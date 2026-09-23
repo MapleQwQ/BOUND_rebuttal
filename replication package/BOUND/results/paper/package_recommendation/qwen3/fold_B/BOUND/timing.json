@@ -1,0 +1,17 @@
+{
+  "model": "qwen3",
+  "fold": "B",
+  "method": "bound",
+  "eval_num_generations": 5,
+  "localization": {
+    "elapsed_sec": 25.43
+  },
+  "update": {
+    "stage_name": "edit",
+    "elapsed_sec": 85.39
+  },
+  "inference": {
+    "edit50_total_sec": 346.96,
+    "unseen_total_sec": 2288.65
+  }
+}

@@ -1,0 +1,142 @@
+\subsection{Cost of \appname}
+\begin{table}[t]
+\centering
+\caption{Average cost of \appname and baselines across models.}
+\label{tab:cost_bound}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{0.95}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccc}
+\toprule
+Method 
+& Loc. time (s) 
+& Edit time (s) 
+& Test time (s) 
+& Artifact size \\
+\midrule
+\cellcolor{boundRow}\textbf{\appname}
+& \cellcolor{boundRow}23.81 
+& \cellcolor{boundRow}83.09 
+& \cellcolor{boundRow}11.30 
+& \cellcolor{boundRow}731.03 KB \\
+
+ROME
+& 10.19 
+& 384.45 
+& 10.86 
+& 98.01 MB \\
+
+MEMIT
+& -- 
+& 193.06 
+& 13.17 
+& 588.01 MB \\
+
+DINM
+& 0.92 
+& 11.97 
+& 12.63 
+& 126.68 MB \\
+
+Full-FT
+& -- 
+& 124.16 
+& 15.31 
+& 14.27 GB \\
+
+\scriptsize{Self-Refinement}
+& -- 
+& --  
+& 25.12 
+& --  \\
+\bottomrule
+\end{tabular}
+}
+\vspace{-0.3cm}
+\end{table}
+
+% To assess the practical cost of \appname, we evaluate its runtime and storage overhead. Table~\ref{tab:cost_bound} reports the average results across the three evaluated models.
+% \appname introduces a localization step that takes 23.81 seconds on average. Although this adds extra cost, RQ3 shows that localization helps identify modules related to the package-validity boundary and improves editing effectiveness.
+% For editing, \appname requires 83.09 seconds on average, which is lower than ROME (384.45s), MEMIT (193.06s), and Full-FT (124.16s).
+% At inference time, \appname takes 11.30 seconds per case on average, which is comparable to ROME (10.86s) and lower than MEMIT, DINM, Full-FT, and Self-Refinement.
+% Its average artifact size is only 731.03 KB, much smaller than ROME (98.01 MB), MEMIT (588.01 MB), DINM (126.68 MB), and Full-FT (14.27 GB).
+% This is because \appname stores only LoRA updates on localized modules rather than large parameter edits or full checkpoints.
+% Overall, \appname adds a small localization cost but achieves efficient editing, competitive inference time, and very small storage overhead. 
+% These results show that \appname is practical for mitigating package hallucination.
+
+To assess the practical cost of \appname, we evaluate its runtime and storage overhead. 
+Table~\ref{tab:cost_bound} reports the average results across the three evaluated models. 
+\appname introduces a localization step that takes 23.81 seconds on average. 
+Although this adds extra cost, RQ3 shows that localization improves editing effectiveness by identifying modules related to the package-validity boundary.
+For editing, \appname requires 83.09 seconds on average, which is lower than ROME, MEMIT, and Full-FT. 
+At inference time, \appname takes 11.30 seconds per case on average, which is comparable to ROME and lower than other baselines. 
+\appname is also lightweight in storage, requiring only 731.03 KB of artifacts on average, approximately 20,000× smaller than full fine-tuning checkpoints. This is because \appname stores only LoRA updates on localized modules rather than large parameter edits or full checkpoints. 
+Overall, \appname adds a small localization cost while achieving efficient editing, competitive inference time, and very small storage overhead.
+These results show that \appname is practical for mitigating package hallucination.
+
+\subsection{Impact of Editing on Model Performance}
+\begin{table}[t]
+\centering
+\captionsetup{skip=2pt}
+\caption{Code accuracy on HumanEval before and after editing.}
+\label{tab:editing_drop}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.95}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lccc|ccc}
+\toprule
+\multirow{2}{*}{Model}
+& \multicolumn{3}{c|}{pass@1}
+& \multicolumn{3}{c}{pass@10} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+& Orig. & Edited & $\Delta$
+& Orig. & Edited & $\Delta$ \\
+\midrule
+DeepSeekCoder
+& 68.96\% & 67.58\% & -1.38\%
+& 82.32\% & 83.39\% & +1.07\% \\
+
+Qwen3
+& 23.29\% & 21.93\% & -1.36\%
+& 51.83\% & 50.91\% & -0.92\% \\
+
+Llama-3.1
+& 41.52\% & 42.12\% & +0.60\%
+& 69.51\% & 69.66\% & +0.15\% \\
+\bottomrule
+\end{tabular}
+}
+\vspace{-0.3cm}
+\end{table}
+
+While \appname effectively reduces package hallucination, it is important to examine whether editing affects the model's general code generation ability. 
+To this end, we evaluate the original and edited models on HumanEval. 
+Following the main evaluation setup, each model has four edited versions, obtained by editing on the four edit folds separately. 
+We evaluate all four edited models on HumanEval and report the average pass@1 and pass@10 results. 
+Table~\ref{tab:editing_drop} presents the results.
+
+The results show that \appname remains stable on clean code generation inputs, with most changes within a $\pm$2\% margin. 
+Overall, \appname mitigates package hallucination with minimal impact on the original capabilities of the model.
+
+
+\subsection{Threats to Validity}
+\noindent\textbf{Internal Validity:}
+A potential internal threat comes from package extraction. 
+We rely on regular expressions to extract package names from model outputs. 
+Due to the inherent instability of LLM outputs, the extracted packages may not always follow the expected format. 
+To reduce this threat, we constrain the output format in the prompt and use one-shot prompting to guide generation.
+Another concern is the stability of evaluation. 
+Since LLM generation involves randomness, the measured hallucination rates may exhibit slight variance. 
+We address this by generating five responses for each prompt, and reporting average results over four edit folds.
+The module localization step of \appname may also introduce uncertainty. 
+Although \appname identifies modules related to package boundaries using a risk-aware localization objective, the results may still be affected by noisy gradients or the selected edit cases. 
+To mitigate this threat, we aggregate localization signals over multiple edit cases. 
+
+\noindent\textbf{External Validity:}
+Our evaluation is conducted on three open-source LLMs from different model families. However, the results may not directly generalize to other LLMs. We focus on open-source models because they provide stable access after release, allowing historical versions to be revisited and reproduced. In contrast, commercial LLMs are continuously updated and may become unavailable over time.
+Another external threat comes from the package ecosystem studied in this paper. 
+We focus on Python packages from PyPI because PyPI provides public metadata for package validity checking. 
+Future work can extend \appname to additional package ecosystems and programming languages (e.g., Java) to further evaluate its generality.
+Furthermore, we evaluate \appname on three package-related tasks: package recommendation, code generation, and \texttt{pip install} recommendation. Although these tasks cover common package-related development scenarios, real-world dependency management also involves configuration files, build scripts, and repository-level workflows. Future work can extend \appname to these broader settings.

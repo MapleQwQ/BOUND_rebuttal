@@ -1,0 +1,17 @@
+{
+  "model": "deepseekcoder",
+  "fold": "C",
+  "method": "bound",
+  "eval_num_generations": 5,
+  "localization": {
+    "elapsed_sec": 21.71
+  },
+  "update": {
+    "stage_name": "edit",
+    "elapsed_sec": 73.74
+  },
+  "inference": {
+    "edit50_total_sec": 649.0,
+    "unseen_total_sec": 5631.75
+  }
+}

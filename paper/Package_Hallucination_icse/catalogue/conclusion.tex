@@ -1,0 +1,21 @@
+% In this paper, we presented \textbf{\appname}, a lightweight localized model editing framework for mitigating package hallucination in LLMs. 
+% Instead of treating package hallucination as a standard factual editing problem, \appname formulates it as a package-validity boundary editing problem, where the goal is to improve the model's distinction between valid and hallucinated package names.  
+% \appname first identifies modules related to package hallucination through risk-aware localization, and then edits only these localized modules using lightweight LoRA adapters with a boundary-aware objective.
+% We evaluated \appname on three representative open-source LLMs: DeepSeekCoder, Qwen3, and Llama-3.1. 
+% The results show that \appname effectively reduces package hallucination in package recommendation, lowering Package-HR by 79.9\% on edit prompts and by 65.4\% on unseen prompts. 
+% The edited package-validity boundary also transfers to other package-related tasks, reducing Package-HR by 12.8\% in code generation and by 34.0\% in \texttt{pip install} recommendation.
+% Compared with existing baselines, \appname better balances hallucination reduction and valid package preservation, while several baselines reduce hallucinations by suppressing package generation.
+% Our ablation study further confirms the importance of each component in \appname, and the cost analysis shows that \appname is practical and lightweight.  
+% Overall, \appname provides a practical step toward improving the reliability of LLM-generated package recommendations without full model retraining or external retrieval pipelines. 
+% Future work will extend \appname to more package ecosystems and broader dependency management scenarios.
+
+In this paper, we presented \textbf{\appname}, a lightweight localized model editing framework for mitigating package hallucination in LLMs. 
+\appname formulates package hallucination as a package-validity boundary editing problem, where the goal is to improve the model's distinction between valid and hallucinated package names. 
+It first locates modules related to package hallucination through risk-aware localization, and then edits only these modules with lightweight LoRA adapters and a boundary-aware objective.
+We evaluated \appname on three representative open-source LLMs: DeepSeekCoder, Qwen3, and Llama-3.1. 
+The results show that \appname effectively reduces package hallucination in package recommendation, lowering Package-HR by 79.9\% on edit prompts and by 65.4\% on unseen prompts. 
+The edited package-validity boundary also transfers to other package-related tasks, reducing Package-HR by 12.8\% in code generation and by 34.0\% in \texttt{pip install} recommendation. 
+Compared with existing baselines, \appname better balances hallucination reduction and valid package preservation, while several baselines reduce hallucinations by suppressing package generation.
+Ablation and cost analyses further show that each component contributes to \appname's effectiveness, and the framework is practical and lightweight. 
+Overall, \appname provides a practical step toward mitigating package hallucinations in LLMs without full model retraining or external retrieval pipelines. 
+Future work will extend \appname to more package ecosystems and broader dependency management scenarios.

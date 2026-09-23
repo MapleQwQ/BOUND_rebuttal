@@ -1,0 +1,178 @@
+\subsection{Dataset}
+\label{sec:dataset}
+We construct a high-risk prompt set for each evaluated model and further split it into edit and unseen evaluation subsets. The dataset construction process contains three steps:
+
+% \noindent\ding{182} \textbf{Prompt source.}
+% To construct a dataset for evaluating package hallucinations, we follow the LLM-generated prompt dataset released by Spracklen et al.~\cite{spracklen2025we}. 
+% Specifically, we use the Python subset of the recent LLM-generated prompts. 
+% This dataset was derived from package descriptions of popular Python packages and was designed to cover a diverse range of package-related programming tasks. 
+
+\noindent\ding{182} \textbf{Prompt source.}
+We follow the LLM-generated prompt dataset released by Spracklen et al.~\cite{spracklen2025we} and use its recent Python subset. 
+The prompts are derived from descriptions of popular Python packages and cover diverse package-related programming tasks.
+% We select the recent subset because it contains tasks related to recently popular packages, which are more likely to expose package-knowledge gaps near the temporal boundary of many LLMs' pre-training data. 
+% This makes it a challenging setting for evaluating package hallucination mitigation.
+
+% \noindent\ding{183} \textbf{High-risk prompt construction.}
+% Since package hallucination behavior varies across models, we construct a model-specific high-risk prompt set for each evaluated model. 
+% For each prompt $x$ in the dataset, we query the model five times under the package recommendation setting. 
+% From each generated response, we extract all recommended packages and assess their validity using PyPI metadata~\cite{pypi}. 
+% A package is considered valid only if it exists on PyPI and has at least one release preceding the model's knowledge cutoff date. 
+% Otherwise, it is classified as hallucinated.
+% For each prompt $x$, we compute its hallucination frequency over the five generations:
+% \begin{equation}
+%     \mathrm{HR}_{M}(x)
+%     =
+%     \frac{N_{\mathrm{hall}}(x)}{5},
+% \end{equation}
+% where $N_{\mathrm{hall}}(x)$ denotes the number of generated responses that contain at least one hallucinated package. 
+% We retain a prompt as a high-risk prompt for model $M$ if $\mathrm{HR}_{M}(x) > 0.5$. 
+% This filtering procedure focuses subsequent editing and evaluation on prompts that consistently induce package hallucinations.
+
+\noindent\ding{183} \textbf{High-risk prompt construction.}
+Since package hallucination behavior varies across models, we construct a separate high-risk prompt set for each evaluated model.
+For each prompt $x$, we query the model five times in the package recommendation setting, extract the recommended packages, and check their validity using PyPI metadata~\cite{pypi}. 
+A package is valid only if it exists on PyPI and has at least one release before the model's knowledge cutoff. Otherwise, it is classified as a hallucinated package.
+We then compute the sample-level hallucination rate (Sample-HR) of each prompt over the five generations, as defined in Equation~\ref{eqa:sample-HR}.
+We retain a prompt as a high-risk prompt if Sample-HR $>0.5$, focusing our study on prompts that consistently trigger package hallucinations.
+
+\noindent\ding{184} \textbf{Dataset split.}
+Table~\ref{tab:dataset_statistics} summarizes the resulting high-risk prompt sets. 
+For each model, we split high-risk prompts into four edit subsets and one unseen evaluation subset. 
+Each edit subset contains 50 prompts and is used independently for editing, reducing the effect of randomness in edit case selection.
+For each edit prompt $x_i$, we construct an edit case $e_i=(x_i,G_i,H_i)$, where $G_i$ and $H_i$ are the extracted valid and hallucinated packages from the five generations.
+% $y_i$ is the formatted valid package answer, and $C_i$ contains locality prompts.
+The remaining high-risk prompts are used to evaluate whether the package-validity boundary learned through editing can generalize to unseen prompts.
+
+% \noindent\ding{184} \textbf{Dataset split.}
+% Table~\ref{tab:dataset_statistics} summarizes the model-specific high-risk prompt sets used in our experiments. 
+% For each evaluated model, we split its high-risk prompt set into four edit subsets and one evaluation subset. 
+% Each edit subset contains 50 high-risk prompts and is used independently for editing. 
+% This design reduces the effect of randomness in edit-case selection. 
+% For each prompt in an edit subset, we construct a package-boundary edit case $e_i=(x_i,G_i,H_i)$, where $G_i$ and $H_i$ are extracted from the original model responses and denote the observed valid and hallucinated packages, respectively. 
+% \appname further instantiates each edit case as $e_i^{\mathrm{BOUND}}=(x_i,y_i,G_i,H_i,C_i)$, where $y_i$ is constructed by formatting $G_i$ as a positive target answer and $C_i$ is constructed as preservation prompts derived from $G_i$ and the original task prompt.
+% Prompts not included in the four edit subsets are reserved as held-out evaluation prompts. 
+% These prompts are used to evaluate whether the edited model generalizes beyond the specific prompts used for parameter updates. 
+% We report the average performance across the four editing folds.
+
+\begin{table}[t]
+\centering
+\caption{Statistics of high-risk prompt sets for the evaluated models.}
+\label{tab:dataset_statistics}
+\begin{tabular}{lccc}
+\toprule
+Model & High-risk Prompt & Edit Prompt & Evaluation Prompt \\
+\midrule
+DeepSeekCoder & 741   & 4 $\times$ 50 & 541 \\
+Qwen3         & 609   & 4 $\times$ 50 & 409 \\
+Llama-3.1     & 1,134 & 4 $\times$ 50 & 934 \\
+\bottomrule
+\end{tabular}
+\vspace{-0.3cm}
+\end{table}
+
+
+
+\subsection{Baselines}
+To evaluate the effectiveness of \appname, we compare it with five baselines, including two package hallucination mitigation methods and three model editing methods. 
+% We also report the original unedited model as \textbf{BASE}. 
+For a fair comparison, all trainable baselines use the same high-risk edit cases as \appname.
+
+
+% \noindent\textbf{Fine-Tuning~\cite{spracklen2025we}} is a direct model adaptation baseline for mitigating package hallucinations. Using the same high-risk edit cases as \appname, we construct supervised training examples by pairing each package recommendation prompt $x_i$ with its corresponding valid-package answer $y_i$. The model is then fine-tuned to increase the likelihood of valid package recommendations.
+
+\noindent\textbf{Full-FT~\cite{spracklen2025we}} is a direct model adaptation baseline for mitigating package hallucinations.
+We construct supervised examples by pairing each package recommendation prompt $x_i$ with its valid package answer $y_i$, and fine-tune the model to increase the likelihood of valid package recommendations.
+
+
+% \noindent\textbf{Self-Refinement~\cite{spracklen2025we}}
+% is an inference-time baseline that iteratively verifies and refines its own package recommendations. In each round, the model first generates a set of package recommendations and then evaluates the validity of each generated package. Packages identified as invalid are added to an avoid list, and the model regenerates its response with an instruction to exclude them. This process is repeated for up to five rounds.
+
+\noindent\textbf{Self-Refinement~\cite{spracklen2025we}} is an inference-time baseline that iteratively verifies and refines package recommendations. 
+In each round, the model generates packages, checks their validity, adds invalid packages to an avoidance list, and regenerates the answer. 
+We repeat this process for up to five rounds.
+
+% \noindent\textbf{ROME~\cite{meng2022rome}} is a representative localized knowledge editing baseline that modifies model parameters through a rank-one update. ROME is originally designed to edit factual associations expressed as subject-relation-object triples. To adapt it to package hallucination mitigation, we use the package recommendation prompt $x_i$ as the editing context and the corresponding valid-package answer $y_i$ as the target output. This baseline evaluates whether a sequence of localized factual-editing updates can reduce hallucinated package recommendations.
+
+\noindent\textbf{ROME~\cite{meng2022rome}} is a localized knowledge editing method that applies rank-one parameter updates to edit factual associations. 
+We adapt ROME by using the package recommendation prompt $x_i$ as the editing context and the valid package answer $y_i$ as the target output.
+
+
+
+% \noindent\textbf{MEMIT~\cite{meng2023memit}} extends ROME to support batch editing by updating multiple factual associations simultaneously. Compared with ROME, MEMIT provides a stronger batch-editing baseline for testing whether existing factual knowledge editing methods can handle package hallucination mitigation at a larger edit scale.
+
+\noindent\textbf{MEMIT~\cite{meng2023memit}} extends ROME to edit multiple factual associations in a batch. 
+We use the same edit cases to evaluate whether batch factual editing can mitigate package hallucination at a larger edit scale.
+
+% \noindent\textbf{DINM~\cite{wang2024detoxifying}} is a model editing method designed for behavior-level editing, such as detoxification. Since package hallucination mitigation also requires suppressing undesired generations, we adapt DINM by treating the valid-package answer $y_i$ as the desired behavior. This baseline evaluates whether a general behavior-editing method can reduce hallucinated package recommendations while preserving valid packages.
+
+\noindent\textbf{DINM~\cite{wang2024detoxifying}} is a behavior editing method originally designed for tasks such as detoxification. 
+We adapt DINM by treating $y_i$ as the desired behavior, and evaluate whether behavior editing can suppress hallucinated package recommendations while preserving valid packages.
+
+
+
+
+
+\subsection{Evaluation Metrics}
+We evaluate each method from two perspectives: package hallucination and valid package preservation. For each generated answer $a$, we extract the set of recommended packages $P(a)$ and classify each package using the cutoff-aware PyPI validation procedure described in Section~\ref{sec:dataset}. Let $G(a)$ and $H(a)$ denote the sets of valid and hallucinated packages extracted from $a$, respectively.
+
+\noindent\textbf{Sample-HR:} Sample-level hallucination rate measures the fraction of generated answers that contain at least one hallucinated package:
+\begin{equation}
+\label{eqa:sample-HR}
+\mathrm{Sample\mbox{-}HR}
+=
+\frac{1}{N}
+\sum_{i=1}^{N}
+\mathbb{I}\left(|H(a_i)| > 0\right),
+\end{equation}
+where $N$ is the number of generated answers. Sample-HR reflects how frequently users are exposed to hallucinated package recommendations.
+
+\noindent\textbf{Package-HR:} Package-level hallucination rate measures the fraction of hallucinated packages among extracted packages:
+\begin{equation}
+\mathrm{Package\mbox{-}HR}
+=
+\frac{
+\sum_{i=1}^{N} |H(a_i)|
+}{
+\sum_{i=1}^{N} \left(|G(a_i)| + |H(a_i)|\right)
+}.
+\end{equation}
+This metric reflects the overall hallucination level among generated package names. If no package is extracted from any generated answer, we define Package-HR as 0.
+
+\noindent\textbf{Valid-Rate:} Valid-Rate measures the fraction of generated answers that contain at least one valid package:
+\begin{equation}
+\mathrm{Valid\mbox{-}Rate}
+=
+\frac{1}{N}
+\sum_{i=1}^{N}
+\mathbb{I}\left(|G(a_i)| > 0\right).
+\end{equation}
+Here, a valid package means a real package that exists in the package ecosystem. It does not imply that the package is semantically correct for the given task. 
+Valid-Rate complements the hallucination metrics, since a method may reduce hallucinations by suppressing package generation.
+
+% % \noindent\textbf{Additional metrics.}
+% We also report Avg Packages, Avg Valid, and Avg Hallucinated, which denote the average number of extracted packages, valid packages, and hallucinated packages per generated answer, respectively. 
+% For cross-task and ablation experiments, we additionally report Empty-Rate, defined as the fraction of generated answers from which no package can be extracted. 
+% Empty-Rate helps identify cases where a method reduces hallucination by producing no usable package recommendation.
+
+
+
+
+
+\subsection{Experimental Setting}
+
+\noindent\textbf{Models.}
+We evaluate on three open-source LLMs: \texttt{deepseek-coder-6.7b-instruct}~\cite{guo2024deepseek}, \texttt{Qwen3-8B}
+\cite{yang2025qwen3}, and \texttt{Llama-3.1-8B-Instruct}~\cite{grattafiori2024llama}. All experiments use PyTorch and HuggingFace Transformers, with model weights loaded in \texttt{bfloat16} precision.
+
+\noindent\textbf{Editing Hyperparameters.}
+\appname selects the top 5 modules during localization. 
+During editing, it uses a LoRA rank of $r=8$, scaling factor $\alpha=16$, dropout rate of 0.05, batch size of 1, learning rate of $2\times10^{-4}$, and three training epochs. The loss weights $\lambda_v$, $\lambda_h$, and $\lambda_l$ are set to 1.0, 0.15, and 0.03, respectively. For a fair comparison, all trainable baselines use the same edit cases as \appname, while method-specific hyperparameters follow their default settings.
+
+
+\noindent\textbf{Generation Settings.}
+For all evaluations, each prompt is sampled five times using \texttt{temperature} = 0.7 and \texttt{top\_p} = 0.9. The maximum generation length is set to 128 tokens for package recommendation and \texttt{pip install} recommendation tasks, and 2,048 tokens for code generation.
+
+
+\noindent\textbf{Hardware.}
+All experiments are conducted on a Linux server running Ubuntu 22.04 LTS, equipped with two Intel Xeon Platinum 8358P CPUs (64 cores total @ 2.60 GHz), 1 TB RAM, and eight NVIDIA A100-SXM4 GPUs (80~GB memory).

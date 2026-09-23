@@ -1,0 +1,44 @@
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{fancyvrb} 
+\usepackage{fontawesome} % 用于插入FontAwesome图标
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs} 
+\usepackage{pifont}
+\usepackage[font=small]{caption} 
+\usepackage{titlesec}
+\usepackage{balance}
+\usepackage{xspace}
+
+\definecolor{c1}{HTML}{F6D4CF}
+\definecolor{tabHeader}{HTML}{EAF0F6}
+\definecolor{tabSubHeader}{HTML}{F6F8FA}
+\definecolor{boundRow}{HTML}{EAF6EF}
+\definecolor{tabRule}{HTML}{4B5563}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newcommand{\appname}{{BOUND}\xspace}
+
+
+\newif\ifSimpleMode\SimpleModefalse
+\newcommand{\sh}[1]{\textcolor{red}{{\it [SH: #1]}}}
+\newcommand{\hx}[1]{\textcolor{blue}{{\it [HX: #1]}}}
+% \newcommand{\dx}[1]{\textcolor{magenta}{{#1}}}
+\newcommand{\dx}[1]{\textcolor{black}{{#1}}}
+\newcommand{\before}[1]{\textcolor{c1}
+{{\ifSimpleMode\relax\else#1\fi}}}
+
+
+
+% \renewcommand\footnotetextcopyrightpermission[1]{}
+% \settopmatter{printacmref=false}
+% \setcopyright{none}

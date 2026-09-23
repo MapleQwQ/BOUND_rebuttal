@@ -1,0 +1,17 @@
+{
+  "model": "llama3.1",
+  "fold": "D",
+  "method": "bound",
+  "eval_num_generations": 5,
+  "localization": {
+    "elapsed_sec": 24.03
+  },
+  "update": {
+    "stage_name": "edit",
+    "elapsed_sec": 84.67
+  },
+  "inference": {
+    "edit50_total_sec": 774.31,
+    "unseen_total_sec": 9530.0
+  }
+}

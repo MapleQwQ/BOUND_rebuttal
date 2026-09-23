@@ -1,0 +1,275 @@
+\begin{table*}[t]
+\centering
+\caption{Effectiveness comparison in the package recommendation setting. We report results on both Edit50 prompts and unseen evaluation prompts. Lower Sample-HR and Package-HR are better, while higher Valid-Rate is better.}
+\label{tab:main_results_three_models}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{Method}}
+& \multicolumn{3}{c|}{\textbf{Edit50 Prompts}}
+& \multicolumn{3}{c}{\textbf{Unseen Evaluation Prompts}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+& & Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$
+  & Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$ \\
+\midrule
+
+\multirow{7}{*}{DeepSeekCoder}
+& Base            & 0.8140 & 0.4091 & 0.8270 & 0.8333 & 0.4414 & 0.7978 \\
+% & \textbf{BOUND}  & \textbf{0.1980} & \textbf{0.0745} & \textbf{0.9480} & \textbf{0.3712} & \textbf{0.1706} & \textbf{0.8909} \\tabHeader
+& \cellcolor{boundRow}\textbf{\appname} & \cellcolor{boundRow}0.1980 & \cellcolor{boundRow}0.0745 & \cellcolor{boundRow}0.9480 & \cellcolor{boundRow}0.3712 & \cellcolor{boundRow}0.1706 & \cellcolor{boundRow}0.8909 \\
+& ROME            & 0.1820 & 0.0916 & 0.2120 & 0.1879 & 0.1085 & 0.1978 \\
+& MEMIT           & 0.7560 & 0.4049 & 0.8160 & 0.7503 & 0.4114 & 0.8001 \\
+& DINM            & 0.1540 & 0.1327 & 0.4000 & 0.2805 & 0.2366 & 0.3707 \\
+& Full-FT         & 0.0580 & 0.0188 & 0.9500 & 0.4814 & 0.2141 & 0.8991 \\
+& Self-Refinement & 0.5180 & 0.2263 & 0.8360 & --     & --     & --     \\
+\midrule
+
+\multirow{7}{*}{Llama-3.1}
+& Base            & 0.8320 & 0.4308 & 0.8150 & 0.8368 & 0.4295 & 0.8182 \\
+% & \textbf{BOUND}  & \textbf{0.3180} & \textbf{0.1419} & \textbf{0.8690} & \textbf{0.4033} & \textbf{0.1955} & \textbf{0.8353} \\
+& \cellcolor{boundRow}\textbf{\appname} & \cellcolor{boundRow}0.3180 & \cellcolor{boundRow}0.1419 & \cellcolor{boundRow}0.8690 & \cellcolor{boundRow}0.4033 & \cellcolor{boundRow}0.1955 & \cellcolor{boundRow}0.8353 \\
+& ROME            & 0.1590 & 0.4297 & 0.0110 & 0.1587 & 0.4325 & 0.0147 \\
+& MEMIT           & 0.7340 & 0.3899 & 0.8310 & 0.7389 & 0.3870 & 0.8304 \\
+& DINM            & 0.0320 & 0.0423 & 0.2710 & 0.0387 & 0.0590 & 0.2591 \\
+& Full-FT         & 0.5110 & 0.3064 & 0.8660 & 0.5592 & 0.3546 & 0.8265 \\
+& Self-Refinement & 0.7120 & 0.3897 & 0.7740 & --     & --     & --     \\
+\midrule
+
+\multirow{7}{*}{Qwen3}
+& Base            & 0.9040 & 0.4991 & 0.7620 & 0.9017 & 0.4555 & 0.7990 \\
+% & \textbf{BOUND}  & \textbf{0.0990} & \textbf{0.0526} & \textbf{0.7410} & \textbf{0.1595} & \textbf{0.0927} & \textbf{0.7434} \\
+& \cellcolor{boundRow}\textbf{\appname} & \cellcolor{boundRow}0.0990 & \cellcolor{boundRow}0.0526 & \cellcolor{boundRow}0.7410 & \cellcolor{boundRow}0.1595 & \cellcolor{boundRow}0.0927 & \cellcolor{boundRow}0.7434 \\
+& ROME            & 0.3760 & 0.1879 & 0.6640 & 0.6069 & 0.4036 & 0.4475 \\
+& MEMIT           & 0.8440 & 0.4757 & 0.7520 & 0.8318 & 0.4423 & 0.7883 \\
+& DINM            & 0.7670 & 0.4372 & 0.7480 & 0.7545 & 0.4124 & 0.7791 \\
+& Full-FT         & 0.1460 & 0.0895 & 0.7780 & 0.3341 & 0.2572 & 0.6417 \\
+& Self-Refinement & 0.5650 & 0.2668 & 0.6860 & --     & --     & --     \\
+
+\bottomrule
+\end{tabular}
+}
+\vspace{-0.3cm}
+\end{table*}
+
+
+
+In this section, we aim to answer the following three research questions:
+
+
+\noindent\textbf{RQ1 (Effectiveness).} How effective is \appname compared to package hallucination mitigation and model editing methods?
+
+
+
+\noindent\textbf{RQ2 (Generalization).} Can \appname generalize from package recommendation to other package-related tasks?
+
+\noindent\textbf{RQ3 (Ablation Study).} How does each component of \appname contribute to its overall effectiveness?
+
+% \noindent\textbf{RQ4 (Key Module Analysis).} Where are localized key modules distributed across the model?
+
+\subsection{RQ1: Effectiveness}
+To answer RQ1, we evaluate \appname and all baselines in the package recommendation setting. We also report the unedited model as \textbf{Base}. 
+Following the dataset split in Table~\ref{tab:dataset_statistics}, all trainable methods are trained using the same four edit folds, each containing 50 prompts. For each method, we report the average performance across the four folds on both the edit set and the unseen evaluation set. Table~\ref{tab:main_results_three_models} presents the results. 
+
+\noindent\faThumbsUp~\textbf{Effectiveness of \appname:}
+\appname substantially reduces package hallucinations across all three models while preserving valid package recommendations. On the edit prompts, \appname reduces the average Sample-HR from 0.8500 to 0.2050 (-75.9\%) and the average Package-HR from 0.4463 to 0.0897 (-79.9\%). Meanwhile, the average Valid-Rate increases from 0.8013 to 0.8527 (+6.4\%), indicating that \appname suppresses hallucinated packages without sacrificing valid package generation.
+The improvements further generalize to unseen prompts that are not used during editing.
+On the unseen evaluation prompts, \appname reduces the average Sample-HR from 0.8573 to 0.3113 (-63.7\%) and the average Package-HR from 0.4421 to 0.1529 (-65.4\%). These consistent gains suggest that \appname learns a transferable package-validity boundary rather than simply memorizing the edited prompts.
+
+
+\noindent\faThumbsUp~\textbf{Comparison with Baselines:}
+Compared with model editing baselines, \appname achieves a better balance between hallucination reduction and valid package preservation.
+Although ROME and DINM sometimes achieve very low Sample-HR or Package-HR, these gains are often accompanied by substantial drops in Valid-Rate. For example, on Llama-3.1, ROME reduces the Edit50 Sample-HR to 0.1590, but its Valid-Rate drops to only 0.0110. Similar trends can be observed for DINM across multiple models.
+This suggests that these methods may reduce hallucinations by suppressing package recommendation behavior itself. 
+In contrast, \appname reduces hallucinations while maintaining a high Valid-Rate, indicating that it better separates valid packages from hallucinated ones.
+\appname also generalizes better than package hallucination mitigation baselines.
+Although Full-FT performs competitively on some edit sets, its improvements transfer less consistently to unseen prompts.
+On the unseen evaluation prompts, \appname reduces Package-HR by 65.4\% on average across the three models, compared with 37.8\% for Full-FT.
+Self-Refinement achieves moderate hallucination reductions, but its gains are smaller than those of \appname (29.6\% vs. 75.9\% Sample-HR reduction on Edit50).
+% More importantly, it does not directly improve the model’s internal package-validity boundary knowledge. Instead, it relies on an additional post-generation verification loop and can not generalize to unseen prompts.
+Furthermore, Self-Refinement can be applied to any prompt at inference time. 
+However, since our unseen evaluation focuses on the generalization of the edited model, Self-Refinement is not included in this comparison.
+
+
+
+\begin{center}
+    \resizebox{\linewidth}{!}{
+\begin{tabular}{l!{\vrule width 1pt}p{0.9\columnwidth}}
+    \makecell{{\LARGE \faLightbulbO}}  &\textbf{Answer to RQ1:}
+        \appname achieves the best overall balance between hallucinated package mitigation and valid package preservation. On edit prompts, it reduces Sample-HR and Package-HR by 75.9\% and 79.9\%, while improving Valid-Rate by 6.4\%. These improvements also generalize to unseen prompts, reducing Sample-HR and Package-HR by 63.7\% and 65.4\%.\\
+\end{tabular}}
+\end{center}
+
+\subsection{RQ2: Generalization}
+\begin{table*}[t]
+\centering
+\caption{Cross-task generalization results on code generation and \texttt{pip install} recommendation.}
+\label{tab:rq2_cross_task}
+\footnotesize
+\resizebox{.95\textwidth}{!}{
+\begin{tabular}{llccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{Method}}
+& \multicolumn{3}{c|}{\textbf{Code Generation}}
+& \multicolumn{3}{c}{\textbf{\texttt{pip install} Recommendation}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+& & Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$
+  & Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$ \\
+\midrule
+
+\multirow{6}{*}{DeepSeekCoder}
+& Base    & 0.3420 & 0.2643 & 0.6420 & 0.4340 & 0.2986 & 0.6320 \\
+& \cellcolor{boundRow}\textbf{\appname} 
+          & \cellcolor{boundRow}0.3260 & \cellcolor{boundRow}0.2542 & \cellcolor{boundRow}0.6415
+          & \cellcolor{boundRow}0.3375 & \cellcolor{boundRow}0.1987 & \cellcolor{boundRow}0.7690 \\
+& DINM    & 0.3105 & 0.2714 & 0.5655 & 0.2070 & 0.2352 & 0.3985 \\
+& MEMIT   & 0.3550 & 0.2758 & 0.6215 & 0.4150 & 0.3017 & 0.6130 \\
+& ROME    & 0.0850 & 0.0671 & 0.1510 & 0.1010 & 0.0669 & 0.1515 \\
+& Full-FT & 0.3540 & 0.2729 & 0.6385 & 0.3845 & 0.2547 & 0.6275 \\
+\midrule
+
+\multirow{6}{*}{Qwen3}
+& Base    & 0.3700 & 0.2785 & 0.5500 & 0.4820 & 0.3569 & 0.6040 \\
+& \cellcolor{boundRow}\textbf{\appname} 
+          & \cellcolor{boundRow}0.3385 & \cellcolor{boundRow}0.2237 & \cellcolor{boundRow}0.5815
+          & \cellcolor{boundRow}0.2400 & \cellcolor{boundRow}0.2122 & \cellcolor{boundRow}0.6030 \\
+& DINM    & 0.3230 & 0.2682 & 0.4820 & 0.5015 & 0.3704 & 0.5945 \\
+& MEMIT   & 0.3640 & 0.2829 & 0.5200 & 0.4910 & 0.3608 & 0.6050 \\
+& ROME    & 0.0935 & 0.0715 & 0.1325 & 0.1215 & 0.0871 & 0.1545 \\
+& Full-FT & 0.0930 & 0.1094 & 0.3200 & 0.0000 & 0.0000 & 0.0005 \\
+\midrule
+
+\multirow{6}{*}{Llama-3.1}
+& Base    & 0.3380 & 0.2425 & 0.6940 & 0.5760 & 0.3452 & 0.6600 \\
+& \cellcolor{boundRow}\textbf{\appname} 
+          & \cellcolor{boundRow}0.3085 & \cellcolor{boundRow}0.2070 & \cellcolor{boundRow}0.7165
+          & \cellcolor{boundRow}0.3825 & \cellcolor{boundRow}0.2492 & \cellcolor{boundRow}0.7675 \\
+& DINM    & 0.0095 & 0.1352 & 0.0115 & 0.0005 & 0.2500 & 0.0000 \\
+& MEMIT   & 0.3355 & 0.2319 & 0.6890 & 0.5650 & 0.3348 & 0.6785 \\
+& ROME    & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+& Full-FT & 0.0000 & 0.0000 & 0.0005 & 0.0000 & 0.0000 & 0.0000 \\
+
+\bottomrule
+\end{tabular}
+}
+\vspace{-0.3cm}
+\end{table*}
+RQ1 shows the effectiveness of \appname in the package recommendation task. We further investigate whether the package-validity boundary knowledge learned from package recommendation can transfer to other package-related tasks.
+We evaluate two representative tasks: code generation and \texttt{pip install} recommendation.
+For code generation, the edited model first generates Python code for a given task.
+We then extract the \texttt{import} modules and use the corresponding unedited base model to map them to PyPI package names.
+This design separates package name mapping from code generation quality, allowing the evaluation to focus on how editing affects dependencies in generated code.
+For \texttt{pip install} recommendation, we give the model the task prompt and ask it to generate \texttt{pip install} commands directly. 
+We then extract package names from the generated commands for validity checking.
+To control evaluation cost, we randomly sample 100 prompts from the unseen evaluation prompt set. 
+Following the RQ1 setup, we evaluate the four edited models obtained from the four edit folds and report their average results.
+We exclude Self-Refinement because it is an inference-time mitigation method and does not produce edited model parameters that can transfer across tasks.
+Table~\ref{tab:rq2_cross_task} presents the results.
+
+\noindent\faHandORight~\textbf{Cross-Task Generalization:}
+The edited package-validity boundary transfers from package recommendation to both code generation and \texttt{pip install} recommendation.
+In code generation, \appname reduces the average Sample-HR and Package-HR by 7.3\% and 12.8\%, respectively, while improving the average Valid-Rate by 2.8\%.
+This indicates that editing package recommendation behavior can also reduce hallucinated dependencies in generated code.
+However, the gains are smaller than those in the package recommendation setting.
+One possible reason is that package hallucinations in code generation are often introduced through hallucinated module imports, making the effect of package-validity boundary editing less direct than in explicit package recommendation.
+\appname shows stronger transfer in the \texttt{pip install} recommendation setting.
+Across the three models, it reduces Sample-HR and Package-HR by 35.7\% and 34.0\%, while improving Valid-Rate by 12.8\%.
+This suggests that the edited package-validity boundary generalizes well to explicit package installation tasks, where the model still needs to determine whether a package name is valid.
+
+\noindent\faHandORight~\textbf{Comparison with Baselines:}
+% Compared with existing baselines, \appname achieves a more stable balance between hallucination reduction and valid-package preservation across tasks.
+ROME, DINM, and Full-FT sometimes achieve very low Sample-HR or Package-HR, but often at the cost of valid package generation. For example, on Llama-3.1 in the \texttt{pip install} setting, ROME and Full-FT both achieve zero Sample-HR and Package-HR, while their Valid-Rate also drops to zero. 
+This suggests that these methods may damage the model's basic ability to perform package-related tasks, leading to fewer package outputs rather than reducing hallucinations.
+In contrast, \appname consistently reduces hallucinations while maintaining a high Valid-Rate, indicating that it better preserves valid package behavior.
+MEMIT preserves Valid-Rate more effectively than ROME and DINM, but its hallucination reduction is limited. In both code generation and \texttt{pip install} recommendation, its Sample-HR and Package-HR remain close to those of the Base model. This suggests that MEMIT preserves the original model behavior, but has limited ability to transfer the edited package-validity boundary knowledge across tasks.
+Overall, these results indicate that directly applying existing methods is insufficient for cross-task package hallucination mitigation, whereas \appname provides a more reliable package-validity boundary editing approach.
+
+
+\begin{center}
+    \resizebox{\linewidth}{!}{
+\begin{tabular}{l!{\vrule width 1pt}p{0.9\columnwidth}}
+    \makecell{{\LARGE \faLightbulbO}}  &\textbf{Answer to RQ2:}
+        \appname transfers the package-validity boundary learned from package recommendation to other package-related tasks. It reduces Package-HR by 12.8\% in code generation and by 34.0\% in \texttt{pip install} recommendation. These results suggest that \appname learns a transferable distinction between valid and hallucinated packages, rather than merely fitting the edited recommendation prompts.\\
+\end{tabular}}
+\end{center}
+
+
+
+\subsection{RQ3: Ablation Study}
+\begin{table*}[t]
+\centering
+\caption{Ablation study of \appname across three models.}
+\label{tab:rq3_ablation}
+% \footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccc|ccc|ccc}
+\toprule
+\multirow{2}{*}{\textbf{Setting}}
+& \multicolumn{3}{c|}{\textbf{DeepSeekCoder}}
+& \multicolumn{3}{c|}{\textbf{Qwen3}}
+& \multicolumn{3}{c}{\textbf{Llama-3.1}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+& Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$
+& Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$
+& Sample-HR $\downarrow$ & Package-HR $\downarrow$ & Valid-Rate $\uparrow$ \\
+\midrule
+\cellcolor{boundRow}\textbf{\appname}
+& \cellcolor{boundRow}0.3620 & \cellcolor{boundRow}0.1618 & \cellcolor{boundRow}0.8835
+& \cellcolor{boundRow}0.1300 & \cellcolor{boundRow}0.0702 & \cellcolor{boundRow}0.7265
+& \cellcolor{boundRow}0.4700 & \cellcolor{boundRow}0.2204 & \cellcolor{boundRow}0.8645 \\
+
+
+w/o Localization
+& 0.4110 & 0.2356 & 0.7590
+& 0.2055 & 0.1548 & 0.5890
+& 0.5215 & 0.2555 & 0.8420 \\
+
+w/o Valid-NLL
+& 0.0200 & 0.0102 & 0.2140
+& 0.0000 & 0.0000 & 0.0000
+& 0.0855 & 0.0893 & 0.2395 \\
+
+w/o Hall-UL
+& 0.6435 & 0.4728 & 0.6435
+& 0.5545 & 0.5706 & 0.3205
+& 0.7575 & 0.6505 & 0.3980 \\
+
+w/o Locality-KL
+& 0.6420 & 0.5668 & 0.4625
+& 0.5065 & 0.5214 & 0.3175
+& 0.7120 & 0.6027 & 0.4190 \\
+\bottomrule
+\end{tabular}
+}
+\vspace{-0.3cm}
+\end{table*}
+To investigate the contribution of each component to the effectiveness of \appname, we create the following variants:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{BOUND\_Full}: The complete version of \appname, as described in Section~\ref{sec:approach}.
+    \item \textbf{w/o Localization}: This variant removes module localization and randomly selects the same number of editable modules as \appname. It evaluates whether locating modules related to the package-validity boundary is necessary.
+    \item \textbf{w/o Valid-NLL}: This variant removes the valid package NLL loss, which uses valid package answers as positive supervision. It evaluates whether valid package learning is needed to preserve useful recommendations.
+    \item \textbf{w/o Hall-UL}: This variant removes the hallucinated package unlikelihood loss and no longer directly suppresses hallucinated packages. It evaluates whether explicit hallucination suppression is necessary.
+    \item \textbf{w/o Locality-KL}: This variant removes the locality KL loss, so the edited model is no longer constrained to preserve the original behavior on locality prompts. It evaluates whether locality preservation is needed for stable editing.
+\end{itemize}
+
+Following the setup of RQ2, we randomly sample 100 prompts from the unseen prompt set to control evaluation cost. For each variant, we edit the model separately on the four edit sets and report the average results across the four edited models. Table~\ref{tab:rq3_ablation} presents the results.
+
+Overall, the complete version of \appname achieves the best overall effectiveness among all variants, balancing hallucination reduction and valid package preservation.
+Across the three models, it obtains an average Sample-HR of 0.3207, Package-HR of 0.1508, and Valid-Rate of 0.8248.
+% Module localization plays an important role in identifying modules related to package-validity boundaries. 
+Removing localization increases Sample-HR and Package-HR by 18.3\% and 42.8\%, while reducing Valid-Rate by 11.5\%. 
+This result suggests that editing localized modules is more effective than editing randomly selected modules.
+The three editing objectives also contribute to this balance. 
+Removing Valid-NLL reduces Valid-Rate from 0.8248 to 0.1512 (-81.7\%), indicating that the model tends to suppress package generation instead of preserving valid packages. 
+Removing Hall-UL increases Package-HR from 0.1508 to 0.5646 (+274.4\%), showing that suppressing hallucinated package names is necessary for hallucination reduction. 
+Removing Locality-KL increases Package-HR to 0.5636 (+273.8\%) and reduces Valid-Rate to 0.3997 (-51.5\%), suggesting that locality preservation helps stabilize editing and prevents harmful behavioral drift.
+
+\begin{center}
+    \resizebox{\linewidth}{!}{
+\begin{tabular}{l!{\vrule width 1pt}p{0.9\columnwidth}}
+    \makecell{{\LARGE \faLightbulbO}}  &\textbf{Answer to RQ3:}
+        Each component contributes to the effectiveness of \appname. Module localization identifies modules sensitive to the package-validity boundary, while the three loss terms work together to balance hallucination suppression and valid package preservation.\\
+\end{tabular}}
+\end{center}
+% \subsection{RQ4: Key Module Analysis}
