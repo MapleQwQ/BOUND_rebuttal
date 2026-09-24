@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "n_prompts": 100,
+    "baseline_sample_hallucination_rate": 0.014000000000000002,
+    "edited_sample_hallucination_rate": 0.0,
+    "baseline_package_hallucination_rate": 0.008380952380952381,
+    "edited_package_hallucination_rate": 0.0,
+    "baseline_sample_valid_rate": 0.64,
+    "edited_sample_valid_rate": 0.0
+  },
+  "details_file": "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/qwen3_foldD_bound_small100_seed42.details.jsonl",
+  "n_prompts": 100,
+  "adapter_type": "blast",
+  "delta_dir": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50",
+  "prompts_file": "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/shared_prompt_manifest_small100.jsonl"
+}

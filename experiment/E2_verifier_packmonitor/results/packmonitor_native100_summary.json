@@ -1,0 +1,67 @@
+{
+  "scope": "DeepSeekCoder, frozen E2 manifest, native constrained decoding",
+  "base_vs_packmonitor": {
+    "n_tasks": 100,
+    "conditions": {
+      "base": {
+        "invalid_answer_rate": 0.45,
+        "empty_package_rate": 0.02,
+        "install_region_trigger_rate": 0.98,
+        "generation_error_rate": 0.0,
+        "mean_latency_seconds": 0.6029529780615122
+      },
+      "packmonitor": {
+        "invalid_answer_rate": 0.04,
+        "empty_package_rate": 0.01,
+        "install_region_trigger_rate": 0.99,
+        "generation_error_rate": 0.0,
+        "mean_latency_seconds": 0.7441142897307873
+      }
+    },
+    "delta_invalid_answer_rate": -0.41000000000000003,
+    "delta_invalid_answer_rate_ci95": [
+      -0.51,
+      -0.31
+    ],
+    "delta_empty_package_rate": -0.01,
+    "delta_empty_package_rate_ci95": [
+      -0.04,
+      0.02
+    ]
+  },
+  "bound_vs_bound_packmonitor": {
+    "n_tasks": 100,
+    "conditions": {
+      "bound": {
+        "invalid_answer_rate": 0.29,
+        "empty_package_rate": 0.0,
+        "install_region_trigger_rate": 1.0,
+        "generation_error_rate": 0.0,
+        "mean_latency_seconds": 0.5491107443906367
+      },
+      "bound_packmonitor": {
+        "invalid_answer_rate": 0.04,
+        "empty_package_rate": 0.0,
+        "install_region_trigger_rate": 1.0,
+        "generation_error_rate": 0.0,
+        "mean_latency_seconds": 0.7077319104131311
+      }
+    },
+    "delta_invalid_answer_rate": -0.24999999999999997,
+    "delta_invalid_answer_rate_ci95": [
+      -0.35,
+      -0.16
+    ],
+    "delta_empty_package_rate": 0.0,
+    "delta_empty_package_rate_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "bootstrap": {
+    "cluster": "prompt",
+    "replicates": 2000,
+    "seed": 20260923
+  },
+  "boundary": "registry membership and install-region syntax only; no adequacy or execution claim"
+}

@@ -1,0 +1,5 @@
+{"case_id": "same_popular_package", "expected": "不适用任务上的相关性和Adequacy下降"}
+{"case_id": "remove_unique_required_package", "expected": "slot coverage与Adequacy下降"}
+{"case_id": "add_real_irrelevant_package", "expected": "precision下降但原覆盖不变"}
+{"case_id": "documented_alternative", "expected": "合理替代覆盖同一slot，不因名称不同判错"}
+{"case_id": "add_nonexistent_extra", "expected": "存在性风险上升，已有完整Adequacy不自动归零"}

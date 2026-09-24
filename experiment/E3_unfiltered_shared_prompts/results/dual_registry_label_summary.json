@@ -1,0 +1,9 @@
+{
+  "input_files": 15,
+  "trials": 15000,
+  "snapshot_size_raw": 706618,
+  "snapshot_size_normalized": 706618,
+  "snapshot_sha256": "9cc52b886efb9488418f0a5fc2f24484088019111029b5eb9587e3b0e05a315c",
+  "deployment_responses_with_not_listed": 1380,
+  "model_cutoff_responses_with_hallucination": 1545
+}

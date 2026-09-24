@@ -1,0 +1,257 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "E1 推荐充分性与任务相关性审计",
+    "description": "BOUND 在 high-risk unseen prompts 上的匿名双标结果、非劣性判断与 utility trade-off。",
+    "generatedAt": "2026-09-24T02:25:17Z",
+    "cards": [
+      {
+        "id": "adequacy_card",
+        "description": "所有必要依赖需求均由真实且适用的推荐覆盖的回答比例；BOUND 为四折等权平均。",
+        "dataset": "headline",
+        "sourceId": "e1_metrics",
+        "metrics": [
+          {"label": "BOUND Adequacy", "field": "bound_adequacy", "format": "percent"},
+          {"label": "较 Base", "field": "delta_adequacy", "format": "percent", "signed": true}
+        ]
+      },
+      {
+        "id": "coverage_card",
+        "description": "被真实且适用的包覆盖的必要 requirement slots 比例。",
+        "dataset": "headline",
+        "sourceId": "e1_metrics",
+        "metrics": [
+          {"label": "BOUND Slot Coverage", "field": "bound_slot_coverage", "format": "percent"},
+          {"label": "较 Base", "field": "delta_slot_coverage", "format": "percent", "signed": true}
+        ]
+      },
+      {
+        "id": "precision_card",
+        "description": "所有推荐候选中，实际存在且至少对任务有辅助作用的包所占比例。",
+        "dataset": "headline",
+        "sourceId": "e1_metrics",
+        "metrics": [
+          {"label": "BOUND Relevant Precision", "field": "bound_precision", "format": "percent"},
+          {"label": "较 Base", "field": "delta_precision", "format": "percent", "signed": true}
+        ]
+      },
+      {
+        "id": "empty_card",
+        "description": "回答没有给出任何可抽取推荐候选的比例。",
+        "dataset": "headline",
+        "sourceId": "e1_metrics",
+        "metrics": [
+          {"label": "BOUND Empty Rate", "field": "bound_empty", "format": "percent"},
+          {"label": "较 Base", "field": "delta_empty", "format": "percent", "signed": true}
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "adequacy_chart",
+        "title": "各模型 Base 与 BOUND 的 Recommendation Adequacy",
+        "subtitle": "每模型20个提示；BOUND为四折等权平均，三模型macro为等权平均",
+        "showDescription": true,
+        "headerMarkdown": "柱高表示完整覆盖所有冻结必要依赖需求的回答比例。",
+        "intent": "comparison",
+        "question": "BOUND 是否在各模型上保持 Base 的回答充分性？",
+        "rationale": "模型是离散类别，且每个模型只比较两个同量纲条件，分组柱状图最直接。",
+        "type": "bar",
+        "dataset": "adequacy_by_model",
+        "sourceId": "e1_metrics",
+        "encodings": {
+          "x": {"field": "model", "type": "nominal", "label": "模型"},
+          "y": {"field": "adequacy", "type": "quantitative", "label": "Adequacy", "format": "percent"},
+          "color": {"field": "condition", "type": "nominal", "label": "条件"},
+          "tooltip": [
+            {"field": "slot_coverage", "type": "quantitative", "label": "Slot coverage", "format": "percent"},
+            {"field": "empty_rate", "type": "quantitative", "label": "Empty rate", "format": "percent"},
+            {"field": "answers", "type": "quantitative", "label": "回答数"}
+          ]
+        },
+        "valueFormat": "percent",
+        "layout": "full"
+      }
+    ],
+    "tables": [
+      {
+        "id": "model_table",
+        "title": "逐模型充分性、覆盖与空回答结果",
+        "subtitle": "Base与BOUND四折等权平均；差值为BOUND−Base，区间由prompt-cluster bootstrap得到",
+        "dataset": "model_summary",
+        "sourceId": "e1_metrics",
+        "defaultSort": {"field": "delta_adequacy", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "model", "label": "模型", "type": "text"},
+          {"field": "base_adequacy", "label": "Base Adequacy", "format": "percent"},
+          {"field": "bound_adequacy", "label": "BOUND Adequacy", "format": "percent"},
+          {"field": "delta_adequacy", "label": "差值", "format": "percent", "movement": true},
+          {"field": "ci95", "label": "95% CI", "type": "text"},
+          {"field": "base_slot", "label": "Base Slot", "format": "percent"},
+          {"field": "bound_slot", "label": "BOUND Slot", "format": "percent"},
+          {"field": "base_empty", "label": "Base Empty", "format": "percent"},
+          {"field": "bound_empty", "label": "BOUND Empty", "format": "percent"}
+        ]
+      },
+      {
+        "id": "agreement_table",
+        "title": "仲裁前双标一致性",
+        "subtitle": "正式匿名批次；Adequacy按回答统计，包级标签按960个候选统计",
+        "dataset": "agreement",
+        "sourceId": "e1_agreement",
+        "defaultSort": {"field": "agreement", "direction": "desc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "dimension", "label": "维度", "type": "text"},
+          {"field": "unit", "label": "单位/N", "type": "text"},
+          {"field": "agreement", "label": "精确一致率", "format": "percent"},
+          {"field": "kappa", "label": "Cohen's κ", "format": "number"},
+          {"field": "disagreements", "label": "分歧数", "format": "number"}
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1_metrics",
+        "label": "E1最终匿名仲裁指标",
+        "path": "BOUND_rebuttal/experiment/E1_task_relevance/results/E1_detailed_report_data.sql"
+      },
+      {
+        "id": "e1_agreement",
+        "label": "E1仲裁前标注一致性",
+        "path": "BOUND_rebuttal/experiment/E1_task_relevance/results/E1_detailed_report_data.sql"
+      },
+      {
+        "id": "e1_provenance",
+        "label": "来源包关联恢复审计",
+        "path": "BOUND_rebuttal/experiment/E1_task_relevance/results/prompt_ground_truth_provenance.csv"
+      }
+    ],
+    "blocks": [
+      {"id": "title", "type": "markdown", "body": "# E1 推荐充分性与任务相关性审计"},
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "sourceId": "e1_metrics",
+        "body": "## 技术摘要\n\n**E1没有支持‘BOUND降低包幻觉同时保持推荐适用性’。** 在60个high-risk unseen任务、300条匿名回答的正式审计中，三模型等权Adequacy由Base的36.7%降至BOUND的25.4%，差值为−11.3个百分点，95% prompt-bootstrap区间为[−20.8,−2.5]个百分点。冻结的非劣性margin为5个百分点，所有逐模型和总体区间下界均未高于−5个百分点，因此非劣性不成立。与此同时，相关包precision由60.6%升至68.8%，但slot coverage由51.0%降至37.7%，empty rate由1.7%升至12.5%。最合理的解释是BOUND让输出更保守、更集中于少量相关包，却更常漏掉完成任务所需的其他依赖能力。"
+      },
+      {"id": "headline_metrics", "type": "metric-strip", "cardIds": ["adequacy_card", "coverage_card", "precision_card", "empty_card"]},
+      {
+        "id": "main_finding",
+        "type": "markdown",
+        "sourceId": "e1_metrics",
+        "body": "## 三个模型均未通过5个百分点非劣性标准\n\nDeepSeekCoder和Llama-3.1的Adequacy点估计都下降15个百分点；Qwen3下降3.75个百分点。DeepSeekCoder的区间完全低于0，三模型macro区间也完全低于0，支持平均Adequacy下降。Llama与Qwen的单模型区间跨0，表示其各自20个提示的样本不足以确定差异方向，但这不等于证明保持。下图应按‘BOUND能否维持Base柱高’解读，而不是只看某个fold或某个模型。"
+      },
+      {"id": "adequacy_visual", "type": "chart", "chartId": "adequacy_chart"},
+      {
+        "id": "precision_tradeoff",
+        "type": "markdown",
+        "sourceId": "e1_metrics",
+        "body": "## Precision上升来自推荐收缩，不能解释为有用性提高\n\nInclusive Task-Relevant Precision提高8.2个百分点，说明BOUND留下的候选中，真实且与任务至少有关的包比例更高。但Adequacy下降11.3个百分点、slot coverage下降13.2个百分点、empty rate上升10.8个百分点。一个回答只留下一个真实相关包时precision可以很高，却仍可能漏掉其他必要依赖；E1正是为识别这种退化而设计。因此论文可以说‘候选更精确’，不能说‘推荐整体更有用’或‘适用性得到保持’。"
+      },
+      {"id": "model_detail", "type": "table", "tableId": "model_table"},
+      {
+        "id": "scope_definitions",
+        "type": "markdown",
+        "body": "## 实验范围与指标定义\n\n正式样本按模型各随机抽20个high-risk unseen prompts。每个任务包含Base和四个BOUND folds各一条generation-0回答，共60个任务、300条回答、960个去重候选。Requirement slots在标注者看到正式回答之前按匿名任务冻结，同一任务的五个条件共享slot集合。`adequate`要求所有必要依赖需求均由截至审计日真实存在且任务适用的推荐覆盖；覆盖部分需求但有明确遗漏为`partially adequate`；未支持主要需求或违反关键约束为`inadequate`。Adequacy与存在性错误分开：额外出现幻觉包不会自动把Adequacy置零，但幻觉包不能满足需求槽。"
+      },
+      {
+        "id": "experimental_design",
+        "type": "markdown",
+        "body": "## 匿名配对设计降低了方法暴露偏差\n\n初版正式manifest的任务ID意外包含模型名，因此被降格为敏感性分析。最终主结果重新生成匿名`TASK-*`标识，隐藏模型、Base/BOUND、fold和registry标签；两名未接触旧标签的新标注者独立判断，第三名标注者在揭盲前仲裁。统计时Base不复制成四份独立观测，而是在同一prompt内先对四个BOUND folds求平均，再以prompt为cluster做2,000次bootstrap。该区间反映任务样本组成的不确定性，不覆盖重新训练、不同编辑数据或训练seed的不确定性。"
+      },
+      {
+        "id": "agreement_intro",
+        "type": "markdown",
+        "sourceId": "e1_agreement",
+        "body": "## Adequacy判断可靠，包的任务角色仍是主要主观边界\n\nAdequacy精确一致率为89.3%，κ=0.834；registry状态一致率98.4%，κ=0.955。任务角色一致率只有71.8%，κ=0.569，主要分歧是`optional_support`与`irrelevant`的边界，以及通用包是否直接覆盖某个原子slot。两位标注者对300条回答均未使用`cannot_judge`。一致性全部在仲裁前计算，避免把共识结果误当独立一致。"
+      },
+      {"id": "agreement_detail", "type": "table", "tableId": "agreement_table"},
+      {
+        "id": "ground_truth_limit",
+        "type": "markdown",
+        "sourceId": "e1_provenance",
+        "body": "## 数据集没有可恢复的prompt级包名ground truth\n\n60个正式任务中，`official_prompt_mapping=0`、`verified_reconstruction=0`、`unavailable=60`。公开Spracklen数据只有prompt文本；PyPI名称全集不是逐prompt标签，本仓库的`valid_reference`又来自模型历史输出。因此E1没有计算Source-Package Hit或Reference Dependency Recall，也没有用模型输出反推真值，而是以人工冻结的需求槽评估覆盖。"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## 结论应限定在语义审计与high-risk提示\n\nE1是专家式语义审计，不是用户研究；它不验证安装、import、API/版本兼容或端到端执行。每模型只有20个提示，单模型区间较宽；四折来自固定适配器，bootstrap不代表所有训练随机性。样本来自原high-risk unseen集合，不能替代E3对未筛选共同集的评估。任务角色κ为中等，也说明对可选辅助包的细粒度解释应谨慎；不过主要终点Adequacy的一致性较高，且总体下降同时得到slot coverage和empty rate的方向支持。"
+      },
+      {
+        "id": "recommendations",
+        "type": "markdown",
+        "body": "## Rebuttal建议：承认utility trade-off并收窄主张\n\n1. 将E1写成针对Reviewer A/B的直接负面结果：BOUND减少不存在包时，平均遗漏了更多必要依赖能力。\n2. 不再声称‘保持推荐适用性’或‘提高recommendation usefulness’；改为‘降低存在性风险，但存在覆盖与拒答代价，效果依模型和fold而异’。\n3. 同时报告Adequacy、slot coverage、inclusive precision和empty rate，避免只挑选上升的precision。\n4. 将安装、导入与端到端成功明确留给E4/E8，不用E1代替执行验证。\n5. 在论文讨论中把BOUND定位为风险—效用权衡机制，并说明外部verifier/PackMonitor仍可能提供互补保护。"
+      },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## 仍需回答的问题\n\n- 更大人工样本能否缩窄Llama与Qwen的单模型区间？\n- 哪些requirement-slot类型最容易在BOUND后丢失，是否集中于多依赖任务？\n- E1的Adequacy下降有多少由空回答解释，有多少来自非空但漏依赖的回答？\n- 若获得数据集作者的源包映射，Source-Package Hit与人工slot coverage是否一致？\n- 在真实项目功能测试中，语义上的`adequate`与安装、import和端到端成功之间有多强关联？"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-24T02:25:17Z",
+    "status": "ready",
+    "datasets": {
+      "headline": [
+        {
+          "bound_adequacy": 0.2541666667,
+          "delta_adequacy": -0.1125,
+          "bound_slot_coverage": 0.3774305556,
+          "delta_slot_coverage": -0.1322916667,
+          "bound_precision": 0.6877160262,
+          "delta_precision": 0.0821113336,
+          "bound_empty": 0.125,
+          "delta_empty": 0.1083333333
+        }
+      ],
+      "adequacy_by_model": [
+        {"model": "DeepSeekCoder", "condition": "Base", "adequacy": 0.4, "slot_coverage": 0.5541666667, "empty_rate": 0.0, "answers": 20, "aggregation": "single condition"},
+        {"model": "DeepSeekCoder", "condition": "BOUND", "adequacy": 0.25, "slot_coverage": 0.446875, "empty_rate": 0.1, "answers": 80, "aggregation": "four-fold equal-weight macro"},
+        {"model": "Llama-3.1", "condition": "Base", "adequacy": 0.4, "slot_coverage": 0.5416666667, "empty_rate": 0.0, "answers": 20, "aggregation": "single condition"},
+        {"model": "Llama-3.1", "condition": "BOUND", "adequacy": 0.25, "slot_coverage": 0.34375, "empty_rate": 0.0875, "answers": 80, "aggregation": "four-fold equal-weight macro"},
+        {"model": "Qwen3", "condition": "Base", "adequacy": 0.3, "slot_coverage": 0.4333333333, "empty_rate": 0.05, "answers": 20, "aggregation": "single condition"},
+        {"model": "Qwen3", "condition": "BOUND", "adequacy": 0.2625, "slot_coverage": 0.3416666667, "empty_rate": 0.1875, "answers": 80, "aggregation": "four-fold equal-weight macro"},
+        {"model": "三模型macro", "condition": "Base", "adequacy": 0.3666666667, "slot_coverage": 0.5097222222, "empty_rate": 0.0166666667, "answers": 60, "aggregation": "model equal-weight macro"},
+        {"model": "三模型macro", "condition": "BOUND", "adequacy": 0.2541666667, "slot_coverage": 0.3774305556, "empty_rate": 0.125, "answers": 240, "aggregation": "model and fold equal-weight macro"}
+      ],
+      "model_summary": [
+        {"model": "DeepSeekCoder", "base_adequacy": 0.4, "bound_adequacy": 0.25, "delta_adequacy": -0.15, "ci95": "[-30.0%, -1.3%]", "base_slot": 0.5541666667, "bound_slot": 0.446875, "base_empty": 0.0, "bound_empty": 0.1},
+        {"model": "Llama-3.1", "base_adequacy": 0.4, "bound_adequacy": 0.25, "delta_adequacy": -0.15, "ci95": "[-35.0%, +5.0%]", "base_slot": 0.5416666667, "bound_slot": 0.34375, "base_empty": 0.0, "bound_empty": 0.0875},
+        {"model": "Qwen3", "base_adequacy": 0.3, "bound_adequacy": 0.2625, "delta_adequacy": -0.0375, "ci95": "[-16.2%, +5.0%]", "base_slot": 0.4333333333, "bound_slot": 0.3416666667, "base_empty": 0.05, "bound_empty": 0.1875},
+        {"model": "三模型macro", "base_adequacy": 0.3666666667, "bound_adequacy": 0.2541666667, "delta_adequacy": -0.1125, "ci95": "[-20.8%, -2.5%]", "base_slot": 0.5097222222, "bound_slot": 0.3774305556, "base_empty": 0.0166666667, "bound_empty": 0.125}
+      ],
+      "agreement": [
+        {"dimension": "Adequacy", "unit": "回答 / 300", "agreement": 0.8933, "kappa": 0.834, "disagreements": 32},
+        {"dimension": "Registry status", "unit": "候选 / 960", "agreement": 0.9844, "kappa": 0.955, "disagreements": 15},
+        {"dimension": "Task role", "unit": "候选 / 960", "agreement": 0.7177, "kappa": 0.569, "disagreements": 271},
+        {"dimension": "回答slot集合", "unit": "回答 / 300", "agreement": 0.8933, "kappa": 0.863, "disagreements": 32},
+        {"dimension": "回答-slot二元覆盖", "unit": "回答-slot / 525", "agreement": 0.9333, "kappa": 0.867, "disagreements": 35}
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "e1_metrics",
+      "label": "E1最终匿名仲裁指标",
+      "path": "BOUND_rebuttal/experiment/E1_task_relevance/results/E1_detailed_report_data.sql"
+    },
+    {
+      "id": "e1_agreement",
+      "label": "E1仲裁前标注一致性",
+      "path": "BOUND_rebuttal/experiment/E1_task_relevance/results/E1_detailed_report_data.sql"
+    },
+    {
+      "id": "e1_provenance",
+      "label": "来源包关联恢复审计",
+      "path": "BOUND_rebuttal/experiment/E1_task_relevance/results/prompt_ground_truth_provenance.csv"
+    }
+  ]
+}

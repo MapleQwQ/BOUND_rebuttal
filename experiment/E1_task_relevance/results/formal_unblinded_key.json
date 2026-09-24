@@ -1,0 +1,3002 @@
+[
+  {
+    "blind_answer_id": "E1F-9a76d4f11ed090d9",
+    "task_id": "deepseekcoder:1541",
+    "model": "deepseekcoder",
+    "prompt_id": "1541",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-0724a3be42590684",
+    "task_id": "deepseekcoder:1541",
+    "model": "deepseekcoder",
+    "prompt_id": "1541",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4c1828f06e9efe5a",
+    "task_id": "deepseekcoder:1541",
+    "model": "deepseekcoder",
+    "prompt_id": "1541",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6c3e1ff2660986f5",
+    "task_id": "deepseekcoder:1541",
+    "model": "deepseekcoder",
+    "prompt_id": "1541",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-39614b0eb7a07ffc",
+    "task_id": "deepseekcoder:1541",
+    "model": "deepseekcoder",
+    "prompt_id": "1541",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7591c63ac1d35740",
+    "task_id": "deepseekcoder:995",
+    "model": "deepseekcoder",
+    "prompt_id": "995",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3ee527a36ee97174",
+    "task_id": "deepseekcoder:995",
+    "model": "deepseekcoder",
+    "prompt_id": "995",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4263e9c6ee98b549",
+    "task_id": "deepseekcoder:995",
+    "model": "deepseekcoder",
+    "prompt_id": "995",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-197ac22569048aff",
+    "task_id": "deepseekcoder:995",
+    "model": "deepseekcoder",
+    "prompt_id": "995",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9ed9024dc3ecda52",
+    "task_id": "deepseekcoder:995",
+    "model": "deepseekcoder",
+    "prompt_id": "995",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8f8da2db6b7f62c4",
+    "task_id": "deepseekcoder:3692",
+    "model": "deepseekcoder",
+    "prompt_id": "3692",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6f7b1ecd40de90d8",
+    "task_id": "deepseekcoder:3692",
+    "model": "deepseekcoder",
+    "prompt_id": "3692",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-062074452d23443e",
+    "task_id": "deepseekcoder:3692",
+    "model": "deepseekcoder",
+    "prompt_id": "3692",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3cffc3a477cf2570",
+    "task_id": "deepseekcoder:3692",
+    "model": "deepseekcoder",
+    "prompt_id": "3692",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3f81e4cdc1c2e6fe",
+    "task_id": "deepseekcoder:3692",
+    "model": "deepseekcoder",
+    "prompt_id": "3692",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a87c22c031c5bf91",
+    "task_id": "deepseekcoder:1804",
+    "model": "deepseekcoder",
+    "prompt_id": "1804",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3ca16455dcff6ba8",
+    "task_id": "deepseekcoder:1804",
+    "model": "deepseekcoder",
+    "prompt_id": "1804",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1eea5a1dadd611e2",
+    "task_id": "deepseekcoder:1804",
+    "model": "deepseekcoder",
+    "prompt_id": "1804",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-0fd4e1ea8b897d5b",
+    "task_id": "deepseekcoder:1804",
+    "model": "deepseekcoder",
+    "prompt_id": "1804",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4493750c9013541a",
+    "task_id": "deepseekcoder:1804",
+    "model": "deepseekcoder",
+    "prompt_id": "1804",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b66caeb4f22c95f8",
+    "task_id": "deepseekcoder:712",
+    "model": "deepseekcoder",
+    "prompt_id": "712",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5687c839f5367256",
+    "task_id": "deepseekcoder:712",
+    "model": "deepseekcoder",
+    "prompt_id": "712",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-dc8a0c4e25e69b5a",
+    "task_id": "deepseekcoder:712",
+    "model": "deepseekcoder",
+    "prompt_id": "712",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-aaca3e34d9a5aec2",
+    "task_id": "deepseekcoder:712",
+    "model": "deepseekcoder",
+    "prompt_id": "712",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-63a4a9e16f3e1043",
+    "task_id": "deepseekcoder:712",
+    "model": "deepseekcoder",
+    "prompt_id": "712",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-dab0dc4cb378dd07",
+    "task_id": "deepseekcoder:88",
+    "model": "deepseekcoder",
+    "prompt_id": "88",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c7298d39bc54e82c",
+    "task_id": "deepseekcoder:88",
+    "model": "deepseekcoder",
+    "prompt_id": "88",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b69069d4a52e655e",
+    "task_id": "deepseekcoder:88",
+    "model": "deepseekcoder",
+    "prompt_id": "88",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e09aa36c3b25081a",
+    "task_id": "deepseekcoder:88",
+    "model": "deepseekcoder",
+    "prompt_id": "88",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1c786f37bc82d712",
+    "task_id": "deepseekcoder:88",
+    "model": "deepseekcoder",
+    "prompt_id": "88",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8e8d4361b44b709d",
+    "task_id": "deepseekcoder:1380",
+    "model": "deepseekcoder",
+    "prompt_id": "1380",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-fadd82d2bbc2e589",
+    "task_id": "deepseekcoder:1380",
+    "model": "deepseekcoder",
+    "prompt_id": "1380",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e425007bf9f1efc4",
+    "task_id": "deepseekcoder:1380",
+    "model": "deepseekcoder",
+    "prompt_id": "1380",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4e918afd18478081",
+    "task_id": "deepseekcoder:1380",
+    "model": "deepseekcoder",
+    "prompt_id": "1380",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2c6951bfb71390d3",
+    "task_id": "deepseekcoder:1380",
+    "model": "deepseekcoder",
+    "prompt_id": "1380",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e2fe858778cacb03",
+    "task_id": "deepseekcoder:934",
+    "model": "deepseekcoder",
+    "prompt_id": "934",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a54536e58c951cec",
+    "task_id": "deepseekcoder:934",
+    "model": "deepseekcoder",
+    "prompt_id": "934",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-abbbaf67809fd4be",
+    "task_id": "deepseekcoder:934",
+    "model": "deepseekcoder",
+    "prompt_id": "934",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e3337f7aa8649806",
+    "task_id": "deepseekcoder:934",
+    "model": "deepseekcoder",
+    "prompt_id": "934",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-90ebca70d9c2f32e",
+    "task_id": "deepseekcoder:934",
+    "model": "deepseekcoder",
+    "prompt_id": "934",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e2932b2d5bc3bb0f",
+    "task_id": "deepseekcoder:3022",
+    "model": "deepseekcoder",
+    "prompt_id": "3022",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e5e7d58c84b30d5c",
+    "task_id": "deepseekcoder:3022",
+    "model": "deepseekcoder",
+    "prompt_id": "3022",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1ac4bbaf9f1489a4",
+    "task_id": "deepseekcoder:3022",
+    "model": "deepseekcoder",
+    "prompt_id": "3022",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-edf898d4e9b5e59f",
+    "task_id": "deepseekcoder:3022",
+    "model": "deepseekcoder",
+    "prompt_id": "3022",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c168cabfd30008f6",
+    "task_id": "deepseekcoder:3022",
+    "model": "deepseekcoder",
+    "prompt_id": "3022",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-80fc6c0fd10dc8bc",
+    "task_id": "deepseekcoder:2195",
+    "model": "deepseekcoder",
+    "prompt_id": "2195",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3f63f386ddd883a8",
+    "task_id": "deepseekcoder:2195",
+    "model": "deepseekcoder",
+    "prompt_id": "2195",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1caf3e467a9e0e20",
+    "task_id": "deepseekcoder:2195",
+    "model": "deepseekcoder",
+    "prompt_id": "2195",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-49162c80c236774c",
+    "task_id": "deepseekcoder:2195",
+    "model": "deepseekcoder",
+    "prompt_id": "2195",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1e53c7f8092aa202",
+    "task_id": "deepseekcoder:2195",
+    "model": "deepseekcoder",
+    "prompt_id": "2195",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5adcfedda606b4d3",
+    "task_id": "deepseekcoder:3259",
+    "model": "deepseekcoder",
+    "prompt_id": "3259",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a2fa49ced13795c7",
+    "task_id": "deepseekcoder:3259",
+    "model": "deepseekcoder",
+    "prompt_id": "3259",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-70dc69e2116c2556",
+    "task_id": "deepseekcoder:3259",
+    "model": "deepseekcoder",
+    "prompt_id": "3259",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-60fda70b19393e58",
+    "task_id": "deepseekcoder:3259",
+    "model": "deepseekcoder",
+    "prompt_id": "3259",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-f29ccc98c41749fe",
+    "task_id": "deepseekcoder:3259",
+    "model": "deepseekcoder",
+    "prompt_id": "3259",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7f2c30a063b5611a",
+    "task_id": "deepseekcoder:4111",
+    "model": "deepseekcoder",
+    "prompt_id": "4111",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d42b9a8e72c6e435",
+    "task_id": "deepseekcoder:4111",
+    "model": "deepseekcoder",
+    "prompt_id": "4111",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-0612dea038367125",
+    "task_id": "deepseekcoder:4111",
+    "model": "deepseekcoder",
+    "prompt_id": "4111",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1c853e330753cda2",
+    "task_id": "deepseekcoder:4111",
+    "model": "deepseekcoder",
+    "prompt_id": "4111",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-04f7eb0467c0c3a7",
+    "task_id": "deepseekcoder:4111",
+    "model": "deepseekcoder",
+    "prompt_id": "4111",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ef3c07d4a8fafed5",
+    "task_id": "deepseekcoder:4261",
+    "model": "deepseekcoder",
+    "prompt_id": "4261",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-dd2b848ecb58d95e",
+    "task_id": "deepseekcoder:4261",
+    "model": "deepseekcoder",
+    "prompt_id": "4261",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b390370a07889258",
+    "task_id": "deepseekcoder:4261",
+    "model": "deepseekcoder",
+    "prompt_id": "4261",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d27e73349368b995",
+    "task_id": "deepseekcoder:4261",
+    "model": "deepseekcoder",
+    "prompt_id": "4261",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b09df288d1bab879",
+    "task_id": "deepseekcoder:4261",
+    "model": "deepseekcoder",
+    "prompt_id": "4261",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-34842f5a120dc9af",
+    "task_id": "deepseekcoder:3066",
+    "model": "deepseekcoder",
+    "prompt_id": "3066",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e4bc9550a34f7c1f",
+    "task_id": "deepseekcoder:3066",
+    "model": "deepseekcoder",
+    "prompt_id": "3066",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-731007c407490ed1",
+    "task_id": "deepseekcoder:3066",
+    "model": "deepseekcoder",
+    "prompt_id": "3066",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-66668f733dd12cf2",
+    "task_id": "deepseekcoder:3066",
+    "model": "deepseekcoder",
+    "prompt_id": "3066",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e853e2ae670ac566",
+    "task_id": "deepseekcoder:3066",
+    "model": "deepseekcoder",
+    "prompt_id": "3066",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-42c0ab9923e5805b",
+    "task_id": "deepseekcoder:465",
+    "model": "deepseekcoder",
+    "prompt_id": "465",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ade1aba57058f977",
+    "task_id": "deepseekcoder:465",
+    "model": "deepseekcoder",
+    "prompt_id": "465",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-882576c1ebf871de",
+    "task_id": "deepseekcoder:465",
+    "model": "deepseekcoder",
+    "prompt_id": "465",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-55ecf97de5546c8a",
+    "task_id": "deepseekcoder:465",
+    "model": "deepseekcoder",
+    "prompt_id": "465",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-fab098ddf405d9ad",
+    "task_id": "deepseekcoder:465",
+    "model": "deepseekcoder",
+    "prompt_id": "465",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-dac0b6f2a3e529dd",
+    "task_id": "deepseekcoder:732",
+    "model": "deepseekcoder",
+    "prompt_id": "732",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-499c4b500fe22783",
+    "task_id": "deepseekcoder:732",
+    "model": "deepseekcoder",
+    "prompt_id": "732",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-21d303fb15b43579",
+    "task_id": "deepseekcoder:732",
+    "model": "deepseekcoder",
+    "prompt_id": "732",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-293deec69ccac4b8",
+    "task_id": "deepseekcoder:732",
+    "model": "deepseekcoder",
+    "prompt_id": "732",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-780639dd31916f6c",
+    "task_id": "deepseekcoder:732",
+    "model": "deepseekcoder",
+    "prompt_id": "732",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-afa6fddbdf0ae41c",
+    "task_id": "deepseekcoder:2743",
+    "model": "deepseekcoder",
+    "prompt_id": "2743",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7d9d556e424e2ad4",
+    "task_id": "deepseekcoder:2743",
+    "model": "deepseekcoder",
+    "prompt_id": "2743",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ede03ea0a2b8c9f3",
+    "task_id": "deepseekcoder:2743",
+    "model": "deepseekcoder",
+    "prompt_id": "2743",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-bf11c78d84104f2a",
+    "task_id": "deepseekcoder:2743",
+    "model": "deepseekcoder",
+    "prompt_id": "2743",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9f67162f71782ca3",
+    "task_id": "deepseekcoder:2743",
+    "model": "deepseekcoder",
+    "prompt_id": "2743",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d2e648cac3b87482",
+    "task_id": "deepseekcoder:1537",
+    "model": "deepseekcoder",
+    "prompt_id": "1537",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d8ded489fb4d7c43",
+    "task_id": "deepseekcoder:1537",
+    "model": "deepseekcoder",
+    "prompt_id": "1537",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9d6aa29ce2430a36",
+    "task_id": "deepseekcoder:1537",
+    "model": "deepseekcoder",
+    "prompt_id": "1537",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-423198e81ad0a12f",
+    "task_id": "deepseekcoder:1537",
+    "model": "deepseekcoder",
+    "prompt_id": "1537",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c173b9484ca5a0e4",
+    "task_id": "deepseekcoder:1537",
+    "model": "deepseekcoder",
+    "prompt_id": "1537",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a5e68fd3e1e42ccf",
+    "task_id": "deepseekcoder:4680",
+    "model": "deepseekcoder",
+    "prompt_id": "4680",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-13b04a571b53c345",
+    "task_id": "deepseekcoder:4680",
+    "model": "deepseekcoder",
+    "prompt_id": "4680",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-858ccffce522471a",
+    "task_id": "deepseekcoder:4680",
+    "model": "deepseekcoder",
+    "prompt_id": "4680",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b24e8ebeb391b5bf",
+    "task_id": "deepseekcoder:4680",
+    "model": "deepseekcoder",
+    "prompt_id": "4680",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6dfd0413b5225ccb",
+    "task_id": "deepseekcoder:4680",
+    "model": "deepseekcoder",
+    "prompt_id": "4680",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5cbd9255d5509f7b",
+    "task_id": "deepseekcoder:3963",
+    "model": "deepseekcoder",
+    "prompt_id": "3963",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-03f13645e1db4e54",
+    "task_id": "deepseekcoder:3963",
+    "model": "deepseekcoder",
+    "prompt_id": "3963",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-de9bb99786adfb02",
+    "task_id": "deepseekcoder:3963",
+    "model": "deepseekcoder",
+    "prompt_id": "3963",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a05842fcdc862227",
+    "task_id": "deepseekcoder:3963",
+    "model": "deepseekcoder",
+    "prompt_id": "3963",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1de90abc6e95dd3c",
+    "task_id": "deepseekcoder:3963",
+    "model": "deepseekcoder",
+    "prompt_id": "3963",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5df86fcc93c72a42",
+    "task_id": "qwen3-release:2836",
+    "model": "qwen3-release",
+    "prompt_id": "2836",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-030999e4eeaad170",
+    "task_id": "qwen3-release:2836",
+    "model": "qwen3-release",
+    "prompt_id": "2836",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4572115ac3650e58",
+    "task_id": "qwen3-release:2836",
+    "model": "qwen3-release",
+    "prompt_id": "2836",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8c43e5182a13d09c",
+    "task_id": "qwen3-release:2836",
+    "model": "qwen3-release",
+    "prompt_id": "2836",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-69513bd66f476b19",
+    "task_id": "qwen3-release:2836",
+    "model": "qwen3-release",
+    "prompt_id": "2836",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d8a7e13b3be814d3",
+    "task_id": "qwen3-release:2215",
+    "model": "qwen3-release",
+    "prompt_id": "2215",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5e9fdafbc3f6d83c",
+    "task_id": "qwen3-release:2215",
+    "model": "qwen3-release",
+    "prompt_id": "2215",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a51259a97ba63180",
+    "task_id": "qwen3-release:2215",
+    "model": "qwen3-release",
+    "prompt_id": "2215",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-56ae87868ce89d93",
+    "task_id": "qwen3-release:2215",
+    "model": "qwen3-release",
+    "prompt_id": "2215",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b0a53c0856185be3",
+    "task_id": "qwen3-release:2215",
+    "model": "qwen3-release",
+    "prompt_id": "2215",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-cee45af4973d3a54",
+    "task_id": "qwen3-release:1248",
+    "model": "qwen3-release",
+    "prompt_id": "1248",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-29c3d8815fcc76cc",
+    "task_id": "qwen3-release:1248",
+    "model": "qwen3-release",
+    "prompt_id": "1248",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c609587969e1b518",
+    "task_id": "qwen3-release:1248",
+    "model": "qwen3-release",
+    "prompt_id": "1248",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-bcaaa4c3c74c9a1f",
+    "task_id": "qwen3-release:1248",
+    "model": "qwen3-release",
+    "prompt_id": "1248",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7b592d549a179d1b",
+    "task_id": "qwen3-release:1248",
+    "model": "qwen3-release",
+    "prompt_id": "1248",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-51fd64cc3c754639",
+    "task_id": "qwen3-release:1281",
+    "model": "qwen3-release",
+    "prompt_id": "1281",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-69c015eb87ac6fdf",
+    "task_id": "qwen3-release:1281",
+    "model": "qwen3-release",
+    "prompt_id": "1281",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d31f9017abab63ee",
+    "task_id": "qwen3-release:1281",
+    "model": "qwen3-release",
+    "prompt_id": "1281",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6151b5148615bab9",
+    "task_id": "qwen3-release:1281",
+    "model": "qwen3-release",
+    "prompt_id": "1281",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-98a885a0de96290a",
+    "task_id": "qwen3-release:1281",
+    "model": "qwen3-release",
+    "prompt_id": "1281",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-85231863f3b8f75d",
+    "task_id": "qwen3-release:2969",
+    "model": "qwen3-release",
+    "prompt_id": "2969",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2ce490c38165939a",
+    "task_id": "qwen3-release:2969",
+    "model": "qwen3-release",
+    "prompt_id": "2969",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-69098faa31e102b5",
+    "task_id": "qwen3-release:2969",
+    "model": "qwen3-release",
+    "prompt_id": "2969",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3ec21f058c99fa30",
+    "task_id": "qwen3-release:2969",
+    "model": "qwen3-release",
+    "prompt_id": "2969",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-49a9bc81240176b7",
+    "task_id": "qwen3-release:2969",
+    "model": "qwen3-release",
+    "prompt_id": "2969",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d6bb33b3c5a7b663",
+    "task_id": "qwen3-release:2049",
+    "model": "qwen3-release",
+    "prompt_id": "2049",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4d67207190f6349a",
+    "task_id": "qwen3-release:2049",
+    "model": "qwen3-release",
+    "prompt_id": "2049",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-10f2c335d5bbe818",
+    "task_id": "qwen3-release:2049",
+    "model": "qwen3-release",
+    "prompt_id": "2049",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ee7c40e3681576df",
+    "task_id": "qwen3-release:2049",
+    "model": "qwen3-release",
+    "prompt_id": "2049",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-11055efaf68bbff6",
+    "task_id": "qwen3-release:2049",
+    "model": "qwen3-release",
+    "prompt_id": "2049",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3830feba51ecba11",
+    "task_id": "qwen3-release:3198",
+    "model": "qwen3-release",
+    "prompt_id": "3198",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b113b1097c27894b",
+    "task_id": "qwen3-release:3198",
+    "model": "qwen3-release",
+    "prompt_id": "3198",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e5ba2c577114c9b2",
+    "task_id": "qwen3-release:3198",
+    "model": "qwen3-release",
+    "prompt_id": "3198",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-871238940012586f",
+    "task_id": "qwen3-release:3198",
+    "model": "qwen3-release",
+    "prompt_id": "3198",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4992968d79028cbd",
+    "task_id": "qwen3-release:3198",
+    "model": "qwen3-release",
+    "prompt_id": "3198",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5dd26060fb0998b4",
+    "task_id": "qwen3-release:439",
+    "model": "qwen3-release",
+    "prompt_id": "439",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ad8b3a8e305ed9de",
+    "task_id": "qwen3-release:439",
+    "model": "qwen3-release",
+    "prompt_id": "439",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8aed04520426ef3e",
+    "task_id": "qwen3-release:439",
+    "model": "qwen3-release",
+    "prompt_id": "439",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-31590bd4022a94a7",
+    "task_id": "qwen3-release:439",
+    "model": "qwen3-release",
+    "prompt_id": "439",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2861950dc25f0100",
+    "task_id": "qwen3-release:439",
+    "model": "qwen3-release",
+    "prompt_id": "439",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4a2a38b1f202a6f9",
+    "task_id": "qwen3-release:3825",
+    "model": "qwen3-release",
+    "prompt_id": "3825",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-86bf33b67f602427",
+    "task_id": "qwen3-release:3825",
+    "model": "qwen3-release",
+    "prompt_id": "3825",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8366903248232316",
+    "task_id": "qwen3-release:3825",
+    "model": "qwen3-release",
+    "prompt_id": "3825",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-acefeaed989063ad",
+    "task_id": "qwen3-release:3825",
+    "model": "qwen3-release",
+    "prompt_id": "3825",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-61340ff2d4166f77",
+    "task_id": "qwen3-release:3825",
+    "model": "qwen3-release",
+    "prompt_id": "3825",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-bbdba7e3dc3ca532",
+    "task_id": "qwen3-release:4244",
+    "model": "qwen3-release",
+    "prompt_id": "4244",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8b6abba0b48ae7b7",
+    "task_id": "qwen3-release:4244",
+    "model": "qwen3-release",
+    "prompt_id": "4244",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-63f2c6a8daf09c9e",
+    "task_id": "qwen3-release:4244",
+    "model": "qwen3-release",
+    "prompt_id": "4244",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ba8147bc17a31131",
+    "task_id": "qwen3-release:4244",
+    "model": "qwen3-release",
+    "prompt_id": "4244",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d62f6a9adc07cc53",
+    "task_id": "qwen3-release:4244",
+    "model": "qwen3-release",
+    "prompt_id": "4244",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2842faf98252a204",
+    "task_id": "qwen3-release:3901",
+    "model": "qwen3-release",
+    "prompt_id": "3901",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-f27e56fe7f5fd7fd",
+    "task_id": "qwen3-release:3901",
+    "model": "qwen3-release",
+    "prompt_id": "3901",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e09080ca26ef04d1",
+    "task_id": "qwen3-release:3901",
+    "model": "qwen3-release",
+    "prompt_id": "3901",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-01d0d5b28d3116aa",
+    "task_id": "qwen3-release:3901",
+    "model": "qwen3-release",
+    "prompt_id": "3901",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c8cf278fb2718a6a",
+    "task_id": "qwen3-release:3901",
+    "model": "qwen3-release",
+    "prompt_id": "3901",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3767ffd2f54573f9",
+    "task_id": "qwen3-release:4203",
+    "model": "qwen3-release",
+    "prompt_id": "4203",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c014a0ef25467eae",
+    "task_id": "qwen3-release:4203",
+    "model": "qwen3-release",
+    "prompt_id": "4203",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8046f899317fa209",
+    "task_id": "qwen3-release:4203",
+    "model": "qwen3-release",
+    "prompt_id": "4203",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-319222f1d0adb15f",
+    "task_id": "qwen3-release:4203",
+    "model": "qwen3-release",
+    "prompt_id": "4203",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a6185de5b9625734",
+    "task_id": "qwen3-release:4203",
+    "model": "qwen3-release",
+    "prompt_id": "4203",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-85cc96d116ad1575",
+    "task_id": "qwen3-release:1588",
+    "model": "qwen3-release",
+    "prompt_id": "1588",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-129d0a23da67154f",
+    "task_id": "qwen3-release:1588",
+    "model": "qwen3-release",
+    "prompt_id": "1588",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1ae9952f2e8ee5c1",
+    "task_id": "qwen3-release:1588",
+    "model": "qwen3-release",
+    "prompt_id": "1588",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4696b502206f5660",
+    "task_id": "qwen3-release:1588",
+    "model": "qwen3-release",
+    "prompt_id": "1588",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6d4b4f36ab5aa791",
+    "task_id": "qwen3-release:1588",
+    "model": "qwen3-release",
+    "prompt_id": "1588",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-35c7b4d9505a8fab",
+    "task_id": "qwen3-release:4868",
+    "model": "qwen3-release",
+    "prompt_id": "4868",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-321a1ebec5483ecf",
+    "task_id": "qwen3-release:4868",
+    "model": "qwen3-release",
+    "prompt_id": "4868",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6444632af412d244",
+    "task_id": "qwen3-release:4868",
+    "model": "qwen3-release",
+    "prompt_id": "4868",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3101f2568c2d5e3d",
+    "task_id": "qwen3-release:4868",
+    "model": "qwen3-release",
+    "prompt_id": "4868",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8097f4aa253f08b7",
+    "task_id": "qwen3-release:4868",
+    "model": "qwen3-release",
+    "prompt_id": "4868",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-55d35d5268f191d3",
+    "task_id": "qwen3-release:394",
+    "model": "qwen3-release",
+    "prompt_id": "394",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3314770721413e42",
+    "task_id": "qwen3-release:394",
+    "model": "qwen3-release",
+    "prompt_id": "394",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-735ac428ac1a1fa8",
+    "task_id": "qwen3-release:394",
+    "model": "qwen3-release",
+    "prompt_id": "394",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-16533f7c627dc69e",
+    "task_id": "qwen3-release:394",
+    "model": "qwen3-release",
+    "prompt_id": "394",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8864b92b1b5e626f",
+    "task_id": "qwen3-release:394",
+    "model": "qwen3-release",
+    "prompt_id": "394",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a44dab6dd88f46c4",
+    "task_id": "qwen3-release:185",
+    "model": "qwen3-release",
+    "prompt_id": "185",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-77559b75eff11cb9",
+    "task_id": "qwen3-release:185",
+    "model": "qwen3-release",
+    "prompt_id": "185",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a68f584ddb6761a2",
+    "task_id": "qwen3-release:185",
+    "model": "qwen3-release",
+    "prompt_id": "185",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-74f48c744ebcac8d",
+    "task_id": "qwen3-release:185",
+    "model": "qwen3-release",
+    "prompt_id": "185",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2f1a53c0150bd575",
+    "task_id": "qwen3-release:185",
+    "model": "qwen3-release",
+    "prompt_id": "185",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b5a56069bf03a2f2",
+    "task_id": "qwen3-release:2010",
+    "model": "qwen3-release",
+    "prompt_id": "2010",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3aa6cb9b3acbe7c7",
+    "task_id": "qwen3-release:2010",
+    "model": "qwen3-release",
+    "prompt_id": "2010",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b98a7c1ef54a30fd",
+    "task_id": "qwen3-release:2010",
+    "model": "qwen3-release",
+    "prompt_id": "2010",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-dc2c326c0012379d",
+    "task_id": "qwen3-release:2010",
+    "model": "qwen3-release",
+    "prompt_id": "2010",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8b98142711576ead",
+    "task_id": "qwen3-release:2010",
+    "model": "qwen3-release",
+    "prompt_id": "2010",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-f54c16d015bd1b53",
+    "task_id": "qwen3-release:3560",
+    "model": "qwen3-release",
+    "prompt_id": "3560",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-038474dcf544e8f1",
+    "task_id": "qwen3-release:3560",
+    "model": "qwen3-release",
+    "prompt_id": "3560",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-58e665483dde680a",
+    "task_id": "qwen3-release:3560",
+    "model": "qwen3-release",
+    "prompt_id": "3560",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7693a01fea6e0d15",
+    "task_id": "qwen3-release:3560",
+    "model": "qwen3-release",
+    "prompt_id": "3560",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4c386db57ef66dcd",
+    "task_id": "qwen3-release:3560",
+    "model": "qwen3-release",
+    "prompt_id": "3560",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-af6e44c9d9fc6b98",
+    "task_id": "qwen3-release:1039",
+    "model": "qwen3-release",
+    "prompt_id": "1039",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1d4393d03d4af318",
+    "task_id": "qwen3-release:1039",
+    "model": "qwen3-release",
+    "prompt_id": "1039",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-1948ef09c5e7c770",
+    "task_id": "qwen3-release:1039",
+    "model": "qwen3-release",
+    "prompt_id": "1039",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-cd1782f4aafb7186",
+    "task_id": "qwen3-release:1039",
+    "model": "qwen3-release",
+    "prompt_id": "1039",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-87d78981d21d0410",
+    "task_id": "qwen3-release:1039",
+    "model": "qwen3-release",
+    "prompt_id": "1039",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b39d9af782c12bb8",
+    "task_id": "qwen3-release:647",
+    "model": "qwen3-release",
+    "prompt_id": "647",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b891358c78b150ec",
+    "task_id": "qwen3-release:647",
+    "model": "qwen3-release",
+    "prompt_id": "647",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a4979fc0e8e0ea27",
+    "task_id": "qwen3-release:647",
+    "model": "qwen3-release",
+    "prompt_id": "647",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-f55dc9d7ac6b8860",
+    "task_id": "qwen3-release:647",
+    "model": "qwen3-release",
+    "prompt_id": "647",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d097210d3a9c59f4",
+    "task_id": "qwen3-release:647",
+    "model": "qwen3-release",
+    "prompt_id": "647",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-0edb41a44fcc4005",
+    "task_id": "llama3.1-release:3531",
+    "model": "llama3.1-release",
+    "prompt_id": "3531",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2dbc9f8b41f68aea",
+    "task_id": "llama3.1-release:3531",
+    "model": "llama3.1-release",
+    "prompt_id": "3531",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-68433d8ef2a55b08",
+    "task_id": "llama3.1-release:3531",
+    "model": "llama3.1-release",
+    "prompt_id": "3531",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3b9a08436caab55f",
+    "task_id": "llama3.1-release:3531",
+    "model": "llama3.1-release",
+    "prompt_id": "3531",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-52cd9cf2b321ce99",
+    "task_id": "llama3.1-release:3531",
+    "model": "llama3.1-release",
+    "prompt_id": "3531",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-83d87e985225f51d",
+    "task_id": "llama3.1-release:470",
+    "model": "llama3.1-release",
+    "prompt_id": "470",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e4fcd8d2cd513f26",
+    "task_id": "llama3.1-release:470",
+    "model": "llama3.1-release",
+    "prompt_id": "470",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-78b0e95711ebc2d2",
+    "task_id": "llama3.1-release:470",
+    "model": "llama3.1-release",
+    "prompt_id": "470",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2f71186adb534370",
+    "task_id": "llama3.1-release:470",
+    "model": "llama3.1-release",
+    "prompt_id": "470",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6f43090a8a63fc5c",
+    "task_id": "llama3.1-release:470",
+    "model": "llama3.1-release",
+    "prompt_id": "470",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9ea01f84c8c6e2b0",
+    "task_id": "llama3.1-release:615",
+    "model": "llama3.1-release",
+    "prompt_id": "615",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4c1221d74f594d76",
+    "task_id": "llama3.1-release:615",
+    "model": "llama3.1-release",
+    "prompt_id": "615",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-313b4873ae68a6e4",
+    "task_id": "llama3.1-release:615",
+    "model": "llama3.1-release",
+    "prompt_id": "615",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-258246c2c4db9f7d",
+    "task_id": "llama3.1-release:615",
+    "model": "llama3.1-release",
+    "prompt_id": "615",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-49e1361bc21c165a",
+    "task_id": "llama3.1-release:615",
+    "model": "llama3.1-release",
+    "prompt_id": "615",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a0ed34d4cb3c5825",
+    "task_id": "llama3.1-release:2380",
+    "model": "llama3.1-release",
+    "prompt_id": "2380",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-68e3c500205d2d97",
+    "task_id": "llama3.1-release:2380",
+    "model": "llama3.1-release",
+    "prompt_id": "2380",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-816c33f2a9e7f194",
+    "task_id": "llama3.1-release:2380",
+    "model": "llama3.1-release",
+    "prompt_id": "2380",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7666719c96e7027a",
+    "task_id": "llama3.1-release:2380",
+    "model": "llama3.1-release",
+    "prompt_id": "2380",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-10ed8e62b6ae3e44",
+    "task_id": "llama3.1-release:2380",
+    "model": "llama3.1-release",
+    "prompt_id": "2380",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-aa99322861851fec",
+    "task_id": "llama3.1-release:354",
+    "model": "llama3.1-release",
+    "prompt_id": "354",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e469148c7daf7e30",
+    "task_id": "llama3.1-release:354",
+    "model": "llama3.1-release",
+    "prompt_id": "354",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-910bb73b8583b079",
+    "task_id": "llama3.1-release:354",
+    "model": "llama3.1-release",
+    "prompt_id": "354",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-71ee3f8ccdade69a",
+    "task_id": "llama3.1-release:354",
+    "model": "llama3.1-release",
+    "prompt_id": "354",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-71f2c6c6f1fb220a",
+    "task_id": "llama3.1-release:354",
+    "model": "llama3.1-release",
+    "prompt_id": "354",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-bc3b4f2eaab3191d",
+    "task_id": "llama3.1-release:3373",
+    "model": "llama3.1-release",
+    "prompt_id": "3373",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ee9043e067e02d76",
+    "task_id": "llama3.1-release:3373",
+    "model": "llama3.1-release",
+    "prompt_id": "3373",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-0641bda2071316e6",
+    "task_id": "llama3.1-release:3373",
+    "model": "llama3.1-release",
+    "prompt_id": "3373",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-facaf945a7113d67",
+    "task_id": "llama3.1-release:3373",
+    "model": "llama3.1-release",
+    "prompt_id": "3373",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-35ae66aef4cc6426",
+    "task_id": "llama3.1-release:3373",
+    "model": "llama3.1-release",
+    "prompt_id": "3373",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c57845914d56d3c3",
+    "task_id": "llama3.1-release:3827",
+    "model": "llama3.1-release",
+    "prompt_id": "3827",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-054d543fd192222d",
+    "task_id": "llama3.1-release:3827",
+    "model": "llama3.1-release",
+    "prompt_id": "3827",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7bcbeefb5e3e5a16",
+    "task_id": "llama3.1-release:3827",
+    "model": "llama3.1-release",
+    "prompt_id": "3827",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4b4d12a5d6d69d30",
+    "task_id": "llama3.1-release:3827",
+    "model": "llama3.1-release",
+    "prompt_id": "3827",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9bd12977a9922246",
+    "task_id": "llama3.1-release:3827",
+    "model": "llama3.1-release",
+    "prompt_id": "3827",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3d6c195249e053ca",
+    "task_id": "llama3.1-release:2105",
+    "model": "llama3.1-release",
+    "prompt_id": "2105",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9f2068bb503db85c",
+    "task_id": "llama3.1-release:2105",
+    "model": "llama3.1-release",
+    "prompt_id": "2105",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9a4a80824d4fb59d",
+    "task_id": "llama3.1-release:2105",
+    "model": "llama3.1-release",
+    "prompt_id": "2105",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c64db4945a74aa80",
+    "task_id": "llama3.1-release:2105",
+    "model": "llama3.1-release",
+    "prompt_id": "2105",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-dd9f3fc42bce0be7",
+    "task_id": "llama3.1-release:2105",
+    "model": "llama3.1-release",
+    "prompt_id": "2105",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7748d341c7b80c8c",
+    "task_id": "llama3.1-release:4433",
+    "model": "llama3.1-release",
+    "prompt_id": "4433",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-bcf097be396c57e6",
+    "task_id": "llama3.1-release:4433",
+    "model": "llama3.1-release",
+    "prompt_id": "4433",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-813b19159bd7cd07",
+    "task_id": "llama3.1-release:4433",
+    "model": "llama3.1-release",
+    "prompt_id": "4433",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9eb24d6724018aef",
+    "task_id": "llama3.1-release:4433",
+    "model": "llama3.1-release",
+    "prompt_id": "4433",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-5e5ed5918ea59fe8",
+    "task_id": "llama3.1-release:4433",
+    "model": "llama3.1-release",
+    "prompt_id": "4433",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-69cb2e2dfe5ffe44",
+    "task_id": "llama3.1-release:4368",
+    "model": "llama3.1-release",
+    "prompt_id": "4368",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-cd545ffd6576c067",
+    "task_id": "llama3.1-release:4368",
+    "model": "llama3.1-release",
+    "prompt_id": "4368",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e0786990e5abe8f0",
+    "task_id": "llama3.1-release:4368",
+    "model": "llama3.1-release",
+    "prompt_id": "4368",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-0ef2ba185e4e852f",
+    "task_id": "llama3.1-release:4368",
+    "model": "llama3.1-release",
+    "prompt_id": "4368",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-180cac4267b0fa33",
+    "task_id": "llama3.1-release:4368",
+    "model": "llama3.1-release",
+    "prompt_id": "4368",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-12179aa5f7e19fbb",
+    "task_id": "llama3.1-release:353",
+    "model": "llama3.1-release",
+    "prompt_id": "353",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2193d17f90f89bee",
+    "task_id": "llama3.1-release:353",
+    "model": "llama3.1-release",
+    "prompt_id": "353",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-00bb9d2659e22f8e",
+    "task_id": "llama3.1-release:353",
+    "model": "llama3.1-release",
+    "prompt_id": "353",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b6d9637a7bd46831",
+    "task_id": "llama3.1-release:353",
+    "model": "llama3.1-release",
+    "prompt_id": "353",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-f345405352de625f",
+    "task_id": "llama3.1-release:353",
+    "model": "llama3.1-release",
+    "prompt_id": "353",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a0baf988e2980d26",
+    "task_id": "llama3.1-release:4403",
+    "model": "llama3.1-release",
+    "prompt_id": "4403",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e808dc242a5e478b",
+    "task_id": "llama3.1-release:4403",
+    "model": "llama3.1-release",
+    "prompt_id": "4403",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-c21320805e78bd22",
+    "task_id": "llama3.1-release:4403",
+    "model": "llama3.1-release",
+    "prompt_id": "4403",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-47faae28ca396fbe",
+    "task_id": "llama3.1-release:4403",
+    "model": "llama3.1-release",
+    "prompt_id": "4403",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-48a050b7c6dc85e2",
+    "task_id": "llama3.1-release:4403",
+    "model": "llama3.1-release",
+    "prompt_id": "4403",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-258b026715e94bb0",
+    "task_id": "llama3.1-release:755",
+    "model": "llama3.1-release",
+    "prompt_id": "755",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e4837e8b0b843240",
+    "task_id": "llama3.1-release:755",
+    "model": "llama3.1-release",
+    "prompt_id": "755",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-beb0c665e858edfd",
+    "task_id": "llama3.1-release:755",
+    "model": "llama3.1-release",
+    "prompt_id": "755",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-331a58f0e35138d5",
+    "task_id": "llama3.1-release:755",
+    "model": "llama3.1-release",
+    "prompt_id": "755",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9587516b7aee55fd",
+    "task_id": "llama3.1-release:755",
+    "model": "llama3.1-release",
+    "prompt_id": "755",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-501335e0537abeda",
+    "task_id": "llama3.1-release:4315",
+    "model": "llama3.1-release",
+    "prompt_id": "4315",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4bb2b13b6859314a",
+    "task_id": "llama3.1-release:4315",
+    "model": "llama3.1-release",
+    "prompt_id": "4315",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-650ab9a6e6d08a03",
+    "task_id": "llama3.1-release:4315",
+    "model": "llama3.1-release",
+    "prompt_id": "4315",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-09e03ffc7e069aac",
+    "task_id": "llama3.1-release:4315",
+    "model": "llama3.1-release",
+    "prompt_id": "4315",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-e453c334b605c86e",
+    "task_id": "llama3.1-release:4315",
+    "model": "llama3.1-release",
+    "prompt_id": "4315",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-46db99403569cd77",
+    "task_id": "llama3.1-release:3039",
+    "model": "llama3.1-release",
+    "prompt_id": "3039",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-460eb2e7f539ee44",
+    "task_id": "llama3.1-release:3039",
+    "model": "llama3.1-release",
+    "prompt_id": "3039",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-d1fa6eb7b636220f",
+    "task_id": "llama3.1-release:3039",
+    "model": "llama3.1-release",
+    "prompt_id": "3039",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-58f0a78583154273",
+    "task_id": "llama3.1-release:3039",
+    "model": "llama3.1-release",
+    "prompt_id": "3039",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b537a5b5b1026247",
+    "task_id": "llama3.1-release:3039",
+    "model": "llama3.1-release",
+    "prompt_id": "3039",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ea29e42ddc82eb12",
+    "task_id": "llama3.1-release:1330",
+    "model": "llama3.1-release",
+    "prompt_id": "1330",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-fa8919564a82f2c5",
+    "task_id": "llama3.1-release:1330",
+    "model": "llama3.1-release",
+    "prompt_id": "1330",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-563367ce7c05e7e4",
+    "task_id": "llama3.1-release:1330",
+    "model": "llama3.1-release",
+    "prompt_id": "1330",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-aa0d1df8a9503700",
+    "task_id": "llama3.1-release:1330",
+    "model": "llama3.1-release",
+    "prompt_id": "1330",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-3d2de92f05d3705b",
+    "task_id": "llama3.1-release:1330",
+    "model": "llama3.1-release",
+    "prompt_id": "1330",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-f448283ba937b372",
+    "task_id": "llama3.1-release:323",
+    "model": "llama3.1-release",
+    "prompt_id": "323",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-af8c206f5f972c56",
+    "task_id": "llama3.1-release:323",
+    "model": "llama3.1-release",
+    "prompt_id": "323",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-afb0daaa0b5dc6bd",
+    "task_id": "llama3.1-release:323",
+    "model": "llama3.1-release",
+    "prompt_id": "323",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-ccbf90f60c74fd69",
+    "task_id": "llama3.1-release:323",
+    "model": "llama3.1-release",
+    "prompt_id": "323",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8e8a9453a4f0b8fc",
+    "task_id": "llama3.1-release:323",
+    "model": "llama3.1-release",
+    "prompt_id": "323",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a9713a30f16857cc",
+    "task_id": "llama3.1-release:2821",
+    "model": "llama3.1-release",
+    "prompt_id": "2821",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b390f138d7739d94",
+    "task_id": "llama3.1-release:2821",
+    "model": "llama3.1-release",
+    "prompt_id": "2821",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-2d1dfe6e5b9fbdfd",
+    "task_id": "llama3.1-release:2821",
+    "model": "llama3.1-release",
+    "prompt_id": "2821",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-07610e9120a6495b",
+    "task_id": "llama3.1-release:2821",
+    "model": "llama3.1-release",
+    "prompt_id": "2821",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-8b94169eab998d01",
+    "task_id": "llama3.1-release:2821",
+    "model": "llama3.1-release",
+    "prompt_id": "2821",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-4793e1f945dbd311",
+    "task_id": "llama3.1-release:671",
+    "model": "llama3.1-release",
+    "prompt_id": "671",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-59178791a09ea076",
+    "task_id": "llama3.1-release:671",
+    "model": "llama3.1-release",
+    "prompt_id": "671",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7ceb01a8fd999fbd",
+    "task_id": "llama3.1-release:671",
+    "model": "llama3.1-release",
+    "prompt_id": "671",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-a4fc7210d61aa9df",
+    "task_id": "llama3.1-release:671",
+    "model": "llama3.1-release",
+    "prompt_id": "671",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-9b316c91114de061",
+    "task_id": "llama3.1-release:671",
+    "model": "llama3.1-release",
+    "prompt_id": "671",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b6be2106aebc8b89",
+    "task_id": "llama3.1-release:4402",
+    "model": "llama3.1-release",
+    "prompt_id": "4402",
+    "condition": "bound",
+    "fold": "A",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-6f37884f923b63e1",
+    "task_id": "llama3.1-release:4402",
+    "model": "llama3.1-release",
+    "prompt_id": "4402",
+    "condition": "bound",
+    "fold": "C",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-7139ce88ddbd5fed",
+    "task_id": "llama3.1-release:4402",
+    "model": "llama3.1-release",
+    "prompt_id": "4402",
+    "condition": "base",
+    "fold": "base",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-337a3842d8581a4d",
+    "task_id": "llama3.1-release:4402",
+    "model": "llama3.1-release",
+    "prompt_id": "4402",
+    "condition": "bound",
+    "fold": "B",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/eval_unseen_prompts.json"
+  },
+  {
+    "blind_answer_id": "E1F-b80dc0d89a01d514",
+    "task_id": "llama3.1-release:4402",
+    "model": "llama3.1-release",
+    "prompt_id": "4402",
+    "condition": "bound",
+    "fold": "D",
+    "generation": 0,
+    "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/eval_unseen_prompts.json"
+  }
+]

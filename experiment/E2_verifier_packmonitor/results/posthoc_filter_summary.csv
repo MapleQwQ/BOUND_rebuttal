@@ -1,0 +1,16 @@
+model,fold,method,n_prompts,n_generations,initial_sample_hr,initial_package_hr,postfilter_sample_hr,postfilter_package_hr,initial_avg_packages,verified_valid_retained_per_answer,invalid_removed_per_answer,stdlib_passthrough_per_answer,postfilter_empty_rate,answers_changed_rate
+deepseekcoder,none,base,100,500,0.836,0.34273318872017355,0.0,0.0,2.766,1.818,0.948,0.12,0.162,0.836
+deepseekcoder,A,bound_fold_A,100,500,0.202,0.10878323932312652,0.0,0.0,2.482,2.212,0.27,0.018,0.166,0.202
+deepseekcoder,B,bound_fold_B,100,500,0.392,0.17558886509635974,0.0,0.0,2.802,2.31,0.492,0.028,0.09,0.392
+deepseekcoder,C,bound_fold_C,100,500,0.272,0.09993753903810118,0.0,0.0,3.202,2.882,0.32,0.108,0.068,0.272
+deepseekcoder,D,bound_fold_D,100,500,0.482,0.1870967741935484,0.0,0.0,3.41,2.772,0.638,0.036,0.048,0.482
+qwen3-release,none,base,100,500,0.884,0.34334763948497854,0.0,0.0,2.796,1.836,0.96,0.174,0.132,0.884
+qwen3-release,A,bound_fold_A,100,500,0.126,0.07995735607675906,0.0,0.0,1.876,1.726,0.15,0.044,0.148,0.126
+qwen3-release,B,bound_fold_B,100,500,0.124,0.15024232633279483,0.0,0.0,1.238,1.052,0.186,0.024,0.458,0.124
+qwen3-release,C,bound_fold_C,100,500,0.226,0.15342465753424658,0.0,0.0,2.19,1.854,0.336,0.044,0.272,0.226
+qwen3-release,D,bound_fold_D,100,500,0.24,0.13729977116704806,0.0,0.0,2.622,2.262,0.36,0.052,0.182,0.24
+llama3.1-release,none,base,100,500,0.822,0.3635272945410918,0.0,0.0,3.334,2.122,1.212,0.182,0.112,0.822
+llama3.1-release,A,bound_fold_A,100,500,0.344,0.1815159574468085,0.0,0.0,3.008,2.462,0.546,0.184,0.154,0.344
+llama3.1-release,B,bound_fold_B,100,500,0.432,0.3111716621253406,0.0,0.0,3.67,2.528,1.142,0.09,0.316,0.432
+llama3.1-release,C,bound_fold_C,100,500,0.526,0.23086574654956085,0.0,0.0,3.188,2.452,0.736,0.096,0.022,0.526
+llama3.1-release,D,bound_fold_D,100,500,0.424,0.17022411953041622,0.0,0.0,3.748,3.11,0.638,0.122,0.018,0.424

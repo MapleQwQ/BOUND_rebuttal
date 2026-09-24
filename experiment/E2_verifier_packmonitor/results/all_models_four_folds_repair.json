@@ -1,0 +1,155 @@
+{
+  "DeepSeekCoder": {
+    "base": {
+      "n": 100,
+      "initial_invalid": 0.74,
+      "residual_invalid": 0.43,
+      "final_empty": 0.25,
+      "repair_success": 0.24324324324324326,
+      "avg_final_packages": 1.69
+    },
+    "bound_folds": {
+      "A": {
+        "n": 100,
+        "initial_invalid": 0.19,
+        "residual_invalid": 0.08,
+        "final_empty": 0.18,
+        "repair_success": 0.5263157894736842,
+        "avg_final_packages": 2.3
+      },
+      "B": {
+        "n": 100,
+        "initial_invalid": 0.34,
+        "residual_invalid": 0.22,
+        "final_empty": 0.08,
+        "repair_success": 0.3235294117647059,
+        "avg_final_packages": 2.58
+      },
+      "C": {
+        "n": 100,
+        "initial_invalid": 0.18,
+        "residual_invalid": 0.07,
+        "final_empty": 0.07,
+        "repair_success": 0.6111111111111112,
+        "avg_final_packages": 3.17
+      },
+      "D": {
+        "n": 100,
+        "initial_invalid": 0.47,
+        "residual_invalid": 0.28,
+        "final_empty": 0.04,
+        "repair_success": 0.3617021276595745,
+        "avg_final_packages": 3.12
+      }
+    },
+    "bound_macro": {
+      "initial_invalid": 0.295,
+      "residual_invalid": 0.1625,
+      "final_empty": 0.0925,
+      "repair_success": 0.45566461000226893,
+      "avg_final_packages": 2.7925000000000004
+    }
+  },
+  "Qwen3": {
+    "base": {
+      "n": 100,
+      "initial_invalid": 0.71,
+      "residual_invalid": 0.29,
+      "final_empty": 0.04,
+      "repair_success": 0.5915492957746479,
+      "avg_final_packages": 3.87
+    },
+    "bound_folds": {
+      "A": {
+        "n": 100,
+        "initial_invalid": 0.12,
+        "residual_invalid": 0.03,
+        "final_empty": 0.14,
+        "repair_success": 0.75,
+        "avg_final_packages": 1.66
+      },
+      "B": {
+        "n": 100,
+        "initial_invalid": 0.12,
+        "residual_invalid": 0.03,
+        "final_empty": 0.45,
+        "repair_success": 0.75,
+        "avg_final_packages": 1.15
+      },
+      "C": {
+        "n": 100,
+        "initial_invalid": 0.18,
+        "residual_invalid": 0.03,
+        "final_empty": 0.28,
+        "repair_success": 0.8333333333333334,
+        "avg_final_packages": 1.84
+      },
+      "D": {
+        "n": 100,
+        "initial_invalid": 0.2,
+        "residual_invalid": 0.13,
+        "final_empty": 0.17,
+        "repair_success": 0.3,
+        "avg_final_packages": 2.23
+      }
+    },
+    "bound_macro": {
+      "initial_invalid": 0.155,
+      "residual_invalid": 0.055,
+      "final_empty": 0.26,
+      "repair_success": 0.6583333333333333,
+      "avg_final_packages": 1.7199999999999998
+    }
+  },
+  "Llama-3.1": {
+    "base": {
+      "n": 100,
+      "initial_invalid": 0.7,
+      "residual_invalid": 0.28,
+      "final_empty": 0.01,
+      "repair_success": 0.6,
+      "avg_final_packages": 3.77
+    },
+    "bound_folds": {
+      "A": {
+        "n": 100,
+        "initial_invalid": 0.31,
+        "residual_invalid": 0.12,
+        "final_empty": 0.2,
+        "repair_success": 0.6129032258064516,
+        "avg_final_packages": 2.77
+      },
+      "B": {
+        "n": 100,
+        "initial_invalid": 0.41,
+        "residual_invalid": 0.14,
+        "final_empty": 0.34,
+        "repair_success": 0.6341463414634146,
+        "avg_final_packages": 2.85
+      },
+      "C": {
+        "n": 100,
+        "initial_invalid": 0.46,
+        "residual_invalid": 0.17,
+        "final_empty": 0.0,
+        "repair_success": 0.6304347826086957,
+        "avg_final_packages": 3.6
+      },
+      "D": {
+        "n": 100,
+        "initial_invalid": 0.35,
+        "residual_invalid": 0.11,
+        "final_empty": 0.0,
+        "repair_success": 0.6857142857142857,
+        "avg_final_packages": 3.65
+      }
+    },
+    "bound_macro": {
+      "initial_invalid": 0.38249999999999995,
+      "residual_invalid": 0.135,
+      "final_empty": 0.135,
+      "repair_success": 0.6407996588982119,
+      "avg_final_packages": 3.2175000000000002
+    }
+  }
+}

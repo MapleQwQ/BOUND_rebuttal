@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "n_prompts": 200,
+    "baseline_sample_hallucination_rate": 0.18599999999999997,
+    "edited_sample_hallucination_rate": 0.0,
+    "baseline_package_hallucination_rate": 0.09485746144618039,
+    "edited_package_hallucination_rate": 0.0,
+    "baseline_sample_valid_rate": 0.831,
+    "edited_sample_valid_rate": 0.0
+  },
+  "details_file": "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/confirm200_llama31_foldA_seed20260926.details.jsonl",
+  "n_prompts": 200,
+  "adapter_type": "blast",
+  "delta_dir": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50",
+  "prompts_file": "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/shared_prompt_manifest_confirmatory200.jsonl"
+}

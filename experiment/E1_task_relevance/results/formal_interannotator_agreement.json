@@ -1,0 +1,204 @@
+{
+  "alignment": {
+    "annotator_1_answers": 300,
+    "annotator_2_answers": 300,
+    "answers_with_candidate_set_mismatch": 0,
+    "common_answers": 300,
+    "common_candidates": 960,
+    "only_annotator_1_answers": [],
+    "only_annotator_2_answers": []
+  },
+  "analysis_stage": "pre_adjudication",
+  "answer_level": {
+    "adequacy": {
+      "annotator_1_counts": {
+        "adequate": 78,
+        "inadequate": 150,
+        "partially_adequate_with_clear_omission": 72
+      },
+      "annotator_2_counts": {
+        "adequate": 95,
+        "inadequate": 110,
+        "partially_adequate_with_clear_omission": 95
+      },
+      "cohen_kappa": 0.620253164556962,
+      "confusion": {
+        "adequate": {
+          "adequate": 63,
+          "inadequate": 8,
+          "partially_adequate_with_clear_omission": 7
+        },
+        "inadequate": {
+          "adequate": 22,
+          "inadequate": 101,
+          "partially_adequate_with_clear_omission": 27
+        },
+        "partially_adequate_with_clear_omission": {
+          "adequate": 10,
+          "inadequate": 1,
+          "partially_adequate_with_clear_omission": 61
+        }
+      },
+      "exact_agreement": 0.75,
+      "exact_agreements": 225,
+      "expected_agreement": 0.3416666666666667,
+      "n": 300
+    }
+  },
+  "blinding_status": "method condition key not read",
+  "candidate_level": {
+    "covered_binary": {
+      "annotator_1_counts": {
+        "False": 687,
+        "True": 273
+      },
+      "annotator_2_counts": {
+        "False": 593,
+        "True": 367
+      },
+      "cohen_kappa": 0.6800139124385896,
+      "confusion": {
+        "False": {
+          "False": 571,
+          "True": 116
+        },
+        "True": {
+          "False": 22,
+          "True": 251
+        }
+      },
+      "exact_agreement": 0.85625,
+      "exact_agreements": 822,
+      "expected_agreement": 0.55076171875,
+      "n": 960
+    },
+    "registry_status": {
+      "annotator_1_counts": {
+        "exists_at_audit_date": 761,
+        "nonexistent_at_audit_date": 173,
+        "not_applicable_external_tool": 2,
+        "not_applicable_stdlib": 24
+      },
+      "annotator_2_counts": {
+        "exists_at_audit_date": 759,
+        "nonexistent_at_audit_date": 173,
+        "not_applicable_external_tool": 4,
+        "not_applicable_stdlib": 24
+      },
+      "cohen_kappa": 0.9938753636502833,
+      "confusion": {
+        "exists_at_audit_date": {
+          "exists_at_audit_date": 759,
+          "nonexistent_at_audit_date": 0,
+          "not_applicable_external_tool": 2,
+          "not_applicable_stdlib": 0
+        },
+        "nonexistent_at_audit_date": {
+          "exists_at_audit_date": 0,
+          "nonexistent_at_audit_date": 173,
+          "not_applicable_external_tool": 0,
+          "not_applicable_stdlib": 0
+        },
+        "not_applicable_external_tool": {
+          "exists_at_audit_date": 0,
+          "nonexistent_at_audit_date": 0,
+          "not_applicable_external_tool": 2,
+          "not_applicable_stdlib": 0
+        },
+        "not_applicable_stdlib": {
+          "exists_at_audit_date": 0,
+          "nonexistent_at_audit_date": 0,
+          "not_applicable_external_tool": 0,
+          "not_applicable_stdlib": 24
+        }
+      },
+      "exact_agreement": 0.9979166666666667,
+      "exact_agreements": 958,
+      "expected_agreement": 0.65984375,
+      "n": 960
+    },
+    "task_role": {
+      "annotator_1_counts": {
+        "cannot_judge": 76,
+        "core_function_support": 273,
+        "irrelevant": 304,
+        "optional_support": 307
+      },
+      "annotator_2_counts": {
+        "cannot_judge": 173,
+        "core_function_support": 367,
+        "irrelevant": 80,
+        "optional_support": 340
+      },
+      "cohen_kappa": 0.48578567634104963,
+      "confusion": {
+        "cannot_judge": {
+          "cannot_judge": 76,
+          "core_function_support": 0,
+          "irrelevant": 0,
+          "optional_support": 0
+        },
+        "core_function_support": {
+          "cannot_judge": 0,
+          "core_function_support": 251,
+          "irrelevant": 9,
+          "optional_support": 13
+        },
+        "irrelevant": {
+          "cannot_judge": 97,
+          "core_function_support": 13,
+          "irrelevant": 68,
+          "optional_support": 126
+        },
+        "optional_support": {
+          "cannot_judge": 0,
+          "core_function_support": 103,
+          "irrelevant": 3,
+          "optional_support": 201
+        }
+      },
+      "exact_agreement": 0.6208333333333333,
+      "exact_agreements": 596,
+      "expected_agreement": 0.2626291232638889,
+      "n": 960
+    }
+  },
+  "cannot_judge": {
+    "answer_level": {
+      "annotator_1_count": 0,
+      "annotator_1_rate": 0.0,
+      "annotator_2_count": 0,
+      "annotator_2_rate": 0.0,
+      "n": 300
+    },
+    "candidate_task_role": {
+      "annotator_1_count": 76,
+      "annotator_1_rate": 0.07916666666666666,
+      "annotator_2_count": 173,
+      "annotator_2_rate": 0.18020833333333333,
+      "n": 960
+    }
+  },
+  "disagreement_records": {
+    "by_record_type": {
+      "answer": 75,
+      "package": 366
+    },
+    "path": "formal_disagreements.jsonl",
+    "total": 441
+  },
+  "generated_at_utc": "2026-09-23T18:01:18.177988+00:00",
+  "slot_comparison_path": "formal_slot_differences.jsonl",
+  "slot_comparison_summary": {
+    "annotator_1_total_slots": 105,
+    "annotator_2_total_slots": 152,
+    "different_slot_count_tasks": 41,
+    "mean_a1_to_a2_best_normalized_sequence_similarity": 0.6058336293045649,
+    "note": "文本相似度仅为可复核的词面描述，不代表语义一致性或仲裁结论。",
+    "only_annotator_1_tasks": [],
+    "only_annotator_2_tasks": [],
+    "same_slot_count_tasks": 19,
+    "task_intersection_n": 60,
+    "task_union_n": 60
+  }
+}

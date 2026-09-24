@@ -1,0 +1,193 @@
+{
+  "scope": "Llama-3.1 small100 preliminary exact-exclusion sample",
+  "validity_label": "model_cutoff_only_pending_deployment_snapshot",
+  "conditions": {
+    "base": {
+      "n_prompts": 100,
+      "n_generations": 500,
+      "sample_hr": 0.088,
+      "package_hr": 0.04851752021563342,
+      "hallucination_responses_per_1000": 88.0,
+      "hallucinated_package_mentions_per_1000": 108.0,
+      "empty_rate": 0.032,
+      "avg_packages": 2.634,
+      "distinct_packages_per_1000": 674.0,
+      "top1_concentration": 0.04176157934700076,
+      "top5_concentration": 0.15261958997722094,
+      "top5_packages": [
+        [
+          "pandas",
+          55
+        ],
+        [
+          "numpy",
+          46
+        ],
+        [
+          "matplotlib",
+          37
+        ],
+        [
+          "requests",
+          33
+        ],
+        [
+          "json",
+          30
+        ]
+      ]
+    },
+    "bound_A": {
+      "n_prompts": 100,
+      "n_generations": 500,
+      "sample_hr": 0.09,
+      "package_hr": 0.06679960119641076,
+      "hallucination_responses_per_1000": 90.0,
+      "hallucinated_package_mentions_per_1000": 134.0,
+      "empty_rate": 0.076,
+      "avg_packages": 2.37,
+      "distinct_packages_per_1000": 672.0,
+      "top1_concentration": 0.043037974683544304,
+      "top5_concentration": 0.16540084388185655,
+      "top5_packages": [
+        [
+          "numpy",
+          51
+        ],
+        [
+          "pandas",
+          43
+        ],
+        [
+          "matplotlib",
+          41
+        ],
+        [
+          "mypy",
+          39
+        ],
+        [
+          "scipy",
+          22
+        ]
+      ]
+    },
+    "bound_B": {
+      "n_prompts": 100,
+      "n_generations": 500,
+      "sample_hr": 0.156,
+      "package_hr": 0.11282843894899536,
+      "hallucination_responses_per_1000": 156.0,
+      "hallucinated_package_mentions_per_1000": 292.0,
+      "empty_rate": 0.228,
+      "avg_packages": 2.8,
+      "distinct_packages_per_1000": 978.0,
+      "top1_concentration": 0.04,
+      "top5_concentration": 0.15214285714285714,
+      "top5_packages": [
+        [
+          "pandas",
+          56
+        ],
+        [
+          "numpy",
+          50
+        ],
+        [
+          "matplotlib",
+          39
+        ],
+        [
+          "mypy",
+          39
+        ],
+        [
+          "requests",
+          29
+        ]
+      ]
+    },
+    "bound_C": {
+      "n_prompts": 100,
+      "n_generations": 500,
+      "sample_hr": 0.118,
+      "package_hr": 0.06364428945074106,
+      "hallucination_responses_per_1000": 118.0,
+      "hallucinated_package_mentions_per_1000": 146.0,
+      "empty_rate": 0.012,
+      "avg_packages": 2.634,
+      "distinct_packages_per_1000": 682.0,
+      "top1_concentration": 0.03189066059225513,
+      "top5_concentration": 0.13819286256643887,
+      "top5_packages": [
+        [
+          "pandas",
+          42
+        ],
+        [
+          "numpy",
+          42
+        ],
+        [
+          "requests",
+          40
+        ],
+        [
+          "mypy",
+          34
+        ],
+        [
+          "boto3",
+          24
+        ]
+      ]
+    },
+    "bound_D": {
+      "n_prompts": 100,
+      "n_generations": 500,
+      "sample_hr": 0.088,
+      "package_hr": 0.04357976653696498,
+      "hallucination_responses_per_1000": 88.0,
+      "hallucinated_package_mentions_per_1000": 112.0,
+      "empty_rate": 0.022,
+      "avg_packages": 2.924,
+      "distinct_packages_per_1000": 698.0,
+      "top1_concentration": 0.041723666210670314,
+      "top5_concentration": 0.1573187414500684,
+      "top5_packages": [
+        [
+          "numpy",
+          61
+        ],
+        [
+          "pandas",
+          56
+        ],
+        [
+          "matplotlib",
+          40
+        ],
+        [
+          "mypy",
+          37
+        ],
+        [
+          "requests",
+          36
+        ]
+      ]
+    }
+  },
+  "aggregate": {
+    "n_common_prompts": 100,
+    "bound_macro_sample_hr": 0.11299999999999999,
+    "bound_macro_package_hr": 0.07171302403327805,
+    "delta_sample_hr": 0.024999999999999994,
+    "delta_package_hr": 0.023195503817644625,
+    "seed_schedule_mismatches": 0,
+    "delta_sample_hr_ci95": [
+      -0.009500000000000008,
+      0.06150000000000001
+    ]
+  }
+}

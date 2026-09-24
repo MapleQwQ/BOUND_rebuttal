@@ -1,0 +1,10 @@
+{"blind_answer_id":"E1P-00-1481bc716d13","prompt_id":"562","annotator_1":"adequate","annotator_2":"adequate","adjudicated":"adequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-00-dc8bce704089","prompt_id":"562","annotator_1":"adequate","annotator_2":"adequate","adjudicated":"adequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-01-104142fa54ce","prompt_id":"3119","annotator_1":"inadequate","annotator_2":"inadequate","adjudicated":"inadequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-01-f15921a4e1db","prompt_id":"3119","annotator_1":"inadequate","annotator_2":"partially_adequate_with_clear_omission","adjudicated":"partially_adequate_with_clear_omission","reason":"graphql-server 对 query/mutation execution 提供直接文档能力，可覆盖一个能力槽；但缺少 graphql-tag schema-generation 能力且不满足全部显式约束，因此至多部分充分。正式指南要求将能力覆盖与显式名称约束分别记录。"}
+{"blind_answer_id":"E1P-02-56c3389ed20f","prompt_id":"2882","annotator_1":"inadequate","annotator_2":"inadequate","adjudicated":"inadequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-02-b9bc5df15bb8","prompt_id":"2882","annotator_1":"inadequate","annotator_2":"inadequate","adjudicated":"inadequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-03-62632c85a07b","prompt_id":"4586","annotator_1":"inadequate","annotator_2":"inadequate","adjudicated":"inadequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-03-c30e9cd8cfbd","prompt_id":"4586","annotator_1":"adequate","annotator_2":"adequate","adjudicated":"adequate","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-04-76978884a591","prompt_id":"206","annotator_1":"partially_adequate_with_clear_omission","annotator_2":"partially_adequate_with_clear_omission","adjudicated":"partially_adequate_with_clear_omission","reason":"两名标注者一致。"}
+{"blind_answer_id":"E1P-04-78741b5ee29c","prompt_id":"206","annotator_1":"adequate","annotator_2":"adequate","adjudicated":"adequate","reason":"两名标注者一致。"}

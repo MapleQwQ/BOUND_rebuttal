@@ -1,0 +1,134 @@
+{
+  "round": "pilot_round2",
+  "n_answers": 10,
+  "n_package_candidates": 37,
+  "adequacy_exact_agreement": 0.9,
+  "adequacy_cohen_kappa": 0.838709677419355,
+  "registry_exact_agreement": 0.8648648648648649,
+  "registry_cohen_kappa": 0.7303206997084548,
+  "task_role_exact_agreement": 0.6216216216216216,
+  "task_role_cohen_kappa": 0.46817248459958927,
+  "answer_disagreements": [
+    {
+      "blind_answer_id": "E1P-01-f15921a4e1db",
+      "prompt_id": "3119",
+      "annotator_1": "inadequate",
+      "annotator_2": "partially_adequate_with_clear_omission"
+    }
+  ],
+  "package_disagreements": [
+    {
+      "blind_answer_id": "E1P-00-1481bc716d13",
+      "raw_name": "opencv-python",
+      "annotator_1_registry": "exists_at_audit_date",
+      "annotator_2_registry": "exists_at_audit_date",
+      "annotator_1_role": "optional_support",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-00-dc8bce704089",
+      "raw_name": "opencv",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "nonexistent_at_audit_date",
+      "annotator_1_role": "cannot_judge",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-01-104142fa54ce",
+      "raw_name": "graphql-tag",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "nonexistent_at_audit_date",
+      "annotator_1_role": "cannot_judge",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-01-104142fa54ce",
+      "raw_name": "json",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "not_applicable_stdlib",
+      "annotator_1_role": "optional_support",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-01-104142fa54ce",
+      "raw_name": "typing",
+      "annotator_1_registry": "exists_at_audit_date",
+      "annotator_2_registry": "not_applicable_stdlib",
+      "annotator_1_role": "optional_support",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-01-f15921a4e1db",
+      "raw_name": "graphql-relay",
+      "annotator_1_registry": "exists_at_audit_date",
+      "annotator_2_registry": "exists_at_audit_date",
+      "annotator_1_role": "optional_support",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-01-f15921a4e1db",
+      "raw_name": "json",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "not_applicable_stdlib",
+      "annotator_1_role": "optional_support",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-01-f15921a4e1db",
+      "raw_name": "typing",
+      "annotator_1_registry": "exists_at_audit_date",
+      "annotator_2_registry": "not_applicable_stdlib",
+      "annotator_1_role": "optional_support",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-02-b9bc5df15bb8",
+      "raw_name": "pyminidump",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "nonexistent_at_audit_date",
+      "annotator_1_role": "cannot_judge",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-02-b9bc5df15bb8",
+      "raw_name": "traceback",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "not_applicable_stdlib",
+      "annotator_1_role": "irrelevant",
+      "annotator_2_role": "optional_support"
+    },
+    {
+      "blind_answer_id": "E1P-03-62632c85a07b",
+      "raw_name": "aws-cdk",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "nonexistent_at_audit_date",
+      "annotator_1_role": "cannot_judge",
+      "annotator_2_role": "optional_support"
+    },
+    {
+      "blind_answer_id": "E1P-03-62632c85a07b",
+      "raw_name": "aws-cdk-assets",
+      "annotator_1_registry": "exists_at_audit_date",
+      "annotator_2_registry": "exists_at_audit_date",
+      "annotator_1_role": "irrelevant",
+      "annotator_2_role": "optional_support"
+    },
+    {
+      "blind_answer_id": "E1P-04-76978884a591",
+      "raw_name": "git",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "nonexistent_at_audit_date",
+      "annotator_1_role": "cannot_judge",
+      "annotator_2_role": "core_function_support"
+    },
+    {
+      "blind_answer_id": "E1P-04-78741b5ee29c",
+      "raw_name": "git",
+      "annotator_1_registry": "nonexistent_at_audit_date",
+      "annotator_2_registry": "nonexistent_at_audit_date",
+      "annotator_1_role": "cannot_judge",
+      "annotator_2_role": "core_function_support"
+    }
+  ],
+  "note": "slot schemas/granularity differed; slot agreement requires adjudication after atomic-slot guideline revision"
+}

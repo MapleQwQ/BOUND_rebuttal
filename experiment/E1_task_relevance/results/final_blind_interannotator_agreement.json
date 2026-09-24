@@ -1,0 +1,135 @@
+{
+  "audit_date_utc": "2026-09-23",
+  "blind": true,
+  "disagreement_inventory": {
+    "answers_with_adequacy_disagreement": 32,
+    "answers_with_any_disagreement": 176,
+    "candidate_pairs_with_any_disagreement": 297,
+    "cannot_judge_a": 0,
+    "cannot_judge_b": 0
+  },
+  "inputs": [
+    "formal_prompt_manifest_anonymous.jsonl",
+    "blinded_answers_anonymous.jsonl",
+    "frozen_requirement_slots_anonymous.jsonl",
+    "final_blind_annotator_a_labels.jsonl",
+    "final_blind_annotator_b_labels.jsonl",
+    "annotation_guideline.md"
+  ],
+  "label_distributions": {
+    "adequacy_a": {
+      "adequate": 105,
+      "inadequate": 130,
+      "partially_adequate_with_clear_omission": 65
+    },
+    "adequacy_b": {
+      "adequate": 88,
+      "inadequate": 140,
+      "partially_adequate_with_clear_omission": 72
+    },
+    "registry_a": {
+      "exists_at_audit_date": 758,
+      "nonexistent_at_audit_date": 162,
+      "not_applicable_external_tool": 16,
+      "not_applicable_stdlib": 24
+    },
+    "registry_b": {
+      "exists_at_audit_date": 758,
+      "nonexistent_at_audit_date": 157,
+      "not_applicable_external_tool": 21,
+      "not_applicable_stdlib": 24
+    },
+    "task_role_a": {
+      "core_function_support": 297,
+      "irrelevant": 305,
+      "optional_support": 358
+    },
+    "task_role_b": {
+      "core_function_support": 270,
+      "irrelevant": 173,
+      "optional_support": 517
+    }
+  },
+  "metrics": {
+    "adequacy": {
+      "agreements": 268,
+      "cohen_kappa": 0.834139599170698,
+      "disagreements": 32,
+      "exact_agreement": 0.8933333333333333,
+      "kappa_note": null,
+      "n": 300
+    },
+    "answer_covered_slot_set_exact": {
+      "agreements": 268,
+      "cohen_kappa": 0.8627630375114365,
+      "disagreements": 32,
+      "exact_agreement": 0.8933333333333333,
+      "kappa_note": null,
+      "n": 300
+    },
+    "answer_slot_binary": {
+      "agreements": 490,
+      "cohen_kappa": 0.8667116401540704,
+      "disagreements": 35,
+      "exact_agreement": 0.9333333333333333,
+      "kappa_note": null,
+      "n": 525
+    },
+    "candidate_covered_slot_set_exact": {
+      "agreements": 887,
+      "cohen_kappa": 0.8485676810413564,
+      "disagreements": 73,
+      "exact_agreement": 0.9239583333333333,
+      "kappa_note": null,
+      "n": 960
+    },
+    "candidate_slot_binary": {
+      "agreements": 1918,
+      "cohen_kappa": 0.86528367908023,
+      "disagreements": 77,
+      "exact_agreement": 0.9614035087719298,
+      "kappa_note": null,
+      "n": 1995
+    },
+    "cannot_judge": {
+      "agreements": 300,
+      "cohen_kappa": null,
+      "disagreements": 0,
+      "exact_agreement": 1.0,
+      "kappa_note": "undefined because both annotators used one constant category",
+      "n": 300
+    },
+    "registry_status_candidate_level": {
+      "agreements": 945,
+      "cohen_kappa": 0.9550968224765349,
+      "disagreements": 15,
+      "exact_agreement": 0.984375,
+      "kappa_note": null,
+      "n": 960
+    },
+    "task_role_candidate_level": {
+      "agreements": 689,
+      "cohen_kappa": 0.5689568045543185,
+      "disagreements": 271,
+      "exact_agreement": 0.7177083333333333,
+      "kappa_note": null,
+      "n": 960
+    }
+  },
+  "qa": {
+    "adequacy_coverage_consistent": true,
+    "all_slot_references_valid": true,
+    "answer_coverage_equals_candidate_union": true,
+    "answer_rows": 300,
+    "candidate_rows": 960,
+    "five_answers_per_task": true,
+    "role_coverage_consistent": true,
+    "task_count": 60,
+    "unique_answer_ids": 300
+  },
+  "units": {
+    "answers": 300,
+    "candidates": 960,
+    "tasks": 60
+  }
+}

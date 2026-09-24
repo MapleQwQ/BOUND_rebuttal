@@ -1,0 +1,6 @@
+phase,metric,value,timing_status
+round2,adequacy_exact_agreement,0.900,per-item timing not recorded
+round2,adequacy_kappa,0.838710,per-item timing not recorded
+round2,task_role_exact_agreement,0.621622,per-item timing not recorded
+formal_final_blind,adequacy_exact_agreement,0.893333,per-item timing not recorded
+formal_final_blind,adequacy_kappa,0.834,per-item timing not recorded

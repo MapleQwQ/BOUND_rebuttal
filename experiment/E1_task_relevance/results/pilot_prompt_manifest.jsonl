@@ -1,0 +1,5 @@
+{"prompt_id": "3131", "question": "Generate Python code that imports the necessary libraries and initializes the ConfigCat SDK with an API key and environment name, allowing you to manage feature flags and configurations for your application."}
+{"prompt_id": "3551", "question": "Generate Python code that uses DNSpython resolver to perform sensible high-level DNS lookups, including querying DNS servers for IP addresses and performing DNS lookup validation."}
+{"prompt_id": "3047", "question": "Generate Python code that uses the `cdxj` library to index WARC and ARC files and creates a searchable index for searching and analyzing web data."}
+{"prompt_id": "61", "question": "Generate Python code that imports the necessary modules and initializes an NCCL context, allowing for efficient communication between GPUs on multiple nodes in a distributed training environment."}
+{"prompt_id": "2841", "question": "Generate Python code that uses the spark-html library to create interactive HTML profiling reports from Apache Spark DataFrames, allowing users to visualize and explore their data in a web-based interface."}

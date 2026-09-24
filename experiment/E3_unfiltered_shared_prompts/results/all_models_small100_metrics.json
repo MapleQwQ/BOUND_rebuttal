@@ -1,0 +1,66 @@
+{
+  "scope": "three-model small100 preliminary exact-exclusion shared sample",
+  "n_shared_prompts": 100,
+  "n_models": 3,
+  "n_generation_trials": 7500,
+  "validity_label": "model_cutoff_only_pending_deployment_snapshot",
+  "per_model": {
+    "DeepSeekCoder": {
+      "base_sample_hr": 0.03,
+      "bound_macro_sample_hr": 0.057499999999999996,
+      "delta_sample_hr": 0.027499999999999997,
+      "base_package_hr": 0.01609657947686117,
+      "bound_macro_package_hr": 0.02881774147231602,
+      "delta_package_hr": 0.012721161995454852,
+      "base_empty_rate": 0.06,
+      "bound_macro_empty_rate": 0.127,
+      "delta_empty_rate": 0.067,
+      "seed_schedule_mismatches": 0
+    },
+    "Qwen3": {
+      "base_sample_hr": 0.022,
+      "bound_macro_sample_hr": 0.006500000000000001,
+      "delta_sample_hr": -0.015499999999999998,
+      "base_package_hr": 0.014175257731958763,
+      "bound_macro_package_hr": 0.004837199198749429,
+      "delta_package_hr": -0.009338058533209334,
+      "base_empty_rate": 0.228,
+      "bound_macro_empty_rate": 0.339,
+      "delta_empty_rate": 0.11100000000000002,
+      "seed_schedule_mismatches": 0
+    },
+    "Llama-3.1": {
+      "base_sample_hr": 0.088,
+      "bound_macro_sample_hr": 0.11299999999999999,
+      "delta_sample_hr": 0.024999999999999994,
+      "base_package_hr": 0.04851752021563342,
+      "bound_macro_package_hr": 0.07171302403327805,
+      "delta_package_hr": 0.023195503817644625,
+      "base_empty_rate": 0.032,
+      "bound_macro_empty_rate": 0.0845,
+      "delta_empty_rate": 0.052500000000000005,
+      "seed_schedule_mismatches": 0
+    }
+  },
+  "equal_weight_macro": {
+    "base_sample_hr": 0.04666666666666666,
+    "bound_sample_hr": 0.059,
+    "delta_sample_hr": 0.01233333333333333,
+    "base_package_hr": 0.02626311914148445,
+    "bound_package_hr": 0.03512265490144783,
+    "delta_package_hr": 0.00885953575996338,
+    "base_empty_rate": 0.10666666666666669,
+    "bound_empty_rate": 0.1835,
+    "delta_empty_rate": 0.07683333333333335,
+    "delta_sample_hr_ci95": [
+      -0.004504166666666666,
+      0.027000000000000007
+    ],
+    "seed_schedule_mismatches": 0
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260923,
+    "cluster": "shared_prompt_id; same resample indices for every model/method/fold"
+  }
+}

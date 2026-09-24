@@ -1,0 +1,227 @@
+{
+  "alignment": {
+    "annotator_1_answers": 300,
+    "annotator_2_answers": 300,
+    "answers_with_candidate_set_mismatch": 0,
+    "common_answers": 300,
+    "common_candidates": 960,
+    "only_annotator_1_answers": [],
+    "only_annotator_2_answers": []
+  },
+  "analysis_stage": "pre_adjudication_common_frozen_slots",
+  "answer_level": {
+    "adequacy": {
+      "annotator_1_counts": {
+        "adequate": 78,
+        "inadequate": 150,
+        "partially_adequate_with_clear_omission": 72
+      },
+      "annotator_2_counts": {
+        "adequate": 103,
+        "inadequate": 126,
+        "partially_adequate_with_clear_omission": 71
+      },
+      "cohen_kappa": 0.7670566311212341,
+      "confusion": {
+        "adequate": {
+          "adequate": 72,
+          "inadequate": 5,
+          "partially_adequate_with_clear_omission": 1
+        },
+        "inadequate": {
+          "adequate": 23,
+          "inadequate": 120,
+          "partially_adequate_with_clear_omission": 7
+        },
+        "partially_adequate_with_clear_omission": {
+          "adequate": 8,
+          "inadequate": 1,
+          "partially_adequate_with_clear_omission": 63
+        }
+      },
+      "exact_agreement": 0.85,
+      "exact_agreements": 255,
+      "expected_agreement": 0.3560666666666667,
+      "n": 300
+    },
+    "covered_slot_set": {
+      "annotator_1_unique_label_count": 61,
+      "annotator_2_unique_label_count": 68,
+      "cohen_kappa": 0.7617844510214394,
+      "exact_agreement": 0.8166666666666667,
+      "exact_agreements": 245,
+      "expected_agreement": 0.2303888888888889,
+      "n": 300
+    },
+    "numeric_slot_coverage": {
+      "exact_agreement": 0.8135593220338984,
+      "exact_agreements": 240,
+      "max_absolute_difference": 1.0,
+      "mean_absolute_difference": 0.13587570621468928,
+      "n_all_answers": 300,
+      "n_comparable_numeric": 295,
+      "n_with_null_either_side": 5
+    }
+  },
+  "blinding_status": "method condition key not read",
+  "candidate_level": {
+    "covered_binary": {
+      "annotator_1_counts": {
+        "False": 687,
+        "True": 273
+      },
+      "annotator_2_counts": {
+        "False": 644,
+        "True": 316
+      },
+      "cohen_kappa": 0.738562091503268,
+      "confusion": {
+        "False": {
+          "False": 612,
+          "True": 75
+        },
+        "True": {
+          "False": 32,
+          "True": 241
+        }
+      },
+      "exact_agreement": 0.8885416666666667,
+      "exact_agreements": 853,
+      "expected_agreement": 0.5736718749999999,
+      "n": 960
+    },
+    "covered_slot_set": {
+      "annotator_1_unique_label_count": 70,
+      "annotator_2_unique_label_count": 80,
+      "cohen_kappa": 0.7428287994910153,
+      "exact_agreement": 0.8666666666666667,
+      "exact_agreements": 832,
+      "expected_agreement": 0.4815386284722221,
+      "n": 960
+    },
+    "registry_status": {
+      "annotator_1_counts": {
+        "exists_at_audit_date": 761,
+        "nonexistent_at_audit_date": 173,
+        "not_applicable_external_tool": 2,
+        "not_applicable_stdlib": 24
+      },
+      "annotator_2_counts": {
+        "exists_at_audit_date": 759,
+        "nonexistent_at_audit_date": 173,
+        "not_applicable_external_tool": 4,
+        "not_applicable_stdlib": 24
+      },
+      "cohen_kappa": 0.9938753636502833,
+      "confusion": {
+        "exists_at_audit_date": {
+          "exists_at_audit_date": 759,
+          "nonexistent_at_audit_date": 0,
+          "not_applicable_external_tool": 2,
+          "not_applicable_stdlib": 0
+        },
+        "nonexistent_at_audit_date": {
+          "exists_at_audit_date": 0,
+          "nonexistent_at_audit_date": 173,
+          "not_applicable_external_tool": 0,
+          "not_applicable_stdlib": 0
+        },
+        "not_applicable_external_tool": {
+          "exists_at_audit_date": 0,
+          "nonexistent_at_audit_date": 0,
+          "not_applicable_external_tool": 2,
+          "not_applicable_stdlib": 0
+        },
+        "not_applicable_stdlib": {
+          "exists_at_audit_date": 0,
+          "nonexistent_at_audit_date": 0,
+          "not_applicable_external_tool": 0,
+          "not_applicable_stdlib": 24
+        }
+      },
+      "exact_agreement": 0.9979166666666667,
+      "exact_agreements": 958,
+      "expected_agreement": 0.65984375,
+      "n": 960
+    },
+    "task_role": {
+      "annotator_1_counts": {
+        "cannot_judge": 76,
+        "core_function_support": 273,
+        "irrelevant": 304,
+        "optional_support": 307
+      },
+      "annotator_2_counts": {
+        "cannot_judge": 173,
+        "core_function_support": 316,
+        "irrelevant": 80,
+        "optional_support": 391
+      },
+      "cohen_kappa": 0.5227100720390306,
+      "confusion": {
+        "cannot_judge": {
+          "cannot_judge": 76,
+          "core_function_support": 0,
+          "irrelevant": 0,
+          "optional_support": 0
+        },
+        "core_function_support": {
+          "cannot_judge": 0,
+          "core_function_support": 241,
+          "irrelevant": 9,
+          "optional_support": 23
+        },
+        "irrelevant": {
+          "cannot_judge": 97,
+          "core_function_support": 9,
+          "irrelevant": 68,
+          "optional_support": 130
+        },
+        "optional_support": {
+          "cannot_judge": 0,
+          "core_function_support": 66,
+          "irrelevant": 3,
+          "optional_support": 238
+        }
+      },
+      "exact_agreement": 0.6489583333333333,
+      "exact_agreements": 623,
+      "expected_agreement": 0.2645106336805555,
+      "n": 960
+    }
+  },
+  "cannot_judge": {
+    "answer_level": {
+      "annotator_1_count": 0,
+      "annotator_1_rate": 0.0,
+      "annotator_2_count": 0,
+      "annotator_2_rate": 0.0,
+      "n": 300
+    },
+    "candidate_task_role": {
+      "annotator_1_count": 76,
+      "annotator_1_rate": 0.07916666666666666,
+      "annotator_2_count": 173,
+      "annotator_2_rate": 0.18020833333333333,
+      "n": 960
+    }
+  },
+  "disagreements": {
+    "answers_with_adequacy_disagreement": 45,
+    "answers_with_any_reported_disagreement": 170,
+    "answers_with_coverage_disagreement": 60,
+    "path": "formal_common_slot_disagreements.jsonl",
+    "records_by_type": {
+      "answer": 60,
+      "package": 360
+    },
+    "records_total": 420
+  },
+  "generated_at_utc": "2026-09-23T18:08:14.481417+00:00",
+  "sensitivity_note": "此前 formal_interannotator_agreement.* 使用两名标注者各自拆分的 slots，保留为 slot 粒度敏感性分析；本文件为共同冻结 slots 下的主一致率。",
+  "slot_basis": {
+    "path": "frozen_requirement_slots.jsonl",
+    "slots": 105,
+    "tasks": 60
+  }
+}

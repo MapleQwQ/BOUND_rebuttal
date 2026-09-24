@@ -1,0 +1,28 @@
+[
+  {
+    "condition": "base",
+    "n_prompts": 100,
+    "initial_invalid_rate": 0.74,
+    "repair_attempt_rate": 0.74,
+    "repair_verified_rate_among_attempts": 0.24324324324324326,
+    "remaining_invalid_rate_after_repair_before_filter": 0.43,
+    "final_empty_rate": 0.25,
+    "avg_final_packages": 1.69,
+    "repair_latency_mean_seconds": 2.992986662489538,
+    "repair_latency_p50_seconds": 3.0025108624249697,
+    "repair_latency_p95_seconds": 3.563215496018529
+  },
+  {
+    "condition": "bound_fold_C",
+    "n_prompts": 100,
+    "initial_invalid_rate": 0.18,
+    "repair_attempt_rate": 0.18,
+    "repair_verified_rate_among_attempts": 0.6111111111111112,
+    "remaining_invalid_rate_after_repair_before_filter": 0.07,
+    "final_empty_rate": 0.07,
+    "avg_final_packages": 3.17,
+    "repair_latency_mean_seconds": 3.083494797348976,
+    "repair_latency_p50_seconds": 3.0534237613901496,
+    "repair_latency_p95_seconds": 3.2439764318987727
+  }
+]

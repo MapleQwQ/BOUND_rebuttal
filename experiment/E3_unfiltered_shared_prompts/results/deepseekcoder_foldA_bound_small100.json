@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "n_prompts": 100,
+    "baseline_sample_hallucination_rate": 0.046000000000000006,
+    "edited_sample_hallucination_rate": 0.0,
+    "baseline_package_hallucination_rate": 0.022487360570177906,
+    "edited_package_hallucination_rate": 0.0,
+    "baseline_sample_valid_rate": 0.768,
+    "edited_sample_valid_rate": 0.0
+  },
+  "details_file": "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/deepseekcoder_foldA_bound_small100.details.jsonl",
+  "n_prompts": 100,
+  "adapter_type": "blast",
+  "delta_dir": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50",
+  "prompts_file": "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/shared_prompt_manifest_small100.jsonl"
+}

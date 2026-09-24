@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "scope": "adapter-load-and-generation-smoke-only",
+  "started_utc": "2026-09-23T15:00:38.071178+00:00",
+  "finished_utc": "2026-09-23T15:00:44.060104+00:00",
+  "cuda_device": 0,
+  "gpu_name": "NVIDIA A100-SXM4-80GB",
+  "model_path": "/data0/shuhanliu/models/deepseekcoder",
+  "adapter_dir": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50",
+  "prompt_id": 270,
+  "question": "Generate Python code that imports the necessary libraries, configures an API connection to Buildkite, fetches test run data, processes and transforms the data into a suitable format, and then visualizes the test analytics using appropriate plots and charts.",
+  "answer": "[ANSWER]\nmatplotlib, pandas, pytest, requests\n[/ANSWER]",
+  "packages": [
+    "matplotlib",
+    "pandas",
+    "pytest",
+    "requests"
+  ],
+  "registry_validation": "not_run",
+  "included_in_metrics": false
+}

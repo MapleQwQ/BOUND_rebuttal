@@ -1,0 +1,21 @@
+{
+  "status": "confirmatory_manifest_frozen_before_generation",
+  "source": "/tmp/E3_LLM_LY.json",
+  "source_sha256": "843fae63874c52b1bfa9b08f833bfea72b2ad5d77575210447d2d2f35e44b733",
+  "seed": 20260926,
+  "n": 200,
+  "source_prompts": 4892,
+  "edit_record_files": 24,
+  "unique_edit_prompts": 918,
+  "exact_removed": 918,
+  "near_removed": 0,
+  "within_pool_exact_duplicates": 13,
+  "lexical_candidate_threshold": 0.8,
+  "lexical_auto_exclude_threshold": 0.9,
+  "retained_review_candidates": 0,
+  "eligible": 3961,
+  "selected": 200,
+  "source_group_status": "unavailable: official dataset does not publish prompt-to-source-package/task mapping",
+  "embedding_status": "not_used",
+  "warning": "Lexical rules were frozen after preliminary outcomes were known but before confirmatory generations; this is disclosed, not claimed as pristine preregistration."
+}

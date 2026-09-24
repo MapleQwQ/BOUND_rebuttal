@@ -1,0 +1,204 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.31s/it]
+Total valid packages:706618
+building_time:3.8592453002929688s
+generate time:0.37117552757263184s
+building_time:0.04940605163574219s
+generate time:0.28369712829589844s
+building_time:0.03903841972351074s
+generate time:0.33791255950927734s
+building_time:0.04198741912841797s
+generate time:0.4319131374359131s
+building_time:0.048145294189453125s
+generate time:0.4605562686920166s
+building_time:0.04483604431152344s
+generate time:0.7760705947875977s
+building_time:0.044777631759643555s
+generate time:0.39833736419677734s
+building_time:0.0388185977935791s
+generate time:0.5938901901245117s
+building_time:0.040740966796875s
+generate time:0.33806443214416504s
+building_time:0.038336753845214844s
+generate time:0.514108419418335s
+building_time:0.04386115074157715s
+generate time:0.37592244148254395s
+building_time:0.0456235408782959s
+generate time:0.42870569229125977s
+building_time:0.042936086654663086s
+generate time:0.45063066482543945s
+building_time:0.04009866714477539s
+generate time:0.45501160621643066s
+building_time:0.044783592224121094s
+generate time:0.4272739887237549s
+building_time:0.04338693618774414s
+generate time:0.35852670669555664s
+building_time:0.03949999809265137s
+generate time:1.0656299591064453s
+building_time:0.03992891311645508s
+generate time:0.8855915069580078s
+building_time:0.04104757308959961s
+generate time:0.7827465534210205s
+building_time:0.038378000259399414s
+generate time:0.5547058582305908s
+building_time:0.04178023338317871s
+generate time:0.36315035820007324s
+building_time:0.04676413536071777s
+generate time:0.528449535369873s
+building_time:0.038008928298950195s
+generate time:0.5755162239074707s
+building_time:0.03807544708251953s
+generate time:0.42766332626342773s
+building_time:0.04092741012573242s
+generate time:1.851957082748413s
+building_time:0.04587101936340332s
+generate time:4.400532960891724s
+building_time:0.04863309860229492s
+generate time:0.3465883731842041s
+building_time:0.05391240119934082s
+generate time:0.3200550079345703s
+building_time:0.03951072692871094s
+generate time:0.4205458164215088s
+building_time:0.044141530990600586s
+generate time:0.29465723037719727s
+building_time:0.04012870788574219s
+generate time:0.4626626968383789s
+building_time:0.039113521575927734s
+generate time:1.3778600692749023s
+building_time:0.03967595100402832s
+generate time:0.8183538913726807s
+building_time:0.04237723350524902s
+generate time:4.267680406570435s
+building_time:0.0505681037902832s
+generate time:0.4460771083831787s
+building_time:0.039762258529663086s
+generate time:0.3445398807525635s
+building_time:0.037654876708984375s
+generate time:0.34813451766967773s
+building_time:0.03899526596069336s
+generate time:0.3450005054473877s
+building_time:0.037397146224975586s
+generate time:0.33698105812072754s
+building_time:0.0388636589050293s
+generate time:0.8101465702056885s
+building_time:0.037444353103637695s
+generate time:0.517291784286499s
+building_time:0.03908371925354004s
+generate time:0.48671793937683105s
+building_time:0.0379025936126709s
+generate time:0.6630394458770752s
+building_time:0.04376077651977539s
+generate time:0.36882662773132324s
+building_time:0.04138946533203125s
+generate time:0.6060855388641357s
+building_time:0.04153633117675781s
+generate time:0.2606689929962158s
+building_time:0.03983640670776367s
+generate time:0.34141111373901367s
+building_time:0.04251289367675781s
+generate time:0.38638734817504883s
+building_time:0.04204273223876953s
+generate time:0.42004966735839844s
+building_time:0.04405093193054199s
+generate time:2.6046061515808105s
+building_time:0.041690826416015625s
+generate time:0.34659552574157715s
+building_time:0.04756760597229004s
+generate time:0.9531385898590088s
+building_time:0.04030919075012207s
+generate time:0.5997841358184814s
+building_time:0.04226493835449219s
+generate time:0.5351681709289551s
+building_time:0.04203987121582031s
+generate time:0.26391100883483887s
+building_time:0.04769325256347656s
+generate time:0.3743102550506592s
+building_time:0.042940616607666016s
+generate time:0.5202305316925049s
+building_time:0.04226994514465332s
+generate time:0.3692779541015625s
+building_time:0.04046964645385742s
+generate time:0.3001549243927002s
+building_time:0.03989267349243164s
+generate time:0.7310965061187744s
+building_time:0.03868746757507324s
+generate time:0.5076620578765869s
+building_time:0.03919720649719238s
+generate time:0.546044111251831s
+building_time:0.04232168197631836s
+generate time:1.647984266281128s
+building_time:0.042505502700805664s
+generate time:0.4512910842895508s
+building_time:0.0394282341003418s
+generate time:0.32312941551208496s
+building_time:0.04027295112609863s
+generate time:0.43233156204223633s
+building_time:0.04288196563720703s
+generate time:0.5204513072967529s
+building_time:0.04319405555725098s
+generate time:0.3866889476776123s
+building_time:0.04182076454162598s
+generate time:0.28818249702453613s
+building_time:0.04151296615600586s
+generate time:1.8343956470489502s
+building_time:0.048276662826538086s
+generate time:2.211469888687134s
+building_time:0.038648366928100586s
+generate time:0.8451089859008789s
+building_time:0.038396358489990234s
+generate time:0.3253169059753418s
+building_time:0.03960084915161133s
+generate time:0.9707403182983398s
+building_time:0.04065561294555664s
+generate time:0.2981278896331787s
+building_time:0.039719343185424805s
+generate time:0.3426384925842285s
+building_time:0.03785443305969238s
+generate time:0.4788641929626465s
+building_time:0.03791499137878418s
+generate time:0.48980212211608887s
+building_time:0.04366421699523926s
+generate time:0.3489220142364502s
+building_time:0.03909444808959961s
+generate time:0.464374303817749s
+building_time:0.04103446006774902s
+generate time:0.41510725021362305s
+building_time:0.03888416290283203s
+generate time:0.8478832244873047s
+building_time:0.03833436965942383s
+generate time:0.29172348976135254s
+building_time:0.03728437423706055s
+generate time:0.403883695602417s
+building_time:0.03830838203430176s
+generate time:0.5220565795898438s
+building_time:0.03839302062988281s
+generate time:1.1989076137542725s
+building_time:0.03818869590759277s
+generate time:0.886803150177002s
+building_time:0.04342532157897949s
+generate time:4.24156379699707s
+building_time:0.0448153018951416s
+generate time:3.9654154777526855s
+building_time:0.047234296798706055s
+generate time:0.39079713821411133s
+building_time:0.03704023361206055s
+generate time:0.6142568588256836s
+building_time:0.037023067474365234s
+generate time:0.3090088367462158s
+building_time:0.040014028549194336s
+generate time:0.4202427864074707s
+building_time:0.03819847106933594s
+generate time:1.1580188274383545s
+building_time:0.039055824279785156s
+generate time:0.5243239402770996s
+building_time:0.038350582122802734s
+generate time:4.284246444702148s
+building_time:0.03897404670715332s
+generate time:0.34177112579345703s
+building_time:0.038027286529541016s
+generate time:0.44336605072021484s
+building_time:0.037593841552734375s
+generate time:2.107243776321411s
+building_time:0.03881645202636719s
+generate time:4.210535287857056s
+{"status": "completed_with_minimal_compatibility_patch", "official_commit": "8808362e14891fe692b17b8192ed123dff4d64d2", "official_grammar_probe": {"is_error": true, "error": "at 13(21): unknown name: \"NATATURAL_LANG\"\n  11 |             CODE_BLOCK: CODE_START CODE_BODY CODE_END\n  12 |             NATURAL_LANG: /[^`]*/\n  13 |             start: (NATATURAL_LANG | CODE_BLOCK)*\n                           ^\n"}, "compatibility_patch": "NATATURAL_LANG->NATURAL_LANG only; official worktree unchanged", "model_path": "/data0/shuhanliu/models/deepseekcoder", "delta_dir": "", "condition_prefix": "base", "registry_path": "/tmp/PackMonitor/HFuzzer/valid_packages/pypi_packages.json", "registry_size": 706618, "prompt_ids": ["429", "3896", "3151", "4369", "1728", "270", "3449", "955", "1020", "248", "4498", "3642", "4393", "4214", "2044", "3759", "159", "3522", "4134", "3959", "1497", "1634", "1709", "796", "4801", "1947", "32", "4269", "1118", "1305", "4424", "3354", "3152", "4381", "18", "3551", "729", "2113", "514", "562", "731", "1684", "1500", "3880", "2184", "3024", "2010", "4219", "446", "3194", "4275", "1316", "146", "2939", "2207", "3330", "992", "2026", "4179", "3680", "4141", "4589", "2058", "3710", "3156", "1023", "4315", "206", "2012", "4302", "2258", "2559", "1393", "614", "1236", "2431", "4340", "275", "3349", "1899", "1473", "934", "4729", "762", "1804", "2483", "91", "740", "3191", "918", "2491", "3746", "202", "4692", "2004", "1981", "4538", "1371", "1522", "447"], "max_tokens": 128, "decoding": "greedy temperature=0; same model/tasks/protocol", "model_load_seconds": 4.718979318626225, "conditions": {"base": {"n_tasks": 100, "successful_generations": 100, "install_region_trigger_rate": 1.0, "invalid_answer_rate": 0.47, "empty_package_rate": 0.0, "mean_latency_seconds": 0.6906335101742297, "p50_latency_seconds": 0.4489849666133523, "total_decoded_tokens": 2352}, "packmonitor": {"n_tasks": 100, "successful_generations": 100, "install_region_trigger_rate": 0.99, "invalid_answer_rate": 0.03, "empty_package_rate": 0.01, "mean_latency_seconds": 0.9041456551849842, "p50_latency_seconds": 0.5049824267625809, "total_decoded_tokens": 2759}}, "cuda_peak_allocated_gib": 13.044990062713623, "cuda_peak_reserved_gib": 13.1484375}

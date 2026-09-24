@@ -1,0 +1,9 @@
+condition,terminal_state,count,rate
+base,explicit_refusal_or_empty,13,0.13
+base,final_filter,43,0.43
+base,initial_verified,26,0.26
+base,repair_verified,18,0.18
+bound_fold_B,explicit_refusal_or_empty,4,0.04
+bound_fold_B,final_filter,22,0.22
+bound_fold_B,initial_verified,63,0.63
+bound_fold_B,repair_verified,11,0.11

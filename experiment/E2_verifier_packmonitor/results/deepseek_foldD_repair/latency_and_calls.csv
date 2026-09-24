@@ -1,0 +1,3 @@
+condition,repair_calls,registry_network_calls,latency_mean_seconds,latency_p50_seconds,latency_p95_seconds
+base,74,0,2.87227483592122,2.8985233856365085,3.405658640898764
+bound_fold_D,47,0,2.8073622127400433,2.9168813973665237,3.174090531654656

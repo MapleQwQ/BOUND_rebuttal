@@ -1,0 +1,14 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.28s/it]
+Total valid packages:706618
+building_time:4.7783050537109375s
+generate time:0.48952579498291016s
+building_time:0.04877424240112305s
+generate time:0.28598666191101074s
+building_time:0.03773808479309082s
+generate time:0.3423159122467041s
+building_time:0.04169797897338867s
+generate time:0.31981849670410156s
+building_time:0.038668155670166016s
+generate time:0.2579798698425293s
+{"status": "completed_with_minimal_compatibility_patch", "official_commit": "8808362e14891fe692b17b8192ed123dff4d64d2", "official_grammar_probe": {"is_error": true, "error": "at 13(21): unknown name: \"NATATURAL_LANG\"\n  11 |             CODE_BLOCK: CODE_START CODE_BODY CODE_END\n  12 |             NATURAL_LANG: /[^`]*/\n  13 |             start: (NATATURAL_LANG | CODE_BLOCK)*\n                           ^\n"}, "compatibility_patch": "NATATURAL_LANG->NATURAL_LANG only; official worktree unchanged", "model_path": "/data0/shuhanliu/models/deepseekcoder", "delta_dir": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50", "condition_prefix": "bound", "registry_path": "/tmp/PackMonitor/HFuzzer/valid_packages/pypi_packages.json", "registry_size": 706618, "prompt_ids": ["429", "3896", "3151", "4369", "1728"], "max_tokens": 64, "decoding": "greedy temperature=0; same model/tasks/protocol", "model_load_seconds": 4.709256194531918, "conditions": {"bound": {"n_tasks": 5, "successful_generations": 5, "install_region_trigger_rate": 1.0, "invalid_answer_rate": 0.0, "empty_package_rate": 0.0, "mean_latency_seconds": 0.39543602596968414, "p50_latency_seconds": 0.32611709274351597, "total_decoded_tokens": 58}, "bound_packmonitor": {"n_tasks": 5, "successful_generations": 5, "install_region_trigger_rate": 1.0, "invalid_answer_rate": 0.0, "empty_package_rate": 0.0, "mean_latency_seconds": 1.3297656917944551, "p50_latency_seconds": 0.3628970021381974, "total_decoded_tokens": 58}}, "cuda_peak_allocated_gib": 12.80583906173706, "cuda_peak_reserved_gib": 12.828125}

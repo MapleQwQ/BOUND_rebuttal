@@ -1,0 +1,16 @@
+## RQ1 path-to-metric validation
+[OK] RQ1 147 rows match their result files.
+
+## RQ2 detail-file recomputation
+[OK] RQ2 72 rows match rq2_details.jsonl and are grouped as 100 cases x 5 repeats.
+
+## RQ3 inferred-result validation
+[OK] RQ3 60 rows match rq3_metrics.json and eval_unseen_prompts.json.
+
+## Cost table arithmetic
+[OK] Cost inputs reproduce the paper cost table.
+[WARN] Cost rows are numeric raw inputs rather than per-row result paths; keep source notebooks/logs if submitting artifacts.
+
+## HumanEval summary validation
+[OK] HumanEval 15 selected summary rows match summary.json files.
+[WARN] HumanEval paper values use selected one-run-per-fold rows, not all stored repeats.

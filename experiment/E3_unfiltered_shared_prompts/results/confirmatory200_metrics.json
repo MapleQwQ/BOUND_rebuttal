@@ -1,0 +1,743 @@
+{
+  "scope": "confirmatory200 corrected unfiltered shared manifest",
+  "n_prompts": 200,
+  "n_generation_trials": 15000,
+  "per_model": {
+    "DeepSeekCoder": {
+      "base": {
+        "n_prompts": 200,
+        "n_generations": 1000,
+        "sample_hr": 0.107,
+        "package_hr": 0.064453125,
+        "hallucination_responses_per_1000": 107.0,
+        "hallucinated_package_mentions_per_1000": 132.0,
+        "empty_rate": 0.056,
+        "avg_packages": 2.464,
+        "distinct_packages_per_1000": 487.0,
+        "top1_concentration": 0.057224025974025976,
+        "top5_concentration": 0.18181818181818182,
+        "top5_packages": [
+          [
+            "pandas",
+            141
+          ],
+          [
+            "numpy",
+            121
+          ],
+          [
+            "requests",
+            86
+          ],
+          [
+            "matplotlib",
+            56
+          ],
+          [
+            "boto3",
+            44
+          ]
+        ]
+      },
+      "folds": {
+        "A": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.07,
+          "package_hr": 0.0420032310177706,
+          "hallucination_responses_per_1000": 70.0,
+          "hallucinated_package_mentions_per_1000": 78.0,
+          "empty_rate": 0.244,
+          "avg_packages": 1.943,
+          "distinct_packages_per_1000": 421.0,
+          "top1_concentration": 0.08800823468862584,
+          "top5_concentration": 0.2527020072053526,
+          "top5_packages": [
+            [
+              "pandas",
+              171
+            ],
+            [
+              "numpy",
+              122
+            ],
+            [
+              "requests",
+              107
+            ],
+            [
+              "matplotlib",
+              50
+            ],
+            [
+              "flask",
+              41
+            ]
+          ]
+        },
+        "B": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.095,
+          "package_hr": 0.04847161572052402,
+          "hallucination_responses_per_1000": 95.0,
+          "hallucinated_package_mentions_per_1000": 111.0,
+          "empty_rate": 0.09,
+          "avg_packages": 2.415,
+          "distinct_packages_per_1000": 526.0,
+          "top1_concentration": 0.06335403726708075,
+          "top5_concentration": 0.19337474120082815,
+          "top5_packages": [
+            [
+              "pandas",
+              153
+            ],
+            [
+              "numpy",
+              138
+            ],
+            [
+              "requests",
+              67
+            ],
+            [
+              "flask",
+              62
+            ],
+            [
+              "boto3",
+              47
+            ]
+          ]
+        },
+        "C": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.103,
+          "package_hr": 0.045331266950794265,
+          "hallucination_responses_per_1000": 103.0,
+          "hallucinated_package_mentions_per_1000": 117.0,
+          "empty_rate": 0.086,
+          "avg_packages": 2.849,
+          "distinct_packages_per_1000": 532.0,
+          "top1_concentration": 0.07300807300807301,
+          "top5_concentration": 0.2457002457002457,
+          "top5_packages": [
+            [
+              "pandas",
+              208
+            ],
+            [
+              "numpy",
+              198
+            ],
+            [
+              "matplotlib",
+              137
+            ],
+            [
+              "requests",
+              102
+            ],
+            [
+              "flask",
+              55
+            ]
+          ]
+        },
+        "D": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.146,
+          "package_hr": 0.06040992448759439,
+          "hallucination_responses_per_1000": 146.0,
+          "hallucinated_package_mentions_per_1000": 168.0,
+          "empty_rate": 0.047,
+          "avg_packages": 2.915,
+          "distinct_packages_per_1000": 589.0,
+          "top1_concentration": 0.08713550600343054,
+          "top5_concentration": 0.2144082332761578,
+          "top5_packages": [
+            [
+              "pandas",
+              254
+            ],
+            [
+              "numpy",
+              167
+            ],
+            [
+              "requests",
+              82
+            ],
+            [
+              "matplotlib",
+              72
+            ],
+            [
+              "boto3",
+              50
+            ]
+          ]
+        }
+      },
+      "bound_macro_sample_hr": 0.10350000000000001,
+      "bound_macro_package_hr": 0.049054009544170815,
+      "bound_macro_empty": 0.11674999999999998,
+      "delta_sample_hr": -0.0034999999999999892,
+      "snapshot_base": {
+        "response_not_listed_rate": 0.094,
+        "package_not_listed_rate": 0.04748376623376623,
+        "responses": 1000,
+        "packages": 2464
+      },
+      "snapshot_folds": {
+        "A": {
+          "response_not_listed_rate": 0.066,
+          "package_not_listed_rate": 0.03808543489449305,
+          "responses": 1000,
+          "packages": 1943
+        },
+        "B": {
+          "response_not_listed_rate": 0.093,
+          "package_not_listed_rate": 0.04472049689440994,
+          "responses": 1000,
+          "packages": 2415
+        },
+        "C": {
+          "response_not_listed_rate": 0.092,
+          "package_not_listed_rate": 0.036504036504036504,
+          "responses": 1000,
+          "packages": 2849
+        },
+        "D": {
+          "response_not_listed_rate": 0.129,
+          "package_not_listed_rate": 0.050085763293310465,
+          "responses": 1000,
+          "packages": 2915
+        }
+      },
+      "snapshot_bound_macro_response_not_listed_rate": 0.095,
+      "historical_clean_prompts": 149,
+      "historical_clean_base_fresh_sample_hr": 0.013422818791946308,
+      "historical_clean_base_empty": 0.07248322147651007,
+      "induced_hallucination_by_fold": {
+        "A": 0.03355704697986577,
+        "B": 0.056375838926174496,
+        "C": 0.05503355704697987,
+        "D": 0.11140939597315436
+      },
+      "clean_to_hallucinated_transition_by_fold": {
+        "A": 0.032214765100671144,
+        "B": 0.053691275167785234,
+        "C": 0.05100671140939597,
+        "D": 0.10738255033557047
+      },
+      "historical_clean_empty_by_fold": {
+        "A": 0.27114093959731544,
+        "B": 0.11140939597315436,
+        "C": 0.10201342281879194,
+        "D": 0.05906040268456376
+      },
+      "seed_schedule_mismatches": 0
+    },
+    "Qwen3": {
+      "base": {
+        "n_prompts": 200,
+        "n_generations": 1000,
+        "sample_hr": 0.054,
+        "package_hr": 0.032004491858506456,
+        "hallucination_responses_per_1000": 54.0,
+        "hallucinated_package_mentions_per_1000": 57.0,
+        "empty_rate": 0.23,
+        "avg_packages": 2.133,
+        "distinct_packages_per_1000": 336.0,
+        "top1_concentration": 0.05297702766057196,
+        "top5_concentration": 0.18612283169245195,
+        "top5_packages": [
+          [
+            "pandas",
+            113
+          ],
+          [
+            "numpy",
+            94
+          ],
+          [
+            "requests",
+            86
+          ],
+          [
+            "matplotlib",
+            58
+          ],
+          [
+            "typing",
+            46
+          ]
+        ]
+      },
+      "folds": {
+        "A": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.035,
+          "package_hr": 0.03139013452914798,
+          "hallucination_responses_per_1000": 35.0,
+          "hallucinated_package_mentions_per_1000": 49.0,
+          "empty_rate": 0.194,
+          "avg_packages": 1.707,
+          "distinct_packages_per_1000": 302.0,
+          "top1_concentration": 0.1060339777387229,
+          "top5_concentration": 0.36321031048623315,
+          "top5_packages": [
+            [
+              "numpy",
+              181
+            ],
+            [
+              "pandas",
+              172
+            ],
+            [
+              "requests",
+              108
+            ],
+            [
+              "matplotlib",
+              96
+            ],
+            [
+              "scipy",
+              63
+            ]
+          ]
+        },
+        "B": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.023,
+          "package_hr": 0.03536977491961415,
+          "hallucination_responses_per_1000": 23.0,
+          "hallucinated_package_mentions_per_1000": 33.0,
+          "empty_rate": 0.521,
+          "avg_packages": 0.993,
+          "distinct_packages_per_1000": 219.0,
+          "top1_concentration": 0.1148036253776435,
+          "top5_concentration": 0.30513595166163143,
+          "top5_packages": [
+            [
+              "pandas",
+              114
+            ],
+            [
+              "matplotlib",
+              63
+            ],
+            [
+              "numpy",
+              55
+            ],
+            [
+              "requests",
+              41
+            ],
+            [
+              "scikit-learn",
+              30
+            ]
+          ]
+        },
+        "C": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.044,
+          "package_hr": 0.0437636761487965,
+          "hallucination_responses_per_1000": 44.0,
+          "hallucinated_package_mentions_per_1000": 80.0,
+          "empty_rate": 0.359,
+          "avg_packages": 1.998,
+          "distinct_packages_per_1000": 408.0,
+          "top1_concentration": 0.08558558558558559,
+          "top5_concentration": 0.28178178178178176,
+          "top5_packages": [
+            [
+              "numpy",
+              171
+            ],
+            [
+              "pandas",
+              151
+            ],
+            [
+              "matplotlib",
+              95
+            ],
+            [
+              "requests",
+              88
+            ],
+            [
+              "scipy",
+              58
+            ]
+          ]
+        },
+        "D": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.04,
+          "package_hr": 0.037644787644787646,
+          "hallucination_responses_per_1000": 40.0,
+          "hallucinated_package_mentions_per_1000": 78.0,
+          "empty_rate": 0.293,
+          "avg_packages": 2.2,
+          "distinct_packages_per_1000": 388.0,
+          "top1_concentration": 0.08954545454545454,
+          "top5_concentration": 0.3181818181818182,
+          "top5_packages": [
+            [
+              "numpy",
+              197
+            ],
+            [
+              "pandas",
+              175
+            ],
+            [
+              "matplotlib",
+              132
+            ],
+            [
+              "requests",
+              130
+            ],
+            [
+              "scipy",
+              66
+            ]
+          ]
+        }
+      },
+      "bound_macro_sample_hr": 0.035500000000000004,
+      "bound_macro_package_hr": 0.03704209331058657,
+      "bound_macro_empty": 0.34175,
+      "delta_sample_hr": -0.018499999999999996,
+      "snapshot_base": {
+        "response_not_listed_rate": 0.042,
+        "package_not_listed_rate": 0.02109704641350211,
+        "responses": 1000,
+        "packages": 2133
+      },
+      "snapshot_folds": {
+        "A": {
+          "response_not_listed_rate": 0.024,
+          "package_not_listed_rate": 0.022261277094317515,
+          "responses": 1000,
+          "packages": 1707
+        },
+        "B": {
+          "response_not_listed_rate": 0.02,
+          "package_not_listed_rate": 0.030211480362537766,
+          "responses": 1000,
+          "packages": 993
+        },
+        "C": {
+          "response_not_listed_rate": 0.039,
+          "package_not_listed_rate": 0.03653653653653654,
+          "responses": 1000,
+          "packages": 1998
+        },
+        "D": {
+          "response_not_listed_rate": 0.035,
+          "package_not_listed_rate": 0.03318181818181818,
+          "responses": 1000,
+          "packages": 2200
+        }
+      },
+      "snapshot_bound_macro_response_not_listed_rate": 0.0295,
+      "historical_clean_prompts": 177,
+      "historical_clean_base_fresh_sample_hr": 0.007909604519774011,
+      "historical_clean_base_empty": 0.2542372881355932,
+      "induced_hallucination_by_fold": {
+        "A": 0.02824858757062147,
+        "B": 0.012429378531073447,
+        "C": 0.02937853107344633,
+        "D": 0.02824858757062147
+      },
+      "clean_to_hallucinated_transition_by_fold": {
+        "A": 0.02824858757062147,
+        "B": 0.011299435028248588,
+        "C": 0.02711864406779661,
+        "D": 0.02598870056497175
+      },
+      "historical_clean_empty_by_fold": {
+        "A": 0.21468926553672316,
+        "B": 0.5548022598870056,
+        "C": 0.38531073446327685,
+        "D": 0.31864406779661014
+      },
+      "seed_schedule_mismatches": 0
+    },
+    "Llama-3.1": {
+      "base": {
+        "n_prompts": 200,
+        "n_generations": 1000,
+        "sample_hr": 0.154,
+        "package_hr": 0.08557347670250896,
+        "hallucination_responses_per_1000": 154.0,
+        "hallucinated_package_mentions_per_1000": 191.0,
+        "empty_rate": 0.054,
+        "avg_packages": 2.614,
+        "distinct_packages_per_1000": 631.0,
+        "top1_concentration": 0.03902065799540933,
+        "top5_concentration": 0.12815608263198164,
+        "top5_packages": [
+          [
+            "pandas",
+            102
+          ],
+          [
+            "requests",
+            72
+          ],
+          [
+            "numpy",
+            66
+          ],
+          [
+            "scipy",
+            48
+          ],
+          [
+            "json",
+            47
+          ]
+        ]
+      },
+      "folds": {
+        "A": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.131,
+          "package_hr": 0.08748375920311824,
+          "hallucination_responses_per_1000": 131.0,
+          "hallucinated_package_mentions_per_1000": 202.0,
+          "empty_rate": 0.094,
+          "avg_packages": 2.646,
+          "distinct_packages_per_1000": 653.0,
+          "top1_concentration": 0.040438397581254726,
+          "top5_concentration": 0.1379440665154951,
+          "top5_packages": [
+            [
+              "pandas",
+              107
+            ],
+            [
+              "numpy",
+              87
+            ],
+            [
+              "requests",
+              68
+            ],
+            [
+              "matplotlib",
+              57
+            ],
+            [
+              "mypy",
+              46
+            ]
+          ]
+        },
+        "B": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.211,
+          "package_hr": 0.1595400646784046,
+          "hallucination_responses_per_1000": 211.0,
+          "hallucinated_package_mentions_per_1000": 444.0,
+          "empty_rate": 0.236,
+          "avg_packages": 2.994,
+          "distinct_packages_per_1000": 1020.0,
+          "top1_concentration": 0.04208416833667335,
+          "top5_concentration": 0.12758851035404142,
+          "top5_packages": [
+            [
+              "pandas",
+              126
+            ],
+            [
+              "numpy",
+              87
+            ],
+            [
+              "requests",
+              60
+            ],
+            [
+              "mypy",
+              56
+            ],
+            [
+              "matplotlib",
+              53
+            ]
+          ]
+        },
+        "C": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.162,
+          "package_hr": 0.08059467918622848,
+          "hallucination_responses_per_1000": 162.0,
+          "hallucinated_package_mentions_per_1000": 206.0,
+          "empty_rate": 0.01,
+          "avg_packages": 2.871,
+          "distinct_packages_per_1000": 706.0,
+          "top1_concentration": 0.04005572971090213,
+          "top5_concentration": 0.13235806339254616,
+          "top5_packages": [
+            [
+              "requests",
+              115
+            ],
+            [
+              "pandas",
+              96
+            ],
+            [
+              "numpy",
+              67
+            ],
+            [
+              "pydantic",
+              55
+            ],
+            [
+              "mypy",
+              47
+            ]
+          ]
+        },
+        "D": {
+          "n_prompts": 200,
+          "n_generations": 1000,
+          "sample_hr": 0.17,
+          "package_hr": 0.08401859134787272,
+          "hallucination_responses_per_1000": 170.0,
+          "hallucinated_package_mentions_per_1000": 235.0,
+          "empty_rate": 0.02,
+          "avg_packages": 3.132,
+          "distinct_packages_per_1000": 733.0,
+          "top1_concentration": 0.03863346104725415,
+          "top5_concentration": 0.14687100893997446,
+          "top5_packages": [
+            [
+              "pandas",
+              121
+            ],
+            [
+              "requests",
+              113
+            ],
+            [
+              "numpy",
+              109
+            ],
+            [
+              "pytz",
+              63
+            ],
+            [
+              "pydantic",
+              54
+            ]
+          ]
+        }
+      },
+      "bound_macro_sample_hr": 0.1685,
+      "bound_macro_package_hr": 0.102909273603906,
+      "bound_macro_empty": 0.09,
+      "delta_sample_hr": 0.014500000000000013,
+      "snapshot_base": {
+        "response_not_listed_rate": 0.14,
+        "package_not_listed_rate": 0.06426931905126243,
+        "responses": 1000,
+        "packages": 2614
+      },
+      "snapshot_folds": {
+        "A": {
+          "response_not_listed_rate": 0.122,
+          "package_not_listed_rate": 0.06878306878306878,
+          "responses": 1000,
+          "packages": 2646
+        },
+        "B": {
+          "response_not_listed_rate": 0.204,
+          "package_not_listed_rate": 0.14195056780227122,
+          "responses": 1000,
+          "packages": 2994
+        },
+        "C": {
+          "response_not_listed_rate": 0.144,
+          "package_not_listed_rate": 0.06269592476489028,
+          "responses": 1000,
+          "packages": 2871
+        },
+        "D": {
+          "response_not_listed_rate": 0.136,
+          "package_not_listed_rate": 0.06098339719029374,
+          "responses": 1000,
+          "packages": 3132
+        }
+      },
+      "snapshot_bound_macro_response_not_listed_rate": 0.1515,
+      "historical_clean_prompts": 122,
+      "historical_clean_base_fresh_sample_hr": 0.027868852459016394,
+      "historical_clean_base_empty": 0.05737704918032787,
+      "induced_hallucination_by_fold": {
+        "A": 0.047540983606557376,
+        "B": 0.1540983606557377,
+        "C": 0.07049180327868852,
+        "D": 0.09016393442622951
+      },
+      "clean_to_hallucinated_transition_by_fold": {
+        "A": 0.04262295081967213,
+        "B": 0.14918032786885246,
+        "C": 0.06393442622950819,
+        "D": 0.08196721311475409
+      },
+      "historical_clean_empty_by_fold": {
+        "A": 0.08196721311475409,
+        "B": 0.2,
+        "C": 0.014754098360655738,
+        "D": 0.021311475409836064
+      },
+      "seed_schedule_mismatches": 0
+    }
+  },
+  "equal_weight_macro": {
+    "base_sample_hr": 0.105,
+    "bound_sample_hr": 0.1025,
+    "delta_sample_hr": -0.0024999999999999905,
+    "delta_sample_hr_ci95": [
+      -0.020166666666666666,
+      0.014754166666666646
+    ],
+    "base_package_hr": 0.06067703118700515,
+    "bound_package_hr": 0.0630017921528878,
+    "base_empty": 0.11333333333333334,
+    "bound_empty": 0.18283333333333332,
+    "snapshot_base_response_not_listed_rate": 0.09200000000000001,
+    "snapshot_bound_response_not_listed_rate": 0.09200000000000001,
+    "seed_schedule_mismatches": 0
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260926,
+    "cluster": "shared prompt"
+  },
+  "deployment_snapshot_interpretation": "not-listed is a common-snapshot risk flag, not proof of never-existing"
+}
