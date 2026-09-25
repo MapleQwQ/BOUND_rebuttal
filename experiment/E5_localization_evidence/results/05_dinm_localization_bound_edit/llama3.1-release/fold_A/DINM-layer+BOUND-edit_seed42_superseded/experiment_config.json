@@ -9,7 +9,7 @@
   "edit_case_seed": 42,
   "method": "blast",
   "gpu": "3",
-  "seed": 43,
+  "seed": 42,
   "max_records": 128,
   "anchor_penalty": 0.5,
   "family_penalty": 0.0,

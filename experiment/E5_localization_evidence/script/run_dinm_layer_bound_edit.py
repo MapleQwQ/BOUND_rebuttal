@@ -96,6 +96,10 @@ def one(gpu: str, model_name: str, fold: str) -> None:
     (out / "dinm_layer_selection.json").write_text(json.dumps(loc_meta, indent=2) + "\n")
 
     cfg = build_cfg(model_name, fold, "BOUND", gpu, OUT)
+    # The final paper BOUND adapter for Llama fold A was retrained with seed 43;
+    # its original YAML still says 42. Match the actual comparison artifact.
+    paper_bound_config = json.loads((SOURCE / model_name / f"fold_{fold}/blast_50/blast_config.json").read_text())
+    cfg.seed = int(paper_bound_config["seed"])
     cfg.output_dir = out
     cfg.experiment_dir = out
     cfg.target_modules = ",".join(modules)
@@ -132,6 +136,7 @@ def one(gpu: str, model_name: str, fold: str) -> None:
     adapter = out / "blast_delta.pt"
     state = torch.load(adapter, map_location="cpu", weights_only=True)
     data = {"status": "complete", "model": model_name, "fold": fold, "gpu": gpu,
+            "training_seed": cfg.seed,
             "started_at": started, "ended_at": time.time(),
             "dinm_historical_localization_seconds": loc_meta["dinm_historical_localization_seconds"],
             "edit_seconds": edit_seconds, "eval_seconds": eval_seconds,

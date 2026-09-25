@@ -1,0 +1,199 @@
+{
+  "status": "complete",
+  "comparison": "DINM-layer+BOUND-edit minus BOUND",
+  "n_models": 3,
+  "n_folds_per_model": 4,
+  "n_prompts_per_fold": 100,
+  "n_generations_per_prompt": 5,
+  "bootstrap_seed": 20260925,
+  "bootstrap_resamples": 10000,
+  "bootstrap_unit": "prompt; folds fixed and macro-averaged",
+  "models": {
+    "deepseekcoder": {
+      "sample_hallucination_rate": {
+        "bound_four_fold_macro": 0.36200000000000004,
+        "original_dinm_four_fold_macro": 0.29350000000000004,
+        "hybrid_four_fold_macro": 0.4425,
+        "delta_hybrid_minus_bound": 0.0805,
+        "ci95_prompt_bootstrap": [
+          0.02500000000000001,
+          0.1365
+        ],
+        "delta_hybrid_minus_original_dinm": 0.149,
+        "ci95_hybrid_minus_original_dinm": [
+          0.0955,
+          0.205
+        ]
+      },
+      "package_hallucination_rate": {
+        "bound_four_fold_macro": 0.16182964005111522,
+        "original_dinm_four_fold_macro": 0.2614257430675837,
+        "hybrid_four_fold_macro": 0.2535640374501596,
+        "delta_hybrid_minus_bound": 0.09173439739904438,
+        "ci95_prompt_bootstrap": [
+          0.05358794685343678,
+          0.13118982718414055
+        ],
+        "delta_hybrid_minus_original_dinm": -0.00786170561742413,
+        "ci95_hybrid_minus_original_dinm": [
+          -0.044493572235126816,
+          0.028665640108321008
+        ]
+      },
+      "sample_valid_rate": {
+        "bound_four_fold_macro": 0.8835000000000001,
+        "original_dinm_four_fold_macro": 0.363,
+        "hybrid_four_fold_macro": 0.7334999999999999,
+        "delta_hybrid_minus_bound": -0.15,
+        "ci95_prompt_bootstrap": [
+          -0.1875,
+          -0.113
+        ],
+        "delta_hybrid_minus_original_dinm": 0.3705,
+        "ci95_hybrid_minus_original_dinm": [
+          0.317,
+          0.4235
+        ]
+      },
+      "empty_rate": {
+        "bound_four_fold_macro": 0.0695,
+        "original_dinm_four_fold_macro": 0.55,
+        "hybrid_four_fold_macro": 0.152,
+        "delta_hybrid_minus_bound": 0.0825,
+        "ci95_prompt_bootstrap": [
+          0.054500000000000014,
+          0.11099999999999997
+        ],
+        "delta_hybrid_minus_original_dinm": -0.39799999999999996,
+        "ci95_hybrid_minus_original_dinm": [
+          -0.452,
+          -0.342
+        ]
+      }
+    },
+    "qwen3-release": {
+      "sample_hallucination_rate": {
+        "bound_four_fold_macro": 0.13,
+        "original_dinm_four_fold_macro": 0.7305000000000001,
+        "hybrid_four_fold_macro": 0.22899999999999998,
+        "delta_hybrid_minus_bound": 0.09900000000000002,
+        "ci95_prompt_bootstrap": [
+          0.0415,
+          0.1555
+        ],
+        "delta_hybrid_minus_original_dinm": -0.5015000000000001,
+        "ci95_hybrid_minus_original_dinm": [
+          -0.5585,
+          -0.447
+        ]
+      },
+      "package_hallucination_rate": {
+        "bound_four_fold_macro": 0.07016362621076633,
+        "original_dinm_four_fold_macro": 0.42772257554221504,
+        "hybrid_four_fold_macro": 0.22071820614525994,
+        "delta_hybrid_minus_bound": 0.1505545799344936,
+        "ci95_prompt_bootstrap": [
+          0.09762047387085102,
+          0.20561218881470605
+        ],
+        "delta_hybrid_minus_original_dinm": -0.20700436939695507,
+        "ci95_hybrid_minus_original_dinm": [
+          -0.25106329672474925,
+          -0.16419204380086122
+        ]
+      },
+      "sample_valid_rate": {
+        "bound_four_fold_macro": 0.7265,
+        "original_dinm_four_fold_macro": 0.7440000000000001,
+        "hybrid_four_fold_macro": 0.517,
+        "delta_hybrid_minus_bound": -0.20950000000000002,
+        "ci95_prompt_bootstrap": [
+          -0.266,
+          -0.152
+        ],
+        "delta_hybrid_minus_original_dinm": -0.22700000000000004,
+        "ci95_hybrid_minus_original_dinm": [
+          -0.2855,
+          -0.171
+        ]
+      },
+      "empty_rate": {
+        "bound_four_fold_macro": 0.255,
+        "original_dinm_four_fold_macro": 0.06149999999999999,
+        "hybrid_four_fold_macro": 0.392,
+        "delta_hybrid_minus_bound": 0.137,
+        "ci95_prompt_bootstrap": [
+          0.07148750000000002,
+          0.2025
+        ],
+        "delta_hybrid_minus_original_dinm": 0.33049999999999996,
+        "ci95_hybrid_minus_original_dinm": [
+          0.275,
+          0.3875
+        ]
+      }
+    },
+    "llama3.1-release": {
+      "sample_hallucination_rate": {
+        "bound_four_fold_macro": 0.47,
+        "original_dinm_four_fold_macro": 0.031,
+        "hybrid_four_fold_macro": 0.493,
+        "delta_hybrid_minus_bound": 0.023000000000000007,
+        "ci95_prompt_bootstrap": [
+          -0.0285125,
+          0.0735
+        ],
+        "delta_hybrid_minus_original_dinm": 0.46199999999999997,
+        "ci95_hybrid_minus_original_dinm": [
+          0.41,
+          0.5155000000000001
+        ]
+      },
+      "package_hallucination_rate": {
+        "bound_four_fold_macro": 0.22037107375029696,
+        "original_dinm_four_fold_macro": 0.05186688311688312,
+        "hybrid_four_fold_macro": 0.3022114003495413,
+        "delta_hybrid_minus_bound": 0.08184032659924434,
+        "ci95_prompt_bootstrap": [
+          0.041412311944416275,
+          0.12023202345560206
+        ],
+        "delta_hybrid_minus_original_dinm": 0.25034451723265816,
+        "ci95_hybrid_minus_original_dinm": [
+          0.20315514234194956,
+          0.29805178193581067
+        ]
+      },
+      "sample_valid_rate": {
+        "bound_four_fold_macro": 0.8645,
+        "original_dinm_four_fold_macro": 0.24900000000000003,
+        "hybrid_four_fold_macro": 0.7265,
+        "delta_hybrid_minus_bound": -0.138,
+        "ci95_prompt_bootstrap": [
+          -0.18201250000000002,
+          -0.0955
+        ],
+        "delta_hybrid_minus_original_dinm": 0.4775,
+        "ci95_hybrid_minus_original_dinm": [
+          0.4134999999999999,
+          0.541
+        ]
+      },
+      "empty_rate": {
+        "bound_four_fold_macro": 0.099,
+        "original_dinm_four_fold_macro": 0.738,
+        "hybrid_four_fold_macro": 0.154,
+        "delta_hybrid_minus_bound": 0.055,
+        "ci95_prompt_bootstrap": [
+          0.01998750000000001,
+          0.092
+        ],
+        "delta_hybrid_minus_original_dinm": -0.5840000000000001,
+        "ci95_hybrid_minus_original_dinm": [
+          -0.6335000000000001,
+          -0.532
+        ]
+      }
+    }
+  }
+}

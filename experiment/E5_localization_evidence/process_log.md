@@ -65,3 +65,12 @@
 - 用户新增05实验，并明确仅沿用RQ3设置、暂不测HumanEval；模型计算可用GPU 1、2、3。
 - 已核验仓库原DINM的12份逐case隐藏状态距离定位报告和原BOUND同折50个编辑case ID一一对应。混合条件取原DINM所选层的去重集合，按原DINM的`mlp.down_proj`映射插入BOUND LoRA；训练损失及超参数由原BOUND配置构建。
 - 新增`script/run_dinm_layer_bound_edit.py`，在GPU 1/2/3分别启动DeepSeekCoder/Qwen3/Llama-3.1四折队列；每折评估原RQ3同一100条unseen prompt×5次生成。结果写入`results/05_dinm_localization_bound_edit/`，未完成单元不计入结论。
+
+## 2026-09-25：05实验完成
+
+- 三模型×四折的混合baseline均完成，12格逐折核对同一100条RQ3未见提示及五次生成，并从原DINM完整评估中抽出相同提示作辅助对照。prompt配对bootstrap、编辑成本和adapter统计已写入05独立结果文档；所有新增模型运行仅使用GPU 1、2、3。
+- 相对BOUND，混合条件的Package-HR三模型均显著更高，Valid-Rate均显著更低，Empty-Rate均增加。原DINM层映射只给DeepSeekCoder 2个、Qwen3/Llama-3.1各1个`down_proj`模块，而BOUND使用7/9/7个，结论明确受模块预算差异约束。本次按用户最新要求未运行HumanEval。
+
+## 2026-09-25：05实验最终训练seed修正
+
+- 复核最终论文BOUND adapter发现Llama A折seed43与旧YAML的42不一致。混合条件该折已在GPU 3按43重新训练及评估；旧42结果归档并排除。分析器现在检查全部12折与最终BOUND adapter的训练seed一致，最终表格已重算。其他11折无需重跑。
