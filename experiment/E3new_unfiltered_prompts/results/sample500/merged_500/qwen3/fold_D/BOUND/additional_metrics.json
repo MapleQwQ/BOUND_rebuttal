@@ -1,0 +1,22 @@
+{
+  "base": {
+    "n_generations": 2500,
+    "sample_hr": 0.0568,
+    "package_hr": 0.036897767332549944,
+    "valid_rate": 0.6828,
+    "no_extracted_package_rate": 0.2496,
+    "hallucination_responses_per_1000": 56.8,
+    "hallucinated_package_mentions_per_1000": 62.8,
+    "avg_packages": 2.0392
+  },
+  "bound": {
+    "n_generations": 2500,
+    "sample_hr": 0.0376,
+    "package_hr": 0.036886828891463885,
+    "valid_rate": 0.72,
+    "no_extracted_package_rate": 0.2532,
+    "hallucination_responses_per_1000": 37.6,
+    "hallucinated_package_mentions_per_1000": 76.4,
+    "avg_packages": 2.2176
+  }
+}

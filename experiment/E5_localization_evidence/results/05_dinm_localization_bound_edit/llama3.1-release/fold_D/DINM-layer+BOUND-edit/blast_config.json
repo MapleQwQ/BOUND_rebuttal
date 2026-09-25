@@ -1,0 +1,29 @@
+{
+  "model_path": "/data0/shuhanliu/models/llama3.1",
+  "edits_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+  "output_dir": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/results/05_dinm_localization_bound_edit/llama3.1-release/fold_D/DINM-layer+BOUND-edit",
+  "method": "blast",
+  "gpu": "3",
+  "seed": 42,
+  "max_edits": 2000,
+  "epochs": 3,
+  "batch_size": 1,
+  "lr": 0.0002,
+  "rank": 8,
+  "alpha": 16.0,
+  "dropout": 0.05,
+  "target_modules": "model.layers.31.mlp.down_proj",
+  "localization_report": "",
+  "localization_top_k": 5,
+  "localization_mode": "window_family",
+  "localization_window": 1,
+  "task_weight": 1.0,
+  "answer_neg_weight": 0.15,
+  "kl_weight": 0.03,
+  "max_task_packages": 5,
+  "resolved_target_modules": "model.layers.31.mlp.down_proj",
+  "edited_modules": [
+    "model.layers.31.mlp.down_proj"
+  ],
+  "n_edited_modules": 1
+}

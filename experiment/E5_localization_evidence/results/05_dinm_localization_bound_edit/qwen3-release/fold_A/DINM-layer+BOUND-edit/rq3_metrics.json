@@ -1,0 +1,18 @@
+{
+  "model": "qwen3-release",
+  "fold": "fold_A",
+  "setting": "DINM-layer+BOUND-edit",
+  "status": "done",
+  "n_prompts": 100,
+  "n_trials": 500,
+  "sample_hr": 0.2619999999999998,
+  "package_hr": 0.23284610373286846,
+  "valid_rate": 0.6259999999999998,
+  "empty_rate": 0.278,
+  "avg_packages": 1.568,
+  "avg_valid": 1.266,
+  "avg_hallucinated": 0.276,
+  "edited_modules": 1,
+  "result": "BOUND_rebuttal/experiment/E5_localization_evidence/results/05_dinm_localization_bound_edit/qwen3-release/fold_A/DINM-layer+BOUND-edit",
+  "eval_file": "BOUND_rebuttal/experiment/E5_localization_evidence/results/05_dinm_localization_bound_edit/qwen3-release/fold_A/DINM-layer+BOUND-edit/eval_unseen_prompts.json"
+}

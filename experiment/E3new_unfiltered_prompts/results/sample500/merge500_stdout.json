@@ -1,0 +1,164 @@
+{
+  "n_prompts": 500,
+  "model_cutoffs": {
+    "deepseekcoder": "2023-10-29",
+    "qwen3": "2025-04-29",
+    "llama31": "2023-12-31"
+  },
+  "models": {
+    "deepseekcoder": {
+      "metrics": {
+        "sample_hallucination_rate": {
+          "base": 0.11680000000000008,
+          "bound_four_fold_macro": 0.10820000000000005,
+          "difference": -0.008600000000000038
+        },
+        "package_hallucination_rate": {
+          "base": 0.06387961849254815,
+          "bound_four_fold_macro": 0.0479508936087044,
+          "difference": -0.015928724883843753
+        },
+        "sample_valid_rate": {
+          "base": 0.8180000000000003,
+          "bound_four_fold_macro": 0.8210000000000004,
+          "difference": 0.0030000000000001137
+        }
+      },
+      "delta_sample_hr_ci95": [
+        -0.02629999999999998,
+        0.008599999999999974
+      ],
+      "by_historical_risk": {
+        "clean": {
+          "n_prompts": 363,
+          "base_sample_hr": 0.0,
+          "bound_four_fold_macro_sample_hr": 0.061432506887052374,
+          "difference": 0.061432506887052374
+        },
+        "low": {
+          "n_prompts": 94,
+          "base_sample_hr": 0.2723404255319144,
+          "bound_four_fold_macro_sample_hr": 0.18723404255319145,
+          "difference": -0.08510638297872294
+        },
+        "high": {
+          "n_prompts": 43,
+          "base_sample_hr": 0.762790697674419,
+          "bound_four_fold_macro_sample_hr": 0.3302325581395348,
+          "difference": -0.4325581395348842
+        }
+      },
+      "reused_old_e3_prompts": 0
+    },
+    "qwen3": {
+      "metrics": {
+        "sample_hallucination_rate": {
+          "base": 0.056799999999999976,
+          "bound_four_fold_macro": 0.02869999999999999,
+          "difference": -0.028099999999999986
+        },
+        "package_hallucination_rate": {
+          "base": 0.031062756513964306,
+          "bound_four_fold_macro": 0.016378521796642762,
+          "difference": -0.014684234717321543
+        },
+        "sample_valid_rate": {
+          "base": 0.6828000000000003,
+          "bound_four_fold_macro": 0.6601000000000004,
+          "difference": -0.022699999999999942
+        }
+      },
+      "delta_sample_hr_ci95": [
+        -0.04489999999999996,
+        -0.01329000000000006
+      ],
+      "by_historical_risk": {
+        "clean": {
+          "n_prompts": 448,
+          "base_sample_hr": 0.0,
+          "bound_four_fold_macro_sample_hr": 0.016629464285714272,
+          "difference": 0.016629464285714272
+        },
+        "low": {
+          "n_prompts": 25,
+          "base_sample_hr": 0.2400000000000001,
+          "bound_four_fold_macro_sample_hr": 0.11199999999999999,
+          "difference": -0.1280000000000001
+        },
+        "high": {
+          "n_prompts": 27,
+          "base_sample_hr": 0.8296296296296298,
+          "bound_four_fold_macro_sample_hr": 0.15185185185185185,
+          "difference": -0.677777777777778
+        }
+      },
+      "reused_old_e3_prompts": 0
+    },
+    "llama31": {
+      "metrics": {
+        "sample_hallucination_rate": {
+          "base": 0.1924000000000003,
+          "bound_four_fold_macro": 0.1448000000000002,
+          "difference": -0.04760000000000009
+        },
+        "package_hallucination_rate": {
+          "base": 0.10139686277704667,
+          "bound_four_fold_macro": 0.07174654597726991,
+          "difference": -0.029650316799776755
+        },
+        "sample_valid_rate": {
+          "base": 0.8460000000000005,
+          "bound_four_fold_macro": 0.7985000000000003,
+          "difference": -0.04750000000000021
+        }
+      },
+      "delta_sample_hr_ci95": [
+        -0.07039999999999993,
+        -0.024197499999999976
+      ],
+      "by_historical_risk": {
+        "clean": {
+          "n_prompts": 299,
+          "base_sample_hr": 0.0006688963210702342,
+          "bound_four_fold_macro_sample_hr": 0.07374581939799334,
+          "difference": 0.07307692307692311
+        },
+        "low": {
+          "n_prompts": 119,
+          "base_sample_hr": 0.26386554621848685,
+          "bound_four_fold_macro_sample_hr": 0.18739495798319336,
+          "difference": -0.07647058823529349
+        },
+        "high": {
+          "n_prompts": 82,
+          "base_sample_hr": 0.7878048780487803,
+          "bound_four_fold_macro_sample_hr": 0.34207317073170734,
+          "difference": -0.44573170731707296
+        }
+      },
+      "reused_old_e3_prompts": 0
+    }
+  },
+  "three_model_equal_weight_macro": {
+    "sample_hallucination_rate": {
+      "base": 0.12200000000000011,
+      "bound_four_fold_macro": 0.09390000000000008,
+      "difference": -0.028100000000000038
+    },
+    "package_hallucination_rate": {
+      "base": 0.0654464125945197,
+      "bound_four_fold_macro": 0.04535865379420569,
+      "difference": -0.020087758800314017
+    },
+    "sample_valid_rate": {
+      "base": 0.782266666666667,
+      "bound_four_fold_macro": 0.759866666666667,
+      "difference": -0.022400000000000014
+    }
+  },
+  "three_model_macro_delta_sample_hr_ci95": [
+    -0.042433333333333316,
+    -0.015065833333333353
+  ],
+  "aggregation": "replication package: first mean of per-prompt rates, then four-fold mean, then equal-weight model mean"
+}

@@ -56,7 +56,7 @@ for attempt in 1 2 3; do
     --manifest "$sub/sample1500_manifest.jsonl" \
     --raw-dir "$root/results/raw" --extra-raw-dir "$sub/raw" \
     --seed-cache "$root/results/release_dates_final.jsonl" \
-    --output "$sub/release_dates.jsonl" --workers 32 \
+    --output "$sub/release_dates.jsonl" --workers 4 \
     > "$sub/release_cache_stdout.json" 2> "$sub/release_cache_stderr.log"
   if "$python_bin" - "$sub/release_cache_audit.json" <<'PY'
 import json,sys

@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "model": "qwen3-release",
+  "fold": "D",
+  "gpu": "2",
+  "started_at": 1790337580.146218,
+  "ended_at": 1790338171.34482,
+  "dinm_historical_localization_seconds": 0.94,
+  "edit_seconds": 57.015522956848145,
+  "eval_seconds": 534.120236158371,
+  "total_new_run_seconds": 591.1986067295074,
+  "peak_edit_reserved_mib": 17230.0,
+  "n_edited_modules": 1,
+  "n_trainable_adapter_parameters": 131072,
+  "adapter_bytes": 264069,
+  "adapter_sha256": "39935487f34f33066b502388660b9d67bdef9b3b932295654d047421519e6744",
+  "dinm_report_sha256": "8ef466fff5f1c0cb04d6fc6360d003552464b5362541085e63d82c1d3ec23c6a",
+  "edit_cases_sha256": "0f480fc1b97c873cc3e3859d3c7b5397ebe5e847773d3c28c292b1520afbea4f"
+}

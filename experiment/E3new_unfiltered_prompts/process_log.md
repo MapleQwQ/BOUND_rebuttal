@@ -283,3 +283,11 @@
 - 2026-09-25T10:37:33Z UTC: release-date cache has unresolved lookups; retry 2/3.
 
 - 2026-09-25T10:39:54Z UTC: release-date cache has unresolved lookups; retry 3/3.
+- 2026-09-25T12:39Z UTC: 人工复核发现12条件已于10:30完成（6000/6000），自动缓存的最后163个候选仍为`query_unknown`，均系PyPI短暂HTTP 503；单独复查其中候选已返回确定的404。已改用4并发重试，避免将HTTP 503误判为包不存在；合并需等待缓存全部确定。
+
+- 2026-09-25T12:40:52Z UTC: final 500/1500 tables written to design_and_results.md; cache statuses={'dated': 5801, 'no_release_date': 120, 'not_found': 6379}.
+- 2026-09-25T12:41Z UTC: 4并发复查剩余163项均得到确定状态（均404）；合并1500条共有12300个候选：dated=5801、not_found=6379、no_release_date=120、query_unknown=0。去重日期缓存SHA-256=`0771ccd78d2be0f222b10c2d13c8727a2f00fd73e17ec0510b58f8caaa34129b`。
+- 500条和1500条的12份replication-package格式结果、逐折CSV、四折与三模型宏平均、bootstrap区间均已写出。500条三模型等权Sample-HR=12.20%→9.39%（−2.81 pp，95% CI [−4.24,−1.51]）；1500条=11.56%→9.37%（−2.19 pp，95% CI [−2.88,−1.49]）。相应Package-HR=6.54%→4.54%及6.13%→4.45%；Valid-Rate=78.23%→75.99%及79.20%→76.69%。
+- QA通过：500/1500各12条件每个prompt均为五次Base与BOUND回答；每模型四折Base完全一致；模型cutoff匹配replication package；1500条指标与1000、500按样本数加权结果一致；缓存12300项唯一且无未知状态。`design_and_results.md`已更新最终表和解释限制。
+
+- 2026-09-25T12:42:41Z UTC: final 500/1500 tables written to design_and_results.md; cache statuses={'dated': 5801, 'no_release_date': 120, 'not_found': 6379}.

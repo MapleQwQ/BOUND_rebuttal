@@ -1,6 +1,6 @@
-# E5：Localization 与包有效性区分的四项补充实验
+# E5：Localization 与包有效性区分的补充实验
 
-本目录按四个独立问题组织实验。各自的设计、已有结果、待完成工作和过程记录分别在下表所列文件中；现有结果清单由 `script/reanalyse_existing.py` 只读重算，输出统一写入本目录的 `results/01`—`04` 子目录。已完成12折论文主表同配置HumanEval、24格同GPU成本重测、定位负对照以及完整序列概率与敏感性分析。
+本目录按五个独立问题组织实验。各自的设计、结果和过程记录分别在下表所列文件中；前四项已完成。新增05实验将仓库原DINM层定位与BOUND编辑组合，在原RQ3的100条unseen prompt×5次生成上评价。
 
 | 实验 | 核心问题 | 独立设计与结果 | 当前可复用证据 |
 | --- | --- | --- | --- |
@@ -8,6 +8,7 @@
 | 2 Full risk vs hallucination-only | valid anchor 是否改变定位和最终编辑 | [02](02_risk_score/design_and_results.md) | 12折adapter审计及真正改变模块的两折共同随机数评估已完成；未确认稳定质量收益 |
 | 3 定位集中性与稳定性 | 哪些层/模块反复出现，是否具有包幻觉特异性 | [03](03_localization_stability/design_and_results.md) | RQ4及新增valid-only对照完成；热点不专属于hallucination-risk目标 |
 | 4 Unseen候选完整序列概率 | Base→BOUND 是否扩大 valid/hallucinated score separation | [04](04_sequence_margin/design_and_results.md) | 原RQ2标签和registry敏感性两套12折评分已完成，历史首发日期已审计 |
+| 5 DINM层定位+BOUND编辑 | 原DINM层选择替代BOUND定位后的RQ3效果和成本 | [05](05_dinm_localization_bound_edit/design_and_results.md) | 原DINM 12折报告与同折50编辑case已核验；GPU 1/2/3训练及RQ3评估中，暂不测HumanEval |
 
 ## 统一边界与来源
 

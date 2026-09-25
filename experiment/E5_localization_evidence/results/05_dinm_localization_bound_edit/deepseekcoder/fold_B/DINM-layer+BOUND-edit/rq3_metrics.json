@@ -1,0 +1,18 @@
+{
+  "model": "deepseekcoder",
+  "fold": "fold_B",
+  "setting": "DINM-layer+BOUND-edit",
+  "status": "done",
+  "n_prompts": 100,
+  "n_trials": 500,
+  "sample_hr": 0.47600000000000003,
+  "package_hr": 0.28326350223377067,
+  "valid_rate": 0.8039999999999998,
+  "empty_rate": 0.034,
+  "avg_packages": 2.408,
+  "avg_valid": 1.824,
+  "avg_hallucinated": 0.522,
+  "edited_modules": 2,
+  "result": "BOUND_rebuttal/experiment/E5_localization_evidence/results/05_dinm_localization_bound_edit/deepseekcoder/fold_B/DINM-layer+BOUND-edit",
+  "eval_file": "BOUND_rebuttal/experiment/E5_localization_evidence/results/05_dinm_localization_bound_edit/deepseekcoder/fold_B/DINM-layer+BOUND-edit/eval_unseen_prompts.json"
+}

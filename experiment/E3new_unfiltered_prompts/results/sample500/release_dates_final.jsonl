@@ -1,25 +1,25 @@
 {"name": "1password", "first_upload_utc": "2020-03-05T13:10:53", "status": "dated", "source": "seed_cache"}
 {"name": "1password-connect", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "@aws-c", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-apigateway", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-codebuild", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-codepipeline", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-codepipeline-actions", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-dynamodb", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-kinesis", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-kinesis-analytics", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-lambda", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-logs", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-rds", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-s3", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-sns", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-sns-subscriptions", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "@aws-cdk/aws-sqs", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "@aws-c", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-apigateway", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-codebuild", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-codepipeline", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-codepipeline-actions", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-dynamodb", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-kinesis", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-kinesis-analytics", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-lambda", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-logs", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-rds", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-s3", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-sns", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-sns-subscriptions", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "@aws-cdk/aws-sqs", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "@cdktf/provider-google", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "a2c-ppo-acktr", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "a2c-ppo-pkl", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "a2c-ppo-sac", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "abbyy-ocr", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "abbyy-ocr", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "abigen", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "abjad", "first_upload_utc": "2009-08-07T04:35:07", "status": "dated", "source": "seed_cache"}
 {"name": "absl-py", "first_upload_utc": "2017-09-26T20:21:55", "status": "dated", "source": "seed_cache"}
@@ -27,7 +27,7 @@
 {"name": "accelerate", "first_upload_utc": "2020-10-30T13:43:42", "status": "dated", "source": "seed_cache"}
 {"name": "accessibility", "first_upload_utc": "2014-01-09T01:31:53", "status": "dated", "source": "seed_cache"}
 {"name": "accessibility-bridging-kit", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "accessible-styles", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "accessible-styles", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "acme", "first_upload_utc": "2015-10-06T06:47:54", "status": "dated", "source": "seed_cache"}
 {"name": "actions", "first_upload_utc": "2016-12-03T18:46:50", "status": "dated", "source": "seed_cache"}
 {"name": "adafruit-ampy", "first_upload_utc": "2016-08-19T22:50:32", "status": "dated", "source": "seed_cache"}
@@ -36,7 +36,7 @@
 {"name": "adafruit-cc3000", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "adafruit-io", "first_upload_utc": "2016-01-19T10:39:15", "status": "dated", "source": "seed_cache"}
 {"name": "adal", "first_upload_utc": "2015-10-08T22:21:45", "status": "dated", "source": "seed_cache"}
-{"name": "adal-python", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "adal-python", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "adapter", "first_upload_utc": "2019-02-10T22:38:40", "status": "dated", "attempts": [200]}
 {"name": "address", "first_upload_utc": "2013-01-28T18:27:03", "status": "dated", "source": "seed_cache"}
 {"name": "address-guarantor", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -45,9 +45,9 @@
 {"name": "addressparser", "first_upload_utc": "2020-02-14T03:17:20", "status": "dated", "source": "seed_cache"}
 {"name": "adjustments", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "admin", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "adminlte3", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "adobe", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "adobe-amf", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "adminlte3", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "adobe", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "adobe-amf", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "adomain", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "adsk-cadquery", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "adsk-cam", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -64,7 +64,7 @@
 {"name": "aikit", "first_upload_utc": "2018-09-14T10:32:44", "status": "dated", "source": "seed_cache"}
 {"name": "aio-pika", "first_upload_utc": "2016-09-28T11:55:02", "status": "dated", "source": "seed_cache"}
 {"name": "aioamqp", "first_upload_utc": "2014-05-19T16:36:25", "status": "dated", "attempts": [200]}
-{"name": "aiobaseutils", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiobaseutils", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiobcrypt", "first_upload_utc": "2022-05-26T10:35:17", "status": "dated", "source": "seed_cache"}
 {"name": "aiobilibili", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aioboto3", "first_upload_utc": "2017-09-27T15:14:10", "status": "dated", "source": "seed_cache"}
@@ -84,34 +84,34 @@
 {"name": "aiocron", "first_upload_utc": "2015-02-22T14:30:59", "status": "dated", "source": "seed_cache"}
 {"name": "aiocsv", "first_upload_utc": "2020-07-31T13:43:44", "status": "dated", "source": "seed_cache"}
 {"name": "aiodatabase", "first_upload_utc": "2024-05-28T08:42:55", "status": "dated", "source": "seed_cache"}
-{"name": "aiodbc", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aiodbx", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiodbc", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aiodbx", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiodict", "first_upload_utc": "2026-04-05T08:02:48", "status": "dated", "source": "seed_cache"}
 {"name": "aiodiskcache", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiodns", "first_upload_utc": "2014-03-27T08:03:42", "status": "dated", "source": "seed_cache"}
 {"name": "aiodocker", "first_upload_utc": "2014-04-06T04:43:36", "status": "dated", "source": "seed_cache"}
 {"name": "aiodogstatsd", "first_upload_utc": "2019-03-10T16:42:13", "status": "dated", "source": "seed_cache"}
-{"name": "aiodogtag", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiodogtag", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiofiles", "first_upload_utc": "2015-04-06T22:55:01", "status": "dated", "source": "seed_cache"}
 {"name": "aioftp", "first_upload_utc": "2015-04-24T09:29:43", "status": "dated", "source": "seed_cache"}
 {"name": "aiogram", "first_upload_utc": "2017-06-03T09:27:25", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp", "first_upload_utc": "2013-10-25T18:17:03", "status": "dated", "source": "seed_cache"}
-{"name": "aiohttp-asynchttpclient", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiohttp-asynchttpclient", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiohttp-auth", "first_upload_utc": "2016-01-11T01:00:36", "status": "dated", "attempts": [200]}
 {"name": "aiohttp-cache", "first_upload_utc": "2016-11-10T23:56:13", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp-caching", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "aiohttp-camd", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiohttp-camd", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiohttp-client", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-client-errors", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-client-logging", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-client-requests", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-client-resources", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "aiohttp-client-session", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiohttp-client-session", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiohttp-cors", "first_upload_utc": "2015-11-05T00:41:33", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp-graphql", "first_upload_utc": "2017-09-23T09:41:27", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp-graphql-sanic", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-jinja2", "first_upload_utc": "2015-01-08T14:51:29", "status": "dated", "source": "seed_cache"}
-{"name": "aiohttp-jwt-rsa", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiohttp-jwt-rsa", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiohttp-message-queue", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-middlewares", "first_upload_utc": "2017-05-13T13:55:35", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp-mock", "first_upload_utc": "2022-11-23T15:08:56", "status": "dated", "attempts": [200]}
@@ -121,7 +121,7 @@
 {"name": "aiohttp-socks", "first_upload_utc": "2018-07-04T12:20:05", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp-sse-client", "first_upload_utc": "2018-10-02T10:30:51", "status": "dated", "source": "seed_cache"}
 {"name": "aiohttp-swagger", "first_upload_utc": "2016-10-25T11:37:18", "status": "dated", "source": "seed_cache"}
-{"name": "aiohttp-trie", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiohttp-trie", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiohttp-web", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-web-socket", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiohttp-websocket", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -130,7 +130,7 @@
 {"name": "aioice", "first_upload_utc": "2018-02-04T02:24:10", "status": "dated", "source": "seed_cache"}
 {"name": "aioimaplib", "first_upload_utc": "2016-07-05T20:00:08", "status": "dated", "source": "seed_cache"}
 {"name": "aioinject", "first_upload_utc": "2022-01-31T08:20:58", "status": "dated", "source": "seed_cache"}
-{"name": "aioinspect", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aioinspect", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiojobs", "first_upload_utc": "2017-07-01T08:54:44", "status": "dated", "source": "seed_cache"}
 {"name": "aiokafka", "first_upload_utc": "2016-04-11T08:20:49", "status": "dated", "source": "seed_cache"}
 {"name": "aiokeras", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -145,7 +145,7 @@
 {"name": "aiolyrics", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiomail", "first_upload_utc": "2019-11-26T09:48:52", "status": "dated", "source": "seed_cache"}
 {"name": "aiomas", "first_upload_utc": "2015-02-12T15:00:28", "status": "dated", "attempts": [200]}
-{"name": "aiomatrix", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiomatrix", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiomcache", "first_upload_utc": "2014-06-18T04:47:16", "status": "dated", "source": "seed_cache"}
 {"name": "aiomemcache", "first_upload_utc": null, "status": "no_release_date", "attempts": [200]}
 {"name": "aiomerge", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -153,28 +153,28 @@
 {"name": "aiomixpanel", "first_upload_utc": "2019-05-20T15:34:54", "status": "dated", "source": "seed_cache"}
 {"name": "aiomock", "first_upload_utc": "2016-09-09T19:36:14", "status": "dated", "source": "seed_cache"}
 {"name": "aiomonitor", "first_upload_utc": "2016-12-09T23:07:00", "status": "dated", "source": "seed_cache"}
-{"name": "aiomotor", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aiomotortest", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiomotor", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aiomotortest", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiomq", "first_upload_utc": "2020-06-12T09:09:54", "status": "dated", "source": "seed_cache"}
 {"name": "aiomqtt", "first_upload_utc": "2017-07-13T06:47:49", "status": "dated", "source": "seed_cache"}
 {"name": "aiomsg", "first_upload_utc": "2019-01-13T07:38:14", "status": "dated", "source": "seed_cache"}
 {"name": "aiomultipart", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiomultiprocess", "first_upload_utc": "2018-04-08T20:09:39", "status": "dated", "source": "seed_cache"}
 {"name": "aiomysql", "first_upload_utc": "2015-02-17T19:48:02", "status": "dated", "source": "seed_cache"}
-{"name": "aiomysqlclient", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aion", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aionose", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiomysqlclient", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aion", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aionose", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aionotify", "first_upload_utc": "2016-04-03T23:58:20", "status": "dated", "attempts": [200]}
-{"name": "aiooauth", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aiooauth-client", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aioonvif", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiooauth", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aiooauth-client", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aioonvif", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiopg", "first_upload_utc": "2014-04-06T17:04:47", "status": "dated", "source": "seed_cache"}
 {"name": "aioping", "first_upload_utc": "2017-01-17T09:09:42", "status": "dated", "source": "seed_cache"}
 {"name": "aioprocessing", "first_upload_utc": "2014-09-20T05:30:59", "status": "dated", "source": "seed_cache"}
 {"name": "aioproxy", "first_upload_utc": "2015-11-13T12:53:19", "status": "dated", "attempts": [200]}
 {"name": "aioquic", "first_upload_utc": "2019-06-08T13:38:29", "status": "dated", "attempts": [200]}
 {"name": "aioredis", "first_upload_utc": "2014-06-12T08:20:40", "status": "dated", "source": "seed_cache"}
-{"name": "aioredis-py", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aioredis-py", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiorequests", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aioresponses", "first_upload_utc": "2016-11-03T21:49:08", "status": "dated", "source": "seed_cache"}
 {"name": "aiormongo", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -186,14 +186,14 @@
 {"name": "aios", "first_upload_utc": "2018-11-08T07:26:10", "status": "dated", "attempts": [200]}
 {"name": "aioschedule", "first_upload_utc": "2018-02-01T13:12:03", "status": "dated", "source": "seed_cache"}
 {"name": "aioscheduler", "first_upload_utc": "2020-05-16T12:36:07", "status": "dated", "source": "seed_cache"}
-{"name": "aiosdk", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiosdk", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aioserial", "first_upload_utc": "2018-10-08T17:12:28", "status": "dated", "source": "seed_cache"}
 {"name": "aioshield", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aioshttp", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aioshutil", "first_upload_utc": "2021-04-05T11:34:14", "status": "dated", "source": "seed_cache"}
 {"name": "aiosignal", "first_upload_utc": "2019-08-29T17:48:45", "status": "dated", "source": "seed_cache"}
-{"name": "aioslug", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aioslugify", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aioslug", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aioslugify", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiosmpps", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiosmtpd", "first_upload_utc": "2015-10-20T01:56:05", "status": "dated", "source": "seed_cache"}
 {"name": "aiosmtplib", "first_upload_utc": "2016-04-19T23:43:36", "status": "dated", "source": "seed_cache"}
@@ -207,7 +207,7 @@
 {"name": "aiosql", "first_upload_utc": "2018-12-01T00:33:56", "status": "dated", "source": "seed_cache"}
 {"name": "aiosqlite", "first_upload_utc": "2017-05-25T03:58:24", "status": "dated", "source": "seed_cache"}
 {"name": "aiossh", "first_upload_utc": "2026-07-08T18:32:07", "status": "dated", "source": "seed_cache"}
-{"name": "aiossl", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiossl", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiostatsd", "first_upload_utc": "2016-06-12T18:50:33", "status": "dated", "attempts": [200]}
 {"name": "aiostream", "first_upload_utc": "2016-11-02T17:31:52", "status": "dated", "source": "seed_cache"}
 {"name": "aiosupervisely", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -215,7 +215,7 @@
 {"name": "aiosyringe", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiotc", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiotk", "first_upload_utc": "2016-07-29T00:52:25", "status": "dated", "source": "seed_cache"}
-{"name": "aiotracing", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiotracing", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aiotrader", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiotrix", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "aiotruecr", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -227,75 +227,75 @@
 {"name": "aiowmi", "first_upload_utc": "2022-02-17T09:24:14", "status": "dated", "source": "seed_cache"}
 {"name": "aioworkers", "first_upload_utc": "2016-11-13T00:05:44", "status": "dated", "source": "seed_cache"}
 {"name": "aiowrappers", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "aiowss", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aiowss", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aioxmpp", "first_upload_utc": "2015-10-29T11:57:32", "status": "dated", "source": "seed_cache"}
 {"name": "aiozmq", "first_upload_utc": "2014-03-29T20:28:24", "status": "dated", "source": "seed_cache"}
 {"name": "air", "first_upload_utc": "2024-06-11T15:28:03", "status": "dated", "attempts": [200]}
 {"name": "airbrake", "first_upload_utc": "2014-02-20T20:09:56", "status": "dated", "attempts": [200]}
 {"name": "airbyte", "first_upload_utc": "2024-02-17T03:07:16", "status": "dated", "source": "seed_cache"}
 {"name": "airbyte-cdk", "first_upload_utc": "2021-05-09T01:19:37", "status": "dated", "attempts": [200]}
-{"name": "airbyte-cdk-python", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-client", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-config", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-config-manager", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-config-models", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-connector", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-connector-base", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-connector-cli", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-connector-model", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airbyte-cdk-python", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-client", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-config", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-config-manager", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-config-models", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-connector", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-connector-base", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-connector-cli", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-connector-model", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "airbyte-connector-models", "first_upload_utc": "2026-01-13T06:58:45", "status": "dated", "attempts": [200]}
-{"name": "airbyte-connector-utils", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-base", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-model", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-mysql", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-postgres", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-postgresql", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-snowflake", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-sqlite", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-ssh", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-destination-utils", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-base", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-api", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-bigquery", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-csv", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-dbt", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-excel", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-google-ads", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-google-analytics", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-google-sheets", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-jira", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-integrations-source-mongodb", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-logger", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-protocol", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-pydantic", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-source", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-source-base", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-source-model", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airbyte-source-utils", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airbyte-connector-utils", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-base", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-model", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-mysql", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-postgres", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-postgresql", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-snowflake", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-sqlite", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-ssh", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-destination-utils", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-base", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-api", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-bigquery", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-csv", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-dbt", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-excel", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-google-ads", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-google-analytics", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-google-sheets", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-jira", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-integrations-source-mongodb", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-logger", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-protocol", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-pydantic", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-source", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-source-base", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-source-model", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airbyte-source-utils", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "airflow", "first_upload_utc": "2018-11-27T10:15:49", "status": "dated", "source": "seed_cache"}
-{"name": "airflow-api", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airflow-api", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "airflow-docker", "first_upload_utc": "2019-02-25T00:44:32", "status": "dated", "attempts": [200]}
 {"name": "airflow-druid", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "airflow-provider-apache-livy", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "airflow-providers-amazon", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airflow-providers-amazon", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "airflow-providers-apache-druid", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "airflow-providers-apache-livy", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "airflow-providers-azure", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airflow-providers-docker", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airflow-providers-google", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airflow-webserver", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airflow-providers-azure", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airflow-providers-docker", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airflow-providers-google", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airflow-webserver", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "airplay", "first_upload_utc": "2017-12-18T22:51:23", "status": "dated", "attempts": [200]}
 {"name": "airspeed", "first_upload_utc": "2009-11-03T09:04:12", "status": "dated", "attempts": [200]}
-{"name": "airspeed-python", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airspeed-templer", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "airspeed-velocity", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airspeed-python", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airspeed-templer", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "airspeed-velocity", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "airtable", "first_upload_utc": "2016-09-08T16:04:10", "status": "dated", "source": "seed_cache"}
 {"name": "airtable-python-wrapper", "first_upload_utc": "2017-08-06T02:21:47", "status": "dated", "source": "seed_cache"}
-{"name": "airtv", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "airtv", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "akamai", "first_upload_utc": "2023-08-23T19:56:25", "status": "dated", "attempts": [200]}
-{"name": "akamai-ns-api", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "akamai-ns-api", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "akeyless", "first_upload_utc": "2018-10-19T09:15:47", "status": "dated", "source": "seed_cache"}
 {"name": "akka", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "alabaster", "first_upload_utc": "2014-01-10T22:47:41", "status": "dated", "source": "seed_cache"}
@@ -303,28 +303,28 @@
 {"name": "ale", "first_upload_utc": "2019-03-20T15:54:25", "status": "dated", "source": "seed_cache"}
 {"name": "ale-py", "first_upload_utc": "2020-02-07T22:34:24", "status": "dated", "source": "seed_cache"}
 {"name": "aleatoric", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "alecthomas", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "alecthomas", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "alembic", "first_upload_utc": "2011-11-30T21:11:24", "status": "dated", "source": "seed_cache"}
 {"name": "alembic-autogenerate", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "alembic-enum", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "alembic-migrations", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "aleph-alpha", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aleph-alpha-api", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "aleph-alpha-api-client", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "alephalpha", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aleph-alpha", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aleph-alpha-api", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "aleph-alpha-api-client", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "alephalpha", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "algoliasearch", "first_upload_utc": "2013-10-09T13:36:17", "status": "dated", "source": "seed_cache"}
 {"name": "algoliasearch-client", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "algoliasearch-django", "first_upload_utc": "2015-06-19T11:10:06", "status": "dated", "source": "seed_cache"}
 {"name": "alias", "first_upload_utc": "2020-04-27T23:29:59", "status": "dated", "source": "seed_cache"}
-{"name": "alibaba-odps", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "alibaba-odps", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "alibi", "first_upload_utc": "2019-05-03T10:56:48", "status": "dated", "source": "seed_cache"}
 {"name": "alive-progress", "first_upload_utc": "2019-08-05T06:01:35", "status": "dated", "source": "seed_cache"}
-{"name": "aliyun-odps", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "aliyun-odps", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "aliyun-python-sdk-core", "first_upload_utc": "2016-04-07T05:25:26", "status": "dated", "attempts": [200]}
-{"name": "all", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "allauth", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "all", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "allauth", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "allennlp", "first_upload_utc": "2017-09-01T20:27:36", "status": "dated", "source": "seed_cache"}
-{"name": "allmydata", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "allmydata", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "allure", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "allure-behave", "first_upload_utc": "2017-06-27T13:50:42", "status": "dated", "source": "seed_cache"}
 {"name": "allure-behaved", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -347,13 +347,13 @@
 {"name": "alpaca-trade-api", "first_upload_utc": "2018-05-04T07:00:26", "status": "dated", "source": "seed_cache"}
 {"name": "alpha-vantage", "first_upload_utc": "2017-05-21T09:41:28", "status": "dated", "source": "seed_cache"}
 {"name": "alphalens", "first_upload_utc": "2017-03-13T22:26:29", "status": "dated", "source": "seed_cache"}
-{"name": "alphalpha", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "alphalpha", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "altair", "first_upload_utc": "2016-07-09T20:47:30", "status": "dated", "source": "seed_cache"}
-{"name": "alternatively", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "alternatively", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "amazon-ion", "first_upload_utc": "2016-10-20T19:17:31", "status": "dated", "attempts": [200]}
-{"name": "amazon-ion-python-api", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "amazon-ion-python-client", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "amazon-ion-sdk", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "amazon-ion-python-api", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "amazon-ion-python-client", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "amazon-ion-sdk", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "ament", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "ament-cmake-lint", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "ament-cmake-python", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -365,10 +365,10 @@
 {"name": "ament-pep257", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "ament-python", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "ament-uncrustify", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "amf3", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "amf3-codec", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "amf3", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "amf3-codec", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "amfpy", "first_upload_utc": "2016-02-29T13:39:01", "status": "dated", "attempts": [200]}
-{"name": "amfserializer", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "amfserializer", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "ammonia", "first_upload_utc": "2019-07-01T14:13:13", "status": "dated", "source": "seed_cache"}
 {"name": "amqp", "first_upload_utc": "2012-07-24T16:34:31", "status": "dated", "source": "seed_cache"}
 {"name": "amqp-parser", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -406,40 +406,40 @@
 {"name": "anycache", "first_upload_utc": "2017-11-18T19:37:13", "status": "dated", "source": "seed_cache"}
 {"name": "anyconfig", "first_upload_utc": "2015-10-20T14:01:13", "status": "dated", "attempts": [200]}
 {"name": "anyio", "first_upload_utc": "2018-10-12T10:06:03", "status": "dated", "source": "seed_cache"}
-{"name": "anyio-rpc", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "anyio-waiters", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "anyio-rpc", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "anyio-waiters", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "anytree", "first_upload_utc": "2016-09-02T11:42:20", "status": "dated", "source": "seed_cache"}
 {"name": "apacha-httpclient", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apacha-httpserver", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "apache-air", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-air", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow", "first_upload_utc": "2017-05-09T19:53:10", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-backport-providers-http", "first_upload_utc": "2020-05-17T22:36:53", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-druid", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-airflow-providers-amazon", "first_upload_utc": "2020-11-09T22:43:30", "status": "dated", "source": "seed_cache"}
-{"name": "apache-airflow-providers-amazon-aws", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-amazon-aws", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-amazon-cloudformation", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-airflow-providers-amazon-iam", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-airflow-providers-amazon-s3", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-airflow-providers-amazon-ssm", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-airflow-providers-apache-airflow", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-apache-airflow", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-apache-beam", "first_upload_utc": "2021-02-04T12:42:05", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-apache-cassandra", "first_upload_utc": "2020-11-09T22:43:33", "status": "dated", "attempts": [200]}
-{"name": "apache-airflow-providers-apache-dagster", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-apache-dagster", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-apache-druid", "first_upload_utc": "2020-11-09T22:43:36", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-providers-apache-hive", "first_upload_utc": "2020-11-09T22:43:42", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-providers-apache-iceberg", "first_upload_utc": "2024-05-12T19:01:36", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-apache-kafka", "first_upload_utc": "2023-04-21T19:59:11", "status": "dated", "source": "seed_cache"}
-{"name": "apache-airflow-providers-apache-kafka-container", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-apache-kafka-container", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-apache-kylin", "first_upload_utc": "2020-11-09T22:43:45", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-providers-apache-livy", "first_upload_utc": "2020-11-09T22:43:47", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-apache-pinot", "first_upload_utc": "2020-11-09T22:43:53", "status": "dated", "source": "seed_cache"}
-{"name": "apache-airflow-providers-apache-pulsar", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-apache-pulsar", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-apache-spark", "first_upload_utc": "2020-11-09T22:43:56", "status": "dated", "source": "seed_cache"}
-{"name": "apache-airflow-providers-apache-vertica", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-apache-vertica", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-apache-zeppelin", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-airflow-providers-azure", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "apache-airflow-providers-azure-containerregistry", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-azure", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-airflow-providers-azure-containerregistry", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-cloud", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-airflow-providers-cncf-kubernetes", "first_upload_utc": "2020-11-09T22:44:08", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-common", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -451,13 +451,13 @@
 {"name": "apache-airflow-providers-github", "first_upload_utc": "2022-02-05T20:38:26", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-google", "first_upload_utc": "2020-11-09T22:44:37", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-providers-http", "first_upload_utc": "2020-11-09T22:44:46", "status": "dated", "source": "seed_cache"}
-{"name": "apache-airflow-providers-microsoft", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-microsoft", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-microsoft-azure", "first_upload_utc": "2020-11-09T22:45:00", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-microsoft-mssql", "first_upload_utc": "2020-11-09T22:45:03", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-microsoft-teams", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-airflow-providers-mysql", "first_upload_utc": "2020-11-09T22:45:12", "status": "dated", "source": "seed_cache"}
 {"name": "apache-airflow-providers-postgres", "first_upload_utc": "2020-11-09T22:45:34", "status": "dated", "source": "seed_cache"}
-{"name": "apache-airflow-providers-postgresql", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-airflow-providers-postgresql", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-airflow-providers-presto", "first_upload_utc": "2020-11-09T22:45:37", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-qubole", "first_upload_utc": "2020-11-09T22:45:39", "status": "dated", "attempts": [200]}
 {"name": "apache-airflow-providers-redis", "first_upload_utc": "2020-11-09T22:45:42", "status": "dated", "source": "seed_cache"}
@@ -471,35 +471,35 @@
 {"name": "apache-airflow-providers-trino", "first_upload_utc": "2021-04-06T23:56:57", "status": "dated", "source": "seed_cache"}
 {"name": "apache-arrow", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-atlas", "first_upload_utc": "2020-12-04T07:16:20", "status": "dated", "attempts": [200]}
-{"name": "apache-atlas-oss", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "apache-atlas-python-client", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-atlas-oss", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-atlas-python-client", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-avro", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-beam", "first_upload_utc": "2017-03-14T22:00:08", "status": "dated", "source": "seed_cache"}
 {"name": "apache-buildr", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-cloud-sdk", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-commons", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-datasources", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-datasources", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-druid", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-druid-python", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-flink", "first_upload_utc": "2020-02-11T11:46:32", "status": "dated", "source": "seed_cache"}
-{"name": "apache-hadoop", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-hadoop", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-helix", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-hive", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "apache-hive-beeswax", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
-{"name": "apache-hive-jdbc", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "apache-hive-python", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "apache-hive", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-hive-beeswax", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-hive-jdbc", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-hive-python", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-ignite", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-ivy", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-kafka", "first_upload_utc": null, "status": "not_found", "attempts": [503, 503, 404]}
-{"name": "apache-kafka-python", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "apache-kylin", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "apache-kafka-python", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apache-kylin", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-libcloud", "first_upload_utc": "2010-05-11T22:39:47", "status": "dated", "attempts": [200]}
 {"name": "apache-livy", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-pig", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "apache-pig", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-pinot", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-pulsar", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "apache-pulsar", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-spark", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "apache-storm", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "apache-storm", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apache-superset", "first_upload_utc": "2019-09-18T06:23:04", "status": "dated", "source": "seed_cache"}
 {"name": "apache-superset-db-extensions", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apache-superset-druid", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -508,7 +508,7 @@
 {"name": "ape", "first_upload_utc": "2013-02-05T01:06:39", "status": "dated", "attempts": [200]}
 {"name": "apertium", "first_upload_utc": "2019-09-01T17:58:40", "status": "dated", "source": "seed_cache"}
 {"name": "apex", "first_upload_utc": "2013-02-15T03:02:46", "status": "dated", "source": "seed_cache"}
-{"name": "api-obj", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "api-obj", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "apiclient", "first_upload_utc": "2011-10-04T03:13:49", "status": "dated", "source": "seed_cache"}
 {"name": "apicurio-registry", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "apidef", "first_upload_utc": null, "status": "not_found", "attempts": [503, 503, 404]}
@@ -522,8 +522,8 @@
 {"name": "appium", "first_upload_utc": null, "status": "not_found", "attempts": [503, 503, 404]}
 {"name": "appium-client", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "appkit", "first_upload_utc": "2013-01-03T18:50:45", "status": "dated", "source": "seed_cache"}
-{"name": "apple", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "apple-automator", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "apple", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "apple-automator", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "applescript", "first_upload_utc": "2018-06-26T03:06:29", "status": "dated", "source": "seed_cache"}
 {"name": "applescript-sandbox", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "applesdkauth", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -549,23 +549,23 @@
 {"name": "arcade", "first_upload_utc": "2016-03-26T02:22:57", "status": "dated", "source": "seed_cache"}
 {"name": "arcgis", "first_upload_utc": "2018-01-24T00:22:04", "status": "dated", "attempts": [200]}
 {"name": "archive", "first_upload_utc": "2012-02-02T22:00:46", "status": "dated", "attempts": [200]}
-{"name": "archive-provider", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "arcpy", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "archive-provider", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "arcpy", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "arff", "first_upload_utc": "2011-12-02T18:25:50", "status": "dated", "source": "seed_cache"}
 {"name": "argcomplete", "first_upload_utc": "2012-11-20T10:25:27", "status": "dated", "source": "seed_cache"}
-{"name": "argdigger", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "argdigger", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "argdoc", "first_upload_utc": "2018-11-06T00:33:58", "status": "dated", "source": "seed_cache"}
-{"name": "argdoubt", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "argdumper", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "argdoubt", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "argdumper", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "argh", "first_upload_utc": "2010-11-12T22:41:22", "status": "dated", "source": "seed_cache"}
 {"name": "argo", "first_upload_utc": null, "status": "no_release_date", "source": "seed_cache"}
 {"name": "argocd", "first_upload_utc": "2022-10-10T18:42:57", "status": "dated", "source": "seed_cache"}
 {"name": "argon2", "first_upload_utc": "2015-12-06T09:14:18", "status": "dated", "source": "seed_cache"}
 {"name": "argon2-cffi", "first_upload_utc": "2015-12-10T13:01:08", "status": "dated", "source": "seed_cache"}
-{"name": "argon2-cph", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
-{"name": "argpcomplete", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "argon2-cph", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
+{"name": "argpcomplete", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "argpiped", "first_upload_utc": null, "status": "not_found", "attempts": [503, 503, 404]}
-{"name": "argtrace", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "argtrace", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "ariadne", "first_upload_utc": "2018-08-06T17:05:36", "status": "dated", "source": "seed_cache"}
 {"name": "ariadne-graphql", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "arpy", "first_upload_utc": "2010-08-05T04:24:54", "status": "dated", "source": "seed_cache"}
@@ -586,7 +586,7 @@
 {"name": "ase", "first_upload_utc": "2015-05-28T14:04:23", "status": "dated", "source": "seed_cache"}
 {"name": "asecrypto", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "asecuritylib", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "asgi-websocket", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "asgi-websocket", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "asgiref", "first_upload_utc": "2016-01-03T06:46:35", "status": "dated", "source": "seed_cache"}
 {"name": "asn1", "first_upload_utc": "2016-12-16T23:14:27", "status": "dated", "source": "seed_cache"}
 {"name": "asn1-ber", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -608,12 +608,12 @@
 {"name": "astral", "first_upload_utc": "2009-11-26T10:42:14", "status": "dated", "attempts": [200]}
 {"name": "astroid", "first_upload_utc": "2013-07-30T13:44:43", "status": "dated", "source": "seed_cache"}
 {"name": "astroid-linting", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "astronompy", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "astronompy", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "astronomy", "first_upload_utc": "2018-12-20T18:36:54", "status": "dated", "attempts": [200]}
 {"name": "astropy", "first_upload_utc": "2013-01-26T21:09:13", "status": "dated", "source": "seed_cache"}
 {"name": "astropy-healpix", "first_upload_utc": "2017-10-01T09:14:41", "status": "dated", "source": "seed_cache"}
 {"name": "astropy-helpers", "first_upload_utc": "2014-06-10T19:14:31", "status": "dated", "source": "seed_cache"}
-{"name": "astropy-io", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "astropy-io", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "astropy-nddata", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "astropy-units", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "astropy-wcs", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -623,7 +623,7 @@
 {"name": "astview", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "asv", "first_upload_utc": "2015-05-01T18:14:44", "status": "dated", "source": "seed_cache"}
 {"name": "async", "first_upload_utc": "2010-07-08T11:19:25", "status": "dated", "source": "seed_cache"}
-{"name": "async-authlib", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "async-authlib", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "async-click", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "async-clickhouse", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "async-comet", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -639,9 +639,9 @@
 {"name": "async-oauthlib", "first_upload_utc": "2020-09-30T18:29:57", "status": "dated", "attempts": [200]}
 {"name": "async-praw", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "async-sqlalchemy", "first_upload_utc": "2019-04-04T08:59:13", "status": "dated", "attempts": [200]}
-{"name": "async-statsd", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "async-statsd", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "async-std", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
-{"name": "async-timeclock", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "async-timeclock", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "async-timeit", "first_upload_utc": null, "status": "not_found", "attempts": ["network_error", 404]}
 {"name": "async-timeout", "first_upload_utc": "2016-09-09T06:01:28", "status": "dated", "source": "seed_cache"}
 {"name": "asyncblinka", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -654,7 +654,7 @@
 {"name": "asyncio-mongo", "first_upload_utc": "2014-02-15T20:36:33", "status": "dated", "source": "seed_cache"}
 {"name": "asyncio-multiprocess", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "asyncio-multiprocessing", "first_upload_utc": null, "status": "not_found", "attempts": [503, "network_error", 404]}
-{"name": "asyncio-mysql", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, "network_error"]}
+{"name": "asyncio-mysql", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "asyncio-redis", "first_upload_utc": "2013-11-21T12:06:10", "status": "dated", "source": "seed_cache"}
 {"name": "asyncio-semaphore", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "asyncio-sqlite", "first_upload_utc": null, "status": "not_found", "attempts": [503, "network_error", 404]}
@@ -753,7 +753,7 @@
 {"name": "autodoc", "first_upload_utc": "2014-01-26T03:25:46", "status": "dated", "source": "seed_cache"}
 {"name": "autofix", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "autofixr", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
-{"name": "autofixture", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "autofixture", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "autoflake", "first_upload_utc": "2012-12-27T03:41:29", "status": "dated", "source": "seed_cache"}
 {"name": "autoflow", "first_upload_utc": "2018-03-07T16:09:23", "status": "dated", "source": "seed_cache"}
 {"name": "autofluent", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
@@ -915,7 +915,7 @@
 {"name": "awscdk-aws-secretsmanager", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "awscdk-core", "first_upload_utc": null, "status": "not_found", "attempts": [503, 404]}
 {"name": "awscdk-lambda", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
-{"name": "awscdk-stacks", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "awscdk-stacks", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "awscdktargetsaws-lambda", "first_upload_utc": null, "status": "not_found", "source": "seed_cache"}
 {"name": "awscli", "first_upload_utc": "2012-12-21T18:16:31", "status": "dated", "source": "seed_cache"}
 {"name": "awscli-plugin-endpoint", "first_upload_utc": "2017-01-02T22:39:36", "status": "dated", "source": "seed_cache"}
@@ -1066,7 +1066,7 @@
 {"name": "azure-mgmt-appcontainer", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "azure-mgmt-appcontainergroups", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "azure-mgmt-appcontainers", "first_upload_utc": "2022-05-07T03:19:44", "status": "dated", "attempts": [200]}
-{"name": "azure-mgmt-appcontainerservice", "first_upload_utc": null, "status": "query_unknown", "attempts": [503, 503, 503]}
+{"name": "azure-mgmt-appcontainerservice", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "azure-mgmt-appservice", "first_upload_utc": null, "status": "not_found", "attempts": [404]}
 {"name": "azure-mgmt-authorization", "first_upload_utc": "2016-02-19T02:50:01", "status": "dated", "source": "seed_cache"}
 {"name": "azure-mgmt-automation", "first_upload_utc": "2019-04-17T00:16:32", "status": "dated", "source": "seed_cache"}

@@ -59,3 +59,9 @@
 
 - 实验1主表同配置12/12个HumanEval单元完成、逐题判分及参数核验通过；配对统计与表格已写入独立设计结果文档。与历史BOUND同fold/run的pass@1比较，Llama-3.1的All-module条件下降1.69百分点，95%题目bootstrap区间[−3.17,−0.24]；DeepSeekCoder和Qwen3区间跨0。
 - 实验2的风险项结论保持审慎：历史12折中9折adapter完全相同，真正改变模块的DeepSeekCoder B/D共同随机数重评未发现Full风险稳定优势。实验3的valid-only负对照显示热点不具备包幻觉专属性。实验4的完整序列概率在原RQ2 unseen候选上显示正向valid/hallucinated margin变化，历史包日期不确定项另列敏感性分析。四项的脚本、逐条结果、设计结果和过程记录均在E5目录内；历史只读输入路径已记录。
+
+## 2026-09-25：新增05 DINM层定位+BOUND编辑
+
+- 用户新增05实验，并明确仅沿用RQ3设置、暂不测HumanEval；模型计算可用GPU 1、2、3。
+- 已核验仓库原DINM的12份逐case隐藏状态距离定位报告和原BOUND同折50个编辑case ID一一对应。混合条件取原DINM所选层的去重集合，按原DINM的`mlp.down_proj`映射插入BOUND LoRA；训练损失及超参数由原BOUND配置构建。
+- 新增`script/run_dinm_layer_bound_edit.py`，在GPU 1/2/3分别启动DeepSeekCoder/Qwen3/Llama-3.1四折队列；每折评估原RQ3同一100条unseen prompt×5次生成。结果写入`results/05_dinm_localization_bound_edit/`，未完成单元不计入结论。

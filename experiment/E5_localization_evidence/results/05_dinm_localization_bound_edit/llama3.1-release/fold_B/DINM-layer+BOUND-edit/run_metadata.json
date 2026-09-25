@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "model": "llama3.1-release",
+  "fold": "B",
+  "gpu": "3",
+  "started_at": 1790337173.0810995,
+  "ended_at": 1790338017.5707805,
+  "dinm_historical_localization_seconds": 0.89,
+  "edit_seconds": 53.26004219055176,
+  "eval_seconds": 791.1876683235168,
+  "total_new_run_seconds": 844.4896836280823,
+  "peak_edit_reserved_mib": 16898.0,
+  "n_edited_modules": 1,
+  "n_trainable_adapter_parameters": 147456,
+  "adapter_bytes": 296837,
+  "adapter_sha256": "92a98dd85124e01c60c29b152a960a0e30cdaa36b9b7ff2a905da6d75329cb73",
+  "dinm_report_sha256": "d7c540b42be6176631e0698b377a88d5f2167e6b6003196ca16f3a7c8e006167",
+  "edit_cases_sha256": "bf8d72147786ac85b0d19c610039fea2c94f0a697a5fbaa329f3df95d0f943fd"
+}

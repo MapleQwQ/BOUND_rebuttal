@@ -38,6 +38,7 @@ def main() -> None:
         "500条prompt与原1000条在ID和规范化文本上均无重叠。每模型四折，每prompt五次生成；原Base回答文本复用。Base与BOUND全部按replication package cutoff统一标注。表内先按prompt求平均，再按四折及模型等权平均；95% CI为2000次prompt cluster bootstrap。",
         table(500),
         table(1500),
+        "合并1500条后，三模型等权Sample-HR下降2.19个百分点，Package-HR下降1.67个百分点；Valid-Rate也下降2.51个百分点。DeepSeekCoder的Sample-HR差值为−0.17个百分点，95%区间跨0；Qwen3和Llama-3.1的下降更明显。因此不能据总体平均声称三个模型均稳定改善，也不能把较低的幻觉率直接等同于更好的任务适用性。新增500条是在已知原1000条结果之后补充的，不能称为事前独立预注册验证。",
         f"PyPI日期缓存涵盖{audit['candidate_names']}个规范化第三方候选，状态分布为{audit['statuses']}；无未知查询。补充样本逐条结果见`results/sample500/merged_500/`，合并结果见`results/sample500/merged_1500/`。原1000条校正结果见`results/cutoff_corrected_1000/`。",
     ])
     existing = DOC.read_text()

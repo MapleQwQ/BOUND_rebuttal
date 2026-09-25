@@ -1,0 +1,26 @@
+{
+  "deepseekcoder": {
+    "original_sample_hr": 0.1030666666666667,
+    "relabeled_sample_hr": 0.10426666666666667,
+    "original_package_hr": 0.05829388115672373,
+    "relabeled_package_hr": 0.058660450673588334,
+    "original_valid_rate": 0.8241333333333334,
+    "relabeled_valid_rate": 0.8242666666666666
+  },
+  "qwen3": {
+    "original_sample_hr": 0.06306666666666673,
+    "relabeled_sample_hr": 0.06240000000000006,
+    "original_package_hr": 0.032160671843404376,
+    "relabeled_package_hr": 0.031488449621182156,
+    "original_valid_rate": 0.7066666666666666,
+    "relabeled_valid_rate": 0.7069333333333332
+  },
+  "llama31": {
+    "original_sample_hr": 0.17973333333333288,
+    "relabeled_sample_hr": 0.18013333333333287,
+    "original_package_hr": 0.09343642600797769,
+    "relabeled_package_hr": 0.0936752538468055,
+    "original_valid_rate": 0.8446666666666653,
+    "relabeled_valid_rate": 0.8446666666666653
+  }
+}
