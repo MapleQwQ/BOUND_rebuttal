@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "n_runs_per_model": 4,
+  "n_samples_per_task": 10,
+  "bootstrap_seed": 20260924,
+  "bootstrap_resamples": 10000,
+  "bootstrap_unit": "HumanEval task; fold and run fixed",
+  "models": {
+    "deepseekcoder": {
+      "pass@1": {
+        "bound_four_fold_macro": 0.6757621951219512,
+        "all_module_four_fold_macro": 0.667530487804878,
+        "delta_all_minus_bound": -0.008231707317073171,
+        "ci95_task_bootstrap": [
+          -0.021189024390243904,
+          0.0044207317073170745
+        ]
+      },
+      "pass@10": {
+        "bound_four_fold_macro": 0.8338414634146342,
+        "all_module_four_fold_macro": 0.8155487804878049,
+        "delta_all_minus_bound": -0.018292682926829267,
+        "ci95_task_bootstrap": [
+          -0.039634146341463415,
+          0.003048780487804878
+        ]
+      }
+    },
+    "qwen3-release": {
+      "pass@1": {
+        "bound_four_fold_macro": 0.21935975609756095,
+        "all_module_four_fold_macro": 0.21295731707317075,
+        "delta_all_minus_bound": -0.006402439024390244,
+        "ci95_task_bootstrap": [
+          -0.024237804878048778,
+          0.009603658536585366
+        ]
+      },
+      "pass@10": {
+        "bound_four_fold_macro": 0.5091463414634146,
+        "all_module_four_fold_macro": 0.4740853658536585,
+        "delta_all_minus_bound": -0.0350609756097561,
+        "ci95_task_bootstrap": [
+          -0.07164634146341463,
+          0.0
+        ]
+      }
+    },
+    "llama3.1-release": {
+      "pass@1": {
+        "bound_four_fold_macro": 0.4211890243902439,
+        "all_module_four_fold_macro": 0.4042682926829269,
+        "delta_all_minus_bound": -0.016920731707317074,
+        "ci95_task_bootstrap": [
+          -0.03170731707317073,
+          -0.002439024390243905
+        ]
+      },
+      "pass@10": {
+        "bound_four_fold_macro": 0.6966463414634146,
+        "all_module_four_fold_macro": 0.6844512195121951,
+        "delta_all_minus_bound": -0.012195121951219513,
+        "ci95_task_bootstrap": [
+          -0.0350609756097561,
+          0.009146341463414634
+        ]
+      }
+    }
+  }
+}

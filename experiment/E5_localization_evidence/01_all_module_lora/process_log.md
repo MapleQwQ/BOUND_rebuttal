@@ -46,3 +46,9 @@
 - 主表选中run：DeepSeekCoder A1/B1/C2/D2，Qwen3 A5/B4/C4/D1，Llama-3.1 A1/B2/C2/D4。历史summary确认各run的seed=42+run、`max_new_tokens=512`、`temperature=0.2`、`top_p=0.95`，Qwen3主表没有chat template/thinking配置。用户同时将允许的GPU扩展为1、2、3。
 - 新增`../script/run_paper_table_humaneval.py`和`../script/analyze_paper_table_humaneval.py`，按上述选中run生成并逐题对照历史BOUND。已完成的DeepSeekCoder A1（164题×10样本）从误设队列目录复制到新结果目录，并核对summary及1640条判分；DeepSeekCoder A2中断片段、Qwen3 thinking A1中断片段仅保留在旧目录作过程证据。
 - 启动三个新队列：DeepSeekCoder GPU 1、Qwen3普通生成 GPU 3、Llama-3.1 GPU 2；输出均在`../results/01_all_module_lora/humaneval_paper_table/`。最终需12/12个summary齐全、运行`analyze_paper_table_humaneval.py`并把主表对应pass@1/pass@10及区间写入设计结果文档。
+
+## 2026-09-25：论文主表同配置HumanEval完成
+
+- 三个队列正常退出，12/12个指定fold/run的summary齐全；每单元核对164题、1640生成、1640判分、seed、512新token及未启用thinking/chat template。DeepSeekCoder A1是前一队列中已完成且同配置的运行，复制后同样通过完整性审计；其余11格由纠正后的队列生成。
+- 执行`../script/analyze_paper_table_humaneval.py`，逐题与历史BOUND同fold/run比较，10,000次题目配对bootstrap。得到DeepSeekCoder/Qwen3/Llama-3.1的All-module−BOUND pass@1分别为−0.82/−0.64/−1.69百分点；仅Llama的95%区间完全低于0。pass@10及各区间写入`design_and_results.md`，完整原值保存在`../results/01_all_module_lora/humaneval_paper_table/`。
+- 历史BOUND四折均值与论文HumanEval表的Edited栏一致；历史运行与新增运行不在同GPU/时间，未把推理wall time用于公平速度比较。实验1的RQ3、成本、adapter大小、HumanEval均已有可复算结果。

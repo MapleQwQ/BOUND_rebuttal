@@ -46,6 +46,20 @@ All-module在三模型的Valid-Rate均降低；DeepSeekCoder的幻觉率亦显�
 
 同批新增HumanEval运行的All-module生成耗时均值分别为DeepSeekCoder **17.72秒/题**、Qwen3 **23.56秒/题**、Llama-3.1 **18.39秒/题**（各四折平均，完整加载/生成/判分时间见逐折summary）。它们是实际测得的绝对运行成本；历史BOUND推理来自其他运行，不能据此作同GPU吞吐比值。
 
+## 论文主表同配置HumanEval对照：164题×10样本×四折
+
+已按论文主表的四折选定run完成12/12个All-module adapter评估，每折164题×10个completion，使用相同run编号/seed的历史BOUND作为对照。主表选定run来自`E0_version_audit/results/paper_cell_provenance.csv`；生成配置均为`temperature=0.2`、`top_p=0.95`、`max_new_tokens=512`，Qwen3未启用thinking或chat template。每折的`summary.json`、1640条completion及1640条判分已核对，逐折数值见`../results/01_all_module_lora/humaneval_paper_table/per_run_comparison.csv`。下表每模型四折等权，差值为All-module−BOUND，95% CI对164个题目成组配对bootstrap 10,000次，折和run固定。
+
+| 模型 | BOUND pass@1 | All-module pass@1 | Δpass@1 [95% CI] | BOUND pass@10 | All-module pass@10 | Δpass@10 [95% CI] |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| DeepSeekCoder | 67.58% | 66.75% | −0.82 pp [−2.12, +0.44] | 83.38% | 81.55% | −1.83 pp [−3.96, +0.30] |
+| Qwen3 | 21.94% | 21.30% | −0.64 pp [−2.42, +0.96] | 50.91% | 47.41% | −3.51 pp [−7.16, 0.00] |
+| Llama-3.1 | 42.12% | 40.43% | −1.69 pp [−3.17, −0.24] | 69.66% | 68.45% | −1.22 pp [−3.51, +0.91] |
+
+历史BOUND四折均值与论文主表的Edited值在两位百分数的显示精度内一致。All-module的六个差值均为负；其中Llama-3.1的pass@1区间完全低于0，其他五个区间包含0或触及0。Qwen3 pass@10的上界为0.00，按本次离散bootstrap结果不应夸大为稳健显著下降。此实验支持All-module显著扩大adapter并增加编辑成本，且在这些HumanEval设置下没有通用代码准确率优势；不能声称三个模型的HumanEval都显著受损。
+
+该比较配对的是同一HumanEval题目、编辑fold及run编号/seed；随机采样产生的completion本身并非一一配对。历史BOUND推理发生在不同GPU和时间，不用逐run wall time估计推理速度差。完整重算脚本是`../script/analyze_paper_table_humaneval.py`，结果摘要是`../results/01_all_module_lora/humaneval_paper_table/comparison_summary.json`。
+
 ## 同GPU四折成本重测
 
 `../script/benchmark_edit_cost.py`在GPU 2、3上分别以独立进程重测三模型×四折×两条件，使用相同编辑case及源配置。BOUND重新定位再训练，All-module直接对七类投影的全部实际模块训练；每单元保存adapter、源输入SHA-256、wall time和CUDA峰值reserved memory。`../results/01_all_module_lora/cost_rebench/per_fold.csv`保留24格原值，`summary.json`为四折均值。复算器确认每折两条件编辑case/源配置哈希一致、BOUND选中模块与原实验一致。
@@ -68,4 +82,4 @@ All-module在三模型的Valid-Rate均降低；DeepSeekCoder的幻觉率亦显�
 ## 输出与状态
 
 - 已有：`../results/01_all_module_lora/existing_runs.csv`，由`../script/reanalyse_existing.py`只读生成。
-- 已有：12折单样本HumanEval逐题与汇总、prompt配对RQ3差值、历史及同GPU四折成本重测、可精确复核的参数/adapter大小。论文主表对应的四折×10样本HumanEval正在GPU 1、2、3运行，结果写入`../results/01_all_module_lora/humaneval_paper_table/`。先前误按四折×五次且Qwen3 thinking启动的队列已停止，其部分结果保留在`humaneval_paper_protocol/`，不进入主表比较。GPU 2的一题smoke仅验证流程，不进入上表。
+- 已完成：12折单样本HumanEval、论文主表对应的12折×10样本HumanEval、prompt配对RQ3差值、24格同GPU成本重测、参数与adapter大小审计。先前误按四折×五次且Qwen3 thinking启动的队列已停止，其部分结果保留在`humaneval_paper_protocol/`，不进入主表比较。GPU 2的一题smoke仅验证流程，不进入上表。

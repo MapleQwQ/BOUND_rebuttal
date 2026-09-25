@@ -16,7 +16,7 @@
 - 按PEP 503式大小写/`-_.`归一化去重；保守地排除**四个edit folds任一折**的`valid_reference`或`hallucinated`中出现的包名，并核对unseen问题文本不在编辑case中。候选集合不因模型评分结果而改变。
 - `../results/04_sequence_margin/candidate_manifest_preliminary.jsonl`直接沿用原RQ2的cutoff-aware `valid`/`hallucinated`标签，作为主分析候选集；这里的“preliminary”是文件早期命名。另有`candidate_manifest_registry_screened.jsonl`：利用2026-09-24 PyPI项目名快照，仅保留当前存在的历史valid名和当前不存在的历史hallucinated名，作为更保守的敏感性分析。当前是否存在仍不能单独证明模型cutoff时的状态，已删除项目也可能造成误判。不能将pip import名与distribution名混淆。
 - 对所有原RQ2主分析候选，使用历史`rq2_pypi_release_cache`、CCFA缓存和E2/E3留存首发时间，按**原RQ2各模型`case.json`中记录的cutoff**再次审计（DeepSeekCoder 2023-11-02、Qwen3 2025-04-29、Llama-3.1 2024-07-23），结果见`candidate_date_audit.jsonl`与`candidate_date_audit_summary.json`。489次valid候选出现均有首发日期且早于相应cutoff；hallucinated候选中17次有首发日期且晚于cutoff，547次当前PyPI索引不存在且无缓存首发日期，27次当前存在但缓存无日期，后27次标签仍不确定。现有缓存不能证明“当前不存在”者从未存在过，故还需注明这一局限。
-- 仅排除编辑包后的双类别prompt数：DeepSeekCoder **53/100**（374对）、Qwen3 **39/100**（658对）、Llama-3.1 **67/100**（714对）。再做当前PyPI索引筛选后依次为**52/100（351对）、35/100（579对）、65/100（671对）**；这仍是候选初稿，不是cutoff核验完成集。选择覆盖率必须和主结果一起报告；另外对全部候选分别报告valid分数变化与hallucinated分数变化，防止只报有pair的子集。
+- 仅排除编辑包后的双类别prompt数：DeepSeekCoder **53/100**（374对）、Qwen3 **39/100**（658对）、Llama-3.1 **67/100**（714对）。再做当前PyPI索引筛选后依次为**52/100（351对）、35/100（579对）、65/100（671对）**；后者作为registry敏感性候选集，不能替代原RQ2的cutoff-aware标签。选择覆盖率必须和主结果一起报告；另外对全部候选分别报告valid分数变化与hallucinated分数变化，防止只报有pair的子集。
 
 ## 模型、比较和统计
 
