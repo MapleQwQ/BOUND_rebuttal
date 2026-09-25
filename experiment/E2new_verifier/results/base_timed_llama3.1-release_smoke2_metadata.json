@@ -1,0 +1,21 @@
+{
+  "model": "llama3.1-release",
+  "gpu_physical": 3,
+  "device_name": "NVIDIA A100-SXM4-80GB",
+  "model_path": "/data0/shuhanliu/models/llama3.1",
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json",
+  "source_sha256": "dd391b545fd0f24cffd2868d5a108911a84257210e2854e4dd58e46f1d608de5",
+  "task_count": 2,
+  "generations_per_task": 5,
+  "sampler": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_new_tokens": 128
+  },
+  "torch_version": "2.9.1+cu128",
+  "started_utc": "2026-09-24T04:57:51.167895+00:00",
+  "timing_scope": "chat template + tokenization + model.generate + decode; synchronized GPU",
+  "warmup": "first prompt, seed 20260924, discarded"
+}

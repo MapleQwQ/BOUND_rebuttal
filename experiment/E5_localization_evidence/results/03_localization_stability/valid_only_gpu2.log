@@ -1,0 +1,11 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.16s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.43s/it]
+{"model": "deepseekcoder", "n_done": 25, "elapsed": 2.125359296798706}
+{"model": "deepseekcoder", "n_done": 50, "elapsed": 7.786022186279297}
+{"model": "deepseekcoder", "n_done": 75, "elapsed": 14.156424522399902}
+{"model": "deepseekcoder", "n_done": 100, "elapsed": 20.304460525512695}
+{"model": "deepseekcoder", "n_done": 125, "elapsed": 25.89854335784912}
+{"model": "deepseekcoder", "n_done": 150, "elapsed": 32.04187321662903}
+{"model": "deepseekcoder", "n_done": 175, "elapsed": 38.47631573677063}
+{"model": "deepseekcoder", "n_done": 200, "elapsed": 44.58091425895691}
+{"status": "complete", "model": "deepseekcoder", "gpu": "2", "n_prompts": 200, "n_prompts_scored": 190, "n_prompts_skipped_no_valid": 10, "n_candidate_modules": 224, "sources": {"A": {"path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/selected_task_recommend_cases.jsonl", "sha256": "a15103c438f76b13d83303b1322c65117fa0afc1f6d8a54ad9e95c29e481f888"}, "B": {"path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/selected_task_recommend_cases.jsonl", "sha256": "ac85c959d3a111ce3efbef3791a5479dd253cdfe359e812f8d59c9a2656ffe50"}, "C": {"path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/selected_task_recommend_cases.jsonl", "sha256": "b94c1db6c7fbd3e7723d0c1156d0f090e316fb653fef9846b3990f6eac570b75"}, "D": {"path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/selected_task_recommend_cases.jsonl", "sha256": "b0bd9c237bda0463e2fd94649c8bb83d70e6b40f675ad84991ab0a06e18dcf3c"}}, "elapsed_seconds": 44.581106424331665, "objective": "LSE(valid first tokens)", "score": "mean(abs(gradient * weight))"}

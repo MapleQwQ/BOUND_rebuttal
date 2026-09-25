@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "model": "qwen3-release",
+  "gpu": "3",
+  "n_prompts": 200,
+  "n_prompts_scored": 163,
+  "n_prompts_skipped_no_valid": 37,
+  "n_candidate_modules": 252,
+  "sources": {
+    "A": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "653ec931e3025aa8918062395d257cd0b373a903ed1339223e04333cef92c075"
+    },
+    "B": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "185c6baf4cfac59550c883babecc5ec33b252d39df4ff7b86695a7cb6949ca6b"
+    },
+    "C": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "16711d82cb7784ed09063ed3185dee92312d2cf78c6d51eaf9b1171ded5762e7"
+    },
+    "D": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "0f480fc1b97c873cc3e3859d3c7b5397ebe5e847773d3c28c292b1520afbea4f"
+    }
+  },
+  "elapsed_seconds": 48.21985149383545,
+  "objective": "LSE(valid first tokens)",
+  "score": "mean(abs(gradient * weight))"
+}

@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "deepseekcoder": {
+      "prompts": 100,
+      "prompts_with_both_classes": 52,
+      "valid_candidates": 142,
+      "hallucinated_candidates": 178,
+      "pairs": 351
+    },
+    "qwen3-release": {
+      "prompts": 100,
+      "prompts_with_both_classes": 35,
+      "valid_candidates": 149,
+      "hallucinated_candidates": 124,
+      "pairs": 579
+    },
+    "llama3.1-release": {
+      "prompts": 100,
+      "prompts_with_both_classes": 65,
+      "valid_candidates": 198,
+      "hallucinated_candidates": 245,
+      "pairs": 671
+    }
+  },
+  "registry_path": "BOUND_rebuttal/experiment/E2new_verifier/results/pypi_index_names.txt",
+  "registry_sha256": "d186c024035286f0120dfc2914326046101a88b6651ae9695b3ef27a0a68f6b1",
+  "rule": "Keep historically valid names present in the 2026-09-24 PyPI index and historically hallucinated names absent from it. Current existence does not establish model-cutoff validity; project deletion is possible."
+}

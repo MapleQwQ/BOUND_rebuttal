@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "llama3.1-release",
+  "fold": "A",
+  "condition": "BOUND",
+  "gpu": "2",
+  "source_yaml_sha256": "d0046dd9691f4b909e090423ddecdd526d238070a3a797fead7fb625667ab3c0",
+  "edit_cases_sha256": "fb3548e02d7c6bf00468d3e14a1fb44ae3bd66ed2c43d287c3ffb6aa9aeb4d63",
+  "localization_seconds": 18.559367179870605,
+  "edit_seconds": 81.49164056777954,
+  "total_seconds": 100.21760177612305,
+  "peak_localization_reserved_mib": 30626.0,
+  "peak_edit_reserved_mib": 20964.0,
+  "n_edited_modules": 7,
+  "adapter_bytes": 578889,
+  "adapter_sha256": "a642a858586a985b852f40916dfa23ee7d9f8bf2e7ae6365457504069b0e6040",
+  "resolved_target_modules": "model.layers.12.self_attn.v_proj,model.layers.13.self_attn.v_proj,model.layers.10.self_attn.v_proj,model.layers.11.self_attn.v_proj,model.layers.9.self_attn.v_proj,model.layers.8.self_attn.v_proj,model.layers.14.self_attn.v_proj"
+}

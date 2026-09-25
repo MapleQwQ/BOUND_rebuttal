@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "model": "deepseekcoder",
+  "gpu": "2",
+  "n_prompts": 200,
+  "n_prompts_scored": 190,
+  "n_prompts_skipped_no_valid": 10,
+  "n_candidate_modules": 224,
+  "sources": {
+    "A": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "a15103c438f76b13d83303b1322c65117fa0afc1f6d8a54ad9e95c29e481f888"
+    },
+    "B": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "ac85c959d3a111ce3efbef3791a5479dd253cdfe359e812f8d59c9a2656ffe50"
+    },
+    "C": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "b94c1db6c7fbd3e7723d0c1156d0f090e316fb653fef9846b3990f6eac570b75"
+    },
+    "D": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "b0bd9c237bda0463e2fd94649c8bb83d70e6b40f675ad84991ab0a06e18dcf3c"
+    }
+  },
+  "elapsed_seconds": 44.581106424331665,
+  "objective": "LSE(valid first tokens)",
+  "score": "mean(abs(gradient * weight))"
+}

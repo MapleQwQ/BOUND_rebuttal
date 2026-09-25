@@ -1,0 +1,22 @@
+{
+  "model": "llama3.1-release",
+  "fold": "A",
+  "gpu_physical": 1,
+  "model_path": "/data0/shuhanliu/models/llama3.1",
+  "delta_dir": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50",
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/eval_unseen_prompts.json",
+  "source_sha256": "dd391b545fd0f24cffd2868d5a108911a84257210e2854e4dd58e46f1d608de5",
+  "n_prompts": 934,
+  "generations_per_prompt": 5,
+  "load_seconds": 8.894851949065924,
+  "timing_scope": "generation: chat-template/tokenization/model.generate/decode; extraction: split_recommendation_packages; both exclude warmup, load, output I/O and registry labels",
+  "sampler": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_new_tokens": 128
+  },
+  "seed_schedule": "E2new-base-20260924:{model}:{prompt_id}:{trial}",
+  "started_utc": "2026-09-24T11:44:34.330028+00:00"
+}

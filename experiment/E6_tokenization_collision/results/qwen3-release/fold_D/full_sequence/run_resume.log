@@ -1,0 +1,62 @@
+- 2026-09-24 18:36:14 UTC | skip completed localization /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/results/qwen3-release/fold_D/full_sequence
+- 2026-09-24 18:36:14 UTC | adapter differs from historical first-token edit; generate unseen responses /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/results/qwen3-release/fold_D/full_sequence
+- 2026-09-24 18:36:14 UTC | unseen eval start /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/results/qwen3-release/fold_D/full_sequence
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.40it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.41it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.43it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.56it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.05it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+loaded delta /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/results/qwen3-release/fold_D/full_sequence
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+- 2026-09-24 18:41:07 UTC | unseen eval progress /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/results/qwen3-release/fold_D/full_sequence: 100/409
+Traceback (most recent call last):
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/script/run_e6.py", line 371, in <module>
+    main()
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/script/run_e6.py", line 367, in main
+    edit_and_eval(cfg, a.variant)
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/script/run_e6.py", line 237, in edit_and_eval
+    evaluate_unseen_resume(cfg, model, tokenizer)
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E6_tokenization_collision/script/run_e6.py", line 263, in evaluate_unseen_resume
+    trials = generate_recommendation_trials(
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/package_edit.py", line 605, in generate_recommendation_trials
+    ans = gen_chat(
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/package_edit.py", line 510, in gen_chat
+    out = model.generate(**model_inputs, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/generation/utils.py", line 2564, in generate
+    result = decoding_method(
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/generation/utils.py", line 2787, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 480, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+KeyboardInterrupt

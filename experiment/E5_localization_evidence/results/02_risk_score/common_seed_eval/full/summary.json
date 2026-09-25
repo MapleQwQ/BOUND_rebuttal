@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "folds": {
+    "B": {
+      "sample_hallucination_rate": {
+        "delta_hall_minus_full": 0.0040000000000000036,
+        "ci95": [
+          -0.033999999999999996,
+          0.042
+        ]
+      },
+      "package_hallucination_rate": {
+        "delta_hall_minus_full": 0.0037079144278556503,
+        "ci95": [
+          -0.019998129947532108,
+          0.027690353445275505
+        ]
+      },
+      "sample_valid_rate": {
+        "delta_hall_minus_full": -0.003999999999999998,
+        "ci95": [
+          -0.03,
+          0.022000000000000002
+        ]
+      }
+    },
+    "D": {
+      "sample_hallucination_rate": {
+        "delta_hall_minus_full": -0.004,
+        "ci95": [
+          -0.044,
+          0.034
+        ]
+      },
+      "package_hallucination_rate": {
+        "delta_hall_minus_full": -0.0038214962170172308,
+        "ci95": [
+          -0.02507792262781085,
+          0.018929156162408253
+        ]
+      },
+      "sample_valid_rate": {
+        "delta_hall_minus_full": -1.1102230246251566e-18,
+        "ci95": [
+          -0.026000000000000006,
+          0.025999999999999995
+        ]
+      }
+    }
+  },
+  "two_fold_macro": {
+    "sample_hallucination_rate": {
+      "delta_hall_minus_full": 2.220446049250313e-18,
+      "ci95": [
+        -0.027000000000000003,
+        0.026000000000000006
+      ]
+    },
+    "package_hallucination_rate": {
+      "delta_hall_minus_full": -5.679089458079017e-05,
+      "ci95": [
+        -0.015633477361709558,
+        0.01612250504987751
+      ]
+    },
+    "sample_valid_rate": {
+      "delta_hall_minus_full": -0.0019999999999999996,
+      "ci95": [
+        -0.021,
+        0.017
+      ]
+    }
+  },
+  "bootstrap_seed": 20260924,
+  "bootstrap_resamples": 10000,
+  "common_generation_seeds": true,
+  "n_prompts_per_fold": 100,
+  "n_generations_per_prompt": 5
+}

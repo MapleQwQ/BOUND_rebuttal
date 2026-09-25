@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "qwen3-release",
+  "fold": "B",
+  "condition": "wo_localization_all_lora",
+  "gpu": "3",
+  "source_yaml_sha256": "e6a4748d5b007090c87bbe15aadcfad1aca32c1be5785b45308f092d5e302f46",
+  "edit_cases_sha256": "185c6baf4cfac59550c883babecc5ec33b252d39df4ff7b86695a7cb6949ca6b",
+  "localization_seconds": 0.0,
+  "edit_seconds": 158.07390975952148,
+  "total_seconds": 158.11342597007751,
+  "peak_localization_reserved_mib": 0.0,
+  "peak_edit_reserved_mib": 27580.0,
+  "n_edited_modules": 252,
+  "adapter_bytes": 43806151,
+  "adapter_sha256": "fe092577f79753297fc8f6253e4513859fc8ebff1778a26b335accd703b826ef",
+  "resolved_target_modules": "gate_proj,up_proj,down_proj,q_proj,k_proj,v_proj,o_proj"
+}

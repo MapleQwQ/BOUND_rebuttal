@@ -1,0 +1,40 @@
+{
+  "timing_scope": "historical full eval-unseen process wall clock: model load, five generations per prompt, package extraction, PyPI/cutoff classification and result writing; not pure inference",
+  "model_summaries": {
+    "deepseekcoder": {
+      "n_prompts": 541,
+      "n_generations_per_prompt": 5,
+      "mean_unseen_eval_total_sec_across_folds": 7147.0375,
+      "mean_unseen_eval_sec_per_prompt_5_generations": 13.210790203327171,
+      "mean_unseen_eval_sec_per_generation_amortized": 2.6421580406654344,
+      "fold_min_sec_per_prompt": 10.330573012939002,
+      "fold_max_sec_per_prompt": 19.318669131238448,
+      "mean_edit50_eval_sec_per_prompt_5_generations": 14.519449999999999
+    },
+    "qwen3": {
+      "n_prompts": 409,
+      "n_generations_per_prompt": 5,
+      "mean_unseen_eval_total_sec_across_folds": 3391.8675000000003,
+      "mean_unseen_eval_sec_per_prompt_5_generations": 8.29307457212714,
+      "mean_unseen_eval_sec_per_generation_amortized": 1.6586149144254279,
+      "fold_min_sec_per_prompt": 5.595721271393643,
+      "fold_max_sec_per_prompt": 11.49992665036675,
+      "mean_edit50_eval_sec_per_prompt_5_generations": 11.2552
+    },
+    "llama3.1": {
+      "n_prompts": 934,
+      "n_generations_per_prompt": 5,
+      "mean_unseen_eval_total_sec_across_folds": 11571.9,
+      "mean_unseen_eval_sec_per_prompt_5_generations": 12.389614561027837,
+      "mean_unseen_eval_sec_per_generation_amortized": 2.4779229122055675,
+      "fold_min_sec_per_prompt": 9.799400428265525,
+      "fold_max_sec_per_prompt": 15.936102783725909,
+      "mean_edit50_eval_sec_per_prompt_5_generations": 18.686
+    }
+  },
+  "overall": {
+    "paper_cost_table_reconstructed_unseen_sec_per_prompt_5_generations": 11.29782644549405,
+    "model_equal_mean_amortized_sec_per_generation": 2.25956528909881,
+    "edit50_sec_per_prompt_5_generations_not_paper_11_30": 14.820216666666667
+  }
+}

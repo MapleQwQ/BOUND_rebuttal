@@ -1,0 +1,17 @@
+{
+  "model": "deepseekcoder",
+  "fold": "D",
+  "method": "blast",
+  "eval_num_generations": 5,
+  "localization": {
+    "elapsed_sec": 20.79
+  },
+  "update": {
+    "stage_name": "edit",
+    "elapsed_sec": 70.14
+  },
+  "inference": {
+    "edit50_total_sec": 964.42,
+    "heldout_total_sec": 10451.4
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "model_name": "qwen3-release",
+  "method_name": "fold_B/All-module-LoRA",
+  "model_path": "/data0/shuhanliu/models/qwen3-8B",
+  "delta_dir": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/rq3_ablation_20260613/qwen3-release/fold_B/wo_localization_all_lora",
+  "adapter_type": "blast",
+  "adapter_info": {
+    "adapter_type": "blast",
+    "n_lora_modules": 252,
+    "delta_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/rq3_ablation_20260613/qwen3-release/fold_B/wo_localization_all_lora/blast_delta.pt"
+  },
+  "n_tasks": 164,
+  "num_samples_per_task": 1,
+  "n_samples": 164,
+  "pass_at_k": {
+    "pass@1": 0.23780487804878048
+  },
+  "samples_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/results/01_all_module_lora/humaneval/qwen3-release/fold_B/All-module-LoRA/samples.jsonl",
+  "results_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/results/01_all_module_lora/humaneval/qwen3-release/fold_B/All-module-LoRA/samples.jsonl_results.jsonl",
+  "checkpoint_or_delta_size_bytes": 60350332,
+  "timing_seconds": {
+    "load": 4.24,
+    "generation": 3863.46,
+    "evaluation": 12.91,
+    "total": 3880.61
+  },
+  "generation_config": {
+    "max_new_tokens": 512,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "seed": 42,
+    "use_chat_template": false,
+    "enable_thinking": "default",
+    "completion_batch_size": 1
+  }
+}

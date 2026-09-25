@@ -1,0 +1,378 @@
+{
+  "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "bootstrap_seed": 20260924,
+  "bootstrap_reps": 10000,
+  "base_selection_rule": "post hoc lowest syntax_valid_rate among archived A-D per model; earliest fold breaks ties",
+  "selected_base_folds": {
+    "deepseekcoder": "A",
+    "qwen3": "C",
+    "llama3.1": "A"
+  },
+  "base_fold_syntax_rates": {
+    "deepseekcoder": {
+      "A": 0.91,
+      "B": 0.91,
+      "C": 0.91,
+      "D": 0.91
+    },
+    "qwen3": {
+      "A": 0.864,
+      "B": 0.856,
+      "C": 0.842,
+      "D": 0.864
+    },
+    "llama3.1": {
+      "A": 0.914,
+      "B": 0.914,
+      "C": 0.914,
+      "D": 0.914
+    }
+  },
+  "inputs": [
+    {
+      "model": "deepseekcoder",
+      "method": "Base",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "fe04261dbd89e4e0d0e58af91ad32d4bd52f81dbbf0c23394435a3a4858f56a0",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "method": "BOUND",
+      "fold": "A",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/deepseekcoder/BOUND/fold_A/bound/cross_task_case_grouped.jsonl",
+      "sha256": "a9d702d3b1c60b2677e61bc542df2a4e2bb36ea56f31ec1920ed01027935f6e0",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "method": "BOUND",
+      "fold": "B",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/deepseekcoder/BOUND/fold_B/bound/cross_task_case_grouped.jsonl",
+      "sha256": "1d91adf154fc460d174ddfd70c9705af18ad5d34de564b1d30db3a58272b94b1",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "method": "BOUND",
+      "fold": "C",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/deepseekcoder/BOUND/fold_C/bound/cross_task_case_grouped.jsonl",
+      "sha256": "176e40a1545288742b78862022e6e9bd19ec3e56275aad72620e6b08f211b54a",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "method": "BOUND",
+      "fold": "D",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/deepseekcoder/BOUND/fold_D/bound/cross_task_case_grouped.jsonl",
+      "sha256": "f6a34c24f69b476d43cd2d4c0f8d239e11ab1463c923a30d9053021b4fd569fd",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "method": "Base",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "e5445819e719c21156b7257b0a0b9bbd8d5f0d647892bf07a200a41987e7ebcf",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "method": "BOUND",
+      "fold": "A",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/qwen3/BOUND/fold_A/bound/cross_task_case_grouped.jsonl",
+      "sha256": "b2e56004f7ac8431479a9a6d7a021c6b0a7875cfaa143dd97ee454d8d8df47f2",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "method": "BOUND",
+      "fold": "B",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/qwen3/BOUND/fold_B/bound/cross_task_case_grouped.jsonl",
+      "sha256": "2c5feee24eca58fe3153cb4dd717cab41a9220a816bcb94e8b0d3fc9381616b3",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "method": "BOUND",
+      "fold": "C",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/qwen3/BOUND/fold_C/bound/cross_task_case_grouped.jsonl",
+      "sha256": "fb8fd28f462d7a1184d1beb85a05b148c96d59828fbf2eb1e8ba87de19bcad7a",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "method": "BOUND",
+      "fold": "D",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/qwen3/BOUND/fold_D/bound/cross_task_case_grouped.jsonl",
+      "sha256": "4361e9df043c08159634864a248f1bc2c1af13d822570598b7858c5ce0b38169",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "method": "Base",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "method": "BOUND",
+      "fold": "A",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/llama3.1/BOUND/fold_A/bound/cross_task_case_grouped.jsonl",
+      "sha256": "fcde175d773865b41d6bb4ad71b7827e3ffcf9b18f850f18287b1c91ad0d3855",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "method": "BOUND",
+      "fold": "B",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/llama3.1/BOUND/fold_B/bound/cross_task_case_grouped.jsonl",
+      "sha256": "c1805852fa7155fc137f2e1060015d80a9624f3ffc0963727f7c09667692226c",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "method": "BOUND",
+      "fold": "C",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/llama3.1/BOUND/fold_C/bound/cross_task_case_grouped.jsonl",
+      "sha256": "58b5360516f0b2c1ce2553000a1b8580f335cf650edd9b662009a8cc0aadd43b",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "method": "BOUND",
+      "fold": "D",
+      "path": "BOUND_rebuttal/replication package/BOUND/results/paper/cross_task_generalization/llama3.1/BOUND/fold_D/bound/cross_task_case_grouped.jsonl",
+      "sha256": "5220e6ff62a720ca3de6ca62e10c83df1d4a5587c89261164ac0931ecf0d0976",
+      "n": 500
+    }
+  ],
+  "base_fold_copy_inputs": [
+    {
+      "model": "deepseekcoder",
+      "fold": "A",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "fe04261dbd89e4e0d0e58af91ad32d4bd52f81dbbf0c23394435a3a4858f56a0",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "B",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_B/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "25fe1cb46164d2e8e50b12253638989e3ec3bc973134c239c52ea5696dc36dec",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "C",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "25fe1cb46164d2e8e50b12253638989e3ec3bc973134c239c52ea5696dc36dec",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "D",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_D/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "25fe1cb46164d2e8e50b12253638989e3ec3bc973134c239c52ea5696dc36dec",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "A",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "b88e9b2326a68bc735a1740d2c55fa289bef212e2e9db8986a6d5c3ce2fcff36",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_B/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "6a0db857fbb54c4a7dbbf12c984623566e3d4513aca59da82ae83f6c7a86c6c3",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "e5445819e719c21156b7257b0a0b9bbd8d5f0d647892bf07a200a41987e7ebcf",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "D",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_D/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "b88e9b2326a68bc735a1740d2c55fa289bef212e2e9db8986a6d5c3ce2fcff36",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "A",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "B",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_B/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "C",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "D",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_D/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    }
+  ],
+  "base_fold_copy_differences": [
+    {
+      "model": "deepseekcoder",
+      "fold": "B",
+      "generation_id": "3063__repeat_1",
+      "raw_differs": false,
+      "archived_code_block_differs": true
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "C",
+      "generation_id": "3063__repeat_1",
+      "raw_differs": false,
+      "archived_code_block_differs": true
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "D",
+      "generation_id": "3063__repeat_1",
+      "raw_differs": false,
+      "archived_code_block_differs": true
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "3778__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "3778__repeat_3",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "2140__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "4815__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "1021__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "136__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "2140__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "4815__repeat_3",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3844__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3695__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3695__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3695__repeat_5",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3509__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3509__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "185__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "185__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "185__repeat_3",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    }
+  ]
+}

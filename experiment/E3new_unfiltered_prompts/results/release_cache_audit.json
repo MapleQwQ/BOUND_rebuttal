@@ -1,0 +1,14 @@
+{
+  "candidate_names": 9127,
+  "reused_dated": 2754,
+  "fetched": 0,
+  "statuses": {
+    "dated": 4559,
+    "no_release_date": 88,
+    "not_found": 4480
+  },
+  "output": "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/release_dates.jsonl",
+  "output_sha256": "b06021ff751534639ce97488a76cba248cb3773a3215803c57d8655b0705e67b",
+  "deduplicated_final": "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/release_dates_final.jsonl",
+  "deduplicated_final_sha256": "b32f413306b4f8c73bbb7d6cb2b74acbf88f22af0aaec452682d672cf4e75715"
+}

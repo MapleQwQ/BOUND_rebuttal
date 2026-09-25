@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "qwen3-release",
+  "fold": "D",
+  "condition": "BOUND",
+  "gpu": "3",
+  "source_yaml_sha256": "11b2ea795bde20f4f00c8cb3b01603f427786bd2ad92a68191b3e27bdb834b4e",
+  "edit_cases_sha256": "0f480fc1b97c873cc3e3859d3c7b5397ebe5e847773d3c28c292b1520afbea4f",
+  "localization_seconds": 18.970091342926025,
+  "edit_seconds": 88.65034985542297,
+  "total_seconds": 107.70360589027405,
+  "peak_localization_reserved_mib": 31448.0,
+  "peak_edit_reserved_mib": 20836.0,
+  "n_edited_modules": 9,
+  "adapter_bytes": 743885,
+  "adapter_sha256": "14d531b5236ab4d5a80f85710990c5b294db9553b1d1fec797973d9542c161d0",
+  "resolved_target_modules": "model.layers.14.self_attn.v_proj,model.layers.18.self_attn.v_proj,model.layers.16.self_attn.v_proj,model.layers.17.self_attn.v_proj,model.layers.12.self_attn.v_proj,model.layers.15.self_attn.v_proj,model.layers.11.self_attn.v_proj,model.layers.19.self_attn.v_proj,model.layers.13.self_attn.v_proj"
+}

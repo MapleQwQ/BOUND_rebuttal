@@ -1,0 +1,4 @@
+{"fold": "B", "condition": "full_risk", "returncode": 0}
+{"fold": "B", "condition": "hall_only", "returncode": 0}
+{"fold": "D", "condition": "full_risk", "returncode": 0}
+{"fold": "D", "condition": "hall_only", "returncode": 0}

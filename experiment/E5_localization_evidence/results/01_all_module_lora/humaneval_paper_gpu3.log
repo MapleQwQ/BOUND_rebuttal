@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/script/run_paper_protocol_humaneval.py", line 88, in <module>
+    main()
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/script/run_paper_protocol_humaneval.py", line 77, in main
+    proc = subprocess.run(cmd, cwd=ROOT, env=env, stdout=handle, stderr=subprocess.STDOUT)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/subprocess.py", line 1146, in communicate
+    self.wait()
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/shuhanliu/miniconda3/envs/EasyEdit/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

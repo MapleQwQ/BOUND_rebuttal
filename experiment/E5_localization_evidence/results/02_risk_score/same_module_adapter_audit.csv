@@ -1,0 +1,13 @@
+model,fold,same_module_set,module_jaccard,same_seed,same_training_hparams,relative_l2_adapter_difference,adapter_exact_equal
+deepseekcoder,A,1,1.0,1,1,0.0,1
+deepseekcoder,B,0,0.75,1,1,,
+deepseekcoder,C,1,1.0,1,1,0.0,1
+deepseekcoder,D,0,0.75,1,1,,
+qwen3-release,A,1,1.0,1,1,0.0,1
+qwen3-release,B,1,1.0,1,1,0.0,1
+qwen3-release,C,1,1.0,1,1,0.0,1
+qwen3-release,D,1,1.0,1,1,0.0,1
+llama3.1-release,A,1,1.0,0,1,1.40017946899545,0
+llama3.1-release,B,1,1.0,1,1,0.0,1
+llama3.1-release,C,1,1.0,1,1,0.0,1
+llama3.1-release,D,1,1.0,1,1,0.0,1

@@ -1,0 +1,5 @@
+{"event": "waiting_for_gpu3", "utc_epoch": 1790264445.4807918}
+{"event": "start", "utc_epoch": 1790266245.5636108, "model": "qwen3-release", "gpu": 3}
+{"event": "end", "utc_epoch": 1790281791.6419194, "model": "qwen3-release", "gpu": 3, "returncode": 0}
+{"event": "start", "utc_epoch": 1790281791.6422641, "model": "llama3.1-release", "gpu": 3}
+{"event": "end", "utc_epoch": 1790287916.5720816, "model": "llama3.1-release", "gpu": 3, "returncode": 0}

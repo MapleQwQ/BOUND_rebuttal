@@ -192,3 +192,4 @@
 - 按用户要求新增`script/export_formal_annotations_csv.py`，将最终匿名批次的回答、需求槽、两名独立原始标签、最终仲裁标签、候选包存在性/任务作用/覆盖槽/证据，以及揭盲后的模型、condition、fold和prompt ID连接为一张回答级CSV。
 - 输出`results/formal_annotation_results.csv`：300行、42列、300个唯一`blind_answer_id`；模型各100行，Base 60行、BOUND 240行；`candidate_count`合计960，与正式候选总数一致；最终Adequacy分布为83 adequate、71 partially adequate、146 inadequate。CSV使用UTF-8 BOM，数组与嵌套证据以JSON字符串保存在单元格中，兼顾Excel打开和无损复算。
 - 为便于详细解读，新增可移植报告`E1_detailed_report.html`及规范化输入`E1_detailed_report_artifact.json`。报告包含4个headline指标、1个Base/BOUND分组柱图、逐模型结果表和一致性表。打包器验证与结构校验通过；当前环境没有Chromium，因此浏览器级桌面/窄屏验证未运行，交付状态为`structural_only`，语义HTML fallback仍完整。
+- 按用户后续要求，将详细结果完整并入`design_and_results.md`，不再要求读者跳转HTML才能理解主结论。新增正式样本/槽分布、Base与BOUND标签计数、960候选标签分布、主要非劣性表、三个模型全部A/B/C/D逐折结果、precision—coverage权衡、一致性、ground-truth缺失、CSV字段说明以及rebuttal允许/不允许结论。所有数值均来自最终匿名仲裁和`relevance_metrics_by_model_fold.json/csv`，未混入校准或早期模型可见批次。

@@ -1,0 +1,78 @@
+{
+  "comparison": "wo_localization_all_lora minus BOUND",
+  "n_prompts_per_model_fold": 100,
+  "bootstrap_seed": 20260924,
+  "bootstrap_resamples": 10000,
+  "unit": "prompt, paired within fold; four folds macro-averaged",
+  "models": {
+    "deepseekcoder": {
+      "sample_hallucination_rate": {
+        "delta_ablation_minus_bound": 0.048999999999999995,
+        "ci95": [
+          0.009000000000000001,
+          0.08900000000000001
+        ]
+      },
+      "package_hallucination_rate": {
+        "delta_ablation_minus_bound": 0.06747576838369551,
+        "ci95": [
+          0.0414248135466498,
+          0.0929823109931891
+        ]
+      },
+      "sample_valid_rate": {
+        "delta_ablation_minus_bound": -0.05250000000000002,
+        "ci95": [
+          -0.08349999999999999,
+          -0.021500000000000005
+        ]
+      }
+    },
+    "qwen3-release": {
+      "sample_hallucination_rate": {
+        "delta_ablation_minus_bound": -0.02899999999999999,
+        "ci95": [
+          -0.068,
+          0.008500000000000002
+        ]
+      },
+      "package_hallucination_rate": {
+        "delta_ablation_minus_bound": -0.008468405814769972,
+        "ci95": [
+          -0.0341017082700558,
+          0.01600748600865411
+        ]
+      },
+      "sample_valid_rate": {
+        "delta_ablation_minus_bound": -0.0895,
+        "ci95": [
+          -0.1325,
+          -0.0495
+        ]
+      }
+    },
+    "llama3.1-release": {
+      "sample_hallucination_rate": {
+        "delta_ablation_minus_bound": -0.0020000000000000018,
+        "ci95": [
+          -0.048500000000000015,
+          0.046512499999999825
+        ]
+      },
+      "package_hallucination_rate": {
+        "delta_ablation_minus_bound": 0.004160725923835571,
+        "ci95": [
+          -0.026047237549169645,
+          0.034471871964808797
+        ]
+      },
+      "sample_valid_rate": {
+        "delta_ablation_minus_bound": -0.106,
+        "ci95": [
+          -0.1355,
+          -0.076
+        ]
+      }
+    }
+  }
+}

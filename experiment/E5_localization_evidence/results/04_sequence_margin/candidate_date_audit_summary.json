@@ -1,0 +1,39 @@
+{
+  "cutoffs": {
+    "deepseekcoder": "2023-11-02",
+    "qwen3-release": "2025-04-29",
+    "llama3.1-release": "2024-07-23"
+  },
+  "source_sha256": {
+    "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_A/test100_case_repeat5/case.json": "db3dc945ed8d0eabaa934e9be7ada37eaa561c58546a928c1d93b40d32c16999",
+    "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_A/test100_case_repeat5/case.json": "f9780b41ef143d8d0bb4793306624fcdce908c00afde54aa4f6d051f61ab3405",
+    "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_A/test100_case_repeat5/case.json": "def31212959d888ddbf5a835ef8377eca9962d75a5be2ac032a1aef8890bbcbe",
+    "knowledgeEdit/results/rq2_cross_task_20260611/rq2_pypi_release_cache.json": "903f8f20e633d15fb870c39e97af7f517090a336a00c7cffe343b69bedf64ceb",
+    "knowledgeEdit/results/ccfa_supplement_20260604_final/pypi_first_release_cache.json": "213b98cd9bd923e8bf1a5808d3c1e7e630f5f78d35b2a857991612a26a40d55b",
+    "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/release_dates_final.jsonl": "b32f413306b4f8c73bbb7d6cb2b74acbf88f22af0aaec452682d672cf4e75715",
+    "BOUND_rebuttal/experiment/E2new_verifier/results/package_first_release.jsonl": "703d22cbf4416d90efdf9c0b5c899bf759a1421dfc8c9d21e6670f4e4b5ba983",
+    "BOUND_rebuttal/experiment/E2new_verifier/results/package_first_release_jsonapi.jsonl": "4a997c6cd48b92ef3937f589f06404fda5d64934bf69f025b52de1b52d8148c3",
+    "BOUND_rebuttal/experiment/E2new_verifier/results/pypi_index_names.txt": "d186c024035286f0120dfc2914326046101a88b6651ae9695b3ef27a0a68f6b1"
+  },
+  "counts": {
+    "deepseekcoder": {
+      "hallucinated_unknown_absent": 178,
+      "valid_pre_cutoff": 142,
+      "hallucinated_post_cutoff": 5,
+      "hallucinated_unknown_present": 6
+    },
+    "qwen3-release": {
+      "hallucinated_unknown_absent": 124,
+      "valid_pre_cutoff": 149,
+      "hallucinated_post_cutoff": 3,
+      "hallucinated_unknown_present": 11
+    },
+    "llama3.1-release": {
+      "valid_pre_cutoff": 198,
+      "hallucinated_unknown_absent": 245,
+      "hallucinated_unknown_present": 10,
+      "hallucinated_post_cutoff": 9
+    }
+  },
+  "rule": "earliest dated release across archived caches; absent current index without release date remains uncertain"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "deepseekcoder",
+  "fold": "C",
+  "condition": "wo_localization_all_lora",
+  "gpu": "2",
+  "source_yaml_sha256": "d9e8b6c734486afbf769229d26482a2ec899e582031100edc63a0aa8dfaf35c5",
+  "edit_cases_sha256": "b94c1db6c7fbd3e7723d0c1156d0f090e316fb653fef9846b3990f6eac570b75",
+  "localization_seconds": 0.0,
+  "edit_seconds": 147.81947541236877,
+  "total_seconds": 147.83627009391785,
+  "peak_localization_reserved_mib": 0.0,
+  "peak_edit_reserved_mib": 24828.0,
+  "n_edited_modules": 224,
+  "adapter_bytes": 40118487,
+  "adapter_sha256": "d8189020670de277ffd547d5ad12d6047dbbd7aa19e62b65bcc033e01cc9475a",
+  "resolved_target_modules": "gate_proj,up_proj,down_proj,q_proj,k_proj,v_proj,o_proj"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "provisional_historical_labels",
+  "model": "llama3.1-release",
+  "fold": "C",
+  "gpu": "3",
+  "n_prompts": 98,
+  "n_candidate_scores": 886,
+  "elapsed_seconds": 30.744766235351562,
+  "candidate_manifest_sha256": "8b3a6c65ac0f6530e5ad17034a7bd41900abeb8f4568128077d9fba65ff97f0e",
+  "adapter_config_sha256": "447431ad4a5c456b65021a5ea3735a9d3e8e243fdbafa708f6b6d0437be02322",
+  "adapter_delta_sha256": "cd7de24127aa3cd352e1ec914606073483e6daaac3fc6675cf6aa541f84699bc",
+  "model_path": "/data0/shuhanliu/models/llama3.1",
+  "answer_prefix": "[ANSWER]\n",
+  "candidate_presentation": "normalized package name without leading space"
+}

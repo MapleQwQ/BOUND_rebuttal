@@ -1,0 +1,55 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.05it/s]
+generate deepseekcoder/fold_A/All-module-LoRA:   0%|          | 0/1 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.53s/it]
+generate deepseekcoder/fold_A/All-module-LoRA:   0%|          | 0/1 [00:00<?, ?it/s]generate deepseekcoder/fold_A/All-module-LoRA: 100%|██████████| 1/1 [00:18<00:00, 18.46s/it]generate deepseekcoder/fold_A/All-module-LoRA: 100%|██████████| 1/1 [00:18<00:00, 18.46s/it]
+Reading samples...
+0it [00:00, ?it/s]1it [00:00, 1647.41it/s]
+Running test suites...
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:00<00:00,  2.87it/s]100%|██████████| 1/1 [00:00<00:00,  2.87it/s]
+Writing results to /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/results/01_all_module_lora/humaneval_smoke/deepseekcoder/fold_A/All-module-LoRA/samples.jsonl_results.jsonl...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4136.39it/s]
+{
+  "model_name": "deepseekcoder",
+  "method_name": "fold_A/All-module-LoRA",
+  "model_path": "/data0/shuhanliu/models/deepseekcoder",
+  "delta_dir": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/rq3_ablation_20260613/deepseekcoder/fold_A/wo_localization_all_lora",
+  "adapter_type": "blast",
+  "adapter_info": {
+    "adapter_type": "blast",
+    "n_lora_modules": 224,
+    "delta_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/rq3_ablation_20260613/deepseekcoder/fold_A/wo_localization_all_lora/blast_delta.pt"
+  },
+  "n_tasks": 1,
+  "num_samples_per_task": 1,
+  "n_samples": 1,
+  "pass_at_k": {
+    "pass@1": 1.0
+  },
+  "samples_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/results/01_all_module_lora/humaneval_smoke/deepseekcoder/fold_A/All-module-LoRA/samples.jsonl",
+  "results_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/results/01_all_module_lora/humaneval_smoke/deepseekcoder/fold_A/All-module-LoRA/samples.jsonl_results.jsonl",
+  "checkpoint_or_delta_size_bytes": 43165273,
+  "timing_seconds": {
+    "load": 4.28,
+    "generation": 18.47,
+    "evaluation": 0.35,
+    "total": 23.09
+  },
+  "generation_config": {
+    "max_new_tokens": 512,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "seed": 42,
+    "use_chat_template": false,
+    "enable_thinking": "default",
+    "completion_batch_size": 1
+  }
+}

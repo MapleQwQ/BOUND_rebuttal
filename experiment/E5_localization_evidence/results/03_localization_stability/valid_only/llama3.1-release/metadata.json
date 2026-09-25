@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "model": "llama3.1-release",
+  "gpu": "2",
+  "n_prompts": 200,
+  "n_prompts_scored": 188,
+  "n_prompts_skipped_no_valid": 12,
+  "n_candidate_modules": 224,
+  "sources": {
+    "A": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "fb3548e02d7c6bf00468d3e14a1fb44ae3bd66ed2c43d287c3ffb6aa9aeb4d63"
+    },
+    "B": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "bf8d72147786ac85b0d19c610039fea2c94f0a697a5fbaa329f3df95d0f943fd"
+    },
+    "C": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "15d0587f8b08ca9f4712109604ecdebeebf96af2c6da72654a30f64f1617cfdd"
+    },
+    "D": {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "e10984a1c7a4b6cefe13809a467196e09441ee2a31a31cf9655ddf3c907eddd8"
+    }
+  },
+  "elapsed_seconds": 51.939424991607666,
+  "objective": "LSE(valid first tokens)",
+  "score": "mean(abs(gradient * weight))"
+}

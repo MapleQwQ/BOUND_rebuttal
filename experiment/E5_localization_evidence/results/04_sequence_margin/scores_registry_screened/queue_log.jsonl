@@ -1,0 +1,24 @@
+{"event": "start", "model": "deepseekcoder", "fold": "A", "gpu": "3", "utc_epoch": 1790264364.3944876}
+{"event": "end", "model": "deepseekcoder", "fold": "A", "gpu": "3", "returncode": 0, "utc_epoch": 1790264392.9255347}
+{"event": "start", "model": "deepseekcoder", "fold": "B", "gpu": "3", "utc_epoch": 1790264392.9258375}
+{"event": "end", "model": "deepseekcoder", "fold": "B", "gpu": "3", "returncode": 0, "utc_epoch": 1790264421.719526}
+{"event": "start", "model": "deepseekcoder", "fold": "C", "gpu": "3", "utc_epoch": 1790264421.7198942}
+{"event": "end", "model": "deepseekcoder", "fold": "C", "gpu": "3", "returncode": 0, "utc_epoch": 1790264449.7389953}
+{"event": "start", "model": "deepseekcoder", "fold": "D", "gpu": "3", "utc_epoch": 1790264449.7392662}
+{"event": "end", "model": "deepseekcoder", "fold": "D", "gpu": "3", "returncode": 0, "utc_epoch": 1790264478.4221437}
+{"event": "start", "model": "qwen3-release", "fold": "A", "gpu": "3", "utc_epoch": 1790264478.4223568}
+{"event": "end", "model": "qwen3-release", "fold": "A", "gpu": "3", "returncode": 0, "utc_epoch": 1790264506.5204148}
+{"event": "start", "model": "qwen3-release", "fold": "B", "gpu": "3", "utc_epoch": 1790264506.5208707}
+{"event": "end", "model": "qwen3-release", "fold": "B", "gpu": "3", "returncode": 0, "utc_epoch": 1790264533.97023}
+{"event": "start", "model": "qwen3-release", "fold": "C", "gpu": "3", "utc_epoch": 1790264533.9706683}
+{"event": "end", "model": "qwen3-release", "fold": "C", "gpu": "3", "returncode": 0, "utc_epoch": 1790264563.3469737}
+{"event": "start", "model": "qwen3-release", "fold": "D", "gpu": "3", "utc_epoch": 1790264563.3472524}
+{"event": "end", "model": "qwen3-release", "fold": "D", "gpu": "3", "returncode": 0, "utc_epoch": 1790264591.3492796}
+{"event": "start", "model": "llama3.1-release", "fold": "A", "gpu": "3", "utc_epoch": 1790264591.3497179}
+{"event": "end", "model": "llama3.1-release", "fold": "A", "gpu": "3", "returncode": 0, "utc_epoch": 1790264631.640336}
+{"event": "start", "model": "llama3.1-release", "fold": "B", "gpu": "3", "utc_epoch": 1790264631.6407747}
+{"event": "end", "model": "llama3.1-release", "fold": "B", "gpu": "3", "returncode": 0, "utc_epoch": 1790264672.7274785}
+{"event": "start", "model": "llama3.1-release", "fold": "C", "gpu": "3", "utc_epoch": 1790264672.7279315}
+{"event": "end", "model": "llama3.1-release", "fold": "C", "gpu": "3", "returncode": 0, "utc_epoch": 1790264714.22173}
+{"event": "start", "model": "llama3.1-release", "fold": "D", "gpu": "3", "utc_epoch": 1790264714.2222147}
+{"event": "end", "model": "llama3.1-release", "fold": "D", "gpu": "3", "returncode": 0, "utc_epoch": 1790264783.4072013}

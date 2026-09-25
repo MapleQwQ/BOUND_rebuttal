@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-09-24T12:11:01.188903+00:00",
+  "registry": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/pypi_index_packmonitor_registry.json",
+  "n_names": 897748,
+  "model_tokenizer": "/data0/shuhanliu/models/deepseekcoder",
+  "matcher_build_seconds": 6.078546537086368,
+  "matcher_is_none": false,
+  "matcher_error": null,
+  "scope": "CPU grammar/tokenizer compilation only; not a generation or GPU compatibility test"
+}

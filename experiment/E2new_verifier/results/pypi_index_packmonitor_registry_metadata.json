@@ -1,0 +1,8 @@
+{
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/pypi_index_names.txt",
+  "output": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/pypi_index_packmonitor_registry.json",
+  "count": 897748,
+  "source_sha256": "d186c024035286f0120dfc2914326046101a88b6651ae9695b3ef27a0a68f6b1",
+  "output_sha256": "e557cf1388e1667c7b0c95db965afa7a9fd3442ebae0e2c02fe8d354ed606009",
+  "purpose": "same frozen 2026-09-24 current PyPI name set for PackMonitor constraint and independent evaluation"
+}

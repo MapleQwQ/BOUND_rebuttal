@@ -1,0 +1,12 @@
+{"event": "end", "model": "deepseekcoder", "fold": "A", "gpu": "2", "returncode": 0, "utc_epoch": 1790292394.2270684}
+{"event": "end", "model": "deepseekcoder", "fold": "B", "gpu": "2", "returncode": 0, "utc_epoch": 1790292422.4884856}
+{"event": "end", "model": "deepseekcoder", "fold": "C", "gpu": "2", "returncode": 0, "utc_epoch": 1790292450.6811852}
+{"event": "end", "model": "deepseekcoder", "fold": "D", "gpu": "2", "returncode": 0, "utc_epoch": 1790292478.8069913}
+{"event": "end", "model": "qwen3-release", "fold": "A", "gpu": "2", "returncode": 0, "utc_epoch": 1790292507.9542859}
+{"event": "end", "model": "qwen3-release", "fold": "B", "gpu": "2", "returncode": 0, "utc_epoch": 1790292536.447861}
+{"event": "end", "model": "qwen3-release", "fold": "C", "gpu": "2", "returncode": 0, "utc_epoch": 1790292565.1544318}
+{"event": "end", "model": "qwen3-release", "fold": "D", "gpu": "2", "returncode": 0, "utc_epoch": 1790292593.1880016}
+{"event": "end", "model": "llama3.1-release", "fold": "A", "gpu": "2", "returncode": 0, "utc_epoch": 1790292633.531745}
+{"event": "end", "model": "llama3.1-release", "fold": "B", "gpu": "2", "returncode": 0, "utc_epoch": 1790292674.2652586}
+{"event": "end", "model": "llama3.1-release", "fold": "C", "gpu": "2", "returncode": 0, "utc_epoch": 1790292716.0000172}
+{"event": "end", "model": "llama3.1-release", "fold": "D", "gpu": "2", "returncode": 0, "utc_epoch": 1790292756.8619053}

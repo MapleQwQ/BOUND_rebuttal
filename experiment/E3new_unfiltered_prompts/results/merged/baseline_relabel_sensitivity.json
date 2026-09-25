@@ -1,0 +1,32 @@
+{
+  "deepseekcoder": {
+    "original_sample_hr": 0.09700000000000017,
+    "relabeled_sample_hr": 0.09760000000000017,
+    "original_package_hr": 0.05563271794378163,
+    "relabeled_package_hr": 0.05591490185182761,
+    "original_valid_rate": 0.8273999999999999,
+    "relabeled_valid_rate": 0.8273999999999999,
+    "changed_responses": 6,
+    "query_unknown_candidate_mentions": 0
+  },
+  "qwen3": {
+    "original_sample_hr": 0.06440000000000003,
+    "relabeled_sample_hr": 0.06520000000000001,
+    "original_package_hr": 0.031587407285902154,
+    "relabeled_package_hr": 0.03170129617479103,
+    "original_valid_rate": 0.7189999999999998,
+    "relabeled_valid_rate": 0.7189999999999998,
+    "changed_responses": 11,
+    "query_unknown_candidate_mentions": 0
+  },
+  "llama31": {
+    "original_sample_hr": 0.17359999999999998,
+    "relabeled_sample_hr": 0.17319999999999997,
+    "original_package_hr": 0.08955620762344313,
+    "relabeled_package_hr": 0.08925750555152125,
+    "original_valid_rate": 0.8439999999999996,
+    "relabeled_valid_rate": 0.8439999999999996,
+    "changed_responses": 10,
+    "query_unknown_candidate_mentions": 0
+  }
+}

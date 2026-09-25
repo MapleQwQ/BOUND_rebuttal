@@ -1,0 +1,1258 @@
+{
+  "scope": "same frozen high-risk tasks, online verifier outputs; current existence judged by frozen PyPI snapshot, not by runtime HTTP status",
+  "models": {
+    "deepseekcoder": {
+      "n_prompts": 541,
+      "base": {
+        "quality": {
+          "n": 2705,
+          "sample_hr": 0.6695009242144178,
+          "package_hr": 0.2933465248577789,
+          "valid_rate": 0.8277264325323475,
+          "empty_rate": 0.013308687615526803,
+          "hallucinated_package_count": 2372,
+          "package_count": 8086,
+          "empty_count": 36
+        },
+        "mean_input_tokens": 206.45101663585953,
+        "mean_output_tokens_reencoded": 31.259149722735675,
+        "timing_seconds": {
+          "generation": {
+            "mean": 0.75319946275993,
+            "p50": 0.5703198267146945,
+            "p95": 2.0089927002787578
+          },
+          "extraction": {
+            "mean": 4.2838184842883545e-05,
+            "p50": 3.5106e-05,
+            "p95": 8.567139999999992e-05
+          },
+          "total_delivery": {
+            "mean": 0.7532423009447728,
+            "p50": 0.5703536777146945,
+            "p95": 2.009021474678758
+          }
+        },
+        "extra_verifier_llm_tokens": 0
+      },
+      "base_online_verifier": {
+        "n": 2705,
+        "final_quality": {
+          "n": 2705,
+          "sample_hr": 0.0011090573012939,
+          "package_hr": 0.0005247507433968865,
+          "valid_rate": 0.8277264325323475,
+          "empty_rate": 0.1345656192236599,
+          "hallucinated_package_count": 3,
+          "package_count": 5717,
+          "empty_count": 364
+        },
+        "filter": {
+          "filtered_total": 0.8757855822550832,
+          "filtered_invalid_current": 0.8757855822550832,
+          "filtered_unknown_online": 0.007024029574861368,
+          "filtered_snapshot_valid": 0.0,
+          "online_http_attempts": 2.9822550831792976,
+          "online_candidate_count": 2.989279112754159,
+          "source_package_count": 3.1426987060998153,
+          "retained_package_count": 2.266913123844732,
+          "filtered_empty": 0.1345656192236599,
+          "source_empty": 0.013308687615526803,
+          "extra_llm_tokens": 0.0
+        },
+        "timing_seconds": {
+          "generation": {
+            "mean": 0.75319946275993,
+            "p50": 0.5703198267146945,
+            "p95": 2.0089927002787578
+          },
+          "extraction": {
+            "mean": 4.2838184842883545e-05,
+            "p50": 3.5106e-05,
+            "p95": 8.567139999999992e-05
+          },
+          "online_verify_filter": {
+            "mean": 0.9701744981464722,
+            "p50": 0.7275698762387037,
+            "p95": 2.3349994918331474
+          },
+          "total_delivery": {
+            "mean": 1.723416799091245,
+            "p50": 1.3537062881656095,
+            "p95": 3.674555888171961
+          }
+        },
+        "extra_verifier_llm_tokens": 0
+      },
+      "bound_folds": {
+        "A": {
+          "n": 2705,
+          "quality": {
+            "n": 2705,
+            "sample_hr": 0.18743068391866913,
+            "package_hr": 0.11380461605457977,
+            "valid_rate": 0.8022181146025879,
+            "empty_rate": 0.16857670979667283,
+            "hallucinated_package_count": 784,
+            "package_count": 6889,
+            "empty_count": 456
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 1.4810070204477956,
+              "p50": 0.9759875126183033,
+              "p95": 3.1055981669574977
+            },
+            "extraction": {
+              "mean": 9.755245280794648e-05,
+              "p50": 9.877141565084457e-05,
+              "p95": 0.00016425047069787972
+            },
+            "total_delivery": {
+              "mean": 1.4811045729006036,
+              "p50": 0.9760715598240495,
+              "p95": 3.105612701550126
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 206.45101663585953,
+          "mean_output_tokens_reencoded": 60.248059149722735,
+          "mean_delta_output_tokens_vs_base": 28.98890942698706
+        },
+        "B": {
+          "n": 2705,
+          "quality": {
+            "n": 2705,
+            "sample_hr": 0.3597042513863216,
+            "package_hr": 0.15394685168215735,
+            "valid_rate": 0.9020332717190388,
+            "empty_rate": 0.04177449168207024,
+            "hallucinated_package_count": 1176,
+            "package_count": 7639,
+            "empty_count": 113
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.6745840634992295,
+              "p50": 0.5804946031421423,
+              "p95": 1.280823322199284
+            },
+            "extraction": {
+              "mean": 0.00010891343344712213,
+              "p50": 0.00010779686272144318,
+              "p95": 0.00014894045889377578
+            },
+            "total_delivery": {
+              "mean": 0.6746929769326766,
+              "p50": 0.5805973317474127,
+              "p95": 1.2809952417388548
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 206.45101663585953,
+          "mean_output_tokens_reencoded": 26.708317929759705,
+          "mean_delta_output_tokens_vs_base": -4.550831792975971
+        },
+        "C": {
+          "n": 2705,
+          "quality": {
+            "n": 2705,
+            "sample_hr": 0.31164510166358594,
+            "package_hr": 0.11823076111052465,
+            "valid_rate": 0.933826247689464,
+            "empty_rate": 0.05064695009242144,
+            "hallucinated_package_count": 1120,
+            "package_count": 9473,
+            "empty_count": 137
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.693444336783795,
+              "p50": 0.582346910610795,
+              "p95": 1.3438601963222025
+            },
+            "extraction": {
+              "mean": 0.00011352078916845834,
+              "p50": 0.0001104818657040596,
+              "p95": 0.00016782935708761204
+            },
+            "total_delivery": {
+              "mean": 0.6935578575729635,
+              "p50": 0.5824633846059442,
+              "p95": 1.3440017987042663
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 206.45101663585953,
+          "mean_output_tokens_reencoded": 28.006284658040666,
+          "mean_delta_output_tokens_vs_base": -3.2528650646950092
+        },
+        "D": {
+          "n": 2705,
+          "quality": {
+            "n": 2705,
+            "sample_hr": 0.43179297597042515,
+            "package_hr": 0.1635830553028005,
+            "valid_rate": 0.9537892791127541,
+            "empty_rate": 0.01922365988909427,
+            "hallucinated_package_count": 1618,
+            "package_count": 9891,
+            "empty_count": 52
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 1.7001569812642257,
+              "p50": 1.5834836447611451,
+              "p95": 2.959574482217431
+            },
+            "extraction": {
+              "mean": 0.00011376266414213533,
+              "p50": 0.0001049647107720375,
+              "p95": 0.00017487090080976482
+            },
+            "total_delivery": {
+              "mean": 1.7002707439283677,
+              "p50": 1.5835944162681699,
+              "p95": 2.9597277564927933
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 206.45101663585953,
+          "mean_output_tokens_reencoded": 72.25175600739371,
+          "mean_delta_output_tokens_vs_base": 40.99260628465804
+        }
+      },
+      "bound_online_verifier_folds": {
+        "A": {
+          "n": 2705,
+          "final_quality": {
+            "n": 2705,
+            "sample_hr": 0.0003696857670979667,
+            "package_hr": 0.00016377333770062233,
+            "valid_rate": 0.8022181146025879,
+            "empty_rate": 0.19186691312384474,
+            "hallucinated_package_count": 1,
+            "package_count": 6106,
+            "empty_count": 519
+          },
+          "filter": {
+            "filtered_total": 0.28946395563770794,
+            "filtered_invalid_current": 0.28946395563770794,
+            "filtered_unknown_online": 0.0014787430683918669,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 2.545286506469501,
+            "online_candidate_count": 2.5467652495378927,
+            "source_package_count": 2.571534195933457,
+            "retained_package_count": 2.2820702402957487,
+            "filtered_empty": 0.19186691312384474,
+            "source_empty": 0.16857670979667283,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 1.4810070204477956,
+              "p50": 0.9759875126183033,
+              "p95": 3.1055981669574977
+            },
+            "extraction": {
+              "mean": 9.755245280794648e-05,
+              "p50": 9.877141565084457e-05,
+              "p95": 0.00016425047069787972
+            },
+            "online_verify_filter": {
+              "mean": 0.8720657013298155,
+              "p50": 0.5825491063296795,
+              "p95": 2.4317620063200582
+            },
+            "total_delivery": {
+              "mean": 2.3531702742304192,
+              "p50": 2.1597370207309723,
+              "p95": 4.716595486551522
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "B": {
+          "n": 2705,
+          "final_quality": {
+            "n": 2705,
+            "sample_hr": 0.0011090573012939,
+            "package_hr": 0.00046396535725332506,
+            "valid_rate": 0.9020332717190388,
+            "empty_rate": 0.09353049907578559,
+            "hallucinated_package_count": 3,
+            "package_count": 6466,
+            "empty_count": 253
+          },
+          "filter": {
+            "filtered_total": 0.43364140480591495,
+            "filtered_invalid_current": 0.43364140480591495,
+            "filtered_unknown_online": 0.007763401109057301,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 2.8162661737523105,
+            "online_candidate_count": 2.8240295748613677,
+            "source_package_count": 2.8510166358595193,
+            "retained_package_count": 2.4173752310536045,
+            "filtered_empty": 0.09353049907578559,
+            "source_empty": 0.04177449168207024,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.6745840634992295,
+              "p50": 0.5804946031421423,
+              "p95": 1.280823322199284
+            },
+            "extraction": {
+              "mean": 0.00010891343344712213,
+              "p50": 0.00010779686272144318,
+              "p95": 0.00014894045889377578
+            },
+            "online_verify_filter": {
+              "mean": 1.010160438063625,
+              "p50": 0.8537457128986716,
+              "p95": 2.281098440289497
+            },
+            "total_delivery": {
+              "mean": 1.6848534149963017,
+              "p50": 1.5093217426910996,
+              "p95": 3.2871236788108935
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "C": {
+          "n": 2705,
+          "final_quality": {
+            "n": 2705,
+            "sample_hr": 0.0003696857670979667,
+            "package_hr": 0.00011970313622216902,
+            "valid_rate": 0.933826247689464,
+            "empty_rate": 0.05878003696857671,
+            "hallucinated_package_count": 1,
+            "package_count": 8354,
+            "empty_count": 159
+          },
+          "filter": {
+            "filtered_total": 0.41367837338262475,
+            "filtered_invalid_current": 0.41367837338262475,
+            "filtered_unknown_online": 0.0,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 3.5020332717190388,
+            "online_candidate_count": 3.5020332717190388,
+            "source_package_count": 3.6066543438077634,
+            "retained_package_count": 3.1929759704251386,
+            "filtered_empty": 0.05878003696857671,
+            "source_empty": 0.05064695009242144,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.693444336783795,
+              "p50": 0.582346910610795,
+              "p95": 1.3438601963222025
+            },
+            "extraction": {
+              "mean": 0.00011352078916845834,
+              "p50": 0.0001104818657040596,
+              "p95": 0.00016782935708761204
+            },
+            "online_verify_filter": {
+              "mean": 1.304412348123264,
+              "p50": 1.059564103372395,
+              "p95": 3.130296967178579
+            },
+            "total_delivery": {
+              "mean": 1.9979702056962274,
+              "p50": 1.6742969015613198,
+              "p95": 4.345026540942486
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "D": {
+          "n": 2705,
+          "final_quality": {
+            "n": 2705,
+            "sample_hr": 0.0014787430683918669,
+            "package_hr": 0.00048326688413676455,
+            "valid_rate": 0.9537892791127541,
+            "empty_rate": 0.043622920517560074,
+            "hallucinated_package_count": 4,
+            "package_count": 8277,
+            "empty_count": 118
+          },
+          "filter": {
+            "filtered_total": 0.5966728280961183,
+            "filtered_invalid_current": 0.5966728280961183,
+            "filtered_unknown_online": 0.0,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 3.6569316081330867,
+            "online_candidate_count": 3.656561922365989,
+            "source_package_count": 3.6913123844731976,
+            "retained_package_count": 3.0946395563770794,
+            "filtered_empty": 0.043622920517560074,
+            "source_empty": 0.01922365988909427,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 1.7001569812642257,
+              "p50": 1.5834836447611451,
+              "p95": 2.959574482217431
+            },
+            "extraction": {
+              "mean": 0.00011376266414213533,
+              "p50": 0.0001049647107720375,
+              "p95": 0.00017487090080976482
+            },
+            "online_verify_filter": {
+              "mean": 1.3399419341377514,
+              "p50": 1.0509719643741846,
+              "p95": 3.152436138689516
+            },
+            "total_delivery": {
+              "mean": 3.040212678066119,
+              "p50": 2.8232530504465103,
+              "p95": 5.583200704678892
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        }
+      },
+      "bound_four_fold_mean": {
+        "quality": {
+          "sample_hr": 0.32264325323475046,
+          "package_hr": 0.13739132103751558,
+          "valid_rate": 0.8979667282809612,
+          "empty_rate": 0.07005545286506469
+        },
+        "mean_delivery_seconds": 1.1374065378336529,
+        "mean_generation_seconds": 1.1372981004987615,
+        "mean_extraction_seconds": 0.00010843733489141556,
+        "mean_output_tokens_reencoded": 46.80360443622921,
+        "mean_delta_output_tokens_vs_base": 15.54445471349353
+      },
+      "bound_online_verifier_four_fold_mean": {
+        "quality": {
+          "sample_hr": 0.0008317929759704252,
+          "package_hr": 0.00030767717882822026,
+          "valid_rate": 0.8979667282809612,
+          "empty_rate": 0.09695009242144177
+        },
+        "mean_delivery_seconds": 2.269051643247267,
+        "mean_generation_seconds": 1.1372981004987615,
+        "mean_extraction_seconds": 0.00010843733489141556,
+        "mean_online_verify_filter_seconds": 1.131645105413614,
+        "filter": {
+          "filtered_total": 0.43336414048059146,
+          "filtered_invalid_current": 0.43336414048059146,
+          "filtered_unknown_online": 0.002310536044362292,
+          "filtered_snapshot_valid": 0.0,
+          "online_http_attempts": 3.1301293900184843,
+          "online_candidate_count": 3.1323475046210723,
+          "source_package_count": 3.1801293900184846,
+          "retained_package_count": 2.7467652495378925,
+          "filtered_empty": 0.09695009242144177,
+          "source_empty": 0.07005545286506469,
+          "extra_llm_tokens": 0.0
+        }
+      }
+    },
+    "qwen3-release": {
+      "n_prompts": 409,
+      "base": {
+        "quality": {
+          "n": 2045,
+          "sample_hr": 0.7046454767726161,
+          "package_hr": 0.25882728870426586,
+          "valid_rate": 0.8356968215158924,
+          "empty_rate": 0.022004889975550123,
+          "hallucinated_package_count": 1620,
+          "package_count": 6259,
+          "empty_count": 45
+        },
+        "mean_input_tokens": 177.78239608801957,
+        "mean_output_tokens_reencoded": 20.129095354523226,
+        "timing_seconds": {
+          "generation": {
+            "mean": 0.7186036608065763,
+            "p50": 0.6096408301964402,
+            "p95": 1.2889539282768965
+          },
+          "extraction": {
+            "mean": 4.324864254278729e-05,
+            "p50": 3.6441e-05,
+            "p95": 8.76918e-05
+          },
+          "total_delivery": {
+            "mean": 0.7186469094491191,
+            "p50": 0.6096678491964402,
+            "p95": 1.2890073436768965
+          }
+        },
+        "extra_verifier_llm_tokens": 0
+      },
+      "base_online_verifier": {
+        "n": 2045,
+        "final_quality": {
+          "n": 2045,
+          "sample_hr": 0.0,
+          "package_hr": 0.0,
+          "valid_rate": 0.8356968215158924,
+          "empty_rate": 0.1432762836185819,
+          "hallucinated_package_count": 0,
+          "package_count": 4639,
+          "empty_count": 293
+        },
+        "filter": {
+          "filtered_total": 0.7921760391198044,
+          "filtered_invalid_current": 0.7921760391198044,
+          "filtered_unknown_online": 0.0,
+          "filtered_snapshot_valid": 0.0,
+          "online_http_attempts": 3.0611246943765282,
+          "online_candidate_count": 3.060635696821516,
+          "source_package_count": 3.254767726161369,
+          "retained_package_count": 2.4625916870415647,
+          "filtered_empty": 0.1432762836185819,
+          "source_empty": 0.022004889975550123,
+          "extra_llm_tokens": 0.0
+        },
+        "timing_seconds": {
+          "generation": {
+            "mean": 0.7186036608065763,
+            "p50": 0.6096408301964402,
+            "p95": 1.2889539282768965
+          },
+          "extraction": {
+            "mean": 4.324864254278729e-05,
+            "p50": 3.6441e-05,
+            "p95": 8.76918e-05
+          },
+          "online_verify_filter": {
+            "mean": 1.074191637273905,
+            "p50": 0.8057990474626422,
+            "p95": 2.6709943432360883
+          },
+          "total_delivery": {
+            "mean": 1.7928385467230243,
+            "p50": 1.4378602426459275,
+            "p95": 3.858178195424108
+          }
+        },
+        "extra_verifier_llm_tokens": 0
+      },
+      "bound_folds": {
+        "A": {
+          "n": 2045,
+          "quality": {
+            "n": 2045,
+            "sample_hr": 0.10513447432762836,
+            "package_hr": 0.08078548347004723,
+            "valid_rate": 0.8665036674816626,
+            "empty_rate": 0.09486552567237164,
+            "hallucinated_package_count": 325,
+            "package_count": 4023,
+            "empty_count": 194
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.571422816334807,
+              "p50": 0.43979407008737326,
+              "p95": 1.1906017100438473
+            },
+            "extraction": {
+              "mean": 9.61355081688804e-05,
+              "p50": 9.04398038983345e-05,
+              "p95": 0.0001462982967495918
+            },
+            "total_delivery": {
+              "mean": 0.5715189518429757,
+              "p50": 0.43987269327044487,
+              "p95": 1.1907218506559727
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 177.78239608801957,
+          "mean_output_tokens_reencoded": 15.666992665036675,
+          "mean_delta_output_tokens_vs_base": -4.462102689486553
+        },
+        "B": {
+          "n": 2045,
+          "quality": {
+            "n": 2045,
+            "sample_hr": 0.09535452322738386,
+            "package_hr": 0.11954459203036052,
+            "valid_rate": 0.5442542787286063,
+            "empty_rate": 0.4371638141809291,
+            "hallucinated_package_count": 315,
+            "package_count": 2635,
+            "empty_count": 894
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.5432247515294182,
+              "p50": 0.43360807932913303,
+              "p95": 1.0374719575047493
+            },
+            "extraction": {
+              "mean": 7.205176096600834e-05,
+              "p50": 7.958710193634033e-05,
+              "p95": 0.00014280788600444793
+            },
+            "total_delivery": {
+              "mean": 0.5432968032903842,
+              "p50": 0.4336963417008519,
+              "p95": 1.0376059712842107
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 177.78239608801957,
+          "mean_output_tokens_reencoded": 14.458679706601467,
+          "mean_delta_output_tokens_vs_base": -5.67041564792176
+        },
+        "C": {
+          "n": 2045,
+          "quality": {
+            "n": 2045,
+            "sample_hr": 0.20146699266503668,
+            "package_hr": 0.16339748334566986,
+            "valid_rate": 0.7315403422982885,
+            "empty_rate": 0.2469437652811736,
+            "hallucinated_package_count": 883,
+            "package_count": 5404,
+            "empty_count": 505
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.7389831154144991,
+              "p50": 0.5105056064203382,
+              "p95": 1.8866559507325285
+            },
+            "extraction": {
+              "mean": 9.66585922102765e-05,
+              "p50": 9.489525109529495e-05,
+              "p95": 0.00019989665597677228
+            },
+            "total_delivery": {
+              "mean": 0.7390797740067093,
+              "p50": 0.5106101036071777,
+              "p95": 1.8869095912203184
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 177.78239608801957,
+          "mean_output_tokens_reencoded": 20.537897310513447,
+          "mean_delta_output_tokens_vs_base": 0.40880195599022007
+        },
+        "D": {
+          "n": 2045,
+          "quality": {
+            "n": 2045,
+            "sample_hr": 0.16625916870415647,
+            "package_hr": 0.1347708894878706,
+            "valid_rate": 0.8273838630806846,
+            "empty_rate": 0.15892420537897312,
+            "hallucinated_package_count": 800,
+            "package_count": 5936,
+            "empty_count": 325
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.755542142593591,
+              "p50": 0.5377025753259659,
+              "p95": 1.9630774803459643
+            },
+            "extraction": {
+              "mean": 0.00010904040060081226,
+              "p50": 0.00010640546679496765,
+              "p95": 0.00020328331738710402
+            },
+            "total_delivery": {
+              "mean": 0.7556511829941919,
+              "p50": 0.5378159089013934,
+              "p95": 1.9632571374997494
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 177.78239608801957,
+          "mean_output_tokens_reencoded": 20.98484107579462,
+          "mean_delta_output_tokens_vs_base": 0.8557457212713936
+        }
+      },
+      "bound_online_verifier_folds": {
+        "A": {
+          "n": 2045,
+          "final_quality": {
+            "n": 2045,
+            "sample_hr": 0.0,
+            "package_hr": 0.0,
+            "valid_rate": 0.8665036674816626,
+            "empty_rate": 0.11246943765281174,
+            "hallucinated_package_count": 0,
+            "package_count": 3698,
+            "empty_count": 230
+          },
+          "filter": {
+            "filtered_total": 0.15892420537897312,
+            "filtered_invalid_current": 0.15892420537897312,
+            "filtered_unknown_online": 0.0,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 1.967237163814181,
+            "online_candidate_count": 1.967237163814181,
+            "source_package_count": 2.025916870415648,
+            "retained_package_count": 1.8669926650366748,
+            "filtered_empty": 0.11246943765281174,
+            "source_empty": 0.09486552567237164,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.571422816334807,
+              "p50": 0.43979407008737326,
+              "p95": 1.1906017100438473
+            },
+            "extraction": {
+              "mean": 9.61355081688804e-05,
+              "p50": 9.04398038983345e-05,
+              "p95": 0.0001462982967495918
+            },
+            "online_verify_filter": {
+              "mean": 0.6244495222531714,
+              "p50": 0.30151339434087276,
+              "p95": 1.7742985490709542
+            },
+            "total_delivery": {
+              "mean": 1.1959684740961471,
+              "p50": 0.7407579533755779,
+              "p95": 2.8759339671581983
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "B": {
+          "n": 2045,
+          "final_quality": {
+            "n": 2045,
+            "sample_hr": 0.0,
+            "package_hr": 0.0,
+            "valid_rate": 0.5442542787286063,
+            "empty_rate": 0.4488997555012225,
+            "hallucinated_package_count": 0,
+            "package_count": 2320,
+            "empty_count": 918
+          },
+          "filter": {
+            "filtered_total": 0.15403422982885084,
+            "filtered_invalid_current": 0.15403422982885084,
+            "filtered_unknown_online": 0.0,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 1.2885085574572128,
+            "online_candidate_count": 1.2885085574572128,
+            "source_package_count": 1.3139364303178485,
+            "retained_package_count": 1.1599022004889976,
+            "filtered_empty": 0.4488997555012225,
+            "source_empty": 0.4371638141809291,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.5432247515294182,
+              "p50": 0.43360807932913303,
+              "p95": 1.0374719575047493
+            },
+            "extraction": {
+              "mean": 7.205176096600834e-05,
+              "p50": 7.958710193634033e-05,
+              "p95": 0.00014280788600444793
+            },
+            "online_verify_filter": {
+              "mean": 0.419681558027991,
+              "p50": 0.26085045747458935,
+              "p95": 1.5565763978287577
+            },
+            "total_delivery": {
+              "mean": 0.9629783613183752,
+              "p50": 0.6706920331344008,
+              "p95": 2.449012408033012
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "C": {
+          "n": 2045,
+          "final_quality": {
+            "n": 2045,
+            "sample_hr": 0.0,
+            "package_hr": 0.0,
+            "valid_rate": 0.7315403422982885,
+            "empty_rate": 0.26112469437652813,
+            "hallucinated_package_count": 0,
+            "package_count": 4521,
+            "empty_count": 534
+          },
+          "filter": {
+            "filtered_total": 0.4317848410757946,
+            "filtered_invalid_current": 0.4317848410757946,
+            "filtered_unknown_online": 0.0,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 2.6425427872860636,
+            "online_candidate_count": 2.6425427872860636,
+            "source_package_count": 2.699755501222494,
+            "retained_package_count": 2.267970660146699,
+            "filtered_empty": 0.26112469437652813,
+            "source_empty": 0.2469437652811736,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.7389831154144991,
+              "p50": 0.5105056064203382,
+              "p95": 1.8866559507325285
+            },
+            "extraction": {
+              "mean": 9.66585922102765e-05,
+              "p50": 9.489525109529495e-05,
+              "p95": 0.00019989665597677228
+            },
+            "online_verify_filter": {
+              "mean": 0.8705912686989149,
+              "p50": 0.5469703990966082,
+              "p95": 2.958575343340635
+            },
+            "total_delivery": {
+              "mean": 1.6096710427056242,
+              "p50": 1.083079170435667,
+              "p95": 4.940595101937651
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "D": {
+          "n": 2045,
+          "final_quality": {
+            "n": 2045,
+            "sample_hr": 0.0,
+            "package_hr": 0.0,
+            "valid_rate": 0.8273838630806846,
+            "empty_rate": 0.16723716381418094,
+            "hallucinated_package_count": 0,
+            "package_count": 5135,
+            "empty_count": 342
+          },
+          "filter": {
+            "filtered_total": 0.39168704156479217,
+            "filtered_invalid_current": 0.39119804400978,
+            "filtered_unknown_online": 0.0004889975550122249,
+            "filtered_snapshot_valid": 0.0004889975550122249,
+            "online_http_attempts": 2.9036674816625916,
+            "online_candidate_count": 2.902689486552567,
+            "source_package_count": 2.9599022004889974,
+            "retained_package_count": 2.5682151589242053,
+            "filtered_empty": 0.16723716381418094,
+            "source_empty": 0.15892420537897312,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.755542142593591,
+              "p50": 0.5377025753259659,
+              "p95": 1.9630774803459643
+            },
+            "extraction": {
+              "mean": 0.00010904040060081226,
+              "p50": 0.00010640546679496765,
+              "p95": 0.00020328331738710402
+            },
+            "online_verify_filter": {
+              "mean": 0.9012026143982133,
+              "p50": 0.6020429106429219,
+              "p95": 2.6682332722470163
+            },
+            "total_delivery": {
+              "mean": 1.6568537973924051,
+              "p50": 1.1996428733691573,
+              "p95": 4.865421954728658
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        }
+      },
+      "bound_four_fold_mean": {
+        "quality": {
+          "sample_hr": 0.14205378973105134,
+          "package_hr": 0.12462461208348707,
+          "valid_rate": 0.7424205378973106,
+          "empty_rate": 0.23447432762836184
+        },
+        "mean_delivery_seconds": 0.6523866780335652,
+        "mean_generation_seconds": 0.6522932064680788,
+        "mean_extraction_seconds": 9.347156548649437e-05,
+        "mean_output_tokens_reencoded": 17.912102689486552,
+        "mean_delta_output_tokens_vs_base": -2.216992665036675
+      },
+      "bound_online_verifier_four_fold_mean": {
+        "quality": {
+          "sample_hr": 0.0,
+          "package_hr": 0.0,
+          "valid_rate": 0.7424205378973106,
+          "empty_rate": 0.24743276283618582
+        },
+        "mean_delivery_seconds": 1.356367918878138,
+        "mean_generation_seconds": 0.6522932064680788,
+        "mean_extraction_seconds": 9.347156548649437e-05,
+        "mean_online_verify_filter_seconds": 0.7039812408445726,
+        "filter": {
+          "filtered_total": 0.2841075794621027,
+          "filtered_invalid_current": 0.28398533007334964,
+          "filtered_unknown_online": 0.00012224938875305622,
+          "filtered_snapshot_valid": 0.00012224938875305622,
+          "online_http_attempts": 2.2004889975550124,
+          "online_candidate_count": 2.200244498777506,
+          "source_package_count": 2.249877750611247,
+          "retained_package_count": 1.9657701711491442,
+          "filtered_empty": 0.24743276283618582,
+          "source_empty": 0.23447432762836184,
+          "extra_llm_tokens": 0.0
+        }
+      }
+    },
+    "llama3.1-release": {
+      "n_prompts": 934,
+      "base": {
+        "quality": {
+          "n": 4670,
+          "sample_hr": 0.684796573875803,
+          "package_hr": 0.29337974517273085,
+          "valid_rate": 0.8479657387580299,
+          "empty_rate": 0.012633832976445396,
+          "hallucinated_package_count": 4467,
+          "package_count": 15226,
+          "empty_count": 59
+        },
+        "mean_input_tokens": 192.64025695931477,
+        "mean_output_tokens_reencoded": 22.469379014989293,
+        "timing_seconds": {
+          "generation": {
+            "mean": 0.5816439393750238,
+            "p50": 0.47670808248221874,
+            "p95": 1.074000058555976
+          },
+          "extraction": {
+            "mean": 4.636267794432548e-05,
+            "p50": 3.82605e-05,
+            "p95": 9.77951e-05
+          },
+          "total_delivery": {
+            "mean": 0.5816903020529682,
+            "p50": 0.4767488734822187,
+            "p95": 1.074101148105976
+          }
+        },
+        "extra_verifier_llm_tokens": 0
+      },
+      "base_online_verifier": {
+        "n": 4670,
+        "final_quality": {
+          "n": 4670,
+          "sample_hr": 0.0,
+          "package_hr": 0.0,
+          "valid_rate": 0.8479657387580299,
+          "empty_rate": 0.12483940042826552,
+          "hallucinated_package_count": 0,
+          "package_count": 10759,
+          "empty_count": 583
+        },
+        "filter": {
+          "filtered_total": 0.9565310492505353,
+          "filtered_invalid_current": 0.9565310492505353,
+          "filtered_unknown_online": 0.012633832976445396,
+          "filtered_snapshot_valid": 0.0,
+          "online_http_attempts": 3.24796573875803,
+          "online_candidate_count": 3.260385438972163,
+          "source_package_count": 3.4194860813704495,
+          "retained_package_count": 2.4629550321199143,
+          "filtered_empty": 0.12483940042826552,
+          "source_empty": 0.012633832976445396,
+          "extra_llm_tokens": 0.0
+        },
+        "timing_seconds": {
+          "generation": {
+            "mean": 0.5816439393750238,
+            "p50": 0.47670808248221874,
+            "p95": 1.074000058555976
+          },
+          "extraction": {
+            "mean": 4.636267794432548e-05,
+            "p50": 3.82605e-05,
+            "p95": 9.77951e-05
+          },
+          "online_verify_filter": {
+            "mean": 1.1948663009191032,
+            "p50": 0.935068461112678,
+            "p95": 3.0099581582006083
+          },
+          "total_delivery": {
+            "mean": 1.7765566029720714,
+            "p50": 1.4232203443024358,
+            "p95": 4.011081658131247
+          }
+        },
+        "extra_verifier_llm_tokens": 0
+      },
+      "bound_folds": {
+        "A": {
+          "n": 4670,
+          "quality": {
+            "n": 4670,
+            "sample_hr": 0.302355460385439,
+            "package_hr": 0.1694432578670084,
+            "valid_rate": 0.7961456102783726,
+            "empty_rate": 0.1443254817987152,
+            "hallucinated_package_count": 2380,
+            "package_count": 14046,
+            "empty_count": 674
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.5467313446495403,
+              "p50": 0.46763669280335307,
+              "p95": 1.107818236714229
+            },
+            "extraction": {
+              "mean": 0.00010977843178065227,
+              "p50": 0.00011440878733992577,
+              "p95": 0.00017120209522545338
+            },
+            "total_delivery": {
+              "mean": 0.5468411230813209,
+              "p50": 0.46775917802006006,
+              "p95": 1.1079869269393385
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 192.64025695931477,
+          "mean_output_tokens_reencoded": 20.796573875803,
+          "mean_delta_output_tokens_vs_base": -1.6728051391862955
+        },
+        "B": {
+          "n": 4670,
+          "quality": {
+            "n": 4670,
+            "sample_hr": 0.3612419700214133,
+            "package_hr": 0.2988140005785363,
+            "valid_rate": 0.6531049250535332,
+            "empty_rate": 0.32826552462526765,
+            "hallucinated_package_count": 5165,
+            "package_count": 17285,
+            "empty_count": 1533
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.6553338585941947,
+              "p50": 0.4618896199390292,
+              "p95": 1.8131722384598112
+            },
+            "extraction": {
+              "mean": 0.0001044035562148569,
+              "p50": 0.0001111915335059166,
+              "p95": 0.00022393022663891334
+            },
+            "total_delivery": {
+              "mean": 0.6554382621504096,
+              "p50": 0.46199370035901666,
+              "p95": 1.8133950897492475
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 192.64025695931477,
+          "mean_output_tokens_reencoded": 26.16745182012848,
+          "mean_delta_output_tokens_vs_base": 3.6980728051391862
+        },
+        "C": {
+          "n": 4670,
+          "quality": {
+            "n": 4670,
+            "sample_hr": 0.4537473233404711,
+            "package_hr": 0.1888995084653195,
+            "valid_rate": 0.9524625267665953,
+            "empty_rate": 0.007066381156316916,
+            "hallucinated_package_count": 2767,
+            "package_count": 14648,
+            "empty_count": 33
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.5102137806590016,
+              "p50": 0.4705382566899061,
+              "p95": 0.80836311141029
+            },
+            "extraction": {
+              "mean": 0.00011449504276733582,
+              "p50": 0.00011165253818035126,
+              "p95": 0.00014774547889828682
+            },
+            "total_delivery": {
+              "mean": 0.510328275701769,
+              "p50": 0.4706558254547417,
+              "p95": 0.8085161936003715
+            }
+          },
+          "extra_verifier_llm_tokens": 0,
+          "mean_input_tokens": 192.64025695931477,
+          "mean_output_tokens_reencoded": 19.63832976445396,
+          "mean_delta_output_tokens_vs_base": -2.8310492505353317
+        }
+      },
+      "bound_online_verifier_folds": {
+        "A": {
+          "n": 4670,
+          "final_quality": {
+            "n": 4670,
+            "sample_hr": 0.0,
+            "package_hr": 0.0,
+            "valid_rate": 0.7961456102783726,
+            "empty_rate": 0.16038543897216273,
+            "hallucinated_package_count": 0,
+            "package_count": 11666,
+            "empty_count": 749
+          },
+          "filter": {
+            "filtered_total": 0.5096359743040685,
+            "filtered_invalid_current": 0.5096359743040685,
+            "filtered_unknown_online": 0.0017130620985010706,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 3.006209850107066,
+            "online_candidate_count": 3.007708779443255,
+            "source_package_count": 3.1612419700214134,
+            "retained_package_count": 2.6516059957173446,
+            "filtered_empty": 0.16038543897216273,
+            "source_empty": 0.1443254817987152,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.5467313446495403,
+              "p50": 0.46763669280335307,
+              "p95": 1.107818236714229
+            },
+            "extraction": {
+              "mean": 0.00010977843178065227,
+              "p50": 0.00011440878733992577,
+              "p95": 0.00017120209522545338
+            },
+            "online_verify_filter": {
+              "mean": 0.9556451924330689,
+              "p50": 0.814709787722677,
+              "p95": 2.5050382264889777
+            },
+            "total_delivery": {
+              "mean": 1.5024863155143897,
+              "p50": 1.2972580343484879,
+              "p95": 3.5384311913978315
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "B": {
+          "n": 4670,
+          "final_quality": {
+            "n": 4670,
+            "sample_hr": 0.00021413276231263382,
+            "package_hr": 8.250144377526606e-05,
+            "valid_rate": 0.6531049250535332,
+            "empty_rate": 0.33576017130620983,
+            "hallucinated_package_count": 1,
+            "package_count": 12121,
+            "empty_count": 1568
+          },
+          "filter": {
+            "filtered_total": 1.105781584582441,
+            "filtered_invalid_current": 1.105781584582441,
+            "filtered_unknown_online": 0.0017130620985010706,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 3.7,
+            "online_candidate_count": 3.701284796573876,
+            "source_package_count": 3.7732334047109206,
+            "retained_package_count": 2.6674518201284796,
+            "filtered_empty": 0.33576017130620983,
+            "source_empty": 0.32826552462526765,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.6553338585941947,
+              "p50": 0.4618896199390292,
+              "p95": 1.8131722384598112
+            },
+            "extraction": {
+              "mean": 0.0001044035562148569,
+              "p50": 0.0001111915335059166,
+              "p95": 0.00022393022663891334
+            },
+            "online_verify_filter": {
+              "mean": 1.1681210838300147,
+              "p50": 0.815662189386785,
+              "p95": 3.7686565927695543
+            },
+            "total_delivery": {
+              "mean": 1.823559345980424,
+              "p50": 1.3023118330165744,
+              "p95": 5.478470249520617
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        },
+        "C": {
+          "n": 2005,
+          "final_quality": {
+            "n": 2005,
+            "sample_hr": 0.0,
+            "package_hr": 0.0,
+            "valid_rate": 0.9556109725685785,
+            "empty_rate": 0.02942643391521197,
+            "hallucinated_package_count": 0,
+            "package_count": 5144,
+            "empty_count": 59
+          },
+          "filter": {
+            "filtered_total": 0.6049875311720698,
+            "filtered_invalid_current": 0.6049875311720698,
+            "filtered_unknown_online": 0.0,
+            "filtered_snapshot_valid": 0.0,
+            "online_http_attempts": 3.172069825436409,
+            "online_candidate_count": 3.170573566084788,
+            "source_package_count": 3.25785536159601,
+            "retained_package_count": 2.6528678304239404,
+            "filtered_empty": 0.02942643391521197,
+            "source_empty": 0.007481296758104738,
+            "extra_llm_tokens": 0.0
+          },
+          "timing_seconds": {
+            "generation": {
+              "mean": 0.514399054821144,
+              "p50": 0.4703080467879772,
+              "p95": 0.8242100801318883
+            },
+            "extraction": {
+              "mean": 0.00011389705763567713,
+              "p50": 0.00011029094457626343,
+              "p95": 0.0001489909365773201
+            },
+            "online_verify_filter": {
+              "mean": 0.9503739915379413,
+              "p50": 0.8120460566133261,
+              "p95": 1.8371244698762892
+            },
+            "total_delivery": {
+              "mean": 1.464886943416721,
+              "p50": 1.3044131183996797,
+              "p95": 2.6467943977564574
+            }
+          },
+          "extra_verifier_llm_tokens": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{"event": "start", "command": ["/home/shuhanliu/miniconda3/envs/EasyEdit/bin/python", "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/script/evaluate_risk_common_seeds.py", "--gpu", "3", "--fold", "B", "--condition", "full_risk", "--one"], "utc_epoch": 1790291611.1409605}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.40s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.53s/it]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+loaded delta /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50
+{"fold": "B", "condition": "full_risk", "n_done": 10, "elapsed_seconds": 60.01215624809265}
+{"fold": "B", "condition": "full_risk", "n_done": 20, "elapsed_seconds": 107.2191469669342}
+{"fold": "B", "condition": "full_risk", "n_done": 30, "elapsed_seconds": 170.05804443359375}
+{"fold": "B", "condition": "full_risk", "n_done": 40, "elapsed_seconds": 227.85296726226807}
+{"fold": "B", "condition": "full_risk", "n_done": 50, "elapsed_seconds": 275.5376536846161}
+{"fold": "B", "condition": "full_risk", "n_done": 60, "elapsed_seconds": 332.7968339920044}
+{"fold": "B", "condition": "full_risk", "n_done": 70, "elapsed_seconds": 387.68723797798157}
+{"fold": "B", "condition": "full_risk", "n_done": 80, "elapsed_seconds": 440.9822371006012}
+{"fold": "B", "condition": "full_risk", "n_done": 90, "elapsed_seconds": 467.62815046310425}
+{"fold": "B", "condition": "full_risk", "n_done": 100, "elapsed_seconds": 528.2815632820129}
+{"status": "complete", "model": "deepseekcoder", "fold": "B", "condition": "full_risk", "gpu": "3", "n_prompts": 100, "n_generations_per_prompt": 5, "elapsed_seconds": 528.282445192337, "adapter_sha256": "9346a3fc3aa20975eb11e32a2ab7ef9e8209f0d8542176281c530707e73e17d8", "test100_sha256": "15e45179f8d83c8de9cf51898f3102cceab9d0dec338cd79be8f7c05af45e92c", "case_sha256": "35016918b437a910d7cd0ca6eb137714cbe76e1a6cc8244244303e609f6393c4", "cutoff": "2023-11-02T00:00:00", "seed_rule": "SHA256(E5-risk/{prompt_id}/{generation})", "n_release_cache_additions": 125}
+{"event": "end", "returncode": 0, "utc_epoch": 1790292144.6771488}

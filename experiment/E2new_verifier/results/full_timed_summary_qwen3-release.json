@@ -1,0 +1,160 @@
+{
+  "scope": "full original high-risk unseen prompts; fresh five-trial Base and its verifier; archived four-fold BOUND",
+  "index": {
+    "downloaded_utc": "2026-09-24T04:31:36.537839+00:00",
+    "response_date": "Thu, 24 Sep 2026 04:31:25 GMT",
+    "serial": "41394637",
+    "api_version": "1.4",
+    "raw_sha256": "8543b53a77aad91c04c6e94997a9b55c49fe8956bd7c032912481730da870b19",
+    "project_count": 897748,
+    "url": "https://pypi.org/simple/"
+  },
+  "models": {
+    "qwen3-release": {
+      "n_prompts": 409,
+      "n_trials_per_condition": 2045,
+      "metrics": {
+        "base": {
+          "n": 2045,
+          "sample_hr": 0.7046454767726161,
+          "package_hr": 0.25882728870426586,
+          "valid_rate": 0.8356968215158924,
+          "empty_rate": 0.022004889975550123,
+          "hallucinated_package_count": 1620,
+          "package_count": 6259,
+          "empty_count": 45
+        },
+        "bov": {
+          "n": 2045,
+          "sample_hr": 0.0,
+          "package_hr": 0.0,
+          "valid_rate": 0.8356968215158924,
+          "empty_rate": 0.1432762836185819,
+          "hallucinated_package_count": 0,
+          "package_count": 4639,
+          "empty_count": 293
+        },
+        "bound_A": {
+          "n": 2045,
+          "sample_hr": 0.10366748166259168,
+          "package_hr": 0.07247093742270591,
+          "valid_rate": 0.8733496332518338,
+          "empty_rate": 0.08801955990220049,
+          "hallucinated_package_count": 293,
+          "package_count": 4043,
+          "empty_count": 180
+        },
+        "bound_B": {
+          "n": 2045,
+          "sample_hr": 0.08753056234718827,
+          "package_hr": 0.09491778774289986,
+          "valid_rate": 0.560880195599022,
+          "empty_rate": 0.42053789731051344,
+          "hallucinated_package_count": 254,
+          "package_count": 2676,
+          "empty_count": 860
+        },
+        "bound_C": {
+          "n": 2045,
+          "sample_hr": 0.1941320293398533,
+          "package_hr": 0.13456257355825815,
+          "valid_rate": 0.7271393643031785,
+          "empty_rate": 0.24792176039119804,
+          "hallucinated_package_count": 686,
+          "package_count": 5098,
+          "empty_count": 507
+        },
+        "bound_D": {
+          "n": 2045,
+          "sample_hr": 0.1843520782396088,
+          "package_hr": 0.11306927237829349,
+          "valid_rate": 0.8308068459657701,
+          "empty_rate": 0.15647921760391198,
+          "hallucinated_package_count": 648,
+          "package_count": 5731,
+          "empty_count": 320
+        },
+        "bound_macro": {
+          "sample_hr": 0.14242053789731052,
+          "package_hr": 0.10375514277553936,
+          "valid_rate": 0.7480440097799511,
+          "empty_rate": 0.22823960880195598,
+          "n_per_fold": 2045
+        }
+      },
+      "paired_sample_hr_difference": {
+        "bound_minus_base": [
+          -0.5622249388753056,
+          -0.6003667481662592,
+          -0.5227383863080685
+        ],
+        "bound_minus_bov": [
+          0.14242053789731052,
+          0.12285757946210268,
+          0.16418092909535453
+        ],
+        "bov_minus_base": [
+          -0.7046454767726162,
+          -0.7418092909535452,
+          -0.6660146699266503
+        ]
+      },
+      "paired_package_hr_difference": {
+        "bound_minus_base": [
+          -0.15507214592872648,
+          -0.18287670986524168,
+          -0.12894504790673855
+        ],
+        "bound_minus_bov": [
+          0.10375514277553936,
+          0.08740982826849444,
+          0.12117349216992361
+        ]
+      },
+      "timing": {
+        "base": {
+          "n": 2045,
+          "mean_seconds": 0.7186036608065763,
+          "median_seconds": 0.6096408301964402,
+          "p95_seconds": 1.2889539282768965,
+          "sum_seconds": 1469.5444863494486
+        },
+        "verify": {
+          "n": 2045,
+          "mean_seconds": 1.074191637273905,
+          "median_seconds": 0.8057990474626422,
+          "p95_seconds": 2.6709943432360883,
+          "sum_seconds": 2196.721898225136
+        },
+        "bov": {
+          "n": 2045,
+          "mean_seconds": 1.7927952980804815,
+          "median_seconds": 1.4378201216459274,
+          "p95_seconds": 3.858094806224108,
+          "sum_seconds": 3666.2663845745847
+        }
+      },
+      "token_counts": {
+        "input_tokens": {
+          "mean": 177.78239608801957,
+          "sum": 363565
+        },
+        "output_tokens_reencoded": {
+          "mean": 20.129095354523226,
+          "sum": 41164
+        }
+      },
+      "verifier": {
+        "checks": {
+          "exists": 4639,
+          "http_attempts": 6260,
+          "absent": 1620,
+          "stdlib": 397
+        },
+        "unknown_answer_count": 0,
+        "snapshot_exists_but_verifier_removed_count": 0,
+        "verifier_exists_but_snapshot_absent": {}
+      }
+    }
+  }
+}

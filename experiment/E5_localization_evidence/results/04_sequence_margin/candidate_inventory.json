@@ -1,0 +1,88 @@
+{
+  "counts": {
+    "deepseekcoder": {
+      "prompts": 100,
+      "prompts_with_both_classes": 53,
+      "valid_candidates": 142,
+      "hallucinated_candidates": 189,
+      "pairs": 374
+    },
+    "qwen3-release": {
+      "prompts": 100,
+      "prompts_with_both_classes": 39,
+      "valid_candidates": 149,
+      "hallucinated_candidates": 138,
+      "pairs": 658
+    },
+    "llama3.1-release": {
+      "prompts": 100,
+      "prompts_with_both_classes": 67,
+      "valid_candidates": 198,
+      "hallucinated_candidates": 264,
+      "pairs": 714
+    }
+  },
+  "sources": [
+    {
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/test100/rq2_test100.jsonl",
+      "sha256": "15e45179f8d83c8de9cf51898f3102cceab9d0dec338cd79be8f7c05af45e92c"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "a15103c438f76b13d83303b1322c65117fa0afc1f6d8a54ad9e95c29e481f888"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "ac85c959d3a111ce3efbef3791a5479dd253cdfe359e812f8d59c9a2656ffe50"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "b94c1db6c7fbd3e7723d0c1156d0f090e316fb653fef9846b3990f6eac570b75"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "b0bd9c237bda0463e2fd94649c8bb83d70e6b40f675ad84991ab0a06e18dcf3c"
+    },
+    {
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/test100/rq2_test100.jsonl",
+      "sha256": "a7c2eb44eda09a2d776a574d434903f3079d6889857f08b87e5d89003ea59480"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "653ec931e3025aa8918062395d257cd0b373a903ed1339223e04333cef92c075"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "185c6baf4cfac59550c883babecc5ec33b252d39df4ff7b86695a7cb6949ca6b"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "16711d82cb7784ed09063ed3185dee92312d2cf78c6d51eaf9b1171ded5762e7"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "0f480fc1b97c873cc3e3859d3c7b5397ebe5e847773d3c28c292b1520afbea4f"
+    },
+    {
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/test100/rq2_test100.jsonl",
+      "sha256": "ee01f42aa34f6e8ba726dc448f4945811bd0d71d148b9e9250809e2579baef94"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "fb3548e02d7c6bf00468d3e14a1fb44ae3bd66ed2c43d287c3ffb6aa9aeb4d63"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "bf8d72147786ac85b0d19c610039fea2c94f0a697a5fbaa329f3df95d0f943fd"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "15d0587f8b08ca9f4712109604ecdebeebf96af2c6da72654a30f64f1617cfdd"
+    },
+    {
+      "path": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50/selected_task_recommend_cases.jsonl",
+      "sha256": "e10984a1c7a4b6cefe13809a467196e09441ee2a31a31cf9655ddf3c907eddd8"
+    }
+  ],
+  "rule": "Exclude any package appearing in any fold's edit valid_reference or hallucinated set; historical labels require independent registry verification."
+}

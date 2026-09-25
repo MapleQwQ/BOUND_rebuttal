@@ -1,0 +1,15 @@
+{
+  "status": "provisional_historical_labels",
+  "model": "deepseekcoder",
+  "fold": "B",
+  "gpu": "2",
+  "n_prompts": 95,
+  "n_candidate_scores": 662,
+  "elapsed_seconds": 19.83343768119812,
+  "candidate_manifest_sha256": "3ed03e66b1efeab3c8f286e64d49bf27e2ef7c36bf14eb11307c61300c6aae76",
+  "adapter_config_sha256": "164e0cfed5680053a34fffbffe704e127274ec739dafa09653f9b29b75a34237",
+  "adapter_delta_sha256": "9346a3fc3aa20975eb11e32a2ab7ef9e8209f0d8542176281c530707e73e17d8",
+  "model_path": "/data0/shuhanliu/models/deepseekcoder",
+  "answer_prefix": "[ANSWER]\n",
+  "candidate_presentation": "normalized package name with leading space"
+}

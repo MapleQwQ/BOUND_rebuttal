@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import functools
+import hashlib
 import json
 import re
 import time
@@ -11,6 +13,7 @@ import traceback
 from pathlib import Path
 
 import torch
+from transformers import set_seed
 
 from packmonitor_generate import PackMonitor
 from knowledgeEdit.package_edit_utils import inject_lora
@@ -87,6 +90,11 @@ def main() -> None:
     parser.add_argument("--manifest-model", default="deepseekcoder")
     parser.add_argument("--delta-dir", default="")
     parser.add_argument("--condition-prefix", choices=["base", "bound"], default="base")
+    parser.add_argument("--generations", type=int, default=1)
+    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--only-unconstrained", action="store_true")
+    parser.add_argument("--disable-thinking", action="store_true",
+                        help="Use the model chat template's enable_thinking=False (Qwen3).")
     args = parser.parse_args()
 
     if args.manifest_json:
@@ -100,9 +108,12 @@ def main() -> None:
 
     load_start = time.perf_counter()
     model = TypoPatchedPackMonitor(args.model_path, package_path=[args.registry])
+    if args.disable_thinking:
+        model.hf_tokenizer.apply_chat_template = functools.partial(
+            model.hf_tokenizer.apply_chat_template, enable_thinking=False)
     load_seconds = time.perf_counter() - load_start
-    probe = official_grammar_probe(model)
-    if not probe["is_error"]:
+    probe = official_grammar_probe(model) if not args.only_unconstrained else {"skipped": "no constrained condition"}
+    if not args.only_unconstrained and not probe["is_error"]:
         raise RuntimeError("expected frozen official grammar to expose its undefined-symbol error")
 
     delta_dir = Path(args.delta_dir) if args.delta_dir else None
@@ -123,6 +134,21 @@ def main() -> None:
         model.model.load_state_dict(state, strict=False)
         model.model.eval()
 
+    warmup_messages = [{"role": "user", "content": tasks[0]["prompt"]}]
+    set_seed(20260924)
+    warmup_start = time.perf_counter()
+    model.generate(warmup_messages, use_packmonitor=False, max_tokens=16, temperature=0.0)
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
+    warmup_generation_seconds = time.perf_counter() - warmup_start
+    matcher_build_seconds = 0.0
+    if not args.only_unconstrained:
+        matcher_start = time.perf_counter()
+        matcher, _ = model.get_cached_matcher(model.package_list)
+        if matcher is None or matcher.is_error():
+            raise RuntimeError("PackMonitor matcher did not build after the disclosed grammar typo patch")
+        matcher_build_seconds = time.perf_counter() - matcher_start
+
     output_path = Path(args.output_jsonl)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     rows = []
@@ -136,14 +162,21 @@ def main() -> None:
                 if args.condition_prefix == "base"
                 else (("bound", False), ("bound_packmonitor", True))
             )
-            for condition, use_packmonitor in condition_pairs:
+            if args.only_unconstrained:
+                condition_pairs = condition_pairs[:1]
+            for generation in range(args.generations):
+              for condition, use_packmonitor in condition_pairs:
+                seed = int.from_bytes(hashlib.sha256(f"E2new-PM:{args.manifest_model}:{task['prompt_id']}:{generation}".encode()).digest()[:4], "big")
+                set_seed(seed)
+                if torch.cuda.is_available():
+                    torch.cuda.synchronize()
                 start = time.perf_counter()
                 try:
                     text, tokens = model.generate(
                         messages,
                         use_packmonitor=use_packmonitor,
                         max_tokens=args.max_tokens,
-                        temperature=0.0,
+                        temperature=args.temperature,
                     )
                     error = None
                     stack = None
@@ -152,17 +185,26 @@ def main() -> None:
                     tokens = 0
                     error = f"{type(exc).__name__}: {exc}"
                     stack = traceback.format_exc()
+                if torch.cuda.is_available():
+                    torch.cuda.synchronize()
                 latency = time.perf_counter() - start
+                extraction_start = time.perf_counter()
                 packages = extract_packages(text)
+                extraction_seconds = time.perf_counter() - extraction_start
                 invalid = [name for name in packages if name not in registry]
                 row = {
                     **task,
                     "condition": condition,
+                    "generation": generation,
+                    "seed": seed,
                     "use_packmonitor": use_packmonitor,
                     "compatibility_patch": "NATATURAL_LANG->NATURAL_LANG" if use_packmonitor else None,
                     "answer": text,
                     "decoded_tokens": tokens,
                     "latency_seconds": latency,
+                    "generation_seconds": latency,
+                    "extraction_seconds": extraction_seconds,
+                    "delivery_seconds": latency + extraction_seconds,
                     "install_region_emitted": bool(PIP_RE.search(text)),
                     "packages": packages,
                     "invalid_packages": invalid,
@@ -180,11 +222,14 @@ def main() -> None:
         if args.condition_prefix == "base"
         else ("bound", "bound_packmonitor")
     )
+    if args.only_unconstrained:
+        condition_names = condition_names[:1]
     for condition in condition_names:
         subset = [row for row in rows if row["condition"] == condition]
         latencies = sorted(row["latency_seconds"] for row in subset)
         conditions[condition] = {
-            "n_tasks": len(subset),
+            "n_tasks": len({str(row["prompt_id"]) for row in subset}),
+            "n_answers": len(subset),
             "successful_generations": sum(row["error"] is None for row in subset),
             "install_region_trigger_rate": sum(row["install_region_emitted"] for row in subset) / len(subset),
             "invalid_answer_rate": sum(bool(row["invalid_packages"]) for row in subset) / len(subset),
@@ -201,12 +246,17 @@ def main() -> None:
         "model_path": args.model_path,
         "delta_dir": str(delta_dir) if delta_dir else "",
         "condition_prefix": args.condition_prefix,
+        "only_unconstrained": args.only_unconstrained,
+        "disable_thinking": args.disable_thinking,
         "registry_path": args.registry,
         "registry_size": len(registry),
         "prompt_ids": list(prompt_ids),
         "max_tokens": args.max_tokens,
-        "decoding": "greedy temperature=0; same model/tasks/protocol",
+        "generations_per_task": args.generations,
+        "decoding": f"temperature={args.temperature}; same model/tasks/protocol and seed per prompt/generation",
         "model_load_seconds": load_seconds,
+        "warmup_generation_seconds": warmup_generation_seconds,
+        "matcher_build_seconds": matcher_build_seconds,
         "conditions": conditions,
         "cuda_peak_allocated_gib": torch.cuda.max_memory_allocated() / 2**30 if torch.cuda.is_available() else None,
         "cuda_peak_reserved_gib": torch.cuda.max_memory_reserved() / 2**30 if torch.cuda.is_available() else None,

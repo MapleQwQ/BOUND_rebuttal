@@ -1,0 +1,36 @@
+{
+  "source": "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/LLM_LY.source.jsonl",
+  "source_sha256": "843fae63874c52b1bfa9b08f833bfea72b2ad5d77575210447d2d2f35e44b733",
+  "source_records": 4892,
+  "edit_record_files": 24,
+  "unique_edit_keys": 918,
+  "within_pool_duplicate_or_empty": 13,
+  "edited_overlap_removed": 918,
+  "eligible": 3961,
+  "sample_n": 1000,
+  "sample_seed": 20260924,
+  "manifest_sha256": "d1b28c3d52fefce0ab2c9d0d465eb6b6be9139bd78f02bb8f032e40f99beceeb",
+  "historical_risk_counts": {
+    "deepseekcoder": {
+      "clean": 776,
+      "low": 159,
+      "high": 65
+    },
+    "qwen3": {
+      "clean": 879,
+      "low": 69,
+      "high": 52
+    },
+    "llama31": {
+      "clean": 627,
+      "low": 233,
+      "high": 140
+    }
+  },
+  "baseline_files": {
+    "deepseekcoder": "getHallucinationPackage/result/deepseekcoder/LLM_LY_response.jsonl",
+    "qwen3": "getHallucinationPackage/result/qwen3_release_cutoff/LLM_LY_response.jsonl",
+    "llama31": "getHallucinationPackage/result/llama3.1_release_cutoff/LLM_LY_response.jsonl"
+  },
+  "selection": "simple random sample without replacement from globally edit-excluded unique prompts; no risk quota"
+}

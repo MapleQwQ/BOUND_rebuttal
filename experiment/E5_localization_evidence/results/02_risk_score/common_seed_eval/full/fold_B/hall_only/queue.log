@@ -1,0 +1,17 @@
+{"event": "start", "command": ["/home/shuhanliu/miniconda3/envs/EasyEdit/bin/python", "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/script/evaluate_risk_common_seeds.py", "--gpu", "3", "--fold", "B", "--condition", "hall_only", "--one"], "utc_epoch": 1790292144.6774776}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.35s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.48s/it]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+loaded delta /data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/rq3_ablation_20260613/deepseekcoder/fold_B/wo_valid_anchor
+{"fold": "B", "condition": "hall_only", "n_done": 10, "elapsed_seconds": 53.615448236465454}
+{"fold": "B", "condition": "hall_only", "n_done": 20, "elapsed_seconds": 107.08586382865906}
+{"fold": "B", "condition": "hall_only", "n_done": 30, "elapsed_seconds": 167.6612470149994}
+{"fold": "B", "condition": "hall_only", "n_done": 40, "elapsed_seconds": 216.9611349105835}
+{"fold": "B", "condition": "hall_only", "n_done": 50, "elapsed_seconds": 255.88444590568542}
+{"fold": "B", "condition": "hall_only", "n_done": 60, "elapsed_seconds": 300.9564971923828}
+{"fold": "B", "condition": "hall_only", "n_done": 70, "elapsed_seconds": 365.1992230415344}
+{"fold": "B", "condition": "hall_only", "n_done": 80, "elapsed_seconds": 424.45352602005005}
+{"fold": "B", "condition": "hall_only", "n_done": 90, "elapsed_seconds": 455.1913914680481}
+{"fold": "B", "condition": "hall_only", "n_done": 100, "elapsed_seconds": 510.31588435173035}
+{"status": "complete", "model": "deepseekcoder", "fold": "B", "condition": "hall_only", "gpu": "3", "n_prompts": 100, "n_generations_per_prompt": 5, "elapsed_seconds": 510.3168570995331, "adapter_sha256": "e1a0e27cece074597eed7d457d47ed9b954b9e060638095e3f770b4279d9bd4d", "test100_sha256": "15e45179f8d83c8de9cf51898f3102cceab9d0dec338cd79be8f7c05af45e92c", "case_sha256": "35016918b437a910d7cd0ca6eb137714cbe76e1a6cc8244244303e609f6393c4", "cutoff": "2023-11-02T00:00:00", "seed_rule": "SHA256(E5-risk/{prompt_id}/{generation})", "n_release_cache_additions": 110}
+{"event": "end", "returncode": 0, "utc_epoch": 1790292660.216743}

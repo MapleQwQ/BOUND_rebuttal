@@ -1,0 +1,608 @@
+{
+  "definitions": {
+    "syntax_valid_rate": "AST parse succeeds, excluding no_code; denominator all generations",
+    "no_code_rate": "empty/None/no-code answer, unfenced response without Python code lines, comment-only, or single bare Name/Constant AST; denominator all generations",
+    "parse_failure_rate": "code candidate fails ast.parse; denominator all generations",
+    "compile_failure_rate": "AST-valid code fails compile(..., exec); denominator all generations",
+    "compile_valid_rate": "non-no-code and compile succeeds; denominator all generations",
+    "syntax_valid_third_party_import_rate": "AST-valid code imports at least one top-level module absent from Python 3.10 stdlib/builtins; denominator all generations"
+  },
+  "by_condition": {
+    "deepseekcoder": {
+      "Base": {
+        "n": 500,
+        "syntax_valid_rate": 0.91,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.078,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.908,
+        "syntax_valid_third_party_import_rate": 0.856,
+        "status_counts": {
+          "syntax_valid": 454,
+          "no_code": 6,
+          "parse_failure": 39,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 490,
+          "answer_fallback": 10
+        }
+      },
+      "BOUND_A": {
+        "n": 500,
+        "syntax_valid_rate": 0.944,
+        "no_code_rate": 0.014,
+        "parse_failure_rate": 0.042,
+        "compile_failure_rate": 0.006,
+        "compile_valid_rate": 0.938,
+        "syntax_valid_third_party_import_rate": 0.894,
+        "status_counts": {
+          "syntax_valid": 469,
+          "parse_failure": 21,
+          "no_code": 7,
+          "compile_failure": 3
+        },
+        "extraction_route_counts": {
+          "python_fence": 489,
+          "unclosed_python_fence": 3,
+          "answer_fallback": 8
+        }
+      },
+      "BOUND_B": {
+        "n": 500,
+        "syntax_valid_rate": 0.938,
+        "no_code_rate": 0.008,
+        "parse_failure_rate": 0.054,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.938,
+        "syntax_valid_third_party_import_rate": 0.87,
+        "status_counts": {
+          "syntax_valid": 469,
+          "parse_failure": 27,
+          "no_code": 4
+        },
+        "extraction_route_counts": {
+          "python_fence": 489,
+          "answer_fallback": 9,
+          "unclosed_python_fence": 2
+        }
+      },
+      "BOUND_C": {
+        "n": 500,
+        "syntax_valid_rate": 0.952,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.036,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.95,
+        "syntax_valid_third_party_import_rate": 0.908,
+        "status_counts": {
+          "syntax_valid": 475,
+          "parse_failure": 18,
+          "no_code": 6,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 489,
+          "answer_fallback": 10,
+          "unclosed_python_fence": 1
+        }
+      },
+      "BOUND_D": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.022,
+        "parse_failure_rate": 0.064,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.844,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 32,
+          "no_code": 11
+        },
+        "extraction_route_counts": {
+          "python_fence": 481,
+          "answer_fallback": 16,
+          "unclosed_python_fence": 3
+        }
+      }
+    },
+    "qwen3": {
+      "Base": {
+        "n": 500,
+        "syntax_valid_rate": 0.842,
+        "no_code_rate": 0.088,
+        "parse_failure_rate": 0.07,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.842,
+        "syntax_valid_third_party_import_rate": 0.818,
+        "status_counts": {
+          "syntax_valid": 421,
+          "parse_failure": 35,
+          "no_code": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 444,
+          "answer_fallback": 44,
+          "unclosed_python_fence": 12
+        }
+      },
+      "BOUND_A": {
+        "n": 500,
+        "syntax_valid_rate": 0.754,
+        "no_code_rate": 0.086,
+        "parse_failure_rate": 0.16,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.752,
+        "syntax_valid_third_party_import_rate": 0.732,
+        "status_counts": {
+          "syntax_valid": 376,
+          "parse_failure": 80,
+          "no_code": 43,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 328,
+          "unclosed_python_fence": 123,
+          "answer_fallback": 49
+        }
+      },
+      "BOUND_B": {
+        "n": 500,
+        "syntax_valid_rate": 0.76,
+        "no_code_rate": 0.184,
+        "parse_failure_rate": 0.056,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.76,
+        "syntax_valid_third_party_import_rate": 0.738,
+        "status_counts": {
+          "syntax_valid": 380,
+          "no_code": 92,
+          "parse_failure": 28
+        },
+        "extraction_route_counts": {
+          "python_fence": 354,
+          "unclosed_python_fence": 54,
+          "answer_fallback": 92
+        }
+      },
+      "BOUND_C": {
+        "n": 500,
+        "syntax_valid_rate": 0.848,
+        "no_code_rate": 0.058,
+        "parse_failure_rate": 0.094,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.848,
+        "syntax_valid_third_party_import_rate": 0.822,
+        "status_counts": {
+          "syntax_valid": 424,
+          "parse_failure": 47,
+          "no_code": 29
+        },
+        "extraction_route_counts": {
+          "python_fence": 394,
+          "unclosed_python_fence": 77,
+          "answer_fallback": 29
+        }
+      },
+      "BOUND_D": {
+        "n": 500,
+        "syntax_valid_rate": 0.794,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.206,
+        "compile_failure_rate": 0.004,
+        "compile_valid_rate": 0.79,
+        "syntax_valid_third_party_import_rate": 0.784,
+        "status_counts": {
+          "syntax_valid": 395,
+          "parse_failure": 103,
+          "compile_failure": 2
+        },
+        "extraction_route_counts": {
+          "python_fence": 344,
+          "unclosed_python_fence": 156
+        }
+      }
+    },
+    "llama3.1": {
+      "Base": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.086,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.834,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 43
+        },
+        "extraction_route_counts": {
+          "python_fence": 496,
+          "unclosed_python_fence": 4
+        }
+      },
+      "BOUND_A": {
+        "n": 500,
+        "syntax_valid_rate": 0.908,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.092,
+        "compile_failure_rate": 0.004,
+        "compile_valid_rate": 0.904,
+        "syntax_valid_third_party_import_rate": 0.788,
+        "status_counts": {
+          "syntax_valid": 452,
+          "parse_failure": 46,
+          "compile_failure": 2
+        },
+        "extraction_route_counts": {
+          "python_fence": 484,
+          "unclosed_python_fence": 16
+        }
+      },
+      "BOUND_B": {
+        "n": 500,
+        "syntax_valid_rate": 0.912,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.088,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.912,
+        "syntax_valid_third_party_import_rate": 0.79,
+        "status_counts": {
+          "syntax_valid": 456,
+          "parse_failure": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 455,
+          "unclosed_python_fence": 45
+        }
+      },
+      "BOUND_C": {
+        "n": 500,
+        "syntax_valid_rate": 0.932,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.068,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.93,
+        "syntax_valid_third_party_import_rate": 0.844,
+        "status_counts": {
+          "syntax_valid": 465,
+          "parse_failure": 34,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 488,
+          "unclosed_python_fence": 12
+        }
+      },
+      "BOUND_D": {
+        "n": 500,
+        "syntax_valid_rate": 0.918,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.082,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.918,
+        "syntax_valid_third_party_import_rate": 0.804,
+        "status_counts": {
+          "syntax_valid": 459,
+          "parse_failure": 41
+        },
+        "extraction_route_counts": {
+          "python_fence": 485,
+          "unclosed_python_fence": 15
+        }
+      }
+    }
+  },
+  "by_model": {
+    "deepseekcoder": {
+      "Base": {
+        "n": 500,
+        "syntax_valid_rate": 0.91,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.078,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.908,
+        "syntax_valid_third_party_import_rate": 0.856,
+        "status_counts": {
+          "syntax_valid": 454,
+          "no_code": 6,
+          "parse_failure": 39,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 490,
+          "answer_fallback": 10
+        }
+      },
+      "BOUND_macro": {
+        "syntax_valid_rate": 0.9369999999999999,
+        "no_code_rate": 0.014,
+        "parse_failure_rate": 0.049,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.9349999999999999,
+        "syntax_valid_third_party_import_rate": 0.879
+      },
+      "BOUND_minus_Base": {
+        "syntax_valid_rate": 0.026999999999999913,
+        "no_code_rate": 0.002,
+        "parse_failure_rate": -0.028999999999999998,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.026999999999999913,
+        "syntax_valid_third_party_import_rate": 0.02300000000000002
+      }
+    },
+    "qwen3": {
+      "Base": {
+        "n": 500,
+        "syntax_valid_rate": 0.842,
+        "no_code_rate": 0.088,
+        "parse_failure_rate": 0.07,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.842,
+        "syntax_valid_third_party_import_rate": 0.818,
+        "status_counts": {
+          "syntax_valid": 421,
+          "parse_failure": 35,
+          "no_code": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 444,
+          "answer_fallback": 44,
+          "unclosed_python_fence": 12
+        }
+      },
+      "BOUND_macro": {
+        "syntax_valid_rate": 0.789,
+        "no_code_rate": 0.082,
+        "parse_failure_rate": 0.129,
+        "compile_failure_rate": 0.0015,
+        "compile_valid_rate": 0.7875,
+        "syntax_valid_third_party_import_rate": 0.7689999999999999
+      },
+      "BOUND_minus_Base": {
+        "syntax_valid_rate": -0.052999999999999936,
+        "no_code_rate": -0.0059999999999999915,
+        "parse_failure_rate": 0.059,
+        "compile_failure_rate": 0.0015,
+        "compile_valid_rate": -0.05449999999999999,
+        "syntax_valid_third_party_import_rate": -0.049000000000000044
+      }
+    },
+    "llama3.1": {
+      "Base": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.086,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.834,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 43
+        },
+        "extraction_route_counts": {
+          "python_fence": 496,
+          "unclosed_python_fence": 4
+        }
+      },
+      "BOUND_macro": {
+        "syntax_valid_rate": 0.9175000000000001,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.0825,
+        "compile_failure_rate": 0.0015,
+        "compile_valid_rate": 0.916,
+        "syntax_valid_third_party_import_rate": 0.8065
+      },
+      "BOUND_minus_Base": {
+        "syntax_valid_rate": 0.0035000000000000586,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": -0.0034999999999999892,
+        "compile_failure_rate": 0.0015,
+        "compile_valid_rate": 0.0020000000000000018,
+        "syntax_valid_third_party_import_rate": -0.02749999999999997
+      }
+    }
+  },
+  "three_model_macro": {
+    "Base": {
+      "syntax_valid_rate": 0.8886666666666666,
+      "no_code_rate": 0.03333333333333333,
+      "parse_failure_rate": 0.078,
+      "compile_failure_rate": 0.0006666666666666666,
+      "compile_valid_rate": 0.888,
+      "syntax_valid_third_party_import_rate": 0.836
+    },
+    "BOUND_macro": {
+      "syntax_valid_rate": 0.8811666666666667,
+      "no_code_rate": 0.032,
+      "parse_failure_rate": 0.08683333333333333,
+      "compile_failure_rate": 0.0016666666666666668,
+      "compile_valid_rate": 0.8795000000000001,
+      "syntax_valid_third_party_import_rate": 0.8181666666666666
+    },
+    "BOUND_minus_Base": {
+      "syntax_valid_rate": -0.0074999999999999884,
+      "no_code_rate": -0.0013333333333333305,
+      "parse_failure_rate": 0.008833333333333337,
+      "compile_failure_rate": 0.001,
+      "compile_valid_rate": -0.008500000000000027,
+      "syntax_valid_third_party_import_rate": -0.01783333333333333
+    }
+  },
+  "archived_extraction_sensitivity": {
+    "deepseekcoder": {
+      "Base": {
+        "archived_parse_rate": 0.9,
+        "changed_extraction_count": 5
+      },
+      "BOUND_A": {
+        "archived_parse_rate": 0.934,
+        "changed_extraction_count": 7
+      },
+      "BOUND_B": {
+        "archived_parse_rate": 0.926,
+        "changed_extraction_count": 8
+      },
+      "BOUND_C": {
+        "archived_parse_rate": 0.946,
+        "changed_extraction_count": 3
+      },
+      "BOUND_D": {
+        "archived_parse_rate": 0.902,
+        "changed_extraction_count": 7
+      }
+    },
+    "qwen3": {
+      "Base": {
+        "archived_parse_rate": 0.858,
+        "changed_extraction_count": 24
+      },
+      "BOUND_A": {
+        "archived_parse_rate": 0.658,
+        "changed_extraction_count": 127
+      },
+      "BOUND_B": {
+        "archived_parse_rate": 0.706,
+        "changed_extraction_count": 54
+      },
+      "BOUND_C": {
+        "archived_parse_rate": 0.788,
+        "changed_extraction_count": 77
+      },
+      "BOUND_D": {
+        "archived_parse_rate": 0.682,
+        "changed_extraction_count": 157
+      }
+    },
+    "llama3.1": {
+      "Base": {
+        "archived_parse_rate": 0.91,
+        "changed_extraction_count": 4
+      },
+      "BOUND_A": {
+        "archived_parse_rate": 0.904,
+        "changed_extraction_count": 16
+      },
+      "BOUND_B": {
+        "archived_parse_rate": 0.856,
+        "changed_extraction_count": 45
+      },
+      "BOUND_C": {
+        "archived_parse_rate": 0.924,
+        "changed_extraction_count": 13
+      },
+      "BOUND_D": {
+        "archived_parse_rate": 0.912,
+        "changed_extraction_count": 16
+      }
+    }
+  },
+  "bound_minus_base_95pct_prompt_bootstrap_ci": {
+    "deepseekcoder": {
+      "syntax_valid_rate": [
+        0.0004999999999999449,
+        0.05600000000000027
+      ],
+      "no_code_rate": [
+        -0.0075,
+        0.010499999999999999
+      ],
+      "parse_failure_rate": [
+        -0.057499999999999954,
+        -0.0025000000000000022
+      ],
+      "compile_failure_rate": [
+        -0.0030000000000000005,
+        0.0030000000000000005
+      ],
+      "compile_valid_rate": [
+        1.1102230246251565e-16,
+        0.05600000000000027
+      ],
+      "syntax_valid_third_party_import_rate": [
+        -0.010499999999999843,
+        0.05900000000000005
+      ]
+    },
+    "qwen3": {
+      "syntax_valid_rate": [
+        -0.09599999999999997,
+        -0.00898750000000009
+      ],
+      "no_code_rate": [
+        -0.043999999999999984,
+        0.029000000000000005
+      ],
+      "parse_failure_rate": [
+        0.022499999999999964,
+        0.0930124999999998
+      ],
+      "compile_failure_rate": [
+        0.0,
+        0.0035
+      ],
+      "compile_valid_rate": [
+        -0.09750000000000003,
+        -0.01049999999999995
+      ],
+      "syntax_valid_third_party_import_rate": [
+        -0.09099999999999997,
+        -0.007487500000000035
+      ]
+    },
+    "llama3.1": {
+      "syntax_valid_rate": [
+        -0.01800000000000002,
+        0.025000000000000244
+      ],
+      "no_code_rate": [
+        0.0,
+        0.0
+      ],
+      "parse_failure_rate": [
+        -0.02500000000000001,
+        0.018000000000000002
+      ],
+      "compile_failure_rate": [
+        0.0,
+        0.0035
+      ],
+      "compile_valid_rate": [
+        -0.019500000000000073,
+        0.023500000000000187
+      ],
+      "syntax_valid_third_party_import_rate": [
+        -0.053999999999999826,
+        -0.001499999999999832
+      ]
+    },
+    "three_model_macro": {
+      "syntax_valid_rate": [
+        -0.025666666666666837,
+        0.011170833333333368
+      ],
+      "no_code_rate": [
+        -0.01416666666666666,
+        0.010666666666666661
+      ],
+      "parse_failure_rate": [
+        -0.008333333333333335,
+        0.024999999999999984
+      ],
+      "compile_failure_rate": [
+        -0.00016666666666666693,
+        0.002333333333333333
+      ],
+      "compile_valid_rate": [
+        -0.026833333333333338,
+        0.010333333333333417
+      ],
+      "syntax_valid_third_party_import_rate": [
+        -0.03783333333333331,
+        0.002833333333333317
+      ]
+    }
+  }
+}

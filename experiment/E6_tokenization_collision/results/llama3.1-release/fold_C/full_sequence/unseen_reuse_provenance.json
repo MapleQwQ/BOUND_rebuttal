@@ -1,0 +1,5 @@
+{
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50/eval_unseen_prompts.json",
+  "reason": "bitwise-identical LoRA tensor keys and values after full-sequence edit; same base model and evaluation inputs",
+  "verification": "torch.equal for every adapter tensor"
+}

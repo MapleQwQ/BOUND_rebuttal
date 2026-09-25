@@ -1,0 +1,205 @@
+{
+  "bootstrap_seed": 20260924,
+  "bootstrap_resamples": 10000,
+  "comparison": "same prompt and candidate modules, full risk versus valid-only LSE",
+  "models": {
+    "deepseekcoder": {
+      "n_prompts_total": 200,
+      "n_prompts_paired": 190,
+      "n_prompts_no_valid_reference": 10,
+      "metrics": {
+        "top1_same": {
+          "mean": 0.6894736842105263,
+          "ci95_prompt_bootstrap": [
+            0.6210526315789474,
+            0.7578947368421053
+          ]
+        },
+        "top5_intersection": {
+          "mean": 4.0,
+          "ci95_prompt_bootstrap": [
+            3.836842105263158,
+            4.1580263157894715
+          ]
+        },
+        "top5_jaccard": {
+          "mean": 0.7189014202172097,
+          "ci95_prompt_bootstrap": [
+            0.678467000835422,
+            0.7594199039264832
+          ]
+        },
+        "rank_spearman": {
+          "mean": 0.9597846297357744,
+          "ci95_prompt_bootstrap": [
+            0.9526998603571711,
+            0.966570572451308
+          ]
+        }
+      },
+      "full_top5_family": {
+        "o_proj": 933,
+        "v_proj": 17
+      },
+      "valid_only_top5_family": {
+        "o_proj": 937,
+        "v_proj": 13
+      },
+      "full_top5_layers": {
+        "12": 192,
+        "13": 177,
+        "14": 139,
+        "11": 117,
+        "15": 115,
+        "10": 67,
+        "16": 62,
+        "9": 48,
+        "7": 13,
+        "6": 11
+      },
+      "valid_only_top5_layers": {
+        "12": 195,
+        "13": 180,
+        "11": 125,
+        "14": 107,
+        "10": 102,
+        "15": 96,
+        "9": 75,
+        "16": 47,
+        "6": 10,
+        "7": 8
+      }
+    },
+    "qwen3-release": {
+      "n_prompts_total": 200,
+      "n_prompts_paired": 163,
+      "n_prompts_no_valid_reference": 37,
+      "metrics": {
+        "top1_same": {
+          "mean": 0.5398773006134969,
+          "ci95_prompt_bootstrap": [
+            0.4601226993865031,
+            0.6134969325153374
+          ]
+        },
+        "top5_intersection": {
+          "mean": 3.9079754601226995,
+          "ci95_prompt_bootstrap": [
+            3.748312883435583,
+            4.061349693251533
+          ]
+        },
+        "top5_jaccard": {
+          "mean": 0.6857775830168469,
+          "ci95_prompt_bootstrap": [
+            0.6454864154250658,
+            0.7254132583503748
+          ]
+        },
+        "rank_spearman": {
+          "mean": 0.9551922319417292,
+          "ci95_prompt_bootstrap": [
+            0.9478808852629121,
+            0.9621126166692635
+          ]
+        }
+      },
+      "full_top5_family": {
+        "v_proj": 788,
+        "k_proj": 27
+      },
+      "valid_only_top5_family": {
+        "v_proj": 788,
+        "k_proj": 27
+      },
+      "full_top5_layers": {
+        "14": 160,
+        "18": 157,
+        "16": 151,
+        "17": 97,
+        "20": 59,
+        "12": 54,
+        "0": 52,
+        "15": 25,
+        "24": 17,
+        "10": 12
+      },
+      "valid_only_top5_layers": {
+        "18": 163,
+        "14": 162,
+        "16": 155,
+        "17": 121,
+        "12": 81,
+        "20": 47,
+        "0": 37,
+        "15": 26,
+        "22": 6,
+        "24": 4
+      }
+    },
+    "llama3.1-release": {
+      "n_prompts_total": 200,
+      "n_prompts_paired": 188,
+      "n_prompts_no_valid_reference": 12,
+      "metrics": {
+        "top1_same": {
+          "mean": 0.8670212765957447,
+          "ci95_prompt_bootstrap": [
+            0.8138297872340425,
+            0.9148936170212766
+          ]
+        },
+        "top5_intersection": {
+          "mean": 4.547872340425532,
+          "ci95_prompt_bootstrap": [
+            4.441489361702128,
+            4.654255319148936
+          ]
+        },
+        "top5_jaccard": {
+          "mean": 0.8628419452887538,
+          "ci95_prompt_bootstrap": [
+            0.8331433637284703,
+            0.8925421099290779
+          ]
+        },
+        "rank_spearman": {
+          "mean": 0.964852851645381,
+          "ci95_prompt_bootstrap": [
+            0.9568612387040495,
+            0.9724043028825404
+          ]
+        }
+      },
+      "full_top5_family": {
+        "v_proj": 928,
+        "o_proj": 12
+      },
+      "valid_only_top5_family": {
+        "v_proj": 936,
+        "o_proj": 4
+      },
+      "full_top5_layers": {
+        "13": 195,
+        "12": 190,
+        "11": 172,
+        "10": 172,
+        "9": 135,
+        "14": 58,
+        "8": 5,
+        "16": 4,
+        "7": 4,
+        "15": 3
+      },
+      "valid_only_top5_layers": {
+        "12": 191,
+        "13": 189,
+        "10": 185,
+        "11": 185,
+        "9": 151,
+        "14": 38,
+        "2": 1
+      }
+    }
+  }
+}

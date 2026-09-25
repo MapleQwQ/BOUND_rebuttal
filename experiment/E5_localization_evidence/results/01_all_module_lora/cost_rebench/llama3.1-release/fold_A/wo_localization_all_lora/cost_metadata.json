@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "llama3.1-release",
+  "fold": "A",
+  "condition": "wo_localization_all_lora",
+  "gpu": "2",
+  "source_yaml_sha256": "d0046dd9691f4b909e090423ddecdd526d238070a3a797fead7fb625667ab3c0",
+  "edit_cases_sha256": "fb3548e02d7c6bf00468d3e14a1fb44ae3bd66ed2c43d287c3ffb6aa9aeb4d63",
+  "localization_seconds": 0.0,
+  "edit_seconds": 162.77083277702332,
+  "total_seconds": 162.8114664554596,
+  "peak_localization_reserved_mib": 0.0,
+  "peak_edit_reserved_mib": 27444.0,
+  "n_edited_modules": 224,
+  "adapter_bytes": 42084567,
+  "adapter_sha256": "e8ac5c220073226b4512e5c70201ec8fdc23986cb7f9cb9d790f325ba0ba11c6",
+  "resolved_target_modules": "gate_proj,up_proj,down_proj,q_proj,k_proj,v_proj,o_proj"
+}

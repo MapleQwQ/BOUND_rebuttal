@@ -1,0 +1,12 @@
+{
+  "candidate_names": 7789,
+  "reused_dated": 2524,
+  "fetched": 5265,
+  "statuses": {
+    "dated": 3983,
+    "no_release_date": 70,
+    "not_found": 3736
+  },
+  "output": "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/release_dates.jsonl",
+  "output_sha256": "83623e097d628e1e3da0efef9fafb0f864d3ef4515b37fe8546f5f2a0d9d7a9b"
+}

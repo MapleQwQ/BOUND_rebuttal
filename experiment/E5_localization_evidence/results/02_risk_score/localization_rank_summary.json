@@ -1,0 +1,17 @@
+{
+  "deepseekcoder": {
+    "top5_jaccard": 0.8333333333333333,
+    "top5_intersection": 4.5,
+    "common_rank_spearman": 0.9987956164954741
+  },
+  "qwen3-release": {
+    "top5_jaccard": 1.0,
+    "top5_intersection": 5.0,
+    "common_rank_spearman": 0.9959490500901955
+  },
+  "llama3.1-release": {
+    "top5_jaccard": 1.0,
+    "top5_intersection": 5.0,
+    "common_rank_spearman": 0.9967829224397757
+  }
+}

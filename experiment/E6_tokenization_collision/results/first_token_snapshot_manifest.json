@@ -1,0 +1,173 @@
+{
+  "n_folds": 12,
+  "runs": [
+    {
+      "model": "deepseekcoder",
+      "fold": "A",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50",
+      "files_sha256": {
+        "localization_report.json": "7cbbc004a5d006e5507ba9d4ca5ae8ad1254b17364652584a0f60e3089c65061",
+        "timing.json": "2927f242e5876018a78f90ff92dba118fb160f30a202fe1f192d719dd9f78d14",
+        "eval_unseen_prompts.json": "4c3ebe003c36a76f042c5e3d916b50fa0f4899ae0fa1c8d2b9b1b530c6d263b2",
+        "blast_delta.pt": "5ee5f65093a3c222afebc95092fadc84bf01ac34fefe3997984edfe798174978",
+        "blast_config.json": "90a5f30e5e3d1f672584672ede71e17e5de91d15a5f6cef7dfbd727314aaa7c8",
+        "experiment_config.json": "5a34618acad0449b48a2b7eb6fa42efe19e258330605544800a5e60ed4326fe3",
+        "selected_task_recommend_cases.jsonl": "a15103c438f76b13d83303b1322c65117fa0afc1f6d8a54ad9e95c29e481f888"
+      }
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "B",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_B/blast_50",
+      "files_sha256": {
+        "localization_report.json": "a68b90bb36df4d8c11f308aa080327050f7463b6570f0003dc3bee63d5629741",
+        "timing.json": "f6a7ea206a5eeaba92706d20fcb371be614b731ece63648a63488fd26e2164f9",
+        "eval_unseen_prompts.json": "45596f07710ab978cfa2dd7b764b50f047f8e2895e244fe27ec632efc94ce79c",
+        "blast_delta.pt": "9346a3fc3aa20975eb11e32a2ab7ef9e8209f0d8542176281c530707e73e17d8",
+        "blast_config.json": "164e0cfed5680053a34fffbffe704e127274ec739dafa09653f9b29b75a34237",
+        "experiment_config.json": "d325c883b63cb0825b39454b7acf1d7eeb0469355e246a4296015c1d3dd3b626",
+        "selected_task_recommend_cases.jsonl": "ac85c959d3a111ce3efbef3791a5479dd253cdfe359e812f8d59c9a2656ffe50"
+      }
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "C",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_C/blast_50",
+      "files_sha256": {
+        "localization_report.json": "55ff1065455a43f8855b3b0af5064e20456e99b447e5379636f9dbccb2e33899",
+        "timing.json": "c36417687bb606fccf8658fb9949018cf5827a7a86f30ccc19419651d7dfca60",
+        "eval_unseen_prompts.json": "83516bff560178517601c4b55374d526fceb5d8395e8dc807ff1f7f51a590ae0",
+        "blast_delta.pt": "8747aaba46e7903951463a5698de0501ea7c62698754d90260f5dda85f13c020",
+        "blast_config.json": "60b86e2d4fd543f3b5e0cfe7f2a75ed39e582e19326e28fef468840964dfcb7b",
+        "experiment_config.json": "c47a92c716aea8f18dc06966e6bf0b89b42af7542bf4d57156e5f9f3ab38cd12",
+        "selected_task_recommend_cases.jsonl": "b94c1db6c7fbd3e7723d0c1156d0f090e316fb653fef9846b3990f6eac570b75"
+      }
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "D",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50",
+      "files_sha256": {
+        "localization_report.json": "1887c2457dce0c6e9b86ddba6cc4bc96996d2ed7289fe4bc918454dd81238e97",
+        "timing.json": "4e162f17e3b3f7c1493cd981c1dd6830f4ed8be5e574750b9d654c52d0d8af35",
+        "eval_unseen_prompts.json": "40db0abcf84db7f79981ed51bda6d493f86a79625e5d6962a781a028f72b1255",
+        "blast_delta.pt": "224f879d38ef34555aa249bd0af14d92a2b78a4120a4b35ea58c20bec79d193b",
+        "blast_config.json": "56f969559a371fb53ad972d870b73ce65764e7e83130c3ee9a0dd7e4f6c28ad1",
+        "experiment_config.json": "f7a7c0cbf4400ac739fdd150505ad67caf0e4a2c0725a92e493906741fd516f6",
+        "selected_task_recommend_cases.jsonl": "b0bd9c237bda0463e2fd94649c8bb83d70e6b40f675ad84991ab0a06e18dcf3c"
+      }
+    },
+    {
+      "model": "qwen3-release",
+      "fold": "A",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_A/blast_50",
+      "files_sha256": {
+        "localization_report.json": "e04591e8097d27e3c64a29e16845dc8d7967e1274a9b2eeb71bc226a1f2887b6",
+        "timing.json": "99f4f887e418d926a9d37cc23f0f546f295d58375a367ff06c9834189220b844",
+        "eval_unseen_prompts.json": "eaf88aca8467df2fafa3e47f7fa7667d97f15df3397e10984fb0c07766f22872",
+        "blast_delta.pt": "ecc614ceba326a96a4ea9175e69cabc0e2f8076f0079c5364984e4b7544a1239",
+        "blast_config.json": "67cbeb9c39f2b12d6e7cb4c6d2486bd2436c98ddeb7b1d05e8410769d04dec18",
+        "experiment_config.json": "2216880ac6830a70e6b964237e49f34d95345a3be6cb15c01e15a7a7916c4d5e",
+        "selected_task_recommend_cases.jsonl": "653ec931e3025aa8918062395d257cd0b373a903ed1339223e04333cef92c075"
+      }
+    },
+    {
+      "model": "qwen3-release",
+      "fold": "B",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50",
+      "files_sha256": {
+        "localization_report.json": "ec1ac163ba9942bfe4bdf8e608720b55b5c1d01ddeeb4bbbcb1fdb7dbc99f2e4",
+        "timing.json": "e53abc5a1199182310632ce55f7e2935481b7f1d34b53c483a4dd4de11191b21",
+        "eval_unseen_prompts.json": "b835cd048b092973cebdf99a75d4d4d0d928abdd7d340aca2947bf4e7642a4db",
+        "blast_delta.pt": "a5c0cf1094023f93582044c77a80aa382a3b4ef2d20d64851bd0a7d997f0512d",
+        "blast_config.json": "ea0cb104cb2340e65efa0969a466a17a4f93c5344feb4f8f041b09cf706a6f66",
+        "experiment_config.json": "54f2ae91ad84c90d7d9dfe56c25059a916d2667204cf289ade0a4b18101c1aaa",
+        "selected_task_recommend_cases.jsonl": "185c6baf4cfac59550c883babecc5ec33b252d39df4ff7b86695a7cb6949ca6b"
+      }
+    },
+    {
+      "model": "qwen3-release",
+      "fold": "C",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_C/blast_50",
+      "files_sha256": {
+        "localization_report.json": "eb9a8af1da111cfdac11b2a0690e263213acfa92124efa4f4736fb4ce121c865",
+        "timing.json": "74fbbb9f864199760e884c2efd188d0db27549ba25ed427b1d1f7ee8964d4bf1",
+        "eval_unseen_prompts.json": "eba36bf869ed96ddea616fde21abc576f5a6ea76419069fcdb26ab57a061bba5",
+        "blast_delta.pt": "2aa29048391f0fe10b8f2f8b17b7b4da0bb68c7d5fe652d60089c24c3dae9439",
+        "blast_config.json": "3585642e0c6b6911a951c85e2485be4989776c689f3dbc284383054b81002923",
+        "experiment_config.json": "3865f80452c22107172f262b2556e2029b3f9eadec35ca465cc37d536086082c",
+        "selected_task_recommend_cases.jsonl": "16711d82cb7784ed09063ed3185dee92312d2cf78c6d51eaf9b1171ded5762e7"
+      }
+    },
+    {
+      "model": "qwen3-release",
+      "fold": "D",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_D/blast_50",
+      "files_sha256": {
+        "localization_report.json": "626e27b2f745b5fc67500de161b0c995d047b629fa7d87d5799817b447251f55",
+        "timing.json": "94b030f93ee659af2f59bd714a32506b9dd5a39ca29e64f4ff6da5468740fe5b",
+        "eval_unseen_prompts.json": "6b267c66736cd59ee73cc1e619411b54b3893b27e35a4837b01523ebcccda019",
+        "blast_delta.pt": "14d531b5236ab4d5a80f85710990c5b294db9553b1d1fec797973d9542c161d0",
+        "blast_config.json": "fca872ddd9f53d450ae31809c38560aed45b754bfd3e35074d8cc81434cd5ac8",
+        "experiment_config.json": "d758655c5129286053b136d3fe9c3735282e8facd64523342cb664330d86ab56",
+        "selected_task_recommend_cases.jsonl": "0f480fc1b97c873cc3e3859d3c7b5397ebe5e847773d3c28c292b1520afbea4f"
+      }
+    },
+    {
+      "model": "llama3.1-release",
+      "fold": "A",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_A/blast_50",
+      "files_sha256": {
+        "localization_report.json": "acbf4ab08328164486b7cab643d4b2c1637d81ee3523102779e8d089716848fd",
+        "timing.json": "d7e5f5881a05c22f457538f05244dcbca48545ca27a7b6ffe521fdea90c6dd26",
+        "eval_unseen_prompts.json": "dd391b545fd0f24cffd2868d5a108911a84257210e2854e4dd58e46f1d608de5",
+        "blast_delta.pt": "0495c73ca7902cb23e33baa00db1403b192af53f96c92d75b60a021861de3d25",
+        "blast_config.json": "bf8b0c909bc74c0e4db4f1e134376b4c65ed639bfe724fe49da980bf8ff57183",
+        "experiment_config.json": "d710eadade68935dd210355fdcf7970f7301cce0de788a37e3a184d7ee738edf",
+        "selected_task_recommend_cases.jsonl": "fb3548e02d7c6bf00468d3e14a1fb44ae3bd66ed2c43d287c3ffb6aa9aeb4d63"
+      }
+    },
+    {
+      "model": "llama3.1-release",
+      "fold": "B",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_B/blast_50",
+      "files_sha256": {
+        "localization_report.json": "94b7a69042ae72b9fd056ceeb20f48028281fccb75687aecbf50a68b6494f462",
+        "timing.json": "4801e816fba55cb7d7fbeeb77853ae71a852acf3188225cb52aa16b369064431",
+        "eval_unseen_prompts.json": "4ecdfa564f987bc9e12259524c5e189d3f7888412222756fc9a49ea2d67c4310",
+        "blast_delta.pt": "998c412b7902c4e9f148ae44b9ec935b2d61f6217be8ad2064219e62974fa427",
+        "blast_config.json": "0c4dfe8de97599360f0e0d0d7287478d0923962836770ac43353f63918cc2735",
+        "experiment_config.json": "662640c98af78747595b2ecbb670d57f640ed634fa25cee83c9337c1158537e4",
+        "selected_task_recommend_cases.jsonl": "bf8d72147786ac85b0d19c610039fea2c94f0a697a5fbaa329f3df95d0f943fd"
+      }
+    },
+    {
+      "model": "llama3.1-release",
+      "fold": "C",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_C/blast_50",
+      "files_sha256": {
+        "localization_report.json": "90cdbfa05065ada8c0645e3305140e409138fbbf9662daf17443f988d0788a69",
+        "timing.json": "a696818236d566eed41e7ee7bb51f597fafd6ed7e0d8ef683f683be643070647",
+        "eval_unseen_prompts.json": "2568dbe84dd9b97ef57476ddafc57d0f62268069f52606e7bde7b93a432e5c2b",
+        "blast_delta.pt": "cd7de24127aa3cd352e1ec914606073483e6daaac3fc6675cf6aa541f84699bc",
+        "blast_config.json": "447431ad4a5c456b65021a5ea3735a9d3e8e243fdbafa708f6b6d0437be02322",
+        "experiment_config.json": "fca398f080ca26c3c2d965883b4ebdc6fc037ca5f15525510db5ce13c2e23611",
+        "selected_task_recommend_cases.jsonl": "15d0587f8b08ca9f4712109604ecdebeebf96af2c6da72654a30f64f1617cfdd"
+      }
+    },
+    {
+      "model": "llama3.1-release",
+      "fold": "D",
+      "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/llama3.1-release/fold_D/blast_50",
+      "files_sha256": {
+        "localization_report.json": "769e3c999b69e9023085a672be74e9ad1eb6039f69df0fb3ec7518a57ec8772f",
+        "timing.json": "58506802b8eec12fbced9d941984f85d965eb873cdbd9da8b45bab1eb3f3a004",
+        "eval_unseen_prompts.json": "b9f0eaa9cc16b5eb5537c1e15186be2db0ffc5f794f515d23c7ffd38364dba39",
+        "blast_delta.pt": "6668014c830d1ced8e7b97f9dfe37356d112a2f04fde5c72245a63c0134665db",
+        "blast_config.json": "00dfa20a77295b396a60d940436f6fe755c4d8021c24866e4ca404a7a6cefaa5",
+        "experiment_config.json": "86557fb856783991e9c55006a76b978efbb6d1daeed234eeca83cc96ebb4c075",
+        "selected_task_recommend_cases.jsonl": "e10984a1c7a4b6cefe13809a467196e09441ee2a31a31cf9655ddf3c907eddd8"
+      }
+    }
+  ]
+}

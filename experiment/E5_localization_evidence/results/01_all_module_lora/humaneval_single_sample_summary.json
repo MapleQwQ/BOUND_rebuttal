@@ -1,0 +1,56 @@
+{
+  "status": "single_sample_audit_not_paper_protocol",
+  "bootstrap_seed": 20260924,
+  "bootstrap_resamples": 10000,
+  "historical_comparator": "knowledgeEdit/results/humaneval_paper3_20260608",
+  "models": {
+    "deepseekcoder": {
+      "base_pass1": 0.7317073170731707,
+      "bound_fold_macro_pass1": 0.6798780487804879,
+      "all_module_fold_macro_pass1": 0.6570121951219512,
+      "delta_all_minus_bound": -0.022865853658536585,
+      "delta_ci95_task_bootstrap": [
+        -0.06859756097560976,
+        0.022865853658536585
+      ],
+      "all_module_fold_pass1": [
+        0.6524390243902439,
+        0.6707317073170732,
+        0.6646341463414634,
+        0.6402439024390244
+      ]
+    },
+    "qwen3-release": {
+      "base_pass1": 0.3048780487804878,
+      "bound_fold_macro_pass1": 0.21798780487804878,
+      "all_module_fold_macro_pass1": 0.23323170731707318,
+      "delta_all_minus_bound": 0.01524390243902439,
+      "delta_ci95_task_bootstrap": [
+        -0.01676829268292683,
+        0.04878048780487805
+      ],
+      "all_module_fold_pass1": [
+        0.25,
+        0.23780487804878048,
+        0.18902439024390244,
+        0.25609756097560976
+      ]
+    },
+    "llama3.1-release": {
+      "base_pass1": 0.45121951219512196,
+      "bound_fold_macro_pass1": 0.38414634146341464,
+      "all_module_fold_macro_pass1": 0.3932926829268293,
+      "delta_all_minus_bound": 0.009146341463414634,
+      "delta_ci95_task_bootstrap": [
+        -0.03353658536585366,
+        0.053353658536585365
+      ],
+      "all_module_fold_pass1": [
+        0.39634146341463417,
+        0.42073170731707316,
+        0.38414634146341464,
+        0.3719512195121951
+      ]
+    }
+  }
+}

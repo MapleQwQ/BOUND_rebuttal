@@ -1,0 +1,10 @@
+{"model": "deepseekcoder", "fold": "A", "prompt_id": "deepseekcoderhighrisk-1281-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "A", "prompt_id": "deepseekcoderhighrisk-1983-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "A", "prompt_id": "deepseekcoderhighrisk-323-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "A", "prompt_id": "deepseekcoderhighrisk-1939-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "B", "prompt_id": "deepseekcoderhighrisk-4807-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "C", "prompt_id": "deepseekcoderhighrisk-1078-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "C", "prompt_id": "deepseekcoderhighrisk-480-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "C", "prompt_id": "deepseekcoderhighrisk-4707-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "C", "prompt_id": "deepseekcoderhighrisk-470-query_question-task", "reason": "no_valid_reference"}
+{"model": "deepseekcoder", "fold": "D", "prompt_id": "deepseekcoderhighrisk-1488-query_question-task", "reason": "no_valid_reference"}

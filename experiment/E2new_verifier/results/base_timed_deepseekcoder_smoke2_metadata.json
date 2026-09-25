@@ -1,0 +1,21 @@
+{
+  "model": "deepseekcoder",
+  "gpu_physical": 2,
+  "device_name": "NVIDIA A100-SXM4-80GB",
+  "model_path": "/data0/shuhanliu/models/deepseekcoder",
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_A/blast_50/eval_unseen_prompts.json",
+  "source_sha256": "4c3ebe003c36a76f042c5e3d916b50fa0f4899ae0fa1c8d2b9b1b530c6d263b2",
+  "task_count": 2,
+  "generations_per_task": 5,
+  "sampler": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_new_tokens": 128
+  },
+  "torch_version": "2.9.1+cu128",
+  "started_utc": "2026-09-24T04:57:52.342749+00:00",
+  "timing_scope": "chat template + tokenization + model.generate + decode; synchronized GPU",
+  "warmup": "first prompt, seed 20260924, discarded"
+}

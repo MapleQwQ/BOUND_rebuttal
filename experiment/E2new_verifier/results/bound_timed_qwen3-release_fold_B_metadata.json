@@ -1,0 +1,22 @@
+{
+  "model": "qwen3-release",
+  "fold": "B",
+  "gpu_physical": 0,
+  "model_path": "/data0/shuhanliu/models/qwen3-8B",
+  "delta_dir": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50",
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/qwen3-release/fold_B/blast_50/eval_unseen_prompts.json",
+  "source_sha256": "b835cd048b092973cebdf99a75d4d4d0d928abdd7d340aca2947bf4e7642a4db",
+  "n_prompts": 409,
+  "generations_per_prompt": 5,
+  "load_seconds": 5.311775030568242,
+  "timing_scope": "generation: chat-template/tokenization/model.generate/decode; extraction: split_recommendation_packages; both exclude warmup, load, output I/O and registry labels",
+  "sampler": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_new_tokens": 128
+  },
+  "seed_schedule": "E2new-base-20260924:{model}:{prompt_id}:{trial}",
+  "started_utc": "2026-09-24T15:29:40.786260+00:00"
+}

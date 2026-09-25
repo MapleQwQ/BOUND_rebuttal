@@ -1,0 +1,15 @@
+{
+  "status": "provisional_historical_labels",
+  "model": "qwen3-release",
+  "fold": "C",
+  "gpu": "3",
+  "n_prompts": 91,
+  "n_candidate_scores": 574,
+  "elapsed_seconds": 19.320552587509155,
+  "candidate_manifest_sha256": "3ed03e66b1efeab3c8f286e64d49bf27e2ef7c36bf14eb11307c61300c6aae76",
+  "adapter_config_sha256": "3585642e0c6b6911a951c85e2485be4989776c689f3dbc284383054b81002923",
+  "adapter_delta_sha256": "2aa29048391f0fe10b8f2f8b17b7b4da0bb68c7d5fe652d60089c24c3dae9439",
+  "model_path": "/data0/shuhanliu/models/qwen3-8B",
+  "answer_prefix": "[ANSWER]\n",
+  "candidate_presentation": "normalized package name without leading space"
+}

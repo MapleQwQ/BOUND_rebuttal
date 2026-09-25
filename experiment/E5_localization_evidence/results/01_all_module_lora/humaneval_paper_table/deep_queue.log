@@ -1,0 +1,3 @@
+{"event": "end", "model": "deepseekcoder", "fold": "B", "run": 1, "gpu": "1", "utc_epoch": 1790301268.7217443, "returncode": 0}
+{"event": "end", "model": "deepseekcoder", "fold": "C", "run": 2, "gpu": "1", "utc_epoch": 1790304426.7689948, "returncode": 0}
+{"event": "end", "model": "deepseekcoder", "fold": "D", "run": 2, "gpu": "1", "utc_epoch": 1790307765.334313, "returncode": 0}

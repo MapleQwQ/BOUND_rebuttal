@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "deepseekcoder",
+  "fold": "A",
+  "condition": "BOUND",
+  "gpu": "2",
+  "source_yaml_sha256": "2a88d114b9781ce71e78479b0c4a34b4405233623fcf818a65491bf1f9f35145",
+  "edit_cases_sha256": "a15103c438f76b13d83303b1322c65117fa0afc1f6d8a54ad9e95c29e481f888",
+  "localization_seconds": 16.743401765823364,
+  "edit_seconds": 62.58338451385498,
+  "total_seconds": 79.42503833770752,
+  "peak_localization_reserved_mib": 27152.0,
+  "peak_edit_reserved_mib": 17306.0,
+  "n_edited_modules": 7,
+  "adapter_bytes": 922953,
+  "adapter_sha256": "5ee5f65093a3c222afebc95092fadc84bf01ac34fefe3997984edfe798174978",
+  "resolved_target_modules": "model.layers.12.self_attn.o_proj,model.layers.13.self_attn.o_proj,model.layers.14.self_attn.o_proj,model.layers.11.self_attn.o_proj,model.layers.15.self_attn.o_proj,model.layers.10.self_attn.o_proj,model.layers.16.self_attn.o_proj"
+}

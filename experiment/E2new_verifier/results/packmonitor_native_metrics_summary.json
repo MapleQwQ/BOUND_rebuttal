@@ -1,0 +1,383 @@
+{
+  "scope": "native Markdown pip install protocol; frozen 100 prompts/model; 5 generations/prompt; Base/PackMonitor shared seeds; PackMonitor constrained with the E2new frozen current PyPI name snapshot and disclosed official grammar typo correction; same snapshot for metrics",
+  "models": {
+    "deepseekcoder": {
+      "n_prompts": 100,
+      "n_generations_per_condition": 500,
+      "source_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/packmonitor_native_deepseekcoder.jsonl",
+      "anchor_source_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/packmonitor_native_bound_deepseekcoder.jsonl",
+      "disable_thinking": false,
+      "conditions": {
+        "base": {
+          "n": 500,
+          "sample_hr": 0.404,
+          "package_hr": 0.23487903225806453,
+          "valid_rate": 0.74,
+          "empty_rate": 0.068,
+          "hallucinated_package_count": 233,
+          "package_count": 992,
+          "empty_count": 34,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 0.932,
+          "mean_decoded_tokens": 52.914,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 1.6461156753711403,
+              "p50_seconds": 0.8866164442151785,
+              "p95_seconds": 4.285349221993237
+            },
+            "extraction_seconds": {
+              "mean_seconds": 3.716717101633549e-05,
+              "p50_seconds": 3.7806108593940735e-05,
+              "p95_seconds": 5.0179986283183096e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 1.6461528425421565,
+              "p50_seconds": 0.8866566377691925,
+              "p95_seconds": 4.2853567874990395
+            }
+          }
+        },
+        "packmonitor": {
+          "n": 500,
+          "sample_hr": 0.006,
+          "package_hr": 0.0027397260273972603,
+          "valid_rate": 0.922,
+          "empty_rate": 0.072,
+          "hallucinated_package_count": 3,
+          "package_count": 1095,
+          "empty_count": 36,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 0.93,
+          "mean_decoded_tokens": 51.314,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 1.6447977122142912,
+              "p50_seconds": 0.9245774406008422,
+              "p95_seconds": 4.354848133120686
+            },
+            "extraction_seconds": {
+              "mean_seconds": 3.051929548382759e-05,
+              "p50_seconds": 2.952245995402336e-05,
+              "p95_seconds": 4.5034568756818744e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 1.6448282315097749,
+              "p50_seconds": 0.9246054417453706,
+              "p95_seconds": 4.354863820923492
+            }
+          }
+        },
+        "bound_fold_A": {
+          "n": 500,
+          "sample_hr": 0.284,
+          "package_hr": 0.1364329268292683,
+          "valid_rate": 0.872,
+          "empty_rate": 0.046,
+          "hallucinated_package_count": 179,
+          "package_count": 1312,
+          "empty_count": 23,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 0.954,
+          "mean_decoded_tokens": 50.372,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 1.5807742121629418,
+              "p50_seconds": 0.7824521004222333,
+              "p95_seconds": 4.3412883301731195
+            },
+            "extraction_seconds": {
+              "mean_seconds": 3.6934670060873034e-05,
+              "p50_seconds": 3.679795190691948e-05,
+              "p95_seconds": 5.139689892530438e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 1.5808111468330026,
+              "p50_seconds": 0.7824832764454186,
+              "p95_seconds": 4.341322715673596
+            }
+          }
+        }
+      },
+      "one_time_cost": {
+        "model_load_seconds": 5.152722273021936,
+        "warmup_generation_seconds": 0.5931653715670109,
+        "matcher_build_seconds": 4.8608314748853445
+      },
+      "paired_differences": {
+        "packmonitor_minus_base_sample_hr": -0.398,
+        "sample_hr_prompt_bootstrap_ci95": [
+          -0.46605,
+          -0.332
+        ],
+        "packmonitor_minus_base_package_hr": -0.23213930623066728,
+        "package_hr_prompt_bootstrap_ci95": [
+          -0.2859947208457235,
+          -0.18632377720639254
+        ]
+      }
+    },
+    "qwen3-release": {
+      "n_prompts": 100,
+      "n_generations_per_condition": 500,
+      "source_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/packmonitor_native_qwen3-release_nothink_full.jsonl",
+      "anchor_source_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/packmonitor_native_bound_qwen3-release_nothink_full.jsonl",
+      "disable_thinking": true,
+      "conditions": {
+        "base": {
+          "n": 500,
+          "sample_hr": 0.506,
+          "package_hr": 0.28974358974358977,
+          "valid_rate": 0.804,
+          "empty_rate": 0.0,
+          "hallucinated_package_count": 339,
+          "package_count": 1170,
+          "empty_count": 0,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 1.0,
+          "mean_decoded_tokens": 15.854,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 0.5068637790456414,
+              "p50_seconds": 0.41671102307736874,
+              "p95_seconds": 0.9476793021894989
+            },
+            "extraction_seconds": {
+              "mean_seconds": 4.5169353485107424e-05,
+              "p50_seconds": 4.6797096729278564e-05,
+              "p95_seconds": 5.697025917470455e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 0.5069089483991265,
+              "p50_seconds": 0.41676451778039336,
+              "p95_seconds": 0.9477175795473156
+            }
+          }
+        },
+        "packmonitor": {
+          "n": 500,
+          "sample_hr": 0.006,
+          "package_hr": 0.0024390243902439024,
+          "valid_rate": 1.0,
+          "empty_rate": 0.0,
+          "hallucinated_package_count": 3,
+          "package_count": 1230,
+          "empty_count": 0,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 1.0,
+          "mean_decoded_tokens": 18.36,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 0.6614049136079848,
+              "p50_seconds": 0.5175328208133578,
+              "p95_seconds": 1.3673056456260375
+            },
+            "extraction_seconds": {
+              "mean_seconds": 3.3527614548802376e-05,
+              "p50_seconds": 2.995552495121956e-05,
+              "p95_seconds": 6.088772788643837e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 0.6614384412225336,
+              "p50_seconds": 0.5175652354955673,
+              "p95_seconds": 1.3673412643838667
+            }
+          }
+        },
+        "bound_fold_A": {
+          "n": 500,
+          "sample_hr": 0.364,
+          "package_hr": 0.21293375394321767,
+          "valid_rate": 0.868,
+          "empty_rate": 0.0,
+          "hallucinated_package_count": 270,
+          "package_count": 1268,
+          "empty_count": 0,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 1.0,
+          "mean_decoded_tokens": 17.33,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 0.5583463977575303,
+              "p50_seconds": 0.4111873721703887,
+              "p95_seconds": 1.1397305895574388
+            },
+            "extraction_seconds": {
+              "mean_seconds": 4.1550474241375927e-05,
+              "p50_seconds": 4.263874143362045e-05,
+              "p95_seconds": 5.9109274297952624e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 0.5583879482317716,
+              "p50_seconds": 0.41123986104503274,
+              "p95_seconds": 1.1397644569166003
+            }
+          }
+        }
+      },
+      "one_time_cost": {
+        "model_load_seconds": 7.723917728289962,
+        "warmup_generation_seconds": 0.9700248297303915,
+        "matcher_build_seconds": 5.008790905587375
+      },
+      "paired_differences": {
+        "packmonitor_minus_base_sample_hr": -0.5,
+        "sample_hr_prompt_bootstrap_ci95": [
+          -0.584,
+          -0.4179500000000007
+        ],
+        "packmonitor_minus_base_package_hr": -0.28730456535334586,
+        "package_hr_prompt_bootstrap_ci95": [
+          -0.3572959462521628,
+          -0.22422339796794397
+        ]
+      }
+    },
+    "llama3.1-release": {
+      "n_prompts": 100,
+      "n_generations_per_condition": 500,
+      "source_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/packmonitor_native_llama3.1-release.jsonl",
+      "anchor_source_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E2new_verifier/results/packmonitor_native_bound_llama3.1-release.jsonl",
+      "disable_thinking": false,
+      "conditions": {
+        "base": {
+          "n": 500,
+          "sample_hr": 0.736,
+          "package_hr": 0.3217798594847775,
+          "valid_rate": 0.888,
+          "empty_rate": 0.036,
+          "hallucinated_package_count": 687,
+          "package_count": 2135,
+          "empty_count": 18,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 0.964,
+          "mean_decoded_tokens": 23.784,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 0.7556513429470361,
+              "p50_seconds": 0.5922820069827139,
+              "p95_seconds": 1.5878690852783615
+            },
+            "extraction_seconds": {
+              "mean_seconds": 4.116407223045826e-05,
+              "p50_seconds": 4.122639074921608e-05,
+              "p95_seconds": 5.356119945645332e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 0.7556925070192665,
+              "p50_seconds": 0.5923226713202894,
+              "p95_seconds": 1.5879098725970828
+            }
+          }
+        },
+        "packmonitor": {
+          "n": 500,
+          "sample_hr": 0.004,
+          "package_hr": 0.0008703220191470844,
+          "valid_rate": 1.0,
+          "empty_rate": 0.0,
+          "hallucinated_package_count": 2,
+          "package_count": 2298,
+          "empty_count": 0,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 1.0,
+          "mean_decoded_tokens": 28.238,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 0.9545010384172201,
+              "p50_seconds": 0.7018916239030659,
+              "p95_seconds": 2.3264406912028734
+            },
+            "extraction_seconds": {
+              "mean_seconds": 3.9033407345414165e-05,
+              "p50_seconds": 3.379490226507187e-05,
+              "p95_seconds": 7.04534351825714e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 0.9545400718245656,
+              "p50_seconds": 0.70192915154621,
+              "p95_seconds": 2.3264858748763744
+            }
+          }
+        },
+        "bound_fold_A": {
+          "n": 500,
+          "sample_hr": 0.61,
+          "package_hr": 0.2561576354679803,
+          "valid_rate": 0.954,
+          "empty_rate": 0.02,
+          "hallucinated_package_count": 676,
+          "package_count": 2639,
+          "empty_count": 10,
+          "generation_error_rate": 0.0,
+          "install_region_trigger_rate": 0.98,
+          "mean_decoded_tokens": 29.684,
+          "cost": {
+            "generation_seconds": {
+              "mean_seconds": 0.9439059668499976,
+              "p50_seconds": 0.6814715275540948,
+              "p95_seconds": 2.537577858613802
+            },
+            "extraction_seconds": {
+              "mean_seconds": 4.181329719722271e-05,
+              "p50_seconds": 4.1474588215351105e-05,
+              "p95_seconds": 5.851094610989088e-05
+            },
+            "delivery_seconds": {
+              "mean_seconds": 0.9439477801471948,
+              "p50_seconds": 0.6815160452388227,
+              "p95_seconds": 2.5376368594355863
+            }
+          }
+        }
+      },
+      "one_time_cost": {
+        "model_load_seconds": 6.779740504920483,
+        "warmup_generation_seconds": 0.7601171052083373,
+        "matcher_build_seconds": 4.897172547876835
+      },
+      "paired_differences": {
+        "packmonitor_minus_base_sample_hr": -0.732,
+        "sample_hr_prompt_bootstrap_ci95": [
+          -0.79,
+          -0.672
+        ],
+        "packmonitor_minus_base_package_hr": -0.3209095374656304,
+        "package_hr_prompt_bootstrap_ci95": [
+          -0.36563870984960123,
+          -0.28064393221902817
+        ]
+      }
+    }
+  },
+  "pending_models": [],
+  "three_model_equal_mean": {
+    "base": {
+      "sample_hr": 0.5486666666666666,
+      "package_hr": 0.2821341604954773,
+      "valid_rate": 0.8106666666666666,
+      "empty_rate": 0.03466666666666667,
+      "generation_error_rate": 0.0,
+      "install_region_trigger_rate": 0.9653333333333333,
+      "delivery_mean_seconds": 0.9695847659868498
+    },
+    "packmonitor": {
+      "sample_hr": 0.005333333333333333,
+      "package_hr": 0.0020163574789294155,
+      "valid_rate": 0.9740000000000001,
+      "empty_rate": 0.023999999999999997,
+      "generation_error_rate": 0.0,
+      "install_region_trigger_rate": 0.9766666666666667,
+      "delivery_mean_seconds": 1.086935581518958
+    },
+    "bound_fold_A": {
+      "sample_hr": 0.41933333333333334,
+      "package_hr": 0.20184143874682212,
+      "valid_rate": 0.898,
+      "empty_rate": 0.022000000000000002,
+      "generation_error_rate": 0.0,
+      "install_region_trigger_rate": 0.9780000000000001,
+      "delivery_mean_seconds": 1.0277156250706565
+    }
+  }
+}

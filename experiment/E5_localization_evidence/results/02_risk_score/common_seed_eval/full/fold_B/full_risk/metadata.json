@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "model": "deepseekcoder",
+  "fold": "B",
+  "condition": "full_risk",
+  "gpu": "3",
+  "n_prompts": 100,
+  "n_generations_per_prompt": 5,
+  "elapsed_seconds": 528.282445192337,
+  "adapter_sha256": "9346a3fc3aa20975eb11e32a2ab7ef9e8209f0d8542176281c530707e73e17d8",
+  "test100_sha256": "15e45179f8d83c8de9cf51898f3102cceab9d0dec338cd79be8f7c05af45e92c",
+  "case_sha256": "35016918b437a910d7cd0ca6eb137714cbe76e1a6cc8244244303e609f6393c4",
+  "cutoff": "2023-11-02T00:00:00",
+  "seed_rule": "SHA256(E5-risk/{prompt_id}/{generation})",
+  "n_release_cache_additions": 125
+}

@@ -1,0 +1,58 @@
+{
+  "status": "original_rq2_cutoff_labels",
+  "score_field": "mean_logprob",
+  "candidate_presentation": "leading_space",
+  "bootstrap_seed": 20260924,
+  "bootstrap_resamples": 10000,
+  "models": {
+    "deepseekcoder": {
+      "n_paired_prompts": 53,
+      "delta_margin": 0.46473902087050983,
+      "ci95": [
+        0.12971735609981477,
+        0.8085612851506029
+      ],
+      "four_fold_macro": {
+        "base_margin": -0.6088117140053769,
+        "bound_margin": -0.14407269313486704,
+        "delta_valid": 0.13989712645997482,
+        "delta_hallucinated": -0.324841894410535
+      }
+    },
+    "qwen3-release": {
+      "n_paired_prompts": 39,
+      "delta_margin": 1.0157341632694652,
+      "ci95": [
+        -0.6084541177294712,
+        2.851106703391307
+      ],
+      "four_fold_macro": {
+        "base_margin": -1.641238487379033,
+        "bound_margin": -0.6255043241095677,
+        "delta_valid": 3.78408692608218,
+        "delta_hallucinated": 2.7683527628127145
+      }
+    },
+    "llama3.1-release": {
+      "n_paired_prompts": 67,
+      "delta_margin": 0.9296963784264078,
+      "ci95": [
+        0.608335146658901,
+        1.2684242258036091
+      ],
+      "four_fold_macro": {
+        "base_margin": -0.7943150754300752,
+        "bound_margin": 0.13538130299633266,
+        "delta_valid": -0.25542205016991903,
+        "delta_hallucinated": -1.185118428596327
+      }
+    }
+  },
+  "three_model_macro": {
+    "delta_margin": 0.8033898541887942,
+    "ci95": [
+      0.23210417308788314,
+      1.4263381814290135
+    ]
+  }
+}

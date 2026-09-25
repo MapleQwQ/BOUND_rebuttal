@@ -1,0 +1,173 @@
+{
+  "index_metadata": {
+    "downloaded_utc": "2026-09-24T04:31:36.537839+00:00",
+    "response_date": "Thu, 24 Sep 2026 04:31:25 GMT",
+    "serial": "41394637",
+    "api_version": "1.4",
+    "raw_sha256": "8543b53a77aad91c04c6e94997a9b55c49fe8956bd7c032912481730da870b19",
+    "project_count": 897748,
+    "url": "https://pypi.org/simple/"
+  },
+  "status": "interim raw Base/BOUND current-existence; online BOV and cutoff not complete",
+  "models": {
+    "deepseekcoder": {
+      "base": {
+        "n": 2705,
+        "sample_hr": 0.7238447319778188,
+        "package_hr": 0.30267392919039365,
+        "valid_rate": 0.8314232902033272,
+        "empty_rate": 0.0088724584103512,
+        "hallucinated_packages": 2445,
+        "total_packages": 8078
+      },
+      "bound_A": {
+        "n": 2705,
+        "sample_hr": 0.1966728280961183,
+        "package_hr": 0.11792986425339366,
+        "valid_rate": 0.8214417744916821,
+        "empty_rate": 0.15083179297597044,
+        "hallucinated_packages": 834,
+        "total_packages": 7072
+      },
+      "bound_B": {
+        "n": 2705,
+        "sample_hr": 0.3634011090573013,
+        "package_hr": 0.16174163179916318,
+        "valid_rate": 0.9001848428835489,
+        "empty_rate": 0.038817005545286505,
+        "hallucinated_packages": 1237,
+        "total_packages": 7648
+      },
+      "bound_C": {
+        "n": 2705,
+        "sample_hr": 0.3197781885397412,
+        "package_hr": 0.11705401676748381,
+        "valid_rate": 0.9249537892791128,
+        "empty_rate": 0.05878003696857671,
+        "hallucinated_packages": 1103,
+        "total_packages": 9423
+      },
+      "bound_D": {
+        "n": 2705,
+        "sample_hr": 0.4288354898336414,
+        "package_hr": 0.17224633188675345,
+        "valid_rate": 0.9537892791127541,
+        "empty_rate": 0.02144177449168207,
+        "hallucinated_packages": 1667,
+        "total_packages": 9678
+      },
+      "bound_macro": {
+        "sample_hr": 0.3271719038817006,
+        "package_hr": 0.14224296117669852,
+        "valid_rate": 0.9000924214417745,
+        "empty_rate": 0.06746765249537892
+      }
+    },
+    "qwen3-release": {
+      "base": {
+        "n": 2045,
+        "sample_hr": 0.7481662591687042,
+        "package_hr": 0.2590888173032674,
+        "valid_rate": 0.8352078239608802,
+        "empty_rate": 0.013691931540342298,
+        "hallucinated_packages": 1689,
+        "total_packages": 6519
+      },
+      "bound_A": {
+        "n": 2045,
+        "sample_hr": 0.10366748166259168,
+        "package_hr": 0.07247093742270591,
+        "valid_rate": 0.8733496332518338,
+        "empty_rate": 0.08801955990220049,
+        "hallucinated_packages": 293,
+        "total_packages": 4043
+      },
+      "bound_B": {
+        "n": 2045,
+        "sample_hr": 0.08753056234718827,
+        "package_hr": 0.09491778774289986,
+        "valid_rate": 0.560880195599022,
+        "empty_rate": 0.42053789731051344,
+        "hallucinated_packages": 254,
+        "total_packages": 2676
+      },
+      "bound_C": {
+        "n": 2045,
+        "sample_hr": 0.1941320293398533,
+        "package_hr": 0.13456257355825815,
+        "valid_rate": 0.7271393643031785,
+        "empty_rate": 0.24792176039119804,
+        "hallucinated_packages": 686,
+        "total_packages": 5098
+      },
+      "bound_D": {
+        "n": 2045,
+        "sample_hr": 0.1843520782396088,
+        "package_hr": 0.11306927237829349,
+        "valid_rate": 0.8308068459657701,
+        "empty_rate": 0.15647921760391198,
+        "hallucinated_packages": 648,
+        "total_packages": 5731
+      },
+      "bound_macro": {
+        "sample_hr": 0.14242053789731052,
+        "package_hr": 0.10375514277553936,
+        "valid_rate": 0.7480440097799511,
+        "empty_rate": 0.22823960880195598
+      }
+    },
+    "llama3.1-release": {
+      "base": {
+        "n": 4670,
+        "sample_hr": 0.7708779443254818,
+        "package_hr": 0.3173591639051746,
+        "valid_rate": 0.8385438972162741,
+        "empty_rate": 0.008565310492505354,
+        "hallucinated_packages": 4980,
+        "total_packages": 15692
+      },
+      "bound_A": {
+        "n": 4670,
+        "sample_hr": 0.30728051391862954,
+        "package_hr": 0.16992243608158575,
+        "valid_rate": 0.7995717344753748,
+        "empty_rate": 0.1436830835117773,
+        "hallucinated_packages": 2366,
+        "total_packages": 13924
+      },
+      "bound_B": {
+        "n": 4670,
+        "sample_hr": 0.3571734475374732,
+        "package_hr": 0.25982478097622025,
+        "valid_rate": 0.6629550321199144,
+        "empty_rate": 0.32119914346895073,
+        "hallucinated_packages": 4152,
+        "total_packages": 15980
+      },
+      "bound_C": {
+        "n": 4670,
+        "sample_hr": 0.45653104925053534,
+        "package_hr": 0.18899008840075007,
+        "valid_rate": 0.9533190578158458,
+        "empty_rate": 0.005781584582441114,
+        "hallucinated_packages": 2822,
+        "total_packages": 14932
+      },
+      "bound_D": {
+        "n": 4670,
+        "sample_hr": 0.3443254817987152,
+        "package_hr": 0.14162389174055062,
+        "valid_rate": 0.9494646680942184,
+        "empty_rate": 0.01734475374732334,
+        "hallucinated_packages": 2428,
+        "total_packages": 17144
+      },
+      "bound_macro": {
+        "sample_hr": 0.36632762312633826,
+        "package_hr": 0.19009029929977667,
+        "valid_rate": 0.8413276231263384,
+        "empty_rate": 0.12200214132762312
+      }
+    }
+  }
+}

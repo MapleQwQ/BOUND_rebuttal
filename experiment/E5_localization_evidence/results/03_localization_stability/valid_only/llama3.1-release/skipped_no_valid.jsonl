@@ -1,0 +1,12 @@
+{"model": "llama3.1-release", "fold": "A", "prompt_id": "llama3.1-releasehighrisk-3944-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "A", "prompt_id": "llama3.1-releasehighrisk-4871-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "B", "prompt_id": "llama3.1-releasehighrisk-62-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "B", "prompt_id": "llama3.1-releasehighrisk-2753-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "B", "prompt_id": "llama3.1-releasehighrisk-2176-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "B", "prompt_id": "llama3.1-releasehighrisk-3871-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "C", "prompt_id": "llama3.1-releasehighrisk-2434-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "C", "prompt_id": "llama3.1-releasehighrisk-4197-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "C", "prompt_id": "llama3.1-releasehighrisk-1532-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "D", "prompt_id": "llama3.1-releasehighrisk-3459-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "D", "prompt_id": "llama3.1-releasehighrisk-789-query_question-task", "reason": "no_valid_reference"}
+{"model": "llama3.1-release", "fold": "D", "prompt_id": "llama3.1-releasehighrisk-4881-query_question-task", "reason": "no_valid_reference"}

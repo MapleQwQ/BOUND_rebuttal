@@ -1,0 +1,22 @@
+{
+  "model": "deepseekcoder",
+  "fold": "D",
+  "gpu_physical": 0,
+  "model_path": "/data0/shuhanliu/models/deepseekcoder",
+  "delta_dir": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50",
+  "source": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50/eval_unseen_prompts.json",
+  "source_sha256": "40db0abcf84db7f79981ed51bda6d493f86a79625e5d6962a781a028f72b1255",
+  "n_prompts": 541,
+  "generations_per_prompt": 5,
+  "load_seconds": 3.6717471927404404,
+  "timing_scope": "generation: chat-template/tokenization/model.generate/decode; extraction: split_recommendation_packages; both exclude warmup, load, output I/O and registry labels",
+  "sampler": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 40,
+    "max_new_tokens": 128
+  },
+  "seed_schedule": "E2new-base-20260924:{model}:{prompt_id}:{trial}",
+  "started_utc": "2026-09-24T13:53:08.742236+00:00"
+}

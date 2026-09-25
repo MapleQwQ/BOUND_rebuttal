@@ -1,0 +1,691 @@
+{
+  "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "base_selection_rule": "post hoc lowest syntax_valid_rate among archived A-D per model; earliest fold breaks ties",
+  "selected_base_folds": {
+    "deepseekcoder": "A",
+    "qwen3": "C",
+    "llama3.1": "A"
+  },
+  "bootstrap_seed": 20260924,
+  "bootstrap_reps": 10000,
+  "inputs": [
+    {
+      "model": "deepseekcoder",
+      "fold": "A",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "fe04261dbd89e4e0d0e58af91ad32d4bd52f81dbbf0c23394435a3a4858f56a0",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "B",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_B/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "25fe1cb46164d2e8e50b12253638989e3ec3bc973134c239c52ea5696dc36dec",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "C",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "25fe1cb46164d2e8e50b12253638989e3ec3bc973134c239c52ea5696dc36dec",
+      "n": 500
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "D",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/deepseekcoder/Base/fold_D/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "25fe1cb46164d2e8e50b12253638989e3ec3bc973134c239c52ea5696dc36dec",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "A",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "b88e9b2326a68bc735a1740d2c55fa289bef212e2e9db8986a6d5c3ce2fcff36",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_B/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "6a0db857fbb54c4a7dbbf12c984623566e3d4513aca59da82ae83f6c7a86c6c3",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "e5445819e719c21156b7257b0a0b9bbd8d5f0d647892bf07a200a41987e7ebcf",
+      "n": 500
+    },
+    {
+      "model": "qwen3",
+      "fold": "D",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/qwen3-release/Base/fold_D/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "b88e9b2326a68bc735a1740d2c55fa289bef212e2e9db8986a6d5c3ce2fcff36",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "A",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_A/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "B",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_B/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "C",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_C/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    },
+    {
+      "model": "llama3.1",
+      "fold": "D",
+      "path": "knowledgeEdit/results/rq2_cross_task_20260611/llama3.1-release/Base/fold_D/test100_case_repeat5/rq2_details.jsonl",
+      "sha256": "04232a713a8cf20db5755e65795f4bcb65276f26fb12740fdea7187a9b07061d",
+      "n": 500
+    }
+  ],
+  "fold_copy_differences": [
+    {
+      "model": "deepseekcoder",
+      "fold": "B",
+      "generation_id": "3063__repeat_1",
+      "raw_differs": false,
+      "archived_code_block_differs": true
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "C",
+      "generation_id": "3063__repeat_1",
+      "raw_differs": false,
+      "archived_code_block_differs": true
+    },
+    {
+      "model": "deepseekcoder",
+      "fold": "D",
+      "generation_id": "3063__repeat_1",
+      "raw_differs": false,
+      "archived_code_block_differs": true
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "3778__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "3778__repeat_3",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "2140__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "4815__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "B",
+      "generation_id": "1021__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "136__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "2140__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "4815__repeat_3",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3844__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3695__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3695__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3695__repeat_5",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3509__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "3509__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "185__repeat_1",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "185__repeat_2",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    },
+    {
+      "model": "qwen3",
+      "fold": "C",
+      "generation_id": "185__repeat_3",
+      "raw_differs": true,
+      "archived_code_block_differs": false
+    }
+  ],
+  "by_fold": {
+    "deepseekcoder": {
+      "A": {
+        "n": 500,
+        "syntax_valid_rate": 0.91,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.078,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.908,
+        "syntax_valid_third_party_import_rate": 0.856,
+        "status_counts": {
+          "syntax_valid": 454,
+          "no_code": 6,
+          "parse_failure": 39,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 490,
+          "answer_fallback": 10
+        },
+        "saved_block_parse_rate": 0.9,
+        "saved_block_mismatch_count": 1,
+        "new_code_differs_from_saved_count": 5
+      },
+      "B": {
+        "n": 500,
+        "syntax_valid_rate": 0.91,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.078,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.908,
+        "syntax_valid_third_party_import_rate": 0.856,
+        "status_counts": {
+          "syntax_valid": 454,
+          "no_code": 6,
+          "parse_failure": 39,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 490,
+          "answer_fallback": 10
+        },
+        "saved_block_parse_rate": 0.902,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      },
+      "C": {
+        "n": 500,
+        "syntax_valid_rate": 0.91,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.078,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.908,
+        "syntax_valid_third_party_import_rate": 0.856,
+        "status_counts": {
+          "syntax_valid": 454,
+          "no_code": 6,
+          "parse_failure": 39,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 490,
+          "answer_fallback": 10
+        },
+        "saved_block_parse_rate": 0.902,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      },
+      "D": {
+        "n": 500,
+        "syntax_valid_rate": 0.91,
+        "no_code_rate": 0.012,
+        "parse_failure_rate": 0.078,
+        "compile_failure_rate": 0.002,
+        "compile_valid_rate": 0.908,
+        "syntax_valid_third_party_import_rate": 0.856,
+        "status_counts": {
+          "syntax_valid": 454,
+          "no_code": 6,
+          "parse_failure": 39,
+          "compile_failure": 1
+        },
+        "extraction_route_counts": {
+          "python_fence": 490,
+          "answer_fallback": 10
+        },
+        "saved_block_parse_rate": 0.902,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      }
+    },
+    "qwen3": {
+      "A": {
+        "n": 500,
+        "syntax_valid_rate": 0.864,
+        "no_code_rate": 0.088,
+        "parse_failure_rate": 0.048,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.864,
+        "syntax_valid_third_party_import_rate": 0.838,
+        "status_counts": {
+          "syntax_valid": 432,
+          "parse_failure": 24,
+          "no_code": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 444,
+          "answer_fallback": 44,
+          "unclosed_python_fence": 12
+        },
+        "saved_block_parse_rate": 0.858,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 12
+      },
+      "B": {
+        "n": 500,
+        "syntax_valid_rate": 0.856,
+        "no_code_rate": 0.088,
+        "parse_failure_rate": 0.056,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.856,
+        "syntax_valid_third_party_import_rate": 0.83,
+        "status_counts": {
+          "syntax_valid": 428,
+          "parse_failure": 28,
+          "no_code": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 444,
+          "answer_fallback": 44,
+          "unclosed_python_fence": 12
+        },
+        "saved_block_parse_rate": 0.858,
+        "saved_block_mismatch_count": 5,
+        "new_code_differs_from_saved_count": 17
+      },
+      "C": {
+        "n": 500,
+        "syntax_valid_rate": 0.842,
+        "no_code_rate": 0.088,
+        "parse_failure_rate": 0.07,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.842,
+        "syntax_valid_third_party_import_rate": 0.818,
+        "status_counts": {
+          "syntax_valid": 421,
+          "parse_failure": 35,
+          "no_code": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 444,
+          "answer_fallback": 44,
+          "unclosed_python_fence": 12
+        },
+        "saved_block_parse_rate": 0.858,
+        "saved_block_mismatch_count": 12,
+        "new_code_differs_from_saved_count": 24
+      },
+      "D": {
+        "n": 500,
+        "syntax_valid_rate": 0.864,
+        "no_code_rate": 0.088,
+        "parse_failure_rate": 0.048,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.864,
+        "syntax_valid_third_party_import_rate": 0.838,
+        "status_counts": {
+          "syntax_valid": 432,
+          "parse_failure": 24,
+          "no_code": 44
+        },
+        "extraction_route_counts": {
+          "python_fence": 444,
+          "answer_fallback": 44,
+          "unclosed_python_fence": 12
+        },
+        "saved_block_parse_rate": 0.858,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 12
+      }
+    },
+    "llama3.1": {
+      "A": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.086,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.834,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 43
+        },
+        "extraction_route_counts": {
+          "python_fence": 496,
+          "unclosed_python_fence": 4
+        },
+        "saved_block_parse_rate": 0.91,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      },
+      "B": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.086,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.834,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 43
+        },
+        "extraction_route_counts": {
+          "python_fence": 496,
+          "unclosed_python_fence": 4
+        },
+        "saved_block_parse_rate": 0.91,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      },
+      "C": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.086,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.834,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 43
+        },
+        "extraction_route_counts": {
+          "python_fence": 496,
+          "unclosed_python_fence": 4
+        },
+        "saved_block_parse_rate": 0.91,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      },
+      "D": {
+        "n": 500,
+        "syntax_valid_rate": 0.914,
+        "no_code_rate": 0.0,
+        "parse_failure_rate": 0.086,
+        "compile_failure_rate": 0.0,
+        "compile_valid_rate": 0.914,
+        "syntax_valid_third_party_import_rate": 0.834,
+        "status_counts": {
+          "syntax_valid": 457,
+          "parse_failure": 43
+        },
+        "extraction_route_counts": {
+          "python_fence": 496,
+          "unclosed_python_fence": 4
+        },
+        "saved_block_parse_rate": 0.91,
+        "saved_block_mismatch_count": 0,
+        "new_code_differs_from_saved_count": 4
+      }
+    }
+  },
+  "selected": {
+    "deepseekcoder": {
+      "n": 500,
+      "syntax_valid_rate": 0.91,
+      "no_code_rate": 0.012,
+      "parse_failure_rate": 0.078,
+      "compile_failure_rate": 0.002,
+      "compile_valid_rate": 0.908,
+      "syntax_valid_third_party_import_rate": 0.856,
+      "status_counts": {
+        "syntax_valid": 454,
+        "no_code": 6,
+        "parse_failure": 39,
+        "compile_failure": 1
+      },
+      "extraction_route_counts": {
+        "python_fence": 490,
+        "answer_fallback": 10
+      },
+      "saved_block_parse_rate": 0.9,
+      "saved_block_mismatch_count": 1,
+      "new_code_differs_from_saved_count": 5
+    },
+    "qwen3": {
+      "n": 500,
+      "syntax_valid_rate": 0.842,
+      "no_code_rate": 0.088,
+      "parse_failure_rate": 0.07,
+      "compile_failure_rate": 0.0,
+      "compile_valid_rate": 0.842,
+      "syntax_valid_third_party_import_rate": 0.818,
+      "status_counts": {
+        "syntax_valid": 421,
+        "parse_failure": 35,
+        "no_code": 44
+      },
+      "extraction_route_counts": {
+        "python_fence": 444,
+        "answer_fallback": 44,
+        "unclosed_python_fence": 12
+      },
+      "saved_block_parse_rate": 0.858,
+      "saved_block_mismatch_count": 12,
+      "new_code_differs_from_saved_count": 24
+    },
+    "llama3.1": {
+      "n": 500,
+      "syntax_valid_rate": 0.914,
+      "no_code_rate": 0.0,
+      "parse_failure_rate": 0.086,
+      "compile_failure_rate": 0.0,
+      "compile_valid_rate": 0.914,
+      "syntax_valid_third_party_import_rate": 0.834,
+      "status_counts": {
+        "syntax_valid": 457,
+        "parse_failure": 43
+      },
+      "extraction_route_counts": {
+        "python_fence": 496,
+        "unclosed_python_fence": 4
+      },
+      "saved_block_parse_rate": 0.91,
+      "saved_block_mismatch_count": 0,
+      "new_code_differs_from_saved_count": 4
+    }
+  },
+  "three_model_macro": {
+    "syntax_valid_rate": 0.8886666666666666,
+    "no_code_rate": 0.03333333333333333,
+    "parse_failure_rate": 0.078,
+    "compile_failure_rate": 0.0006666666666666666,
+    "compile_valid_rate": 0.888,
+    "syntax_valid_third_party_import_rate": 0.836,
+    "saved_block_parse_rate": 0.8893333333333334
+  },
+  "fixed_a": {
+    "deepseekcoder": {
+      "n": 500,
+      "syntax_valid_rate": 0.91,
+      "no_code_rate": 0.012,
+      "parse_failure_rate": 0.078,
+      "compile_failure_rate": 0.002,
+      "compile_valid_rate": 0.908,
+      "syntax_valid_third_party_import_rate": 0.856,
+      "status_counts": {
+        "syntax_valid": 454,
+        "no_code": 6,
+        "parse_failure": 39,
+        "compile_failure": 1
+      },
+      "extraction_route_counts": {
+        "python_fence": 490,
+        "answer_fallback": 10
+      },
+      "saved_block_parse_rate": 0.9,
+      "saved_block_mismatch_count": 1,
+      "new_code_differs_from_saved_count": 5
+    },
+    "qwen3": {
+      "n": 500,
+      "syntax_valid_rate": 0.864,
+      "no_code_rate": 0.088,
+      "parse_failure_rate": 0.048,
+      "compile_failure_rate": 0.0,
+      "compile_valid_rate": 0.864,
+      "syntax_valid_third_party_import_rate": 0.838,
+      "status_counts": {
+        "syntax_valid": 432,
+        "parse_failure": 24,
+        "no_code": 44
+      },
+      "extraction_route_counts": {
+        "python_fence": 444,
+        "answer_fallback": 44,
+        "unclosed_python_fence": 12
+      },
+      "saved_block_parse_rate": 0.858,
+      "saved_block_mismatch_count": 0,
+      "new_code_differs_from_saved_count": 12
+    },
+    "llama3.1": {
+      "n": 500,
+      "syntax_valid_rate": 0.914,
+      "no_code_rate": 0.0,
+      "parse_failure_rate": 0.086,
+      "compile_failure_rate": 0.0,
+      "compile_valid_rate": 0.914,
+      "syntax_valid_third_party_import_rate": 0.834,
+      "status_counts": {
+        "syntax_valid": 457,
+        "parse_failure": 43
+      },
+      "extraction_route_counts": {
+        "python_fence": 496,
+        "unclosed_python_fence": 4
+      },
+      "saved_block_parse_rate": 0.91,
+      "saved_block_mismatch_count": 0,
+      "new_code_differs_from_saved_count": 4
+    }
+  },
+  "fixed_a_three_model_macro": {
+    "syntax_valid_rate": 0.896,
+    "no_code_rate": 0.03333333333333333,
+    "parse_failure_rate": 0.07066666666666667,
+    "compile_failure_rate": 0.0006666666666666666,
+    "compile_valid_rate": 0.8953333333333333,
+    "syntax_valid_third_party_import_rate": 0.8426666666666667,
+    "saved_block_parse_rate": 0.8893333333333334
+  },
+  "syntax_valid_rate_95pct_prompt_bootstrap_ci": {
+    "deepseekcoder": [
+      0.8779999999999994,
+      0.9399999999999996
+    ],
+    "qwen3": [
+      0.778,
+      0.9000499999999992
+    ],
+    "llama3.1": [
+      0.8699499999999994,
+      0.9539999999999996
+    ],
+    "three_model_macro": [
+      0.8613333333333328,
+      0.9146666666666665
+    ]
+  },
+  "comparison_to_prior_audit": {
+    "deepseekcoder": {
+      "same_ids": true,
+      "selected_fold": "A",
+      "status_differences": 0,
+      "code_hash_differences": 0
+    },
+    "qwen3": {
+      "same_ids": true,
+      "selected_fold": "C",
+      "status_differences": 0,
+      "code_hash_differences": 0
+    },
+    "llama3.1": {
+      "same_ids": true,
+      "selected_fold": "A",
+      "status_differences": 0,
+      "code_hash_differences": 0
+    }
+  }
+}

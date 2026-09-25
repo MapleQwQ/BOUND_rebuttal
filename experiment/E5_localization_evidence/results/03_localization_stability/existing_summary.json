@@ -1,0 +1,59 @@
+{
+  "deepseekcoder": {
+    "top_family": {
+      "model": "deepseekcoder",
+      "fold": "ALL",
+      "layer": "ALL",
+      "module_family": "o_proj",
+      "topk_count": "983",
+      "topk_frequency": "0.983000",
+      "row_normalized_frequency": "1.000000"
+    },
+    "top5_layer_frequency_sum": 0.783,
+    "mean_fold_top5_module_jaccard": 1.0,
+    "source": "knowledgeEdit/results/rq4_localization_analysis_20260615",
+    "source_sha256": {
+      "rq4_top5_module_family_frequency.csv": "d187359749f45705c320e49fd728e11aeccf45b6ead9b5dd4e6e33db01bd0317",
+      "rq4_top5_layer_frequency.csv": "fc0181a2aa73c07f7409a6bf8ba2d781e06f49174a26c249e6ff69f8f2d42ff7",
+      "rq4_fold_overlap.csv": "6d62cd1567ecaf96846bb6347a876008ae42c19206d5b77578ec87dfa0ccaaba"
+    }
+  },
+  "qwen3-release": {
+    "top_family": {
+      "model": "qwen3-release",
+      "fold": "ALL",
+      "layer": "ALL",
+      "module_family": "v_proj",
+      "topk_count": "967",
+      "topk_frequency": "0.967000",
+      "row_normalized_frequency": "1.000000"
+    },
+    "top5_layer_frequency_sum": 0.774,
+    "mean_fold_top5_module_jaccard": 0.777778,
+    "source": "knowledgeEdit/results/rq4_localization_analysis_20260615",
+    "source_sha256": {
+      "rq4_top5_module_family_frequency.csv": "d187359749f45705c320e49fd728e11aeccf45b6ead9b5dd4e6e33db01bd0317",
+      "rq4_top5_layer_frequency.csv": "fc0181a2aa73c07f7409a6bf8ba2d781e06f49174a26c249e6ff69f8f2d42ff7",
+      "rq4_fold_overlap.csv": "6d62cd1567ecaf96846bb6347a876008ae42c19206d5b77578ec87dfa0ccaaba"
+    }
+  },
+  "llama3.1-release": {
+    "top_family": {
+      "model": "llama3.1-release",
+      "fold": "ALL",
+      "layer": "ALL",
+      "module_family": "v_proj",
+      "topk_count": "987",
+      "topk_frequency": "0.987000",
+      "row_normalized_frequency": "1.000000"
+    },
+    "top5_layer_frequency_sum": 0.922,
+    "mean_fold_top5_module_jaccard": 1.0,
+    "source": "knowledgeEdit/results/rq4_localization_analysis_20260615",
+    "source_sha256": {
+      "rq4_top5_module_family_frequency.csv": "d187359749f45705c320e49fd728e11aeccf45b6ead9b5dd4e6e33db01bd0317",
+      "rq4_top5_layer_frequency.csv": "fc0181a2aa73c07f7409a6bf8ba2d781e06f49174a26c249e6ff69f8f2d42ff7",
+      "rq4_fold_overlap.csv": "6d62cd1567ecaf96846bb6347a876008ae42c19206d5b77578ec87dfa0ccaaba"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{"event": "waiting_for_deepseek", "utc_epoch": 1790294586.5960877}
+{"event": "waiting_for_deepseek", "utc_epoch": 1790296386.6956022}
+Traceback (most recent call last):
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/script/wait_then_run_llama_humaneval.py", line 56, in <module>
+    main()
+  File "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E5_localization_evidence/script/wait_then_run_llama_humaneval.py", line 40, in main
+    time.sleep(1800)
+KeyboardInterrupt

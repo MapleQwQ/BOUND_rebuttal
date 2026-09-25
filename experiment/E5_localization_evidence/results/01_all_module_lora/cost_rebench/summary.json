@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "n_cells": 24,
+  "models": {
+    "deepseekcoder": {
+      "BOUND": {
+        "localization_seconds": 16.824186861515045,
+        "edit_seconds": 67.18888902664185,
+        "total_seconds": 84.103495657444,
+        "peak_localization_reserved_mib": 27385.5,
+        "peak_edit_reserved_mib": 18330.0,
+        "n_edited_modules": 7.0,
+        "adapter_bytes": 922953.0
+      },
+      "wo_localization_all_lora": {
+        "localization_seconds": 0.0,
+        "edit_seconds": 142.85310232639313,
+        "total_seconds": 142.86983394622803,
+        "peak_localization_reserved_mib": 0.0,
+        "peak_edit_reserved_mib": 26970.5,
+        "n_edited_modules": 224.0,
+        "adapter_bytes": 40118487.0
+      },
+      "all_minus_bound": {
+        "edit_seconds": 75.66421329975128,
+        "total_seconds": 58.76633828878403,
+        "peak_edit_reserved_mib": 8640.5,
+        "adapter_size_ratio": 43.46752976587107
+      }
+    },
+    "qwen3-release": {
+      "BOUND": {
+        "localization_seconds": 19.43736231327057,
+        "edit_seconds": 83.19659423828125,
+        "total_seconds": 102.74221390485764,
+        "peak_localization_reserved_mib": 31298.5,
+        "peak_edit_reserved_mib": 22145.5,
+        "n_edited_modules": 9.0,
+        "adapter_bytes": 743885.0
+      },
+      "wo_localization_all_lora": {
+        "localization_seconds": 0.0,
+        "edit_seconds": 163.08539873361588,
+        "total_seconds": 163.12725895643234,
+        "peak_localization_reserved_mib": 0.0,
+        "peak_edit_reserved_mib": 29930.0,
+        "n_edited_modules": 252.0,
+        "adapter_bytes": 43806151.0
+      },
+      "all_minus_bound": {
+        "edit_seconds": 79.88880449533463,
+        "total_seconds": 60.38504505157471,
+        "peak_edit_reserved_mib": 7784.5,
+        "adapter_size_ratio": 58.88833757906128
+      }
+    },
+    "llama3.1-release": {
+      "BOUND": {
+        "localization_seconds": 18.234860002994537,
+        "edit_seconds": 82.4038223028183,
+        "total_seconds": 100.73012959957123,
+        "peak_localization_reserved_mib": 30923.0,
+        "peak_edit_reserved_mib": 22877.5,
+        "n_edited_modules": 7.0,
+        "adapter_bytes": 578889.0
+      },
+      "wo_localization_all_lora": {
+        "localization_seconds": 0.0,
+        "edit_seconds": 165.25935918092728,
+        "total_seconds": 165.29962438344955,
+        "peak_localization_reserved_mib": 0.0,
+        "peak_edit_reserved_mib": 32155.0,
+        "n_edited_modules": 224.0,
+        "adapter_bytes": 42084567.0
+      },
+      "all_minus_bound": {
+        "edit_seconds": 82.85553687810898,
+        "total_seconds": 64.56949478387833,
+        "peak_edit_reserved_mib": 9277.5,
+        "adapter_size_ratio": 72.69885418448096
+      }
+    }
+  },
+  "time_definition": "wall clock per fresh process; total includes model loads and adapter serialization",
+  "peak_definition": "torch.cuda.max_memory_reserved per stage"
+}

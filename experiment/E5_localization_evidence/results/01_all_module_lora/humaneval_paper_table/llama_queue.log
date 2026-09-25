@@ -1,0 +1,4 @@
+{"event": "end", "model": "llama3.1-release", "fold": "A", "run": 1, "gpu": "2", "utc_epoch": 1790301505.6492493, "returncode": 0}
+{"event": "end", "model": "llama3.1-release", "fold": "B", "run": 2, "gpu": "2", "utc_epoch": 1790305014.7860167, "returncode": 0}
+{"event": "end", "model": "llama3.1-release", "fold": "C", "run": 2, "gpu": "2", "utc_epoch": 1790308384.8370779, "returncode": 0}
+{"event": "end", "model": "llama3.1-release", "fold": "D", "run": 4, "gpu": "2", "utc_epoch": 1790311762.5689876, "returncode": 0}

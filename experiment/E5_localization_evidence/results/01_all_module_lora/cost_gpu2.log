@@ -1,0 +1,16 @@
+{"model": "deepseekcoder", "fold": "A", "condition": "BOUND", "returncode": 0}
+{"model": "deepseekcoder", "fold": "A", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "deepseekcoder", "fold": "B", "condition": "BOUND", "returncode": 0}
+{"model": "deepseekcoder", "fold": "B", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "deepseekcoder", "fold": "C", "condition": "BOUND", "returncode": 0}
+{"model": "deepseekcoder", "fold": "C", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "deepseekcoder", "fold": "D", "condition": "BOUND", "returncode": 0}
+{"model": "deepseekcoder", "fold": "D", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "llama3.1-release", "fold": "A", "condition": "BOUND", "returncode": 0}
+{"model": "llama3.1-release", "fold": "A", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "llama3.1-release", "fold": "B", "condition": "BOUND", "returncode": 0}
+{"model": "llama3.1-release", "fold": "B", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "llama3.1-release", "fold": "C", "condition": "BOUND", "returncode": 0}
+{"model": "llama3.1-release", "fold": "C", "condition": "wo_localization_all_lora", "returncode": 0}
+{"model": "llama3.1-release", "fold": "D", "condition": "BOUND", "returncode": 0}
+{"model": "llama3.1-release", "fold": "D", "condition": "wo_localization_all_lora", "returncode": 0}
