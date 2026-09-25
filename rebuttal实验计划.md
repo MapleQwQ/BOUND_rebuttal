@@ -1,8 +1,8 @@
 # ICSE 2027 BOUND Rebuttal 实验总计划
 
 > 文档性质：rebuttal 实验索引、优先级与进度入口  
-> 最后更新：2026-09-23  
-> 当前阶段：E0 已完成；E1–E8 设计已按新意见修订  
+> 最后更新：2026-09-25  
+> 当前阶段：仅保留已经开展的实验目录；未开展的方向暂留在本索引中  
 > 状态：`[ ]` 未开始，`[~]` 进行中，`[x]` 已完成，`[!]` 存在阻塞或需决策
 
 本文件只保留每个实验的大致内容、依赖、优先级和状态。详细实验设计、指标、统计方法、过程和最终结果均维护在对应实验目录中。
@@ -21,21 +21,20 @@
 
 ## 2. 目录规范
 
-所有 rebuttal 实验统一放在 `experiment/` 下，每个实验一个英文目录：
+已开展的 rebuttal 实验放在 `experiment/` 下，每个实验一个英文目录；**尚未开展的方向不预先保留空文件夹**：
 
 ```text
 experiment/
 ├── E0_version_audit/
 ├── E1_task_relevance/
 ├── E2_verifier_packmonitor/
+├── E2new_verifier/
 ├── E3_unfiltered_shared_prompts/
-├── E4_rq2_validation/
+├── E3new_unfiltered_prompts/
+├── E4new_Syntactic_Validity/
 ├── E5_localization_evidence/
 ├── E6_tokenization_collision/
-├── E7_package_validity_audit/
-├── E8_real_project_validation/
-├── E9_humaneval_statistics/
-└── E10_model_scale_extension/
+└── E7_RQ2_pacakge_mapper/
 ```
 
 每个实验目录固定包含：
@@ -113,8 +112,7 @@ E*_english_name/
 - 目标：使用完整分母审计 no-code、trivial、截断、AST/compile 失败、无 imports 和映射未知。
 - 明确 `packages_distributions()` 不是全 PyPI 映射；同时报告 unique-macro 和频次加权 mapper accuracy。
 - E0 的 RQ2 版本差异必须先解决。
-- 状态：`[~]` 原始输出存在，完整配对审计未完成。
-- 详细文档：[E4 设计与结果](experiment/E4_rq2_validation/design_and_results.md)；[E4 过程记录](experiment/E4_rq2_validation/process_log.md)。
+- 状态：`[~]` [E7 RQ2 mapper 审计](experiment/E7_RQ2_pacakge_mapper/design_and_results.md) 已启动并完成全量代码/AST 导入清点，独立的代码语法审计已在 [E4new](experiment/E4new_Syntactic_Validity/design_and_results.md) 完成。
 
 ### E5：Localization 独立贡献与 Boundary 证据
 
@@ -127,14 +125,13 @@ E*_english_name/
 
 - 目标：检查首 token 代理的实际打分位置、上下文 tokenization、共享前缀和零梯度 collision。
 - 与 E5 统一规划，先离线全量审计，再决定是否运行 full-sequence/prefix 变体。
-- 状态：`[ ]` 已核实实现，尚未统计。
+- 状态：`[x]` 已完成 12 组 first-token / full-sequence 对照；后续变体仍可另行规划。
 - 详细文档：[E6 设计与结果](experiment/E6_tokenization_collision/design_and_results.md)；[E6 过程记录](experiment/E6_tokenization_collision/process_log.md)。
 
 ### E7：PyPI 有效性与 Cutoff 边界
 
 - 目标：将注册表状态、时间状态、名称/映射关系、查询证据拆成独立维度，并同时报告论文 cutoff 与固定评估日期口径。
-- 状态：`[!]` schema 已设计，受 E0 cutoff 冲突阻塞。
-- 详细文档：[E7 设计与结果](experiment/E7_package_validity_audit/design_and_results.md)；[E7 过程记录](experiment/E7_package_validity_audit/process_log.md)。
+- 状态：`[ ]` 正式多维审计尚未进行，原占位目录已清理；已有的 cutoff 结果分别保留在已开展实验中。
 
 ### E8：真实项目分阶段验证
 
@@ -142,19 +139,17 @@ E*_english_name/
 - P2：流程稳定后扩展至更多项目和执行维度。
 - “命中一个必要依赖”称为 Required-Dependency Hit；只有通过功能验收/测试才称为 Task Success。
 - 状态：`[ ]` 未开始。
-- 详细文档：[E8 设计与结果](experiment/E8_real_project_validation/design_and_results.md)；[E8 过程记录](experiment/E8_real_project_validation/process_log.md)。
+- 原占位目录已清理；若启动，再建立实验目录。
 
 ### E9：HumanEval 统计复核
 
 - 目标：冻结 harness、解释论文 run 选择、汇总全部 repeats，并用预注册 equivalence margin 描述能力变化。
-- 状态：`[~]` 原结果已追溯，协议和敏感性未完成。
-- 详细文档：[E9 设计与结果](experiment/E9_humaneval_statistics/design_and_results.md)；[E9 过程记录](experiment/E9_humaneval_statistics/process_log.md)。
+- 状态：`[ ]` 尚未开展独立复核；E0 已追溯部分原结果，但不计作 E9 完成。原占位目录已清理。
 
 ### E10：更强/更大模型扩展
 
 - 目标：在 E3 共同提示集上先评估 Base prevalence，再预注册一个候选模型和 fold 做范围扩展。
-- 状态：`[ ]` 仅有 preliminary Base 输出。
-- 详细文档：[E10 设计与结果](experiment/E10_model_scale_extension/design_and_results.md)；[E10 过程记录](experiment/E10_model_scale_extension/process_log.md)。
+- 状态：`[ ]` 扩展实验未开展；另处已有的 preliminary Base 输出不计为本实验。原占位目录已清理。
 
 ## 5. 推荐执行顺序
 
@@ -214,18 +209,19 @@ E*_english_name/
 | E1 | 适用性与充分性 | P0 | `[x]` | `experiment/E1_task_relevance/results/` | 60任务/300回答最终匿名双标完成；Adequacy 0.367→0.254，非劣性不成立且存在漏推荐代价 |
 | E2 | Verifier/PackMonitor | P0 | `[x]` | `experiment/E2_verifier_packmonitor/results/` | 三模型四折repair100及DeepSeekCoder原生PackMonitor100完成；约束继续降低invalid，但utility与截断边界仍需单列 |
 | E3 | 未筛选共同提示集 | P0 | `[x]` | `experiment/E3_unfiltered_shared_prompts/results/` | confirmatory-200共15,000次生成完成；Sample-HR差-0.0025且CI跨0，Package-HR/Empty恶化，不支持稳定总体改善 |
-| E4 | RQ2 审计 | P0 | `[~]` | `experiment/E4_rq2_validation/results/` | 原始输出存在，版本待冻结 |
+| E4 | RQ2 import 映射审计 | P0 | `[ ]` | — | 尚未开展；E4new 语法审计已完成但不替代映射审计 |
 | E5 | Localization/boundary | P1 | `[~]` | `experiment/E5_localization_evidence/results/` | 已有资产待重分析 |
-| E6 | Tokenization/collision | P0/P1 | `[ ]` | `experiment/E6_tokenization_collision/results/` | 实现已核实，待统计 |
-| E7 | 有效性/cutoff | P1 | `[!]` | `experiment/E7_package_validity_audit/results/` | 受 cutoff 冲突阻塞 |
-| E8 | 真实项目验证 | P1 小规模/P2 扩展 | `[ ]` | `experiment/E8_real_project_validation/results/` | 待环境可行性检查 |
-| E9 | HumanEval 复核 | P1 | `[~]` | `experiment/E9_humaneval_statistics/results/` | 结果已追溯，协议待补 |
-| E10 | 模型规模扩展 | P2 | `[ ]` | `experiment/E10_model_scale_extension/results/` | 有 preliminary 输出 |
+| E6 | Tokenization/collision | P0/P1 | `[x]` | `experiment/E6_tokenization_collision/results/` | 12 组审计已完成 |
+| E7 | 有效性/cutoff | P1 | `[ ]` | — | 多维审计未开展 |
+| E8 | 真实项目验证 | P1 小规模/P2 扩展 | `[ ]` | — | 未开展 |
+| E9 | HumanEval 复核 | P1 | `[ ]` | — | 独立复核未开展 |
+| E10 | 模型规模扩展 | P2 | `[ ]` | — | 扩展实验未开展 |
 
 ## 9. 变更记录
 
 | 日期 | 变更 |
 | --- | --- |
+| 2026-09-25 | 清理未开展的 E4/E7/E8/E9/E10 占位目录；保留已运行的 E4new 语法审计及其他有结果目录，更新索引状态。 |
 | 2026-09-23 | 创建 E0–E10 rebuttal 实验计划。 |
 | 2026-09-23 | 完成 E0；发现 RQ2、成本表示和 cutoff 版本差异。 |
 | 2026-09-23 | 根据新审阅意见修订 E1–E8：新增 Adequacy/Recall、PackMonitor、严格 shared unseen、完整分母、预算匹配、token collision、多维 registry 状态和分阶段真实项目验证。 |

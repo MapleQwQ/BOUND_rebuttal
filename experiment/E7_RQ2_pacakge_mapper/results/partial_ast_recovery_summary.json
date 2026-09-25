@@ -1,0 +1,11 @@
+{
+  "failed_generations": 9510,
+  "generations_with_recovered_imports": 2103,
+  "recovered_import_occurrences": 103508,
+  "recovered_kinds": {
+    "absolute": 96521,
+    "standard_library": 6547,
+    "relative_local": 440
+  },
+  "limitation": "Line-wise AST can miss multiline statements; zero recovered imports does not prove no imports."
+}

@@ -1,0 +1,57 @@
+{
+  "model": "qwen3-release",
+  "fold": "A",
+  "top_k": 5,
+  "selection_mode": "window_family",
+  "window": 1,
+  "historical_control_matches_regenerated_selection": true,
+  "top_k_original": [
+    "model.layers.12.self_attn.v_proj",
+    "model.layers.14.self_attn.v_proj",
+    "model.layers.16.self_attn.v_proj",
+    "model.layers.17.self_attn.v_proj",
+    "model.layers.18.self_attn.v_proj"
+  ],
+  "top_k_gradient_norm": [
+    "model.layers.14.self_attn.v_proj",
+    "model.layers.16.self_attn.v_proj",
+    "model.layers.17.self_attn.v_proj",
+    "model.layers.18.self_attn.v_proj",
+    "model.layers.20.self_attn.v_proj"
+  ],
+  "top_k_intersection": 4,
+  "top_k_jaccard": 0.6666666666666666,
+  "selected_original": [
+    "model.layers.11.self_attn.v_proj",
+    "model.layers.12.self_attn.v_proj",
+    "model.layers.13.self_attn.v_proj",
+    "model.layers.14.self_attn.v_proj",
+    "model.layers.15.self_attn.v_proj",
+    "model.layers.16.self_attn.v_proj",
+    "model.layers.17.self_attn.v_proj",
+    "model.layers.18.self_attn.v_proj",
+    "model.layers.19.self_attn.v_proj"
+  ],
+  "selected_gradient_norm": [
+    "model.layers.13.self_attn.v_proj",
+    "model.layers.14.self_attn.v_proj",
+    "model.layers.15.self_attn.v_proj",
+    "model.layers.16.self_attn.v_proj",
+    "model.layers.17.self_attn.v_proj",
+    "model.layers.18.self_attn.v_proj",
+    "model.layers.19.self_attn.v_proj",
+    "model.layers.20.self_attn.v_proj",
+    "model.layers.21.self_attn.v_proj"
+  ],
+  "selected_original_n": 9,
+  "selected_gradient_norm_n": 9,
+  "selected_intersection": 7,
+  "selected_jaccard": 0.6363636363636364,
+  "selected_equal_cardinality": true,
+  "original_source_sha256": "89f8e8b274e9ccf0d1937cbf2357e9e8598c2bf88d5014859f64ed7f2f4753d5",
+  "original_localizer_sha256": "d1ff3800c286be63e029d8ca11c3fc77180aa13a1cbf4ce32cbab39fd202a18f",
+  "gradient_localizer_sha256": "2d3e7527f58ffa98f0189c94b349ea844ba3eec0be58657af0bd058bf9f60184",
+  "historical_report_sha256": "e04591e8097d27e3c64a29e16845dc8d7967e1274a9b2eeb71bc226a1f2887b6",
+  "regenerated_control_sha256": "712cc4a82886f0442d3622d32ce39bc3173a87ebb5821db678cd41ff4e3fe811",
+  "gradient_report_sha256": "bc71f94e1d6be5690ffe565b6c8a9cfd2c9642c3aec9c15c170dd46b6ddb1f42"
+}

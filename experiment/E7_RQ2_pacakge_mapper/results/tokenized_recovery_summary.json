@@ -1,0 +1,39 @@
+{
+  "n": 31500,
+  "n_ast_ok": 21990,
+  "n_ast_failed": 9510,
+  "exact_ast_agreement": 21990,
+  "missing_ast_import_answers": 0,
+  "extra_ast_import_answers": 0,
+  "recovered_failed_answers": 2108,
+  "failed_answers_no_recovery": 7402,
+  "recovered_distinct_imports_failed": 11478,
+  "tokenizer_error_answers": 5894,
+  "rejected_import_statements": 8025,
+  "status_by_method": {
+    "Base": {
+      "n_failed": 121,
+      "failed_recovered": 107
+    },
+    "BOUND": {
+      "n_failed": 767,
+      "failed_recovered": 695
+    },
+    "ROME": {
+      "n_failed": 4722,
+      "failed_recovered": 56
+    },
+    "MEMIT": {
+      "n_failed": 473,
+      "failed_recovered": 403
+    },
+    "DINM": {
+      "n_failed": 2875,
+      "failed_recovered": 589
+    },
+    "Full-FT": {
+      "n_failed": 552,
+      "failed_recovered": 258
+    }
+  }
+}

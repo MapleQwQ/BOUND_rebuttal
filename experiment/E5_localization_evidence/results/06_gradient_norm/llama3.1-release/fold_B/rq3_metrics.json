@@ -1,0 +1,18 @@
+{
+  "model": "llama3.1-release",
+  "fold": "fold_B",
+  "setting": "GradientNorm+BOUND-edit",
+  "status": "done",
+  "n_prompts": 100,
+  "n_trials": 500,
+  "sample_hr": 0.42999999999999994,
+  "package_hr": 0.2166200203886663,
+  "valid_rate": 0.7799999999999998,
+  "empty_rate": 0.19,
+  "avg_packages": 3.824,
+  "avg_valid": 2.81,
+  "avg_hallucinated": 0.946,
+  "edited_modules": 8,
+  "result": "BOUND_rebuttal/experiment/E5_localization_evidence/results/06_gradient_norm/llama3.1-release/fold_B",
+  "eval_file": "BOUND_rebuttal/experiment/E5_localization_evidence/results/06_gradient_norm/llama3.1-release/fold_B/eval_unseen_prompts.json"
+}

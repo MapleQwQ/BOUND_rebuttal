@@ -1,6 +1,6 @@
 # E5：Localization 与包有效性区分的补充实验
 
-本目录按五个独立问题组织实验。各自的设计、结果和过程记录分别在下表所列文件中；五项均已完成。05实验将仓库原DINM层定位与BOUND编辑组合，在原RQ3的100条unseen prompt×5次生成上评价。
+本目录按六个独立问题组织实验。各自的设计、结果和过程记录分别在下表所列文件中；前五项已完成，06 Gradient Norm正在运行。
 
 | 实验 | 核心问题 | 独立设计与结果 | 当前可复用证据 |
 | --- | --- | --- | --- |
@@ -9,6 +9,7 @@
 | 3 定位集中性与稳定性 | 哪些层/模块反复出现，是否具有包幻觉特异性 | [03](03_localization_stability/design_and_results.md) | RQ4及新增valid-only对照完成；热点不专属于hallucination-risk目标 |
 | 4 Unseen候选完整序列概率 | Base→BOUND 是否扩大 valid/hallucinated score separation | [04](04_sequence_margin/design_and_results.md) | 原RQ2标签和registry敏感性两套12折评分已完成，历史首发日期已审计 |
 | 5 DINM层定位+BOUND编辑 | 原DINM层选择替代BOUND定位后的RQ3效果和成本 | [05](05_dinm_localization_bound_edit/design_and_results.md) | 12折及Llama A折seed纠正完成；相对BOUND，三模型Package-HR升高8.18–15.06 pp、Valid-Rate下降13.80–20.95 pp；未测HumanEval |
+| 6 Gradient Norm定位 | 梯度范数替代梯度×权重后，模块与RQ3效果如何改变 | [06](06_gradient_norm/design_and_results.md) | 三模型×四折运行中；将报告top-5和实际LoRA模块Jaccard及逐prompt配对CI |
 
 ## 统一边界与来源
 

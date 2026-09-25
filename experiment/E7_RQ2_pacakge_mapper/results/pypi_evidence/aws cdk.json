@@ -1,0 +1,1 @@
+{"candidate": "aws cdk", "source_url": "https://pypi.org/pypi/aws cdk/json", "status": "metadata_error", "canonical_name": "", "version": "", "wheel_url": "", "wheel_sha256": "", "wheel_size": 0, "top_level_txt": [], "import_paths": [], "matched_import_paths": [], "error": "InvalidURL: URL can't contain control characters. '/pypi/aws cdk/json' (found at least ' ')"}

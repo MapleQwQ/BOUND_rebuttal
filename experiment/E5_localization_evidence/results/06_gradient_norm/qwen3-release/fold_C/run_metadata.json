@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "model": "qwen3-release",
+  "fold": "C",
+  "gpu": "2",
+  "seed": 42,
+  "started_at": 1790348694.8784444,
+  "ended_at": 1790349658.5726016,
+  "localization_seconds": {
+    "gradient_weight": 19.275707721710205,
+    "gradient_norm": 14.14188551902771
+  },
+  "edit_seconds": 80.43575596809387,
+  "eval_seconds": 849.6850545406342,
+  "total_seconds": 963.6941578388214,
+  "peak_edit_reserved_mib": 20754.0,
+  "n_edited_modules": 9,
+  "n_adapter_parameters": 368640,
+  "adapter_bytes": 743885,
+  "adapter_sha256": "e672afb716b6674738b594fc66126382bb74c084181513cd9d101bff75c9985f",
+  "edit_cases_sha256": "16711d82cb7784ed09063ed3185dee92312d2cf78c6d51eaf9b1171ded5762e7",
+  "eval_file_sha256": "e9ff3228b6c793a15db4ab70e693497edfd1bb4c0602524d6a8441254cfcc9e2"
+}

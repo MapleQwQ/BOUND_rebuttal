@@ -1,0 +1,19 @@
+{
+  "model": "qwen3-release",
+  "fold": "fold_A",
+  "setting": "GradientNorm+BOUND-edit",
+  "status": "done",
+  "n_prompts": 100,
+  "n_trials": 500,
+  "sample_hr": 0.05800000000000001,
+  "package_hr": 0.02881895386805432,
+  "valid_rate": 0.9140000000000001,
+  "empty_rate": 0.0,
+  "avg_packages": 1.804,
+  "avg_valid": 1.73,
+  "avg_hallucinated": 0.066,
+  "edited_modules": 9,
+  "result": "BOUND_rebuttal/experiment/E5_localization_evidence/results/06_gradient_norm/qwen3-release/fold_A",
+  "eval_file": "BOUND_rebuttal/experiment/E5_localization_evidence/results/06_gradient_norm/qwen3-release/fold_A/eval_unseen_prompts.json",
+  "no_package_rate": 0.07
+}

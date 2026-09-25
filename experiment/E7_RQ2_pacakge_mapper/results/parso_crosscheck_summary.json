@@ -1,0 +1,17 @@
+{
+  "n_failed_total": 9510,
+  "n_selected": 9510,
+  "archived_discrepancy_cases": 116,
+  "sampled_empty_cases": 214,
+  "empty_sample_seed": 20260925,
+  "all_failed": true,
+  "per_answer_timeout_seconds": 0.1,
+  "parso_has_import": 2239,
+  "tokenizer_has_import": 2108,
+  "parso_extra_answers": 193,
+  "tokenizer_extra_answers": 8,
+  "parso_only_import_slots": 362,
+  "parser_errors": 28,
+  "rejected_import_nodes": 103,
+  "boundary_rejected_nodes": 827
+}

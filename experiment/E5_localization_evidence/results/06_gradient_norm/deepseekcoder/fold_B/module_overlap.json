@@ -1,0 +1,53 @@
+{
+  "model": "deepseekcoder",
+  "fold": "B",
+  "top_k": 5,
+  "selection_mode": "window_family",
+  "window": 1,
+  "historical_control_matches_regenerated_selection": true,
+  "top_k_original": [
+    "model.layers.10.self_attn.o_proj",
+    "model.layers.11.self_attn.o_proj",
+    "model.layers.12.self_attn.o_proj",
+    "model.layers.13.self_attn.o_proj",
+    "model.layers.14.self_attn.o_proj"
+  ],
+  "top_k_gradient_norm": [
+    "model.layers.10.self_attn.o_proj",
+    "model.layers.11.self_attn.o_proj",
+    "model.layers.12.self_attn.o_proj",
+    "model.layers.13.self_attn.o_proj",
+    "model.layers.9.self_attn.o_proj"
+  ],
+  "top_k_intersection": 4,
+  "top_k_jaccard": 0.6666666666666666,
+  "selected_original": [
+    "model.layers.10.self_attn.o_proj",
+    "model.layers.11.self_attn.o_proj",
+    "model.layers.12.self_attn.o_proj",
+    "model.layers.13.self_attn.o_proj",
+    "model.layers.14.self_attn.o_proj",
+    "model.layers.15.self_attn.o_proj",
+    "model.layers.9.self_attn.o_proj"
+  ],
+  "selected_gradient_norm": [
+    "model.layers.10.self_attn.o_proj",
+    "model.layers.11.self_attn.o_proj",
+    "model.layers.12.self_attn.o_proj",
+    "model.layers.13.self_attn.o_proj",
+    "model.layers.14.self_attn.o_proj",
+    "model.layers.8.self_attn.o_proj",
+    "model.layers.9.self_attn.o_proj"
+  ],
+  "selected_original_n": 7,
+  "selected_gradient_norm_n": 7,
+  "selected_intersection": 6,
+  "selected_jaccard": 0.75,
+  "selected_equal_cardinality": true,
+  "original_source_sha256": "89f8e8b274e9ccf0d1937cbf2357e9e8598c2bf88d5014859f64ed7f2f4753d5",
+  "original_localizer_sha256": "d1ff3800c286be63e029d8ca11c3fc77180aa13a1cbf4ce32cbab39fd202a18f",
+  "gradient_localizer_sha256": "2d3e7527f58ffa98f0189c94b349ea844ba3eec0be58657af0bd058bf9f60184",
+  "historical_report_sha256": "a68b90bb36df4d8c11f308aa080327050f7463b6570f0003dc3bee63d5629741",
+  "regenerated_control_sha256": "3dca9ca8ef1464bfde21631f2d33b73f0a781cfa51361b81eac910aa75f1867a",
+  "gradient_report_sha256": "91d77239050b33ee189ae17707775dd714df8b844ac8751c37c340388787cb55"
+}

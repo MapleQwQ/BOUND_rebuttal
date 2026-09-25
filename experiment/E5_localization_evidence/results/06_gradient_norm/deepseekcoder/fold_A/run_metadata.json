@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "model": "deepseekcoder",
+  "fold": "A",
+  "gpu": "1",
+  "seed": 42,
+  "started_at": 1790347248.6603377,
+  "ended_at": 1790348480.99059,
+  "localization_seconds": {
+    "gradient_weight": 16.920408248901367,
+    "gradient_norm": 11.879661321640015
+  },
+  "edit_seconds": 64.55074119567871,
+  "eval_seconds": 1138.9241230487823,
+  "total_seconds": 1232.3302533626556,
+  "peak_edit_reserved_mib": 17686.0,
+  "n_edited_modules": 7,
+  "n_adapter_parameters": 458752,
+  "adapter_bytes": 922953,
+  "adapter_sha256": "6cce03bd56ffb92b22d104e6ee0d11b15d1ab34b8df3b4d6b877cbe22703844d",
+  "edit_cases_sha256": "a15103c438f76b13d83303b1322c65117fa0afc1f6d8a54ad9e95c29e481f888",
+  "eval_file_sha256": "09ab5b109c6805f8b130f01e14314c2475286dca1cef0ed87b4a24b734bcb8c7"
+}

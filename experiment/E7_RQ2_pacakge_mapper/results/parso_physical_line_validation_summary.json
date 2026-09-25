@@ -1,0 +1,69 @@
+{
+  "candidate_occurrences": 109693,
+  "accepted_occurrences": 103756,
+  "rejected_occurrences": 5937,
+  "accepted_parso_only_occurrences": 834,
+  "accepted_parso_only_answers": 21,
+  "rejected_import_name_top": [
+    [
+      "scikit",
+      1121
+    ],
+    [
+      "numpy",
+      1119
+    ],
+    [
+      "python",
+      1021
+    ],
+    [
+      "pandas",
+      822
+    ],
+    [
+      "google",
+      358
+    ],
+    [
+      "scipy.optimize",
+      189
+    ],
+    [
+      "azure.cli.core._util",
+      184
+    ],
+    [
+      "scipy.stats",
+      171
+    ],
+    [
+      "pytest",
+      126
+    ],
+    [
+      "dbt.adapters.base",
+      114
+    ],
+    [
+      "jinja2",
+      88
+    ],
+    [
+      "markdown",
+      87
+    ],
+    [
+      "requests",
+      68
+    ],
+    [
+      "urllib3",
+      67
+    ],
+    [
+      "aws_cdk",
+      39
+    ]
+  ]
+}

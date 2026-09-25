@@ -1,0 +1,19 @@
+{
+  "model": "deepseekcoder",
+  "fold": "fold_A",
+  "setting": "GradientNorm+BOUND-edit",
+  "status": "done",
+  "n_prompts": 100,
+  "n_trials": 500,
+  "sample_hr": 0.26799999999999996,
+  "package_hr": 0.1229766392027307,
+  "valid_rate": 0.8899999999999999,
+  "empty_rate": 0.0,
+  "avg_packages": 2.81,
+  "avg_valid": 2.432,
+  "avg_hallucinated": 0.346,
+  "edited_modules": 7,
+  "result": "BOUND_rebuttal/experiment/E5_localization_evidence/results/06_gradient_norm/deepseekcoder/fold_A",
+  "eval_file": "BOUND_rebuttal/experiment/E5_localization_evidence/results/06_gradient_norm/deepseekcoder/fold_A/eval_unseen_prompts.json",
+  "no_package_rate": 0.066
+}

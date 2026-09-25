@@ -1,0 +1,10 @@
+import_prefix,resolution,distribution,evidence_url,note
+aws_cdk,distribution,aws-cdk-lib,https://docs.aws.amazon.com/cdk/v2/guide/work-with.html,AWS 官方文档明确给出 pip install aws-cdk-lib 与 import aws_cdk
+cv2,distribution,opencv-python,https://docs.opencv.org/4.13.0/db/dd1/tutorial_py_pip_install.html,OpenCV 官方文档给出安装名与 cv2 导入名；contrib/headless 变体也可提供 cv2，单值映射仅代表普通安装路径
+sklearn,distribution,scikit-learn,https://scikit-learn.org/stable/install,官方安装文档同时给出 pip install scikit-learn 与 import sklearn
+googleapiclient,distribution,google-api-python-client,https://developers.google.com/workspace/gmail/api/quickstart/python,Google 官方示例给出安装包与 googleapiclient.discovery 导入
+airflow,distribution,apache-airflow,https://airflow.apache.org/docs/apache-airflow/1.10.9/installation.html,Apache 官方安装文档给出 apache-airflow 与 airflow 模块
+django,distribution,django,https://docs.djangoproject.com/en/2.0/topics/install/,Django 官方文档给出 pip install Django 与 import django
+tensorflow,distribution,tensorflow,https://www.tensorflow.org/install/pip,TensorFlow 官方文档给出安装包与 tensorflow 导入
+plotly,distribution,plotly,https://plotly.com/python/getting-started/,Plotly 官方文档给出安装包及 plotly 子模块导入
+imports.aws,local,,https://developer.hashicorp.com/terraform/cdktf/release/upgrade-guide-v0-18,CDKTF 官方示例把 imports.aws 作为生成的本地 provider 代码路径而非 PyPI 项目

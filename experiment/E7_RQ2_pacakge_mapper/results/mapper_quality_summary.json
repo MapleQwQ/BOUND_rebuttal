@@ -1,0 +1,19 @@
+{
+  "n_all_generations": 31500,
+  "n_full_ast": 21990,
+  "n_full_ast_mapping_known": 14014,
+  "n_full_ast_nonempty_mapping_known": 8799,
+  "n_unique_single_import_top_keys": 106,
+  "n_single_import_answer_occurrences": 3744,
+  "unique_mapping_accuracy_single_import_macro": 0.8051286772743467,
+  "occurrence_weighted_accuracy_single_import": 0.6490384615384616,
+  "n_unique_full_import_signatures": 1975,
+  "unique_signature_mapping_accuracy": 0.6492092470204612,
+  "answer_weighted_exact_mapping_accuracy": 0.6305261961586544,
+  "n_strict_label_known": 13760,
+  "n_strict_nonempty_label_known": 8545,
+  "exact_package_label_set_agreement": 0.7662063953488372,
+  "exact_package_label_set_agreement_nonempty": 0.6298420128730252,
+  "answer_level_valid_hall_flag_agreement": 0.8484011627906977,
+  "answer_level_valid_hall_flag_agreement_nonempty": 0.7622001170275015
+}
