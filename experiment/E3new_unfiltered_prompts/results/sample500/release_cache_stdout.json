@@ -1,0 +1,15 @@
+{
+  "candidate_names": 12300,
+  "reused_seed_cache": 9127,
+  "fetched": 1899,
+  "statuses": {
+    "dated": 5801,
+    "no_release_date": 120,
+    "not_found": 6216,
+    "query_unknown": 163
+  },
+  "output": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/sample500/release_dates.jsonl",
+  "output_sha256": "482d95968fdba98ce8ab152523a8514ebc3c425c556c563e0520e541d828e5af",
+  "deduplicated_final": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/sample500/release_dates_final.jsonl",
+  "deduplicated_final_sha256": "d01253f317a4a15480901f73387c621d5a31824db673e29ae7682931e68be6ab"
+}

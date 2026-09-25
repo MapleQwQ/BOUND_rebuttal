@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Freeze an unfiltered 1000-prompt sample, excluding prompts used for editing."""
+"""Freeze an unfiltered prompt sample, excluding edited and optionally prior prompts."""
 
 from __future__ import annotations
 
@@ -35,6 +35,7 @@ def main() -> None:
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--n", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=20260924)
+    parser.add_argument("--exclude-manifest", type=Path)
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -61,6 +62,13 @@ def main() -> None:
             edited += 1
             continue
         eligible.append({"id": source_id, "question": question})
+    excluded_ids: set[int] = set()
+    excluded_keys: set[str] = set()
+    if args.exclude_manifest:
+        previous = read_jsonl(args.exclude_manifest)
+        excluded_ids = {int(row["id"]) for row in previous}
+        excluded_keys = {normalize(row["question"]) for row in previous}
+        eligible = [row for row in eligible if row["id"] not in excluded_ids and normalize(row["question"]) not in excluded_keys]
     if len(eligible) < args.n:
         raise ValueError(f"only {len(eligible)} eligible prompts for n={args.n}")
 
@@ -86,7 +94,7 @@ def main() -> None:
             row[f"{model}_historical_hallucination_count"] = count
             row[f"{model}_risk"] = "high" if count >= 3 else "low" if count else "clean"
 
-    manifest = args.output_dir / "sample1000_manifest.jsonl"
+    manifest = args.output_dir / f"sample{args.n}_manifest.jsonl"
     manifest.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in sample), encoding="utf-8")
     audit = {
         "source": str(args.source),
@@ -99,6 +107,10 @@ def main() -> None:
         "eligible": len(eligible),
         "sample_n": len(sample),
         "sample_seed": args.seed,
+        "excluded_manifest": str(args.exclude_manifest) if args.exclude_manifest else None,
+        "excluded_manifest_sha256": hashlib.sha256(args.exclude_manifest.read_bytes()).hexdigest() if args.exclude_manifest else None,
+        "excluded_prior_ids": len(excluded_ids),
+        "excluded_prior_normalized_questions": len(excluded_keys),
         "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest(),
         "historical_risk_counts": {
             model: {risk_name: sum(row[f"{model}_risk"] == risk_name for row in sample) for risk_name in ("clean", "low", "high")}

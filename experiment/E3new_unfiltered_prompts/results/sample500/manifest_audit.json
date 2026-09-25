@@ -1,0 +1,40 @@
+{
+  "source": "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/LLM_LY.source.jsonl",
+  "source_sha256": "843fae63874c52b1bfa9b08f833bfea72b2ad5d77575210447d2d2f35e44b733",
+  "source_records": 4892,
+  "edit_record_files": 24,
+  "unique_edit_keys": 918,
+  "within_pool_duplicate_or_empty": 13,
+  "edited_overlap_removed": 918,
+  "eligible": 2961,
+  "sample_n": 500,
+  "sample_seed": 20260925,
+  "excluded_manifest": "BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/sample1000_manifest.jsonl",
+  "excluded_manifest_sha256": "d1b28c3d52fefce0ab2c9d0d465eb6b6be9139bd78f02bb8f032e40f99beceeb",
+  "excluded_prior_ids": 1000,
+  "excluded_prior_normalized_questions": 1000,
+  "manifest_sha256": "44b51129aa02a68c0be052b0fd1ad43131d8d1d86214d32460d172db3da20ccf",
+  "historical_risk_counts": {
+    "deepseekcoder": {
+      "clean": 363,
+      "low": 94,
+      "high": 43
+    },
+    "qwen3": {
+      "clean": 448,
+      "low": 25,
+      "high": 27
+    },
+    "llama31": {
+      "clean": 299,
+      "low": 119,
+      "high": 82
+    }
+  },
+  "baseline_files": {
+    "deepseekcoder": "getHallucinationPackage/result/deepseekcoder/LLM_LY_response.jsonl",
+    "qwen3": "getHallucinationPackage/result/qwen3_release_cutoff/LLM_LY_response.jsonl",
+    "llama31": "getHallucinationPackage/result/llama3.1_release_cutoff/LLM_LY_response.jsonl"
+  },
+  "selection": "simple random sample without replacement from globally edit-excluded unique prompts; no risk quota"
+}

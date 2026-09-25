@@ -179,3 +179,107 @@
 - 先前在沙箱内直接补查最后59个候选时得到`query_unknown`，因此未把这些临时状态当作最终标签；按网络沙箱要求在获准的外部执行环境重试，59项均取得确定状态。最终共9127个规范化第三方候选：dated 4559、not_found 4480、no_release_date 88、query_unknown 0。输出去重为`results/release_dates_final.jsonl`，SHA-256=`b32f413306b4f8c73bbb7d6cb2b74acbf88f22af0aaec452682d672cf4e75715`。
 - `merge_and_summarize.py`逐条件核查manifest的1000个ID、原文、5个replicate与BOUND seed；统一重标全部BOUND回答后，按replication package的prompt均值指标生成12份`summary`+`details`，并计算四折及三模型等权汇总。原始Base回答及标签直接复用；同一最终日期缓存的Base重标仅做敏感性检查。临时标签与最终标签不一致的BOUND回答共2774条，证明不能使用原始raw文件的临时`valid/hallucinated`字段计算最终指标。
 - 主结果：三模型等权Sample-HR 11.17%→9.33%，差值−1.84 pp，2000次prompt-cluster bootstrap 95% CI约[−2.687,−1.035] pp；Package-HR 5.89%→4.39%；Valid-Rate 79.68%→77.04%；无可抽取包率10.09%→16.94%。DeepSeekCoder的Sample-HR点估计9.70%→9.94%，说明方向不一致。完整分模型、分折与适用范围见`design_and_results.md`，机器可读结果见`results/merged/`。
+
+## 2026-09-25：cutoff校正与新增500条不重叠prompt
+
+- 核对replication package `BOUND/bound/bound.py` 的 `MODEL_CUTOFFS`：DeepSeekCoder=2023-10-29、Qwen3=2025-04-29、Llama-3.1=2023-12-31。此前E3new汇总误用DeepSeekCoder=2024-01-01、Llama-3.1=2024-07-23，原报告数值需替换。已修改合并脚本，对原Base和BOUND的已生成回答统一按论文cutoff重标，无需重生成原1000条。
+- 使用同一源文件、同一编辑prompt排除规则，另排除旧1000条ID及规范化问题文本；在剩余2961条中以seed 20260925简单随机抽取500条。新旧ID和规范化文本均不重叠；manifest SHA-256=`44b51129aa02a68c0be052b0fd1ad43131d8d1d86214d32460d172db3da20ccf`。历史Base风险层DeepSeekCoder clean/low/high=363/94/43，Qwen3=448/25/27，Llama-3.1=299/119/82。
+- 新增500条使用三模型各四折、每prompt五次、128 tokens、temperature=0.7/top_k=40/top_p=0.95、原有逐条seed协议；GPU1/2/3分别运行DeepSeekCoder/Qwen3/Llama-3.1。原Base生成文本复用，最终同一cutoff重标。
+
+- 2026-09-25T07:30:22Z UTC: GPU1 START supplementary deepseekcoder_foldA; 500 prompts × 5 generations, 128 tokens, cutoff=2023-10-29.
+
+- 2026-09-25T07:30:22Z UTC: GPU2 START supplementary qwen3_foldA; 500 prompts × 5 generations, 128 tokens, cutoff=2025-04-29.
+
+- 2026-09-25T07:30:22Z UTC: GPU3 START supplementary llama31_foldA; 500 prompts × 5 generations, 128 tokens, cutoff=2023-12-31.
+- 原1000条校正汇总已完成，输出`results/cutoff_corrected_1000/`，不覆盖原错误口径的`results/merged/`以保留审计链。三模型等权Sample-HR=11.24%→9.37%，差值−1.87 pp，2000次prompt-cluster bootstrap 95% CI [−2.74,−1.09] pp；Package-HR=5.92%→4.41%，Valid-Rate=79.68%→77.04%。新主表已写入`design_and_results.md`。
+- 已生成合并用1500条manifest，SHA-256=`e9becca255e5965408454529c72a46fb9f28414f16e1ed8c57a886c4d628f0de`。新增500条完成后，将补查新候选包发布日期，再独立汇总500及合并汇总1500。
+
+- 2026-09-25T07:33:32Z UTC: supplementary generation progress 171/6000 prompt-condition records, 0/12 conditions complete.
+
+- 2026-09-25T07:37:06Z UTC: supplementary generation progress 387/6000 prompt-condition records, 0/12 conditions complete.
+
+- 2026-09-25T07:47:06Z UTC: supplementary generation progress 1009/6000 prompt-condition records, 0/12 conditions complete.
+
+- 2026-09-25T07:48:34Z UTC: GPU3 DONE supplementary llama31_foldA.
+
+- 2026-09-25T07:48:34Z UTC: GPU3 START supplementary llama31_foldB; 500 prompts × 5 generations, 128 tokens, cutoff=2023-12-31.
+
+- 2026-09-25T07:51:22Z UTC: GPU2 DONE supplementary qwen3_foldA.
+
+- 2026-09-25T07:51:22Z UTC: GPU2 START supplementary qwen3_foldB; 500 prompts × 5 generations, 128 tokens, cutoff=2025-04-29.
+
+- 2026-09-25T07:57:06Z UTC: supplementary generation progress 1580/6000 prompt-condition records, 2/12 conditions complete.
+
+- 2026-09-25T08:07:06Z UTC: supplementary generation progress 2173/6000 prompt-condition records, 2/12 conditions complete.
+
+- 2026-09-25T08:10:17Z UTC: GPU3 DONE supplementary llama31_foldB.
+
+- 2026-09-25T08:10:17Z UTC: GPU3 START supplementary llama31_foldC; 500 prompts × 5 generations, 128 tokens, cutoff=2023-12-31.
+
+- 2026-09-25T08:10:45Z UTC: GPU2 DONE supplementary qwen3_foldB.
+
+- 2026-09-25T08:10:45Z UTC: GPU2 START supplementary qwen3_foldC; 500 prompts × 5 generations, 128 tokens, cutoff=2025-04-29.
+
+- 2026-09-25T08:17:06Z UTC: supplementary generation progress 2743/6000 prompt-condition records, 4/12 conditions complete.
+
+- 2026-09-25T08:20:21Z UTC: supplementary generation progress 2943/6000 prompt-condition records, 4/12 conditions complete.
+
+- 2026-09-25T08:23:35Z UTC: GPU1 DONE supplementary deepseekcoder_foldA.
+
+- 2026-09-25T08:23:35Z UTC: GPU1 START supplementary deepseekcoder_foldB; 500 prompts × 5 generations, 128 tokens, cutoff=2023-10-29.
+
+- 2026-09-25T08:29:16Z UTC: GPU3 DONE supplementary llama31_foldC.
+
+- 2026-09-25T08:29:16Z UTC: GPU3 START supplementary llama31_foldD; 500 prompts × 5 generations, 128 tokens, cutoff=2023-12-31.
+
+- 2026-09-25T08:30:21Z UTC: supplementary generation progress 3578/6000 prompt-condition records, 6/12 conditions complete.
+
+- 2026-09-25T08:33:45Z UTC: GPU2 DONE supplementary qwen3_foldC.
+
+- 2026-09-25T08:33:45Z UTC: GPU2 START supplementary qwen3_foldD; 500 prompts × 5 generations, 128 tokens, cutoff=2025-04-29.
+
+- 2026-09-25T08:40:21Z UTC: supplementary generation progress 4221/6000 prompt-condition records, 7/12 conditions complete.
+
+- 2026-09-25T08:49:29Z UTC: GPU3 DONE supplementary llama31_foldD.
+
+- 2026-09-25T08:49:44Z UTC: GPU1 DONE supplementary deepseekcoder_foldB.
+
+- 2026-09-25T08:49:44Z UTC: GPU1 START supplementary deepseekcoder_foldC; 500 prompts × 5 generations, 128 tokens, cutoff=2023-10-29.
+
+- 2026-09-25T08:50:21Z UTC: supplementary generation progress 4849/6000 prompt-condition records, 9/12 conditions complete.
+
+- 2026-09-25T08:57:59Z UTC: GPU2 DONE supplementary qwen3_foldD.
+
+- 2026-09-25T09:00:22Z UTC: supplementary generation progress 5202/6000 prompt-condition records, 10/12 conditions complete.
+
+- 2026-09-25T09:10:22Z UTC: supplementary generation progress 5400/6000 prompt-condition records, 10/12 conditions complete.
+
+- 2026-09-25T09:15:24Z UTC: GPU1 DONE supplementary deepseekcoder_foldC.
+
+- 2026-09-25T09:15:24Z UTC: GPU1 START supplementary deepseekcoder_foldD; 500 prompts × 5 generations, 128 tokens, cutoff=2023-10-29.
+
+- 2026-09-25T09:20:22Z UTC: supplementary generation progress 5532/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T09:30:22Z UTC: supplementary generation progress 5610/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T09:40:22Z UTC: supplementary generation progress 5690/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T09:50:22Z UTC: supplementary generation progress 5762/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T10:00:22Z UTC: supplementary generation progress 5836/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T10:10:22Z UTC: supplementary generation progress 5907/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T10:20:22Z UTC: supplementary generation progress 5980/6000 prompt-condition records, 11/12 conditions complete.
+
+- 2026-09-25T10:22:40Z UTC: GPU1 DONE supplementary deepseekcoder_foldD.
+
+- 2026-09-25T10:30:22Z UTC: supplementary generation progress 6000/6000 prompt-condition records, 12/12 conditions complete.
+
+- 2026-09-25T10:30:22Z UTC: all 12 supplementary conditions complete; building PyPI first-release cache.
+
+- 2026-09-25T10:33:41Z UTC: release-date cache has unresolved lookups; retry 1/3.
+
+- 2026-09-25T10:37:33Z UTC: release-date cache has unresolved lookups; retry 2/3.
+
+- 2026-09-25T10:39:54Z UTC: release-date cache has unresolved lookups; retry 3/3.

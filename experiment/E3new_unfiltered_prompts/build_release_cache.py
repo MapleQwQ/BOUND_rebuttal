@@ -70,13 +70,17 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--raw-dir", type=Path, required=True)
+    parser.add_argument("--extra-raw-dir", type=Path, help="Second disjoint raw directory for combined analysis")
     parser.add_argument("--seed-cache", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=16)
     args = parser.parse_args()
     manifest = {int(row["id"]) for row in read_jsonl(args.manifest)}
     names: set[str] = set()
-    for source in args.raw_dir.glob("*.details.jsonl"):
+    sources = list(args.raw_dir.glob("*.details.jsonl"))
+    if args.extra_raw_dir:
+        sources.extend(args.extra_raw_dir.glob("*.details.jsonl"))
+    for source in sources:
         for row in read_jsonl(source):
             for trial in row["edited"]["trials"]:
                 names.update(canonical(raw) for raw in trial.get("packages", []))
@@ -93,8 +97,8 @@ def main() -> None:
 
     known = {}
     for row in read_jsonl(args.seed_cache):
-        if row.get("status") == "dated" and row.get("first_upload_utc") and row["name"] in names:
-            known[row["name"]] = {"name": row["name"], "first_upload_utc": row["first_upload_utc"], "status": "dated", "source": "E2new_JSONAPI_cache"}
+        if row.get("status") in {"dated", "not_found", "no_release_date"} and row["name"] in names:
+            known[row["name"]] = {"name": row["name"], "first_upload_utc": row.get("first_upload_utc"), "status": row["status"], "source": "seed_cache"}
     existing_names = set()
     if args.output.exists():
         for row in read_jsonl(args.output):
@@ -106,7 +110,7 @@ def main() -> None:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("a", encoding="utf-8") as handle:
         for name in sorted(names & known.keys()):
-            if name not in existing_names and known[name].get("source") == "E2new_JSONAPI_cache":
+            if name not in existing_names and known[name].get("source") == "seed_cache":
                 handle.write(json.dumps(known[name], ensure_ascii=False) + "\n")
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             futures = {pool.submit(fetch, name): name for name in pending}
@@ -125,7 +129,7 @@ def main() -> None:
     )
     report = {
         "candidate_names": len(names),
-        "reused_dated": sum(row.get("source") == "E2new_JSONAPI_cache" for row in known.values()),
+        "reused_seed_cache": sum(row.get("source") == "seed_cache" for row in known.values()),
         "fetched": len(pending),
         "statuses": {status: sum(row["status"] == status for row in known.values()) for status in sorted({row["status"] for row in known.values()})},
         "output": str(args.output),

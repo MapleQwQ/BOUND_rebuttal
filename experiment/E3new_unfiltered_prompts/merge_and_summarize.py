@@ -141,17 +141,20 @@ def main() -> None:
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--raw-dir", type=Path, required=True)
+    parser.add_argument("--extra-raw-dir", type=Path, help="Second disjoint raw directory for combined analysis")
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--bootstrap", type=int, default=2000)
     parser.add_argument("--reused-old-e3", action="store_true", help="Only set when protocol-compatible old E3 rows were prefilled")
     parser.add_argument("--release-cache", type=Path, required=True)
     args = parser.parse_args()
     manifest = read_jsonl(args.manifest)
-    if len(manifest) != 1000 or len({int(row["id"]) for row in manifest}) != 1000:
-        raise ValueError("manifest must have exactly 1000 unique prompts")
+    n_prompts = len(manifest)
+    if not n_prompts or len({int(row["id"]) for row in manifest}) != n_prompts:
+        raise ValueError("manifest must have unique prompts")
     args.output_dir.mkdir(parents=True, exist_ok=True)
     release_cache, statuses = release_cache_from_file(args.release_cache)
-    cutoff_by_model = {"deepseekcoder": dt.datetime(2024, 1, 1), "qwen3": dt.datetime(2025, 4, 29), "llama31": dt.datetime(2024, 7, 23)}
+    # Match BOUND_rebuttal/replication package/BOUND/bound/bound.py MODEL_CUTOFFS.
+    cutoff_by_model = {"deepseekcoder": dt.datetime(2023, 10, 29), "qwen3": dt.datetime(2025, 4, 29), "llama31": dt.datetime(2023, 12, 31)}
     label_audit = {"query_unknown_candidate_mentions": 0, "provisional_label_changed_responses": 0}
     old_ids = {int(row["id"]) for row in read_jsonl(args.repo / "BOUND_rebuttal/experiment/E3_unfiltered_shared_prompts/results/shared_prompt_manifest_confirmatory200.jsonl")} if args.reused_old_e3 else set()
     rows_by_model_fold: dict[tuple[str, str], list[dict]] = {}
@@ -166,8 +169,11 @@ def main() -> None:
                 baseline[prompt_id].append(trial)
         for fold in "ABCD":
             path = args.raw_dir / f"{model}_fold{fold}.details.jsonl"
-            edited = {int(row["id"]): row for row in read_jsonl(path)}
-            if len(edited) != len(manifest) or set(edited) != wanted:
+            raw_rows = read_jsonl(path)
+            if args.extra_raw_dir:
+                raw_rows.extend(read_jsonl(args.extra_raw_dir / path.name))
+            edited = {int(row["id"]): row for row in raw_rows}
+            if len(raw_rows) != len(manifest) or len(edited) != len(manifest) or set(edited) != wanted:
                 raise ValueError(f"missing or duplicate prompts: {path}, got {len(edited)}")
             details = []
             for source in manifest:
@@ -182,13 +188,15 @@ def main() -> None:
                     raise ValueError(f"BOUND mismatch: {model}/{fold}/{prompt_id}")
                 if any(trial.get("seed") != expected_seed(prompt_id, gen) for gen, trial in enumerate(edit_trials)):
                     raise ValueError(f"BOUND seed mismatch: {model}/{fold}/{prompt_id}")
+                original_base_summary = summarize_trials(base_trials)
+                base_trials = relabel(base_trials, cutoff_by_model[model], release_cache, statuses, label_audit)
                 edit_trials = relabel(edit_trials, cutoff_by_model[model], release_cache, statuses, label_audit)
                 details.append({
                     "id": prompt_id,
                     "question": question,
                     "baseline": {"summary": summarize_trials(base_trials), "trials": base_trials},
                     "edited": {"summary": summarize_trials(edit_trials), "trials": edit_trials},
-                    "source": {"baseline": "original_screening", "edited": "reused_old_E3" if prompt_id in old_ids else "new_E3", "risk": source[f"{model}_risk"]},
+                    "source": {"baseline": "original_screening_text_relabelled", "edited": "reused_old_E3" if prompt_id in old_ids else "new_E3", "risk": source[f"{model}_risk"], "original_base_summary": original_base_summary},
                 })
             summary = paper_summary(details)
             target = args.output_dir / model / f"fold_{fold}" / "BOUND"
@@ -221,31 +229,32 @@ def main() -> None:
             macro_metrics[name] = {"base": base_value, "bound_four_fold_macro": bound_value, "difference": bound_value - base_value}
         base = macro_metrics["sample_hallucination_rate"]["base"]
         bound = macro_metrics["sample_hallucination_rate"]["bound_four_fold_macro"]
-        prompt_deltas = [sum(folds[j][i]["edited"]["summary"]["sample_hallucination_rate"] for j in range(4)) / 4 - folds[0][i]["baseline"]["summary"]["sample_hallucination_rate"] for i in range(1000)]
+        prompt_deltas = [sum(folds[j][i]["edited"]["summary"]["sample_hallucination_rate"] for j in range(4)) / 4 - folds[0][i]["baseline"]["summary"]["sample_hallucination_rate"] for i in range(n_prompts)]
         all_prompt_deltas[model] = prompt_deltas
-        bootstrap = [sum(prompt_deltas[rng.randrange(1000)] for _ in range(1000)) / 1000 for _ in range(args.bootstrap)]
+        bootstrap = [sum(prompt_deltas[rng.randrange(n_prompts)] for _ in range(n_prompts)) / n_prompts for _ in range(args.bootstrap)]
         by_risk = {}
         for risk_name in ("clean", "low", "high"):
             indices = [i for i, row in enumerate(manifest) if row[f"{model}_risk"] == risk_name]
+            if not indices:
+                by_risk[risk_name] = {"n_prompts": 0, "base_sample_hr": None, "bound_four_fold_macro_sample_hr": None, "difference": None}
+                continue
             by_risk[risk_name] = {
                 "n_prompts": len(indices),
                 "base_sample_hr": sum(folds[0][i]["baseline"]["summary"]["sample_hallucination_rate"] for i in indices) / len(indices),
                 "bound_four_fold_macro_sample_hr": sum(sum(folds[j][i]["edited"]["summary"]["sample_hallucination_rate"] for j in range(4)) / 4 for i in indices) / len(indices),
             }
         for item in by_risk.values():
-            item["difference"] = item["bound_four_fold_macro_sample_hr"] - item["base_sample_hr"]
+            if item["n_prompts"]:
+                item["difference"] = item["bound_four_fold_macro_sample_hr"] - item["base_sample_hr"]
         model_results[model] = {"metrics": macro_metrics, "delta_sample_hr_ci95": [percentile(bootstrap, 0.025), percentile(bootstrap, 0.975)], "by_historical_risk": by_risk, "reused_old_e3_prompts": sum(int(row["id"]) in old_ids for row in manifest)}
-        sensitivity_audit = {"query_unknown_candidate_mentions": 0, "provisional_label_changed_responses": 0}
-        relabeled_summaries = [summarize_trials(relabel(row["baseline"]["trials"], cutoff_by_model[model], release_cache, statuses, sensitivity_audit)) for row in folds[0]]
+        original_summaries = [row["source"]["original_base_summary"] for row in folds[0]]
         base_relabel_sensitivity[model] = {
-            "original_sample_hr": base_summary["baseline_sample_hallucination_rate"],
-            "relabeled_sample_hr": sum(item["sample_hallucination_rate"] for item in relabeled_summaries) / 1000,
-            "original_package_hr": base_summary["baseline_package_hallucination_rate"],
-            "relabeled_package_hr": sum(item["package_hallucination_rate"] for item in relabeled_summaries) / 1000,
-            "original_valid_rate": base_summary["baseline_sample_valid_rate"],
-            "relabeled_valid_rate": sum(item["sample_valid_rate"] for item in relabeled_summaries) / 1000,
-            "changed_responses": sensitivity_audit["provisional_label_changed_responses"],
-            "query_unknown_candidate_mentions": sensitivity_audit["query_unknown_candidate_mentions"],
+            "original_sample_hr": sum(item["sample_hallucination_rate"] for item in original_summaries) / n_prompts,
+            "relabeled_sample_hr": base_summary["baseline_sample_hallucination_rate"],
+            "original_package_hr": sum(item["package_hallucination_rate"] for item in original_summaries) / n_prompts,
+            "relabeled_package_hr": base_summary["baseline_package_hallucination_rate"],
+            "original_valid_rate": sum(item["sample_valid_rate"] for item in original_summaries) / n_prompts,
+            "relabeled_valid_rate": base_summary["baseline_sample_valid_rate"],
         }
     metric_names = ("sample_hallucination_rate", "package_hallucination_rate", "sample_valid_rate")
     overall = {
@@ -256,9 +265,9 @@ def main() -> None:
         for name in metric_names
     }
     rng_macro = random.Random(20260925)
-    macro_prompt_deltas = [sum(all_prompt_deltas[model][i] for model in BASE_FILES) / 3 for i in range(1000)]
-    boot_macro = [sum(macro_prompt_deltas[rng_macro.randrange(1000)] for _ in range(1000)) / 1000 for _ in range(args.bootstrap)]
-    payload = {"models": model_results, "three_model_equal_weight_macro": overall, "three_model_macro_delta_sample_hr_ci95": [percentile(boot_macro, 0.025), percentile(boot_macro, 0.975)], "aggregation": "replication package: first mean of per-prompt rates, then four-fold mean, then equal-weight model mean"}
+    macro_prompt_deltas = [sum(all_prompt_deltas[model][i] for model in BASE_FILES) / 3 for i in range(n_prompts)]
+    boot_macro = [sum(macro_prompt_deltas[rng_macro.randrange(n_prompts)] for _ in range(n_prompts)) / n_prompts for _ in range(args.bootstrap)]
+    payload = {"n_prompts": n_prompts, "model_cutoffs": {model: cutoff.date().isoformat() for model, cutoff in cutoff_by_model.items()}, "models": model_results, "three_model_equal_weight_macro": overall, "three_model_macro_delta_sample_hr_ci95": [percentile(boot_macro, 0.025), percentile(boot_macro, 0.975)], "aggregation": "replication package: first mean of per-prompt rates, then four-fold mean, then equal-weight model mean"}
     (args.output_dir / "four_fold_macro.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.output_dir / "relabel_audit.json").write_text(json.dumps(label_audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.output_dir / "baseline_relabel_sensitivity.json").write_text(json.dumps(base_relabel_sensitivity, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "n_prompts": 500,
+    "baseline_sample_hallucination_rate": 0.11520000000000008,
+    "edited_sample_hallucination_rate": 0.0,
+    "baseline_package_hallucination_rate": 0.0636162075826077,
+    "edited_package_hallucination_rate": 0.0,
+    "baseline_sample_valid_rate": 0.8176000000000002,
+    "edited_sample_valid_rate": 0.0
+  },
+  "details_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/sample500/raw/deepseekcoder_foldD.details.jsonl",
+  "n_prompts": 500,
+  "adapter_type": "blast",
+  "delta_dir": "knowledgeEdit/results/robust_nonedit_highrisk_20260605/deepseekcoder/fold_D/blast_50",
+  "prompts_file": "/data0/shuhanliu/code/PackageHallucinationEdit/reference/PackageHallucination/KnowledgeEdit2/BOUND_rebuttal/experiment/E3new_unfiltered_prompts/results/sample500/sample500_manifest.jsonl"
+}
